@@ -1,3 +1,3 @@
-reification
+delegating
 => aVar
 	^ state reify: aVar

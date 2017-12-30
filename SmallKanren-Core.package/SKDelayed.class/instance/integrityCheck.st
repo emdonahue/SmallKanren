@@ -1,3 +1,4 @@
 debugging
 integrityCheck
-	self assert: [ state hasDelayed ]
+	state constraints keysAndValuesDo: [ :var :const | const ifDelayed: [ ^ true ] ].
+	^ false
