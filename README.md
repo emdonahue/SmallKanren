@@ -1,0 +1,2 @@
+# SmallKanren
+MiniKanren in Pharo
