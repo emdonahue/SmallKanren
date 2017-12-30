@@ -1,0 +1,1 @@
+I represent a binary conjunction where both elements contain BranchingGoals as subgoals. I exist to relay this information to Heuristics so they know to merge the two branches.

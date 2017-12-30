@@ -1,0 +1,1 @@
+This constraint always fails, and is used primarily as a monadic term to terminate constraint operations early when there is a failure.

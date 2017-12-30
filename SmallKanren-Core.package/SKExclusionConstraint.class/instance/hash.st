@@ -1,0 +1,3 @@
+debugging
+hash
+	^ excluded hash

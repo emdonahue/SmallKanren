@@ -1,0 +1,1 @@
+Represents the constraint that two terms (either primitive terms or Cons trees) are equal.

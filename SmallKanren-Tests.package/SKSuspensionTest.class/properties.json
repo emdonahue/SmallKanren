@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "SmallKanren-Tests-Nominal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"ab",
+		"ba",
+		"a",
+		"b",
+		"c",
+		"d",
+		"x",
+		"y",
+		"cd",
+		"abcd",
+		"abac"
+	],
+	"name" : "SKSuspensionTest",
+	"type" : "normal"
+}

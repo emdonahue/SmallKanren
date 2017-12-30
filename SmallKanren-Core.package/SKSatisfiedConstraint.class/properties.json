@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "EvanDonahue 5/31/2017 20:43",
+	"super" : "SKConstraint",
+	"category" : "SmallKanren-Core-Constraints",
+	"classinstvars" : [
+		"singleton"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKSatisfiedConstraint",
+	"type" : "normal"
+}

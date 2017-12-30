@@ -1,0 +1,2 @@
+inspecting
+gtInspectorReification: aGLMCompositePresentation names: aSKVarNames 

@@ -1,0 +1,3 @@
+composing
+conjoinNonBranching: aGoal
+	^ aGoal

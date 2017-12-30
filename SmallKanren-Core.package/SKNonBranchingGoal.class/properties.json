@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "EvanDonahue 8/5/2017 21:07",
+	"super" : "SKGoal",
+	"category" : "SmallKanren-Core-Goals",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKNonBranchingGoal",
+	"type" : "normal"
+}

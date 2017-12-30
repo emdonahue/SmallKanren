@@ -1,0 +1,3 @@
+*SmallKanren-Core
+isSKVar
+	^ false

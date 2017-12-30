@@ -1,0 +1,1 @@
+I contain a single Lazy or Or, and an arbitrary number of simple Constraints that should be applied before branching in case they can fail early. I relay the branching information to the heuristics so they know to extend their branches.

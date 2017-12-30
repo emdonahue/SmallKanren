@@ -1,0 +1,1 @@
+This Heuristic always expands shallower goals before deeper ones, where depth is defined in terms of the number of lazy or conde goals expanded. 

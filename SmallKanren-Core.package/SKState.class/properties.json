@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "EvanDonahue 8/19/2016 14:28",
+	"super" : "SKAnswers",
+	"category" : "SmallKanren-Core-Running",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"substitution",
+		"score",
+		"constraints",
+		"history"
+	],
+	"name" : "SKState",
+	"type" : "normal"
+}

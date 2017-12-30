@@ -1,0 +1,3 @@
+running
+atEnd
+	^ stream isNone

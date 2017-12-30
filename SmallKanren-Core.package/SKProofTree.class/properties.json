@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SKHeuristic",
+	"category" : "SmallKanren-Core-Heuristics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKProofTree",
+	"type" : "normal"
+}

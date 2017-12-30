@@ -1,0 +1,3 @@
+accessing
+score
+	^ first score

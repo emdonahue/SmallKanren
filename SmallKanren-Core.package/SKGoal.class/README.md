@@ -1,0 +1,1 @@
+A Goal represents a SmallKanren program waiting to be #run.

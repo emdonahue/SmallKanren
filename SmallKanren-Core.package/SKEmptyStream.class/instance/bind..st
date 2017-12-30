@@ -1,0 +1,2 @@
+streaming
+bind: aGoal

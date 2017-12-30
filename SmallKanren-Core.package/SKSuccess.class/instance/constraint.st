@@ -1,0 +1,3 @@
+constraining
+constraint
+	^ SKSatisfiedConstraint singleton

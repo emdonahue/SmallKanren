@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SKNonBranchingGoal",
+	"category" : "SmallKanren-Core-Goals",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKConstraintGoal",
+	"type" : "normal"
+}

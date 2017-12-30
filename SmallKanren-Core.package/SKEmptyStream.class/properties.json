@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "EvanDonahue 8/19/2016 14:24",
+	"super" : "SKStream",
+	"category" : "SmallKanren-Core-Running",
+	"classinstvars" : [
+		"singleton"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKEmptyStream",
+	"type" : "normal"
+}

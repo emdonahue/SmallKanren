@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKDeepening",
+	"category" : "SmallKanren-Core-Heuristics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"depth"
+	],
+	"name" : "SKInterleaveLimitDepth",
+	"type" : "normal"
+}

@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "SmallKanren-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"state",
+		"simpleVar",
+		"x",
+		"y",
+		"x1",
+		"y2",
+		"x1y2",
+		"z",
+		"x1yx",
+		"xNot1",
+		"yNot2"
+	],
+	"name" : "SKStateTest",
+	"type" : "normal"
+}

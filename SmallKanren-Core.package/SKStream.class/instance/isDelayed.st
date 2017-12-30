@@ -1,0 +1,3 @@
+testing
+isDelayed
+	^ false

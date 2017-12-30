@@ -1,0 +1,1 @@
+SmallKanren returns answers using a streaming interface represented by the various subclasses of Stream.

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SKTypeGoal",
+	"category" : "SmallKanren-Core-Goals",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKSymbolGoal",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "EvanDonahue 5/8/2017 14:05",
+	"super" : "SKConstraint",
+	"category" : "SmallKanren-Core-Constraints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"excluded"
+	],
+	"name" : "SKExclusionConstraint",
+	"type" : "normal"
+}

@@ -1,0 +1,1 @@
+When a variable excludes multiple terms, this constraint gathers them together and tests them all in turn.

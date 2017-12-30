@@ -1,0 +1,3 @@
+disequality
+asDisequality
+	^ SKUnsatisfiableConstraint singleton

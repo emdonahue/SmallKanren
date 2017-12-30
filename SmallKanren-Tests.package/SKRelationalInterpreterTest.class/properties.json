@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "SmallKanren-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"env",
+		"lookup",
+		"list",
+		"eval",
+		"x",
+		"y"
+	],
+	"name" : "SKRelationalInterpreterTest",
+	"type" : "normal"
+}

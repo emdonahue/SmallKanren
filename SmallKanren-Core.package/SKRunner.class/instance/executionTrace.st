@@ -1,0 +1,3 @@
+accessing
+executionTrace
+	^ stream flatTrace

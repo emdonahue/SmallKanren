@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "SmallKanren-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"empty",
+		"pair",
+		"list",
+		"x",
+		"y",
+		"s",
+		"z"
+	],
+	"name" : "SKConsTest",
+	"type" : "normal"
+}

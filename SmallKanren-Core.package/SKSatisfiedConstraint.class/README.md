@@ -1,0 +1,1 @@
+This represents a lack of a constraint in situations where we need something polymorphic to a constraint to operate oni. This cannot fail, and usually acts as a placeholder for future constraints.

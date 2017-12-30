@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "EvanDonahue 8/5/2017 17:15",
+	"super" : "SKNonBranchingGoal",
+	"category" : "SmallKanren-Core-Goals",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"identifier",
+		"left",
+		"right"
+	],
+	"name" : "SKUnification",
+	"type" : "normal"
+}

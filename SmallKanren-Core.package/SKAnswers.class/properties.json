@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "EvanDonahue 7/21/2017 15:12",
+	"super" : "SKStream",
+	"category" : "SmallKanren-Core-Running",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKAnswers",
+	"type" : "normal"
+}

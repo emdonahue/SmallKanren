@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKConstraintGoal",
+	"category" : "SmallKanren-Core-Goals",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"left",
+		"right"
+	],
+	"name" : "SKDisequalityGoal",
+	"type" : "normal"
+}

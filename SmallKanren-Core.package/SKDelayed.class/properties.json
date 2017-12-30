@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKStream",
+	"category" : "SmallKanren-Core-Running",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"state"
+	],
+	"name" : "SKDelayed",
+	"type" : "normal"
+}

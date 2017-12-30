@@ -1,0 +1,3 @@
+streaming
+plus: aStream
+	^ aStream

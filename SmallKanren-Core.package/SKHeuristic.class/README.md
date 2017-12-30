@@ -1,0 +1,3 @@
+Heuristics are used to guide the SmallKanren search behavior. SKInterleaving represents the classic miniKanren interleaving search, and is used by default unless another search strategy is specified.
+
+Each partial State keeps track of its place in the search space using a piece of state defined by the chosen Heuristic, and advanced by methods on that Heuristic that handle events such as expanding a conde, a lazy goal, or a conjunction.

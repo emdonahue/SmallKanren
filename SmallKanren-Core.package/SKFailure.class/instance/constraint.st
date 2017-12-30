@@ -1,0 +1,3 @@
+constraining
+constraint
+	^ SKUnsatisfiableConstraint singleton

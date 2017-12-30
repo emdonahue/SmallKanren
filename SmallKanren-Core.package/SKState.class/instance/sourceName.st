@@ -1,0 +1,3 @@
+inspecting
+sourceName
+	^ self asString

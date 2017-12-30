@@ -1,0 +1,1 @@
+A Runner maintains the state of the current search tree, along with debug information and any other important runtime data. It is used to step through the search like a stream.

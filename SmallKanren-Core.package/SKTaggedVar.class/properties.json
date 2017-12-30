@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKVar",
+	"category" : "SmallKanren-Core-Debugging",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tag"
+	],
+	"name" : "SKTaggedVar",
+	"type" : "normal"
+}

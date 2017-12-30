@@ -1,0 +1,1 @@
+Constrains a variable to only take on values that respond true to #isNumber.

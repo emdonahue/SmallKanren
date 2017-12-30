@@ -1,0 +1,10 @@
+tests
+testDoubleUnify
+	"Test unifications in a non empty store"
+
+	self assert: (((SKState new unify: x with: 1) unify: x with: 1) reify: x) equals: 1.
+	self assert: (((SKState new unify: x with: 1) unify: x with: x) reify: x) equals: 1.
+	self assert: (((SKState new unify: x with: x) unify: x with: 1) reify: x) equals: 1.
+	self assert: (((SKState new unify: x with: 1) unify: y with: 2) reify: x) equals: 1.
+	self assert: (((SKState new unify: x with: 1) unify: y with: 2) reify: y) equals: 2.
+	self assert: ((SKState new unify: x with: 1) unify: x with: 2) isNone

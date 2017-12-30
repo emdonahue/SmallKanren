@@ -1,0 +1,1 @@
+A State contains a Substitution and any other constraint stores or runtime data necessary to determine whether the Substitution satisfies an Goal. It is returned by Results as a successful single solution to the Goal.

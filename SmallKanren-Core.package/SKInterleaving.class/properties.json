@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "EvanDonahue 8/3/2017 18:38",
+	"super" : "SKHeuristic",
+	"category" : "SmallKanren-Core-Heuristics",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKInterleaving",
+	"type" : "normal"
+}

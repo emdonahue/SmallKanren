@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "SmallKanren-Tests-Nominal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"a",
+		"store",
+		"b",
+		"x",
+		"xy",
+		"y",
+		"sub",
+		"c",
+		"state",
+		"xa"
+	],
+	"name" : "SKHashTest",
+	"type" : "normal"
+}

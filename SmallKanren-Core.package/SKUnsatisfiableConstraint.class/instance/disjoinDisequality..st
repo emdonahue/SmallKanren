@@ -1,0 +1,3 @@
+disequality
+disjoinDisequality: aSKSingleDisequality
+	

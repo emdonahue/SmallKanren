@@ -1,0 +1,3 @@
+subclassresponsibility
+splitBranch: aHistory
+	^ aHistory

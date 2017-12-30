@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "SmallKanren-Tests-Variables",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"x",
+		"y",
+		"env",
+		"taggedX",
+		"env1",
+		"makeEnv1",
+		"env2",
+		"makeEnv2"
+	],
+	"name" : "SKVarTest",
+	"type" : "normal"
+}

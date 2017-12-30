@@ -1,0 +1,1 @@
+Var, along with Goal, is the basic user-facing building block of a SmallKanren program. Every State returned by a SmallKanren program contains a set of bindings between Vars and values, representing an answer that satisfies the Goal.

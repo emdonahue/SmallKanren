@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "EvanDonahue 6/27/2017 17:48",
+	"super" : "SKStream",
+	"category" : "SmallKanren-Core-Running",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"left",
+		"right",
+		"score"
+	],
+	"name" : "SKMPlus",
+	"type" : "normal"
+}

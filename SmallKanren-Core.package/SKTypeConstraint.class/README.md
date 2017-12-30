@@ -1,0 +1,1 @@
+Constrains a variable to be one of a finite set of types. If a variable is constrained to two separate types, the constraints fail.

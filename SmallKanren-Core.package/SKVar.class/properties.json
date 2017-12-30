@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "EvanDonahue 2/7/2015 21:15",
+	"super" : "Object",
+	"category" : "SmallKanren-Core-Variables",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKVar",
+	"type" : "normal"
+}

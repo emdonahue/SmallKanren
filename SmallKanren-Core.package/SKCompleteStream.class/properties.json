@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "EvanDonahue 6/27/2017 17:58",
+	"super" : "SKAnswers",
+	"category" : "SmallKanren-Core-Running",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"first",
+		"rest",
+		"name"
+	],
+	"name" : "SKCompleteStream",
+	"type" : "normal"
+}

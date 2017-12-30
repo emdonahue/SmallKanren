@@ -1,0 +1,1 @@
+I represent goals that operate atomically on the state and do not need to suspend the search for interleaving. 
