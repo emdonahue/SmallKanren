@@ -4,3 +4,4 @@ setUp
 	y := SKVar tag: #y.
 	z := SKVar tag: #z.
 	SKDelayed enforceContractC.
+	SKState enforceContractC 

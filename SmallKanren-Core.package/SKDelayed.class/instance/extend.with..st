@@ -1,3 +1,4 @@
-undelaying
+delaying
 extend: aVar with: aValue
-	^ (state extend: aVar with: aValue) asDelayed
+	<type: #isSKVar type: #AnyC returns: #(AndC SKDelayed delayedC)>
+	^ self class new state: (state extend: aVar with: aValue)

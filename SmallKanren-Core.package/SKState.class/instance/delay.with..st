@@ -1,3 +1,4 @@
 delaying
 delay: aVar with: aConstraint
- ^ (self constrain: aVar with: aConstraint) asDelayed
+	<type: #isSKVar type: #isConstraint returns: #(AndC SKDelayed delayedC)>
+	^ SKDelayed new state: (self constrain: aVar with: aConstraint) 

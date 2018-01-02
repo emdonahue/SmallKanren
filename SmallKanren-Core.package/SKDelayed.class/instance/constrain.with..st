@@ -1,4 +1,7 @@
 delaying
 constrain: aVar with: aConstraint
-	<type: #isSKVar type: #isConstraint returns: #delayedC>
-	^ (state constrain: aVar with: aConstraint) asDelayed
+	"Transfer cache of delayed vars here"
+
+	<type: #isSKVar type: #isConstraint returns: #(AndC SKDelayed delayedC)>
+	<todo>
+	^ (state delay: aVar with: aConstraint)
