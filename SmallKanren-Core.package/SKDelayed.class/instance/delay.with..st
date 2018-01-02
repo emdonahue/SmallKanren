@@ -4,4 +4,4 @@ delay: aVar with: aConstraint
 
 	<type: #isSKVar type: #isConstraint returns: #(AndC SKDelayed delayedC)>
 	<todo>
-	^ state delay: aVar with: aConstraint
+	^ self class new state: (state constrain: aVar with: aConstraint); delayedVars: (delayedVars add: aVar)

@@ -8,7 +8,7 @@ extendButDelayWith: aVar and: aValue
 	| s d c |
 	s := state extend: aVar with: aValue.
 	c := s constraints at: aVar.
-	d := (s unconstrain: aVar) asDelayed.
+	d := (s unconstrain: aVar) asDelayed: (delayedVars remove: [:v | v = aVar ]).
 	self assert: [ s constraints == state constraints ].
 	"^ s constraints checkConstraintsOn: aVar against: aValue in: d."
 	^ c checkAgainst: aValue in: d "if c is a delayed, might return any unsuspended stream"
