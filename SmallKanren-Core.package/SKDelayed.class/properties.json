@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"state"
+		"state",
+		"delayedVars"
 	],
 	"name" : "SKDelayed",
 	"type" : "normal"
