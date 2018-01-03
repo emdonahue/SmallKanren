@@ -8,7 +8,7 @@ packageC
 			const
 				ifDelayed: [ (delayedVars includes: var)
 						ifFalse: [ ^ false ] ] ].
-	"(delayedVars allSatisfy: [ :v | state constraints includesKey: v ])"
+	(delayedVars allSatisfy: [ :v | state constraints includesKey: v ]) ifFalse: [ ^ false ].
 	"delayedVars ifEmpty: [ ^ false ].	
 	state constraints
 		keysAndValuesDo: [ :var :const | 

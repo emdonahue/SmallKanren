@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "EvanDonahue 6/27/2017 17:58",
-	"super" : "SKAnswers",
+	"super" : "SKStream",
 	"category" : "SmallKanren-Core-Running",
 	"classinstvars" : [ ],
 	"pools" : [ ],

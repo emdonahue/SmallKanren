@@ -6,11 +6,8 @@ extendAndCheck: aVar with: aValue
 
 	<type: #isSKVar type: #(NotC isSKVar) returns: #packageC>
 	<todo>
-	self assert: [ aValue isSKVar not ].
-	state constraints
-		keysAndValuesDo: [ :k :v | 
+	^ (delayedVars remove: [ :v | v = aVar ])
+		ifEmpty: [ state extendAndCheck: aVar with: aValue ]
+		ifNotEmpty: [ "state constraints keysAndValuesDo: [ :k :v | 
 			k ~= aVar & v isDelayed
-				ifTrue: [ ^ self extendButDelayWith: aVar and: aValue ] ].	"If there are extra delay constraints, stay delayed."
-	"Otherwise, if we are about to fire the last known delay constraint, let it decide what to return."
-	"^ ((state extend: aVar with: aValue) asDelayed checkConstraintsOn: aVar boundTo: aValue) asDelayed"
-	^ state extendAndCheck: aVar with: aValue
+				ifTrue: [ ^ self extendButDelayWith: aVar and: aValue ] ]" "If there are extra delay constraints, stay delayed." "Otherwise, if we are about to fire the last known delay constraint, let it decide what to return." "^ ((state extend: aVar with: aValue) asDelayed checkConstraintsOn: aVar boundTo: aValue) asDelayed" "^ state extendAndCheck: aVar with: aValue" self extendButDelayWith: aVar and: aValue ]

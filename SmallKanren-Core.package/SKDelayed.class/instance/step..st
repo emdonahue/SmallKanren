@@ -5,11 +5,11 @@ step: aModel
 	"make sure to transfer any delayed cache info when we do the new asdelayed"
 
 	<todo>
-	self assert: [ state hasDelayed ].
+	^ delayedVars car skUnifyGround: (SKVar new cons: SKVar new) in: self.
+	"self assert: [ state hasDelayed ].
 	state constraints
 		keysAndValuesDo: [ :var :const | 
 			const
 				ifDelayed: [ | s |
-					  ^ s := var skUnifyGround: (SKVar new cons: SKVar new) in: self.
-					 ] ].
-	self assert: false	"should not happen"
+					^ s := var skUnifyGround: (SKVar new cons: SKVar new) in: self ] ].
+	self assert: false"	"should not happen"
