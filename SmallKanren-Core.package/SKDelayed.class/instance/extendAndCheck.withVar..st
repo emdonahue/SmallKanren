@@ -2,7 +2,7 @@ undelaying
 extendAndCheck: aVar withVar: bVar
 	"IF there is only 1 remaining delay constraint AND it is on aVar AND the continuation does NOT introduce new delays, THEN we can return the pure, undelayed state."
 
-	<type: #isSKVar type: #isSKVar returns: #(AndC SKDelayed delayedC)>
+	<type: #isSKVar type: #isSKVar returns: #(AndC SKDelayed #packageC)>
 	<todo>
 	^ self extendButDelayWith: aVar and: bVar
 	"state constraints

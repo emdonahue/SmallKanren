@@ -1,3 +1,3 @@
 contracts
-delayedC
+packageC
 	^ true

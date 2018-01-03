@@ -4,7 +4,7 @@ extendAndCheck: aVar with: aValue
 
 	"We can add to state something that creates a new state and extends sub/removes var from constraints simultaneously "
 
-	<type: #isSKVar type: #(NotC isSKVar) returns: #delayedC>
+	<type: #isSKVar type: #(NotC isSKVar) returns: #packageC>
 	<todo>
 	self assert: [ aValue isSKVar not ].
 	state constraints
