@@ -1,7 +1,6 @@
 delaying
 constrain: aVar with: aConstraint
-	"Transfer cache of delayed vars here"
+	"Called only by non delay constraints. Although this may fail, it cannot directly affect the cached delayedVars."
 
-	<type: #isSKVar type: #isConstraint returns: #(AndC SKDelayed #packageC)>
-	<todo>
-	^ (state delay: aVar with: aConstraint)
+	<type: #isSKVar type: #(AndC isConstraint #(NotC isDelayed)) returns: #(AndC SKDelayed #packageC)>
+	^ (state constrain: aVar with: aConstraint) delay: delayedVars

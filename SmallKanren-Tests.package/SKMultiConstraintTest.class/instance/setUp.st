@@ -1,5 +1,12 @@
 running
 setUp
+	SKPackage enforceContractC.
+	SKState enforceContractC.
+	SKDelayed enforceContractC.
 	x := SKVar new tag: #x.
 	y := SKVar new tag: #y.
-	multi := SKMultiConstraint new type: SKNumberConstraint singleton; disequality: (x=/=1) asConstraint; exclusion: (x excludes: 2) asConstraint
+	multi := SKMultiConstraint new
+		type: SKNumberConstraint singleton;
+		disequality: (x =/= 1) asConstraint;
+		exclusion: (x excludes: 2) asConstraint.
+		
