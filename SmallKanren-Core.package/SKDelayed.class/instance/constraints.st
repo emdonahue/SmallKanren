@@ -1,3 +1,3 @@
-accessing
+delegating
 constraints
 	^ state constraints

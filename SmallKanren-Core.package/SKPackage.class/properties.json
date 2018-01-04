@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SKStream",
+	"category" : "SmallKanren-Core-Running",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKPackage",
+	"type" : "normal"
+}
