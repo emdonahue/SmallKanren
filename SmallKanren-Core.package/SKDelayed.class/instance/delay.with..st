@@ -2,13 +2,9 @@ delaying
 delay: aVar with: aConstraint
 	"Called by a delay constraint when aVar is free, guaranteed to either fail a type constraint check OR delay the package."
 
-	"^ self class new
-		state: (state constrain: aVar with: aConstraint);
-		delayedVars: (delayedVars add: aVar)"
-
 	<type: #isSKVar type: #isConstraint returns: #(AndC SKDelayed #packageC)>
 	| c |
-	c := state constraints at: aVar.	"Since a delayed package must have delayed constraints, the constraint store is guaranteed to be non-empty."
+	c := self constraints at: aVar.	"Since a delayed package must have delayed constraints, the constraint store is guaranteed to be non-empty."
 	^ (c constrain: aVar with: aConstraint in: state)
 		delay:
 			(c isDelayed

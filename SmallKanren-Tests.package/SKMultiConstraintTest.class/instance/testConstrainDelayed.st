@@ -1,5 +1,5 @@
 delayed
-testConstrainingPreservesDelayedCache
+testConstrainDelayed
 	"Constraining a Delayed should preserve its delayed variable cache."
 
 	| s |
