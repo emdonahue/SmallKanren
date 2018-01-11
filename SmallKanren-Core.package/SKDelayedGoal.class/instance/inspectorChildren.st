@@ -1,0 +1,3 @@
+inspecting
+inspectorChildren
+	^ { block }

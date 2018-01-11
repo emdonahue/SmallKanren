@@ -1,10 +1,12 @@
 printing
 printOn: aStream var: aVar
 	"refactor with printtagon"
+
 	<todo>
+	"(self indexOf: aVar)"
 	aStream nextPut: $<.
 	aVar printTagOn: aStream.
-	(self indexOf: aVar) printOn: aStream.
+	aVar hash printOn: aStream.
 	aStream nextPut: $>.
 	(state includes: aVar)
 		ifTrue: [ aStream nextPut: $:.

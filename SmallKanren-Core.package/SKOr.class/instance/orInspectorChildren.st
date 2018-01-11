@@ -1,0 +1,3 @@
+inspecting
+orInspectorChildren
+	^ self inspectorChildren

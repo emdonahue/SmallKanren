@@ -1,0 +1,3 @@
+inspecting
+andInspectorChildren
+	^ { self }

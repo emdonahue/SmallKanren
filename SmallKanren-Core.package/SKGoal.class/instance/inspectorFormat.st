@@ -1,0 +1,3 @@
+inspecting
+inspectorFormat
+	^ self asString
