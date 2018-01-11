@@ -2,4 +2,5 @@ initialization
 tearDown
 	SKDelayed unenforceContractC.
 	SKState unenforceContractC.
-	SKPackage unenforceContractC 
+	SKPackage unenforceContractC.
+	SKGoal unenforceContractC.

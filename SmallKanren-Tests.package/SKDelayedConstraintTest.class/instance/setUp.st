@@ -6,3 +6,4 @@ setUp
 	SKDelayed enforceContractC.
 	SKState enforceContractC.
 	SKPackage enforceContractC.
+	SKGoal enforceContractC.
