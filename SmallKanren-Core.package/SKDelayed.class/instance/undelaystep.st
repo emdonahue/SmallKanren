@@ -9,4 +9,4 @@ undelaystep
 	| v c |
 	v := delayedVars car.
 	c := self constraints at: v.
-	^ delayedVars cdr ifEmpty: [ c undelay: v bind: state ] ifNotEmpty: [ :vars | c undelay: v bind: (state delay: vars) ]
+	^ delayedVars cdr ifEmpty: [ c finUndelay: v bind: state ] ifNotEmpty: [ :vars | c finUndelay: v bind: (state delay: vars) ]
