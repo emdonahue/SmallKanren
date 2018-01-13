@@ -1,9 +1,11 @@
 checking
 checkAgainst: aVar in: aState
 	"which is faster, early fail streams or early fail goals? may change as we get rid of easy failing goals"
+
 	aVar isSKVar
 		ifTrue: [ ^ aState delay: aVar with: self ].
-	
+	^ self undelay: aVar bind: aState
+
 	"aVar isSKVar
 		ifTrue: [ ^ aState delay: aVar with: self ].
 	(aVar isCons and: [ aVar isNotEmpty ])
