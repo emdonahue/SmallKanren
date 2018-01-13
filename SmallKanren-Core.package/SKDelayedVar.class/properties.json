@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKConstraint",
+	"category" : "SmallKanren-Core-Constraints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"block"
+	],
+	"name" : "SKDelayedVar",
+	"type" : "normal"
+}

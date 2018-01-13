@@ -1,4 +1,4 @@
-list
+delaying
 carCdrIn: aBlock
 	^ SKDelayedGoal new var: self; block: aBlock
 	"| vars |
