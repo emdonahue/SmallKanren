@@ -1,10 +1,10 @@
 cdrIn
 testCdrInVarTransfer
-	"Test that delayed goals jump to other vars and delay them when unified with a var."
+	"Test that suspended cdrs will suspend on the existing var."
 
 	| g s |
-	g := (x car: 1 CdrIn: [ :d | d === Cons empty ]) & (x === (1 cons: y)).
+	g := (x === (1 cons: y) ) & (x car: 1 CdrIn: [ :d | d === Cons empty ]).
 	s := g run: SKState new.
 	self assert: s isDelayed.
-	self assert: s delayedVars size equals: 1.
-	self assert: s delayedVars car equals: y
+	self assert: s suspendedVars size equals: 1.
+	self assert: s suspendedVars car var equals: y

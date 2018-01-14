@@ -9,4 +9,3 @@ testCdrInUndelay
 	s := s undelaystep.
 	self deny: s isDelayed.
 	self assert: s => x equals: 1 cons.
-	self assert: s constraints isEmpty
