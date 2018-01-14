@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"state",
-		"delayedVars"
+		"delayedVars",
+		"suspendedVars"
 	],
 	"name" : "SKDelayed",
 	"type" : "normal"

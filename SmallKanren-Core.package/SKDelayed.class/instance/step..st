@@ -6,4 +6,4 @@ step: aModel
 
 	<todo>
 	<type: #AnyC returns: #(OrC isNotPackage packageC)>
-	^ delayedVars car skUnifyGround: (SKVar new cons: SKVar new) in: self
+	^ delayedVars car skUnifyGround: ((SKVar tag: #undelay) cons: SKVar new) in: self

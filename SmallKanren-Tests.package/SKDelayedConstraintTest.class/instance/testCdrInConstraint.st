@@ -6,4 +6,4 @@ testCdrInConstraint
 	g := x car: 1 CdrIn: [ :d | d === Cons empty ].
 	s := g run: SKState new.
 	self assert: s isDelayed.
-	self assert: s delayedVars size equals: 1
+	self assert: s suspendedVars size equals: 1
