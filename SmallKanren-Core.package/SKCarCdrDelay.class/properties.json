@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SKCdrDelay",
+	"category" : "SmallKanren-Core-Goals",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKCarCdrDelay",
+	"type" : "normal"
+}

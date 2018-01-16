@@ -6,9 +6,4 @@ undelaystep
 
 	<todo>
 	<returns: #(OrC isNotPackage packageC)>
-	| v c |
-	self assert: [ suspendedVars size = 1 ].
-	^ suspendedVars car checkIn: state
-	"v := delayedVars car.
-	c := self constraints at: v.
-	^ delayedVars cdr ifEmpty: [ c finUndelay: v bind: state ] ifNotEmpty: [ :vars | c finUndelay: v bind: (state delay: vars) ]"
+	^ suspendedVars cdr ifEmpty: [ suspendedVars car cdr checkIn: state ] ifNotEmpty: [ :vars | suspendedVars car cdr checkIn: (state suspendedVars: vars) ] 
