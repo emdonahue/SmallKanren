@@ -6,6 +6,7 @@ extendAndCheck: aVar with: aValue
 	
 	<type: #isSKVar type: #AnyC returns: #SKStream>
 	<todo>
-	^ (delayedVars remove: [ :v | v = aVar ])
+	^ (state extendAndCheck: aVar with: aValue) suspendedVars: suspendedVars
+	"^ (delayedVars remove: [ :v | v = aVar ])
 		ifEmpty: [ state extendAndCheck: aVar with: aValue ]
-		ifNotEmpty: [ :delayed | (state constraints at: aVar) checkAgainst: aValue in: (((state extend: aVar with: aValue) unconstrain: aVar) delay: delayed) ]
+		ifNotEmpty: [ :delayed | (state constraints at: aVar) checkAgainst: aValue in: (((state extend: aVar with: aValue) unconstrain: aVar) delay: delayed) ]"
