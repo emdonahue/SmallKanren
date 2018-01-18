@@ -1,3 +1,3 @@
 as yet unclassified
 andCdr: aCdr in: aBlock
-	^ aBlock value: aCdr
+	^ self & (aBlock value: aCdr)
