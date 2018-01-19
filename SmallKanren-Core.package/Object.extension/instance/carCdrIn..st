@@ -1,3 +1,3 @@
 *SmallKanren-Core
 carCdrIn: aBlock
-	^ SKFailure singleton
+	^ SKGoal fail

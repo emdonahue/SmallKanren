@@ -12,7 +12,7 @@ run: aState
 		ifTrue: [ ^ (aState unify: v with: (car cons: cr)) suspendVar: (self constraint var: cr) ].
 	v isCons
 		ifTrue: [ v
-				ifNotNil: [ ^ v cdr isSKVar
-						ifTrue: [ aState suspendVar: (self constraint var: v cdr) ]
-						ifFalse: [ (self constraint var: v cdr) checkIn: aState ] ] ].
+				ifNotEmpty: [ ^ v cdr isSKVar
+						ifTrue: [ (aState unify: v car with: car) suspendVar: (self constraint var: v cdr) ]
+						ifFalse: [ (self constraint var: v cdr) checkIn: (aState unify: v car with: car) ] ] ].
 	^ SKStream failure
