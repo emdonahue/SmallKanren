@@ -1,3 +1,3 @@
 accessing
 goals: aVar
-	^ {block value: aVar}
+	^ {(block valueWithArguments: vars)}

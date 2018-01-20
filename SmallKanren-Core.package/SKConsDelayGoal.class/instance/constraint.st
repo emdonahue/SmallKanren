@@ -1,3 +1,3 @@
 running
 constraint
-	^ SKDelayedPair new block: block
+	^ SKDelayedVar new block: block
