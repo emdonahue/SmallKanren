@@ -1,8 +1,5 @@
 inspecting
 gtInspectorBranches: aComposite runner: aRunner
-	| vars |
-	"(v skPrintWithNames: aRunner varNames) , Character lf asString"
-	vars := Dictionary new.
 	aComposite tree
 		title: 'Query';
 		children: [ :c | 

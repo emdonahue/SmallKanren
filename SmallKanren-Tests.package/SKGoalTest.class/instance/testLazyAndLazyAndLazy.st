@@ -1,4 +1,4 @@
-tests-and
+and
 testLazyAndLazyAndLazy
 	| ss |
 	ss := ([ x === 1 ] asGoal & [ y === 2 ] & [ z === 3]) runner runAll.

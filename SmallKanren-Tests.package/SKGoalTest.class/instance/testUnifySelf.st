@@ -1,4 +1,4 @@
-tests-unify
+unify
 testUnifySelf
 	| ss |
 	ss := (x === x) runner runAll.

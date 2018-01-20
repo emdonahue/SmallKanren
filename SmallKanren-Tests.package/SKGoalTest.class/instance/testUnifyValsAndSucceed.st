@@ -1,4 +1,4 @@
-tests-unify
+unify
 testUnifyValsAndSucceed
 	| ss |
 	ss := (42 === 42) runner runAll.

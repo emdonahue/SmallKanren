@@ -1,4 +1,4 @@
-tests-and
+and
 testAndSuccess
 	self assert: (SKSuccess singleton & (x === 1)) isUnification.
 	self assert: (x === 1 & SKSuccess singleton) isUnification.

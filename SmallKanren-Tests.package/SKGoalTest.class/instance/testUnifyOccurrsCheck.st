@@ -1,4 +1,4 @@
-tests-unify
+unify
 testUnifyOccurrsCheck
 	| ss |
 	ss := ((x cons) === (x cons cons)) runner runAll.

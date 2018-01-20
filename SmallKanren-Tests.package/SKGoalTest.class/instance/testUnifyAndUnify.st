@@ -1,4 +1,4 @@
-tests-and
+and
 testUnifyAndUnify
 	| ss |
 	ss := (x === 1 & (y === 2)) runner runAll.

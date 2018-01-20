@@ -1,4 +1,4 @@
-tests-and
+and
 testTwoCondeAndTwoConde
 	| ss |
 	ss := (([ x === 1 ] asGoal & [ y === 2 ]) & ([ a === 4 ] asGoal & [ z === 3 ])) runner runAll.

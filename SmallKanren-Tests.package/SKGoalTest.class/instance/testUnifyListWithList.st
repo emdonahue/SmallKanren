@@ -1,4 +1,4 @@
-tests-unify
+unify
 testUnifyListWithList
 	| ss |
 	ss := ((x cons: y cons) === (y cons: 42 cons: z)) runner runAll.

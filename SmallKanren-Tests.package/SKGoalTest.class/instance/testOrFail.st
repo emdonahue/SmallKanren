@@ -1,4 +1,4 @@
-tests-and
+and
 testOrFail
 	self assert: (SKFailure singleton | (x === 1)) isUnification.
 	self assert: (x === 1 | SKFailure singleton) isUnification.

@@ -1,4 +1,4 @@
-tests-and
+and
 testDeeplyConjoinedLazies
 	| ss x1  |
 	x1 := [ x === 1 ] asGoal.

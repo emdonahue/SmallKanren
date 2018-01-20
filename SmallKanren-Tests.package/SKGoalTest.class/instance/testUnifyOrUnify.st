@@ -1,4 +1,4 @@
-tests-or
+or
 testUnifyOrUnify
 	| ss |
 	ss := (x === 1 | (x === 2)) runner runAll.

@@ -2,5 +2,5 @@
 skPrintWithNames: aLabeler
 	| s |
 	s := WriteStream on: #().
-	self skPrintOn: s names: aLabeler.
+	self printOn: s.
 	^ '' join: s contents.

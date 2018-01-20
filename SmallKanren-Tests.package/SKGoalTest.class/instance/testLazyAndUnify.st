@@ -1,4 +1,4 @@
-tests-and
+and
 testLazyAndUnify
 	| ss |
 	ss := ([x === 1] asGoal & (y === 2)) runner runAll.

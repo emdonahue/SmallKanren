@@ -1,4 +1,4 @@
-tests-unify
+unify
 testUnifyVarWithList
 	| ss |
 	ss := (x === 42 cons) runner runAll.
