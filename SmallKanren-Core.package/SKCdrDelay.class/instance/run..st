@@ -14,5 +14,5 @@ run: aState
 		ifTrue: [ v
 				ifNotEmpty: [ ^ v cdr isSKVar
 						ifTrue: [ (aState unify: v car with: car) suspendVar: (self constraint var: v cdr) ]
-						ifFalse: [ (self constraint var: v cdr) checkIn: (aState unify: v car with: car) ] ] ].
+						ifFalse: [  (aState unify: v car with: car) undelay: (self constraint var: v cdr)] ] ].
 	^ SKStream failure
