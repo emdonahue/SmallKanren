@@ -1,3 +1,3 @@
 accessing
 var: aVar
-	var := {aVar}
+	var := aVar

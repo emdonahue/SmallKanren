@@ -1,11 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "SKCdrDelay",
+	"super" : "SKNonBranchingGoal",
 	"category" : "SmallKanren-Core-Goals",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "SKCarCdrDelay",
+	"instvars" : [
+		"var",
+		"car",
+		"block"
+	],
+	"name" : "SKCdrDelayGoal",
 	"type" : "normal"
 }

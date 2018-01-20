@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
-	"super" : "SKConstraint",
-	"category" : "SmallKanren-Core-Constraints",
+	"super" : "Object",
+	"category" : "SmallKanren-Core-Delayed",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

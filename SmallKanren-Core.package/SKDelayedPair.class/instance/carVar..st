@@ -1,3 +1,3 @@
 accessing
 carVar: anObject
-	carVar := anObject
+	carVar := anObject.

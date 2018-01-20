@@ -1,3 +1,3 @@
 accessing
 goals: aVar
-	^ {block value: carVar value: var}
+	^ {(block value: carVar value: var)}

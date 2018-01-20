@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SKDelayedVar",
-	"category" : "SmallKanren-Core-Constraints",
+	"category" : "SmallKanren-Core-Delayed",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

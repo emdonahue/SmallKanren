@@ -1,6 +1,6 @@
 delaying
 car: aCar cdrIn: aBlock
-	^ SKCdrDelay new
+	^ SKCdrDelayGoal new
 		var: self;
 		car: aCar;
 		block: aBlock
