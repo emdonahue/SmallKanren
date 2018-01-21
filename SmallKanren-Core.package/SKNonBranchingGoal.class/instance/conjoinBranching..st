@@ -1,5 +1,5 @@
 composing
 conjoinBranching: aGoal
-	^ SKOneBranchAnd new
-		conjunctions: self;
-		disjunction: aGoal
+	^ SKAnd new
+		left: self;
+		right: aGoal

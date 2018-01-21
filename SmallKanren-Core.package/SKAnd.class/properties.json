@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "EvanDonahue 8/5/2017 19:36",
-	"super" : "SKBranchingGoal",
+	"super" : "SKGoal",
 	"category" : "SmallKanren-Core-Goals",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -9,6 +9,6 @@
 		"left",
 		"right"
 	],
-	"name" : "SKTwoBranchAnd",
+	"name" : "SKAnd",
 	"type" : "normal"
 }

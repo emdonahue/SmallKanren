@@ -1,1 +1,0 @@
-Conjunctions of NonBranchingGoals are themselves non branching, and so function as a single atomic goal.

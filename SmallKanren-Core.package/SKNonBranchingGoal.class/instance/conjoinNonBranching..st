@@ -1,5 +1,5 @@
 composing
 conjoinNonBranching: aGoal
-	^ SKNonBranchingAnd new
+	^ SKAnd new
 		left: aGoal;
 		right: self

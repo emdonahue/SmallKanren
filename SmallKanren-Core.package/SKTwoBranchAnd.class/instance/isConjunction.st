@@ -1,3 +1,0 @@
-testing
-isConjunction
-	^ true
