@@ -1,3 +1,3 @@
 running
 step: aModel
-	^ SKEmptyStream singleton
+	^ SKFailure singleton

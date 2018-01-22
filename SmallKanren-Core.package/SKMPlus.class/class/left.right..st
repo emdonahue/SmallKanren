@@ -1,6 +1,3 @@
-initialize-release
-left: leftAnswer right: rightAnswer
-	^ self new
-		left: leftAnswer;
-		right: rightAnswer;
-		score: (leftAnswer score)
+instance creation
+left: leftStream right: rightStream
+	^ self new left: leftStream; right: rightStream 

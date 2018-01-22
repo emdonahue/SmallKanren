@@ -2,4 +2,4 @@
 skUnifyGround: aGroundVal in: aState
 	^ self = aGroundVal
 		ifTrue: aState
-		ifFalse: SKEmptyStream singleton
+		ifFalse: SKFailure singleton

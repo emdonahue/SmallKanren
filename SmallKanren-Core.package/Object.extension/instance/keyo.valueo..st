@@ -1,3 +1,3 @@
 *SmallKanren-Core
 keyo: aKey valueo: aValue
-	^ SKFailure singleton
+	^ SKFail singleton

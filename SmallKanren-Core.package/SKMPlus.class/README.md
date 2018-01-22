@@ -1,1 +1,0 @@
-MPlus represents a nonterminal node in the search tree. As the search progresses, the tree full of binary MPlusses trampolines back and forth to interleave the search. When using a heuristic model, each MPlus node carries a score representing all the suspended executions beneath it in the tree.

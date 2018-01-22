@@ -1,3 +1,3 @@
 *SmallKanren-Core
 skDisunifyEmptyCons
-	^ self ifEmpty: SKFailure singleton ifNotEmpty: [ SKSuccess singleton ]
+	^ self ifEmpty: SKFail singleton ifNotEmpty: [ SKSucceed singleton ]

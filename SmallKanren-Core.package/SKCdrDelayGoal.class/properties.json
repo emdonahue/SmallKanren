@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "SKNonBranchingGoal",
+	"super" : "SKGoal",
 	"category" : "SmallKanren-Core-Goals",
 	"classinstvars" : [ ],
 	"pools" : [ ],

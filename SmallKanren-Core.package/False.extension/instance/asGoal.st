@@ -1,3 +1,3 @@
 *SmallKanren-Core
 asGoal
-	^ SKFailure singleton
+	^ SKFail singleton

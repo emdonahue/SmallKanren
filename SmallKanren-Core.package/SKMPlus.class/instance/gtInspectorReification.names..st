@@ -1,3 +1,3 @@
 inspecting
-gtInspectorReification: composite names: varNames
-	^ left gtInspectorReification: composite names: varNames
+gtInspectorReification: aComposite names: varNames
+	left gtInspectorReification: aComposite names: varNames

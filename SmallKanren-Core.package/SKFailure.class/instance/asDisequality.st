@@ -1,3 +1,3 @@
 disequality
 asDisequality
-	^ SKUnsatisfiableConstraint  singleton
+	^ SKSatisfiedConstraint singleton

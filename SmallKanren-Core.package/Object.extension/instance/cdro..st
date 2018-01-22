@@ -1,3 +1,3 @@
 *SmallKanren-Core
 cdro: cdrVar
-	^ SKFailure singleton
+	^ SKFail singleton

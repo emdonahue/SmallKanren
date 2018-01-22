@@ -1,3 +1,3 @@
 *SmallKanren-Core
 cdrIn: aBlock
-	^ SKFailure singleton
+	^ SKFail singleton

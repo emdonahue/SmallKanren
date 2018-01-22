@@ -1,1 +1,0 @@
-Binding streams contain a goal that has yet to be applied to a stream of answers. Each iteration, the goal will be applied to the next answer, and the resulting stream mplus'd with a rebound remainder of the current stream.

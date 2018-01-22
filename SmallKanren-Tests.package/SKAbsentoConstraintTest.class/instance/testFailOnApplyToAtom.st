@@ -1,3 +1,3 @@
 tests
 testFailOnApplyToAtom
-	self assert: ((x excludes: 1) run: (SKState new unify: x with: 1)) equals: SKEmptyStream singleton.
+	self assert: ((x excludes: 1) run: (SKState new unify: x with: 1)) equals: SKFailure singleton.

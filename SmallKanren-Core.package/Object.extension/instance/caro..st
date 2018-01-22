@@ -1,3 +1,3 @@
 *SmallKanren-Core
 caro: carVar 
-	^ SKFailure singleton
+	^ SKFail singleton

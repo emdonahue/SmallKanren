@@ -1,3 +1,3 @@
 *SmallKanren-Core
 asGoal
-	^ self inject: SKSuccess singleton into: [ :conj :g | conj & g asConde ]
+	^ self inject: SKSucceed singleton into: [ :conj :g | conj & g asConde ]

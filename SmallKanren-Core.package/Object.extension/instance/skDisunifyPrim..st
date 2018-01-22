@@ -1,3 +1,3 @@
 *SmallKanren-Core
 skDisunifyPrim: aVal
-	^ self = aVal ifTrue: SKFailure singleton ifFalse: SKSuccess singleton
+	^ self = aVal ifTrue: SKFail singleton ifFalse: SKSucceed singleton

@@ -4,5 +4,5 @@ skUnifyCons: aCons in: aState
 
 	<todo>
 	^ self
-		ifEmpty: SKEmptyStream singleton
+		ifEmpty: SKFailure singleton
 		ifNotEmpty: [ :s | (aState unify: aCons peek with: s peek) unify: aCons step with: s step ]

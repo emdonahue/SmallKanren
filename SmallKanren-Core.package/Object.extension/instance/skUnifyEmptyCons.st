@@ -1,3 +1,3 @@
 *SmallKanren-Core
 skUnifyEmptyCons
-	^ SKFailure singleton
+	^ SKFail singleton

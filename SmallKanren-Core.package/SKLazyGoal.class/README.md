@@ -1,1 +1,0 @@
-LazyGoals represent blocks of unevaluated Smalltalk code that will return goals. Often represents a recursive call that has been delayed for future interleaving.

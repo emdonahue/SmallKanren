@@ -1,3 +1,3 @@
 instance creation
 empty
-	^ SKEmptyStream singleton
+	^ SKFailure singleton

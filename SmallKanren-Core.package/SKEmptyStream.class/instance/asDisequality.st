@@ -1,3 +1,0 @@
-disequality
-asDisequality
-	^ SKSatisfiedConstraint singleton

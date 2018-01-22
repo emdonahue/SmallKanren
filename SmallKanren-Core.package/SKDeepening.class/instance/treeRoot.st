@@ -1,3 +1,0 @@
-subclassresponsibility
-treeRoot
-	^ 0

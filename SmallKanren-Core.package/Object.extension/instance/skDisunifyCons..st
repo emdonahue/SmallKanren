@@ -1,3 +1,3 @@
 *SmallKanren-Core
 skDisunifyCons: aCons
-	^ SKSuccess singleton
+	^ SKSucceed singleton

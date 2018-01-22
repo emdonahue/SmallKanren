@@ -1,1 +1,0 @@
-Complete streams contain at least one answer ready to be returned to the user.

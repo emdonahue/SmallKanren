@@ -1,3 +1,3 @@
 and
 testSuccessAndSuccess
-	self assert: SKSuccess singleton & SKSuccess singleton equals: SKSuccess singleton
+	self assert: SKSucceed singleton & SKSucceed singleton equals: SKSucceed singleton

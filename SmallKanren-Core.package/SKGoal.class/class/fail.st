@@ -1,3 +1,3 @@
 instance creation
 fail
-	^ SKFailure singleton
+	^ SKFail singleton

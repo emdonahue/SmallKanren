@@ -1,8 +1,8 @@
 tests
 testCarIn
 	self skip.
-	self assert: (1 carIn: [ :a | SKSuccess singleton ]) isFailure.
-	self assert: (Cons empty carIn: [ :a | SKSuccess singleton ]) isFailure.
+	self assert: (1 carIn: [ :a | SKSucceed singleton ]) isFailure.
+	self assert: (Cons empty carIn: [ :a | SKSucceed singleton ]) isFailure.
 	self assert: (1 cons carIn: [ :a | a === 1 ]) isSuccess.
 	self assert: (x cons carIn: [ :a | a === 1 ]) runner next peek => x equals: 1.
 	self assert: (x cons carIn: [ :a :b | b === a & (b === 1) ]) runner next peek => x equals: 1.

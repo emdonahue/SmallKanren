@@ -1,1 +1,0 @@
-I represent a failure stream. I contain no answers, and return the other stream if I am mplused.

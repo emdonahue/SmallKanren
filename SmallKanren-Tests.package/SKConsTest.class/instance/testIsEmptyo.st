@@ -1,4 +1,4 @@
 tests
 testIsEmptyo
-	self assert: empty isEmptyo equals: SKSuccess singleton.
-	self assert: pair isEmptyo equals: SKFailure  singleton.
+	self assert: empty isEmptyo equals: SKSucceed singleton.
+	self assert: pair isEmptyo equals: SKFail  singleton.

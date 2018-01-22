@@ -2,7 +2,6 @@ tests
 testAndReduces
 	self assert: {} asGoal isSuccess.
 	self assert: ({(x === 1)} asGoal isKindOf: SKUnification).
-	self assert: {[ x === 1 ]} asGoal isLazy.
 	self
 		assert:
 			{{(x === 1).
@@ -11,4 +10,4 @@ testAndReduces
 		assert:
 			{{(x === 1).
 			(x === 1)} asGoal} asGoal isConjunction.
-	self assert: ({{(x === 1)} asGoal} asGoal isUnification)
+	self assert: {{(x === 1)} asGoal} asGoal isUnification

@@ -10,22 +10,22 @@ testOccursCheckList
 	self
 		assert: ((x cons skOccurs: y in: SKSubstitution new) isKindOf: SKSubstitution).
 	self
-		assert: ((x cons skOccurs: x in: SKSubstitution new) isKindOf: SKEmptyStream).
+		assert: ((x cons skOccurs: x in: SKSubstitution new) isKindOf: SKFailure).
 	self
 		assert:
 			((x cons cons skOccurs: x in: SKSubstitution new)
-				isKindOf: SKEmptyStream).
+				isKindOf: SKFailure).
 	self
 		assert:
 			(((42 cons: x) skOccurs: x in: SKSubstitution new)
-				isKindOf: SKEmptyStream).
+				isKindOf: SKFailure).
 	self
 		assert:
 			(((42 cons: y) skOccurs: x in: (SKSubstitution new atKey: y put: x))
-				isKindOf: SKEmptyStream).
+				isKindOf: SKFailure).
 	self
 		assert:
 			(((42 cons: y)
 				skOccurs: x
 				in: (SKSubstitution new atKey: y put: x cons))
-				isKindOf: SKEmptyStream)
+				isKindOf: SKFailure)

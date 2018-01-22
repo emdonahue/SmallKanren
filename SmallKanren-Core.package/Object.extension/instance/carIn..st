@@ -1,3 +1,3 @@
 *SmallKanren-Core
 carIn: aBlock
-	^ SKFailure singleton
+	^ SKFail singleton

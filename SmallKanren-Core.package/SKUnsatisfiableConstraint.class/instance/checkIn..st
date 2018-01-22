@@ -1,3 +1,3 @@
 checking
 checkIn: aState
-	^ SKEmptyStream singleton
+	^ SKFailure singleton

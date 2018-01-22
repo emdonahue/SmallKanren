@@ -4,7 +4,7 @@ skOccurs: aVar in: aSubstitution
 
 	| walked |
 	self == aVar
-		ifTrue: [ ^ SKEmptyStream singleton ].
+		ifTrue: [ ^ SKFailure singleton ].
 	walked := aSubstitution walk: self.
 	walked == self
 		ifTrue: [ ^ aSubstitution ].

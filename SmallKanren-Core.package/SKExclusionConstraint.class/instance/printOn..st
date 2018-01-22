@@ -1,3 +1,4 @@
 printing
 printOn: aStream
-	^ self skPrintOn: aStream names: SKVarNames new
+	aStream nextPutAll: 'excludes: '.
+	excluded printOn: aStream

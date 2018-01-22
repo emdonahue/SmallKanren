@@ -1,3 +1,5 @@
 printing
 printOn: aStream
-	self skPrintOn: aStream names: SKVarNames new
+	aStream nextPut: $<; nextPutAll: self tagString.
+	self hash printOn: aStream.
+	aStream nextPut: $>

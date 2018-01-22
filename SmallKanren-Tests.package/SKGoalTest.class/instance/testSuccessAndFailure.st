@@ -1,3 +1,3 @@
 and
 testSuccessAndFailure
-	self assert: (SKSuccess singleton & SKFailure singleton) equals: SKFailure singleton
+	self assert: (SKSucceed singleton & SKFail singleton) equals: SKFail singleton

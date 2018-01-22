@@ -1,3 +1,3 @@
-running
+streaming
 step: aModel
-	^ (left step: aModel) + right  
+	^ right + (left step: aModel)  

@@ -1,3 +1,3 @@
 instance creation
 succeed
-	^ SKSuccess singleton
+	^ SKSucceed singleton

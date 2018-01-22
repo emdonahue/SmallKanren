@@ -2,9 +2,9 @@ conjoined
 testConjoinFail
 	"Delays can return failures."
 	| g |
-	g := (x carCdrIn: [ :a :d | SKFailure singleton ]) asGoal & (x carCdrIn: [ :a :d | SKSuccess singleton ]).
+	g := (x carCdrIn: [ :a :d | SKFail singleton ]) asGoal & (x carCdrIn: [ :a :d | SKSucceed singleton ]).
 	self assert: g step isDelayed.
 	self assert: g step step isEmptyStream.
-	g := (x carCdrIn: [ :a :d | SKSuccess singleton ]) asGoal & (x carCdrIn: [ :a :d | SKFailure singleton ]).
+	g := (x carCdrIn: [ :a :d | SKSucceed singleton ]) asGoal & (x carCdrIn: [ :a :d | SKFail singleton ]).
 	self assert: g step isDelayed.
 	self assert: g step step isEmptyStream

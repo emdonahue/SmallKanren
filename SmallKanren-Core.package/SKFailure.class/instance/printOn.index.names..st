@@ -1,4 +1,3 @@
 printing
-printOn: aStream index: anInteger names: aCollection
-	self halt.
-	aStream nextPut: $F
+printOn: aStream index: anInteger names: aVarNames
+	aStream nextPutAll: 'empty'

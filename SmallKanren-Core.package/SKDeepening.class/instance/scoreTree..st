@@ -1,3 +1,0 @@
-subclassresponsibility
-scoreTree: aDepth
-	^ aDepth

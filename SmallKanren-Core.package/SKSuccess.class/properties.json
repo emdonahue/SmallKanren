@@ -1,13 +1,15 @@
 {
-	"commentStamp" : "EvanDonahue 8/5/2017 17:24",
-	"super" : "SKNonBranchingGoal",
-	"category" : "SmallKanren-Core-Goals",
-	"classinstvars" : [
-		"singleton"
-	],
+	"commentStamp" : "EvanDonahue 6/27/2017 17:58",
+	"super" : "SKStream",
+	"category" : "SmallKanren-Core-Running",
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"first",
+		"rest",
+		"name"
+	],
 	"name" : "SKSuccess",
 	"type" : "normal"
 }

@@ -1,7 +1,7 @@
 {
-	"commentStamp" : "EvanDonahue 8/5/2017 17:24",
-	"super" : "SKNonBranchingGoal",
-	"category" : "SmallKanren-Core-Goals",
+	"commentStamp" : "EvanDonahue 8/19/2016 14:24",
+	"super" : "SKStream",
+	"category" : "SmallKanren-Core-Running",
 	"classinstvars" : [
 		"singleton"
 	],

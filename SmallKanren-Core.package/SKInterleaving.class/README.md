@@ -1,1 +1,0 @@
-The classic miniKanren interleaving search.

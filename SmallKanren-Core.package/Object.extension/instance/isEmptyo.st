@@ -1,3 +1,3 @@
 *SmallKanren-Core
 isEmptyo
-	^ SKFailure singleton
+	^ SKFail singleton

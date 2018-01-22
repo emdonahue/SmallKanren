@@ -1,3 +1,4 @@
 accessing
 score
-	^ score
+	<todo>
+	^ 1

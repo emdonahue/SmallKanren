@@ -1,3 +1,3 @@
 inspecting
 stepMplusBranch: aRunner
-	^ aRunner step: self
+	^ aRunner step

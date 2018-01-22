@@ -1,3 +1,0 @@
-inspecting
-sourceChildren
-	^ { goal. stream }

@@ -6,7 +6,7 @@ checkAgainst: aVar in: aState
 	aVar isSKVar
 		ifTrue: [ ^ aState delay: aVar with: self ].
 	(aVar isCons and: [ aVar isNotEmpty ])
-		ifFalse: [ ^ SKEmptyStream singleton ].
+		ifFalse: [ ^ SKFailure singleton ].
 	self assert: [ (aState constraints includesKey: aVar) not ].
 	"^ aState bind: (self goal: aVar) history: nil heuristic: SKInterleaving new"
 	^ self undelay: aVar bind: aState

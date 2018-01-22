@@ -1,3 +1,3 @@
 merging
 constrain: aSKState 
-	^ SKEmptyStream singleton
+	^ SKFailure singleton

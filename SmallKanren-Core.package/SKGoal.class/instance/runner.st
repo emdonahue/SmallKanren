@@ -1,3 +1,3 @@
 accessing
 runner
-	^ self runner: SKInterleaving  new
+	^ SKRunner new stream: (self run: SKState new)

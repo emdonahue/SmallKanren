@@ -1,5 +1,6 @@
 accessing
 runner: aModel
+	self halt.
 	^ SKRunner new
 		stream:
 			(self

@@ -1,3 +1,3 @@
 *SmallKanren-Core
 skUnifyEmptyConsIn: aState
-	^ SKEmptyStream singleton
+	^ SKFailure singleton

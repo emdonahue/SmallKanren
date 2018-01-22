@@ -1,8 +1,8 @@
 tests
 testCdrIn
 	self skip.
-	self assert: (1 cdrIn: [ :a | SKSuccess singleton ]) isFailure.
-	self assert: (Cons empty cdrIn: [ :a | SKSuccess singleton ]) isFailure.
+	self assert: (1 cdrIn: [ :a | SKSucceed singleton ]) isFailure.
+	self assert: (Cons empty cdrIn: [ :a | SKSucceed singleton ]) isFailure.
 	self assert: (1 cons cdrIn: [ :a | a === Cons empty ]) isSuccess.
 	self assert: ((1 cons: x) cdrIn: [ :a | a === 2 ]) runner next peek => x equals: 2.
 	self assert: ((1 cons: x) cdrIn: [ :a :b | a === b & (b === 2) ]) runner next peek => x equals: 2.

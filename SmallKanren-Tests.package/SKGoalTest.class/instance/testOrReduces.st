@@ -2,7 +2,6 @@ tests
 testOrReduces
 	self assert: {{}} asGoal isFailure.
 	self assert: {{(x === 1)}} asGoal isUnification.
-	self assert: {{[ x === 1 ]}} asGoal isLazy.
 	self
 		assert:
 			{{{{(x === 1).
