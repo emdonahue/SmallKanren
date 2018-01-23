@@ -1,3 +1,3 @@
 inspecting
 sourceWithRunner: aRunner
-	^ (self reify: aRunner queryVars) skPrintWithNames: aRunner varNames
+	^ (self reify: aRunner queryVars) asString

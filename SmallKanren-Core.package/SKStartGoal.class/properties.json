@@ -1,11 +1,14 @@
 {
-	"commentStamp" : "EvanDonahue 8/5/2017 17:16",
+	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "SmallKanren-Core-Goals",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "SKGoal",
+	"instvars" : [
+		"goal",
+		"vars"
+	],
+	"name" : "SKStartGoal",
 	"type" : "normal"
 }

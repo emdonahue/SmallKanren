@@ -1,5 +1,11 @@
 inspecting
 gtInspectorReification: composite
-     <gtInspectorPresentationOrder: 20>
-	self gtInspectorReification: composite labels: nil
-		
+	<gtInspectorPresentationOrder: 20>
+	self isEmpty
+		ifTrue: [ ^ self ].
+	composite table
+		title: 'Reification';
+		column: 'Variable' evaluated: [ :a |  a key ];
+		column: 'Value' evaluated: [ :a | (a value skReify: self)  ];
+		selectionAct: [ :x | x selection value value inspect ] entitled: 'Inspect';
+		display: hashmap associations asArray
