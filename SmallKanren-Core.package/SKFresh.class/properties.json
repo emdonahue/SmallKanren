@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "SKGoal",
 	"category" : "SmallKanren-Core-Goals",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"goal",
-		"vars"
+		"block"
 	],
-	"name" : "SKStartGoal",
+	"name" : "SKFresh",
 	"type" : "normal"
 }

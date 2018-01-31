@@ -8,8 +8,7 @@
 	"instvars" : [
 		"x",
 		"y",
-		"z",
-		"a"
+		"z"
 	],
 	"name" : "SKGoalTest",
 	"type" : "normal"

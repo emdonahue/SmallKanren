@@ -10,7 +10,8 @@
 		"y",
 		"z",
 		"w",
-		"a"
+		"one",
+		"two"
 	],
 	"name" : "SKDisequalityConstraintTest",
 	"type" : "normal"

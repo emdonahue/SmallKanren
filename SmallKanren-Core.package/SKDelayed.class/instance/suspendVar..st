@@ -6,5 +6,5 @@ suspendVar: aDelay
 		suspendedVars:
 			(suspendedVars
 				detect: [ :kv | kv car = aDelay var ]
-				ifFound: [ :kv | (suspendedVars remove: [ :v | v = kv ]) add: (kv car cons: (kv cdr conjoin: aDelay)) ]
+				ifFound: [ :kv | (suspendedVars rejectOne: [ :v | v = kv ]) add: (kv car cons: (kv cdr conjoin: aDelay)) ]
 				ifNone: [ suspendedVars add: (aDelay var cons: aDelay) ])
