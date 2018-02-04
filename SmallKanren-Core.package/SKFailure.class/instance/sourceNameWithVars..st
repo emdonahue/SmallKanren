@@ -1,3 +1,0 @@
-inspecting
-sourceNameWithVars: varNames
-	^ 'empty'

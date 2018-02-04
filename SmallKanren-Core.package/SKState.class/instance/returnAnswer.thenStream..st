@@ -1,5 +1,5 @@
 as yet unclassified
 returnAnswer: anAnswer thenStream: aStream
-	^ SKSuccess new
+	^ SKComplete new
 		first: anAnswer;
 		rest: aStream

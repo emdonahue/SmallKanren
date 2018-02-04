@@ -1,2 +1,0 @@
-*SmallKanren-Core
-skVariables

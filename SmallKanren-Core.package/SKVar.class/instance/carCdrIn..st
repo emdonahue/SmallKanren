@@ -1,6 +1,5 @@
 delaying
 carCdrIn: aBlock
-	^ self carCdrIn2: aBlock
-	"^ SKDelayedGoal new
+	^ SKConsDelayGoal new
 		var: self;
-		block: aBlock"
+		block: aBlock

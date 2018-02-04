@@ -1,3 +1,3 @@
 running
 unsafeStep
-	^ stream := (stream step: model)
+	^ stream := stream step

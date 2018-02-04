@@ -1,3 +1,0 @@
-composing
-conjoinNonBranching: aGoal
-	

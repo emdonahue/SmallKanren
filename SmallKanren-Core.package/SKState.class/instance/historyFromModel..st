@@ -1,3 +1,0 @@
-debugging
-historyFromModel: aHeuristic
-	^ history 

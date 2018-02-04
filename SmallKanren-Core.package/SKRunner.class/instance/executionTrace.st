@@ -1,3 +1,0 @@
-accessing
-executionTrace
-	^ stream flatTrace
