@@ -1,12 +1,8 @@
 inspecting
 gtInspectorBranches: aComposite runner: aRunner
-	aComposite tree
+	aComposite list
 		title: 'Query';
-		children: [ :c | 
-			(c isKindOf: BlockClosure)
-				ifTrue: [ #() ]
-				ifFalse: [ (c isKindOf: SKGoal)
-						ifTrue: [ c inspectorChildren ]
-						ifFalse: [ c cdr goals: c car ] ] ];
-		send: [ :s | aRunner copy step ];
-		display: [ self suspendedVars ]
+		format: [ :s | s formatQuery: aRunner ];
+		send: [ :s | s ifNil: [ aRunner copy step ] ifNotNil: [ s stepMplusBranch: aRunner copy ] ];
+		act: [ :s | s inspect ] entitled: 'Inspect';
+		display: [ self suspendedVars inject: #() into: [ :branches :v | branches , (self undelaystep: v) asSourceBranch ] ]

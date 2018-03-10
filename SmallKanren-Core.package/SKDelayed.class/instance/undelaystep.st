@@ -6,4 +6,5 @@ undelaystep
 
 	<todo>
 	<returns: #(OrC isNotPackage packageC)>
-	^ suspendedVars cdr ifEmpty: [ suspendedVars car cdr checkIn: state ] ifNotEmpty: [ :vars | suspendedVars car cdr checkIn: (state suspendedVars: vars) ] 
+	"^ suspendedVars cdr ifEmpty: [ suspendedVars car cdr checkIn: state ] ifNotEmpty: [ :vars | suspendedVars car cdr checkIn: (state suspendedVars: vars) ]"
+	^ self undelaystep: suspendedVars car

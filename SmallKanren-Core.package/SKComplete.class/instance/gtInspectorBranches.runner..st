@@ -1,7 +1,8 @@
 inspecting
 gtInspectorBranches: aComposite runner: aRunner
 	aComposite list
-		title: 'Branches';
-		format: [ :s | (s sourceWithRunner: aRunner) , Character cr asString ];
-		send: [ :s | s ifNil: [ aRunner step: self ] ifNotNil: [ s stepMplusBranch: aRunner ] ];
-		display: [ {first} , rest asSourceBranch ]
+		title: 'Query';
+		format: [ :s | s formatQuery: aRunner ];
+		send: [ :s | s ifNil: [ aRunner copy step ] ifNotNil: [ s stepMplusBranch: aRunner copy ] ];
+		act: [ :s | s inspect ] entitled: 'Inspect';
+		display: [ {self} , first asSourceBranch , rest asSourceBranch ]
