@@ -9,6 +9,7 @@ run: aState
 	ca := SKVar new.
 	cr := SKVar new.
 	v := aState walk: var.
+	"If this is the first delayed constraint on var, unify it with a new cons and hang the delayed block on the car in the suspended store."
 	v isSKVar
 		ifTrue: [ ^ (aState unify: v with: (ca cons: cr))
 				suspendVar:
@@ -16,15 +17,18 @@ run: aState
 						vars:
 							{ca.
 							cr}) ].
+	"If var has already been unified,"
 	v isCons
 		ifTrue: [ v
 				ifNotEmpty: [ ^ v cdr isSKVar
+					"but only with a placeholder from another delay, hang the delay on the same car variable in the suspended store."
 						ifTrue: [ aState
 								suspendVar:
 									(self constraint
 										vars:
 											{v car.
 											v cdr}) ]
+						"else, if var has been unified for real, just fire the constraint."
 						ifFalse: [ (self constraint
 								vars:
 									{v car.

@@ -1,0 +1,1 @@
+Hangs in the delayed state's suspended store, indexed under the first of its variables, and holds a block representing the delayed computation.

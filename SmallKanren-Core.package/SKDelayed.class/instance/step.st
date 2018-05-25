@@ -5,6 +5,6 @@ step
 	"make sure to transfer any delayed cache info when we do the new asdelayed"
 
 	<todo>
-	<type: #AnyC returns: #(OrC isNotPackage packageC)>
+	<returns: #(OrC isNotPackage packageC)>
 	^ self undelaystep
 	"^ delayedVars car skUnifyGround: ((SKVar tag: #undelay) cons: SKVar new) in: self"

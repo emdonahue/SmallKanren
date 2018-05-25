@@ -1,7 +1,7 @@
 initialization
 setUp
 	"Define a mini relational interpreter to stress test goals."
-
+	<todo> 
 	x := SKVar new tag: #x.
 	y := SKVar new tag: #y.
 	env := (#x cons: 1) cons: (#y cons: 2) cons.
