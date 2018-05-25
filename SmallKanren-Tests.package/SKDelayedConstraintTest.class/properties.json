@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "SmallKanren-Tests",
+	"super" : "Object",
+	"category" : "SmallKanren-Tests-NYI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
