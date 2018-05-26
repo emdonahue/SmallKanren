@@ -1,5 +1,5 @@
 inspecting
-gtInspectorBranches: aComposite runner: aRunner
+gtInspectorQuery: aComposite runner: aRunner
 	aComposite list
 		title: 'Query';
 		display: #()

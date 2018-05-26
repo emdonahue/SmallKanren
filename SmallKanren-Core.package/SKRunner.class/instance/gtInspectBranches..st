@@ -1,4 +1,4 @@
 inspecting
 gtInspectBranches: composite
 	<gtInspectorPresentationOrder: 10>
-	stream gtInspectorBranches: composite runner: self
+	stream gtInspectorQuery: composite runner: self
