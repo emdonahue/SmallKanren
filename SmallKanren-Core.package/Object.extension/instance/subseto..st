@@ -1,3 +1,3 @@
 *SmallKanren-Core
 subseto: aSubset
-	^ aSubset isEmptyo | (aSubset carCdrIn: [ :a :d | (self membero: a) & (self subseto: d) ])
+	^ self isEmptyo & aSubset isEmptyo | (self carCdrIn: [ :a :b | aSubset isEmptyo | (aSubset carCdrIn: [ :c :d | (a === c | (b membero: c)) & (self subseto: d) ])])
