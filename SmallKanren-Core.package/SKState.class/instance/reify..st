@@ -1,3 +1,3 @@
 reification
 reify: aVar
-	^ substitution reify: aVar
+	^ constraints reify: (substitution reify: aVar)

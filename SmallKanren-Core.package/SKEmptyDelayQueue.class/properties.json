@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKDelayQueue",
+	"category" : "SmallKanren-Core-Delayed",
+	"classinstvars" : [
+		"empty"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKEmptyDelayQueue",
+	"type" : "normal"
+}

@@ -1,6 +1,7 @@
 delaying
 suspendVar: aDelay
-	self assert: [ suspendedVars allSatisfy: [ :kv | kv car = kv cdr var ] ].
+	
+	
 	^ SKDelayed new
 		state: state;
 		suspendedVars:

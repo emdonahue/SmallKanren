@@ -2,4 +2,4 @@ delaying
 suspendVar: aDelay
 	^ SKDelayed new
 		state: self;
-		suspendedVars: (aDelay var cons: aDelay) cons
+		suspendedVars: (ABBench a: [ SKDelayQueue from: aDelay ] b: [(aDelay var cons: aDelay) cons])

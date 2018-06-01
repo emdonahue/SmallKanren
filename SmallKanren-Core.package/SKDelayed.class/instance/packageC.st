@@ -1,7 +1,8 @@
-contracts
+delaying
 packageC
 	"A delayed state should contain delayed variables, and the delayedVars cache should contain exactly one copy of every delayed variable in the constraint store.."
-	^ suspendedVars isNotEmpty
+	
+	^ suspendedVars isNotEmpty & (suspendedVars allSatisfy: [ :kv | kv car = kv cdr var ])
 	"delayedVars ifEmpty: [ ^ false ].
 	state constraints
 		keysAndValuesDo: [ :var :const | 

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKDelayQueue",
+	"category" : "SmallKanren-Core-Delayed",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"forward",
+		"reverse"
+	],
+	"name" : "SKReverseDelayedQueue",
+	"type" : "normal"
+}

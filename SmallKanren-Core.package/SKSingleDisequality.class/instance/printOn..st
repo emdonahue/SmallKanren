@@ -1,8 +1,7 @@
 printing
-printOn: aStream 
-	aStream nextPut: $(.
+printOn: aStream
+	aStream nextPut: ${.
 	left printOn: aStream.
 	aStream nextPutAll: '=/='.
-	right printOn: aStream .
-	aStream nextPut: $).
-	
+	right printOn: aStream.
+	aStream nextPut: $}

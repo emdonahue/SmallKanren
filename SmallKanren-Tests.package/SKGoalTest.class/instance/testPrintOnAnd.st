@@ -1,3 +1,9 @@
 printing
 testPrintOnAnd
-	self assert: ((x === 42) & (y === 43)) asString equals: ('(<x:{1}>===42 & <y:{2}>===43)' format: {x hash. y hash}).
+	self
+		assert: (x === 42 & (y === 43)) asString
+		equals:
+			('(<x:{1}>===42 & <y:{2}>===43)'
+				format:
+					{xhash.
+					yhash})

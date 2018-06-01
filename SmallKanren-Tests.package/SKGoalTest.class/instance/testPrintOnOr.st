@@ -5,5 +5,5 @@ testPrintOnOr
 		equals:
 			('(<x:{1}>===42 | <y:{2}>===43)'
 				format:
-					{x hash.
-					y hash})
+					{xhash.
+					yhash})

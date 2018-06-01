@@ -4,7 +4,8 @@ undelaystep
 
 	"make sure to transfer any delayed cache info when we do the new asdelayed"
 
+	"^ suspendedVars cdr ifEmpty: [ suspendedVars car cdr checkIn: state ] ifNotEmpty: [ :vars | suspendedVars car cdr checkIn: (state suspendedVars: vars) ]"
+
 	<todo>
 	<returns: #(OrC isNotPackage packageC)>
-	"^ suspendedVars cdr ifEmpty: [ suspendedVars car cdr checkIn: state ] ifNotEmpty: [ :vars | suspendedVars car cdr checkIn: (state suspendedVars: vars) ]"
-	^ self undelaystep: suspendedVars car
+	^ self undelaystep: suspendedVars first

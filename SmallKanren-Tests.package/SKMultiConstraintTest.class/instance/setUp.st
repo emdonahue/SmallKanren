@@ -9,4 +9,4 @@ setUp
 		type: SKNumberConstraint singleton;
 		disequality: (x =/= 1) asConstraint;
 		exclusion: (x excludes: 2) asConstraint.
-		
+		xhash := x hash asString copyFrom: 1 to: 4

@@ -8,7 +8,8 @@
 	"instvars" : [
 		"x",
 		"y",
-		"multi"
+		"multi",
+		"xhash"
 	],
 	"name" : "SKMultiConstraintTest",
 	"type" : "normal"

@@ -11,7 +11,9 @@
 		"z",
 		"w",
 		"one",
-		"two"
+		"two",
+		"xhash",
+		"yhash"
 	],
 	"name" : "SKDisequalityConstraintTest",
 	"type" : "normal"
