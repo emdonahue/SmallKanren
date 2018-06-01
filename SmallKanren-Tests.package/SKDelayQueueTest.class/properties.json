@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"empty",
+		"a",
+		"b"
+	],
 	"name" : "SKDelayQueueTest",
 	"type" : "normal"
 }

@@ -1,5 +1,5 @@
 removing
 removeFirst
 	^ rest isEmpty
-		ifTrue: [ rest ]
+		ifTrue: rest 
 		ifFalse: [ SKReverseDelayedQueue reverse: rest ]

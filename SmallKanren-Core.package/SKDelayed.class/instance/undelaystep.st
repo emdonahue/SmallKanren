@@ -8,4 +8,4 @@ undelaystep
 
 	<todo>
 	<returns: #(OrC isNotPackage packageC)>
-	^ self undelaystep: suspendedVars first
+	^ suspendedVars undelay: state
