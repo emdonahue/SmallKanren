@@ -15,4 +15,4 @@ inspectSuspendedVarsIn: aComposite runner: aRunner
 			s isCons
 				ifTrue: [ ' ' join: s cdr vars ]
 				ifFalse: [( s isKindOf: SKDelayedVar ) ifTrue: [ s block asString ] ifFalse: [s asString] ] ];
-		display: [ self suspendedVars ]
+		display: [ self suspendedVars asOrderedCollection  ]

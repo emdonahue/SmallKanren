@@ -1,3 +1,3 @@
-accessing
+removing
 forward: aForwardQueue
 	^ aForwardQueue 
