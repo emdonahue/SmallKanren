@@ -1,3 +1,3 @@
 inspecting
 gtInspectorConstraints: aComposite 
-	first gtInspectorConstraints: aComposite 
+	left gtInspectorConstraints: aComposite 

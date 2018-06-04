@@ -1,3 +1,3 @@
 running
 step: aModel 
-	^ rest 
+	^ right 

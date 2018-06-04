@@ -1,3 +1,3 @@
 delaying
 delayCheckIn: aDelayC
-	^ (aDelayC checkIn: first) + (rest delayCheckIn: aDelayC)
+	^ (aDelayC checkIn: left) + (right delayCheckIn: aDelayC)

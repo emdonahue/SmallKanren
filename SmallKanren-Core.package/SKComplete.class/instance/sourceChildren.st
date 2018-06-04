@@ -1,4 +1,4 @@
 inspecting
 sourceChildren
-	^ {first} ,
-	rest asSourceBranch
+	^ {left} ,
+	right asSourceBranch

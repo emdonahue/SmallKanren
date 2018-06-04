@@ -1,3 +1,3 @@
 contracts
 packageC
-	^ first packageC & rest packageC
+	^ left packageC & right packageC

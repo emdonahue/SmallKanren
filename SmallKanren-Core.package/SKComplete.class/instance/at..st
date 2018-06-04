@@ -1,3 +1,3 @@
 accessing
 at: anIndex
-	^ rest at: anIndex
+	^ right at: anIndex

@@ -1,3 +1,3 @@
 accessing
 first: anObject
-	first := anObject
+	left := anObject

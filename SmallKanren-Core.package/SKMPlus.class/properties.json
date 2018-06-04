@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "SKStream",
+	"super" : "SKBranchingStream",
 	"category" : "SmallKanren-Core-Running",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"left",
-		"right"
-	],
+	"instvars" : [ ],
 	"name" : "SKMPlus",
 	"type" : "normal"
 }

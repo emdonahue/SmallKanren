@@ -1,3 +1,3 @@
 accessing
 first
-	^ first
+	^ left

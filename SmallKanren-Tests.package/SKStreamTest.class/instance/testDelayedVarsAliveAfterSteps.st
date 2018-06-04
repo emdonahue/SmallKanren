@@ -1,5 +1,5 @@
 debugging
-testBranchesAliveAfterSteps
+testDelayedVarsAliveAfterSteps
 	| s |
 	s := ((SKVar new carCdrIn: [ :a :d | SKGoal fail ]) & (SKVar new carCdrIn: [ :a :d | SKVar new carCdrIn: [ :b :c | SKGoal fail ] ])) runner stream.
 	self assert: (s isKindOf: SKDelayed).

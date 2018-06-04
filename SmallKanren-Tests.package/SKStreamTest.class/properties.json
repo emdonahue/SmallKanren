@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "SmallKanren-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"x"
+	],
+	"name" : "SKStreamTest",
+	"type" : "normal"
+}

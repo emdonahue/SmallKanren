@@ -1,3 +1,3 @@
 streaming
 bind: aGoal
-	^ (first bind: aGoal) + (rest bind: aGoal )
+	^ (left bind: aGoal) + (right bind: aGoal )

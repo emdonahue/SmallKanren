@@ -1,3 +1,3 @@
 accessing
 score
-	^ first score
+	^ left score

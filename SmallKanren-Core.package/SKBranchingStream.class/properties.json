@@ -1,11 +1,14 @@
 {
-	"commentStamp" : "EvanDonahue 6/27/2017 17:58",
-	"super" : "SKBranchingStream",
+	"commentStamp" : "",
+	"super" : "SKStream",
 	"category" : "SmallKanren-Core-Running",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "SKComplete",
+	"instvars" : [
+		"left",
+		"right"
+	],
+	"name" : "SKBranchingStream",
 	"type" : "normal"
 }

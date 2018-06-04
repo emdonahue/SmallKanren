@@ -1,3 +1,3 @@
 inspecting
 asSourceBranch
-	^ {first} , rest asSourceBranch
+	^ {left} , right asSourceBranch

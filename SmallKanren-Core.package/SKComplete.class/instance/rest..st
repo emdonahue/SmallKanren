@@ -1,3 +1,3 @@
 accessing
 rest: anObject
-	rest := anObject
+	right := anObject

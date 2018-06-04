@@ -1,3 +1,3 @@
 arithmetic
 plus: anAnswer
-	^ self returnAnswer: first thenStream: anAnswer + rest
+	^ self returnAnswer: left thenStream: anAnswer + right

@@ -1,3 +1,3 @@
 running
 step
-	^ rest 
+	^ right 
