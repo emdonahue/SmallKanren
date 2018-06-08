@@ -1,4 +1,4 @@
-membero
+member
 testMemberoVar
 	| lst |
 	lst := [ :a | (a membero: 1) ]  asGoal run first first.

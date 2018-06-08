@@ -1,4 +1,4 @@
-membero
+member
 testMemberoGround
 	self assert: (1 cons membero: 1) succeeds.
 	self assert: ((2 cons: 1 cons) membero: 1) succeeds.
