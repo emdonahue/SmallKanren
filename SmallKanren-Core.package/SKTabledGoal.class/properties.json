@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SKGoal",
+	"category" : "SmallKanren-Core-Tabling",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tableName",
+		"tabledArgs",
+		"block"
+	],
+	"name" : "SKTabledGoal",
+	"type" : "normal"
+}
