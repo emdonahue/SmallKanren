@@ -1,3 +1,3 @@
 running
 unsafeStep
-	^ stream := stream step
+	^ stream := stream step: self.

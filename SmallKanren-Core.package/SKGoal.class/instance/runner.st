@@ -1,3 +1,5 @@
 accessing
 runner
-	^ SKRunner new stream: (self run: SKState new)
+	| r |
+	r := SKRunner new.
+	^ r stream: (self run: SKState new runner: r).

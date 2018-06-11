@@ -1,3 +1,5 @@
 running
 run: aState
-	^ (block valueWithArguments: tabledArgs) run: aState
+	| cacheKey |
+	cacheKey := aState reify: tabledArgs.
+	^ (block valueWithArguments: tabledArgs) run: aState.

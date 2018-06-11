@@ -1,3 +1,3 @@
 running
-step: aModel 
-	^ right 
+step: aRunner
+	^ right.

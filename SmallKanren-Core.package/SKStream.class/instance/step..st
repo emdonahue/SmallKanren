@@ -1,3 +1,3 @@
 streaming
-step: aModel
-	self subclassResponsibility 
+step: aRunner
+	self subclassResponsibility.
