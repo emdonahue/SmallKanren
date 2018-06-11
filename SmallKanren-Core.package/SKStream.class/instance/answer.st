@@ -1,3 +1,3 @@
 subclassresponsibility
-isIncomplete
+answer
 	self subclassResponsibility 

@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"tableName",
-		"tableArgs"
+		"stream"
 	],
 	"name" : "SKTabledStream",
 	"type" : "normal"

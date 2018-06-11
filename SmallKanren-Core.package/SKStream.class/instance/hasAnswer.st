@@ -1,3 +1,3 @@
-testing
+subclassresponsibility
 hasAnswer
-	^ true
+	self subclassResponsibility 

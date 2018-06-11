@@ -1,4 +1,4 @@
-pathing
+tests
 path: from to: to
 	<todo> 
 	"when delayed fresh goals are ready, swap one in here"
