@@ -10,7 +10,7 @@ inspectSuspendedVarsIn: aComposite runner: aRunner
 						ifFalse: [ c isCons
 								ifTrue: [ c cdr asArray	"goals: c car" ]
 								ifFalse: [ c goals: c vars ] ] ] ];
-		send: [ :s | aRunner copy stream: (self undelaystep: s cdr) ];
+		send: [ :s | aRunner copy stream: (self undelaystep: s cdr runner: aRunner) ];
 		format: [ :s | 
 			s isCons
 				ifTrue: [ ' ' join: s cdr vars ]

@@ -3,5 +3,5 @@ testNonListUnifyCdrFail
 	"Non-lists fail delay."
 
 	| s |
-	s := (x === Object new) & (x car: 1 cdrIn: [ :d | x === d ]) run: SKState new.
-	self assert: s isEmptyStream
+	s := ((x === Object new) & (x car: 1 cdrIn: [ :d | x === d ])) runner.
+	self assert: s stream isEmptyStream

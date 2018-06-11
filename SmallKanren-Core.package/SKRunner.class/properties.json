@@ -8,7 +8,8 @@
 	"instvars" : [
 		"stream",
 		"model",
-		"queryVars"
+		"queryVars",
+		"tables"
 	],
 	"name" : "SKRunner",
 	"type" : "normal"

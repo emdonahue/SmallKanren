@@ -3,8 +3,9 @@ runner
 	"can probably DRY this out wrt run:"
 
 	<todo>
-	| args |
+	| args r |
 	args := block argumentNames collect: [ :a | SKVar tag: a ].
-	^ SKRunner new
-		stream: ((block valueWithArguments: args) asGoal run: SKState new);
+	r := SKRunner new.
+	^ r
+		stream: ((block valueWithArguments: args) asGoal run: SKState new runner: r);
 		queryVars: args asCons

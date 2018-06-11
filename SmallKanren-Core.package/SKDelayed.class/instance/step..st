@@ -5,6 +5,5 @@ step: aRunner
 	"make sure to transfer any delayed cache info when we do the new asdelayed"
 
 	<todo>
-	<returns: #(OrC isNotPackage packageC)>
-	^ self undelaystep.
+	^ suspendedVars undelay: state runner: aRunner.
 	"^ delayedVars car skUnifyGround: ((SKVar tag: #undelay) cons: SKVar new) in: self"
