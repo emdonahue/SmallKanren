@@ -1,4 +1,3 @@
 tabling
 table: tabledStream
-	^ tabledStream cache: self.
-	
+	^ tabledStream cacheStream: self.

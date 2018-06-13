@@ -6,8 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stream"
+		"stream",
+		"cache",
+		"argVars"
 	],
-	"name" : "SKTabledStream",
+	"name" : "SKTabledProducerStream",
 	"type" : "normal"
 }

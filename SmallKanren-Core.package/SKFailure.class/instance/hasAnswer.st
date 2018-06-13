@@ -1,0 +1,3 @@
+subclassresponsibility
+hasAnswer
+	^ false
