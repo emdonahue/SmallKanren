@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SKStream",
+	"category" : "SmallKanren-Core-Tabling",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cache",
+		"numConsumed",
+		"state"
+	],
+	"name" : "SKTabledConsumerStream",
+	"type" : "normal"
+}

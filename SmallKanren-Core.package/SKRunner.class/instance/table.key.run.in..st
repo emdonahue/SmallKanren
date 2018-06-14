@@ -1,14 +1,15 @@
 tabling
-table: tableName key: cacheKey run: aState in: goalBlock
-	| table cache |
+table: tableName key: argVars run: aState in: goalBlock
+	"Can we reify the argVars /before/ passing to either reuse or master?"
+
+	| table cacheKey |
+	cacheKey := aState reify: argVars.
 	table := tables at: tableName ifAbsentPut: [ Dictionary new ].
 	"If the cache already exists, this is a consumer call. Otherwise, it is a producer call."
-	cache := table
+	^ table
 		at: cacheKey
-		ifPresent: [ :c | 
-			c ]
-		ifAbsentPut: [ OrderedCollection new ].
-	^ SKTabledProducerStream new
-		stream: ((goalBlock valueWithArguments: cacheKey) run: aState runner: self);
-		cache: cache;
-		tabledArgs: cacheKey.
+		ifPresent: [ :c | "self master: goalBlock args: argVars state: aState cache: c key: cacheKey."
+			self reuse: argVars cache: c state: aState ]
+		ifAbsent: [ | c |
+			c := table at: cacheKey put: OrderedCollection new.
+			self master: goalBlock args: argVars state: aState cache: c key: argVars ].
