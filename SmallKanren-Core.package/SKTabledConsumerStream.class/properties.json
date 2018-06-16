@@ -8,7 +8,8 @@
 	"instvars" : [
 		"cache",
 		"numConsumed",
-		"state"
+		"state",
+		"argVars"
 	],
 	"name" : "SKTabledConsumerStream",
 	"type" : "normal"

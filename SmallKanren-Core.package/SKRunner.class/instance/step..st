@@ -1,3 +1,3 @@
 running
 step: aStream
-	^ self copy stream: (aStream step: self).
+	^ self copy stream: (aStream firstStep: self).

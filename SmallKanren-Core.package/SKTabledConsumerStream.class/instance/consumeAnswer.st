@@ -1,4 +1,7 @@
 as yet unclassified
 consumeAnswer
-	numConsumed := numConsumed +1.
-	
+	"full unify unnecessary: can make a subunifier."
+
+	<todo>
+	numConsumed := numConsumed + 1.
+	^ (state unify: argVars with: (state copyTerm: (cache at: numConsumed))) + self.
