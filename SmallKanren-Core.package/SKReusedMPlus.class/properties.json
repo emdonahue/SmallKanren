@@ -1,11 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "SKStream",
+	"super" : "SKTabledConsumerStream",
 	"category" : "SmallKanren-Core-Tabling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "SKTabledConsumerStream",
+	"instvars" : [
+		"left",
+		"right"
+	],
+	"name" : "SKReusedMPlus",
 	"type" : "normal"
 }

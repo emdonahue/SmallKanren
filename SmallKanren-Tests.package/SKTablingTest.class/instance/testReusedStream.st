@@ -1,5 +1,5 @@
 consumer
-testSuspendedStream
+testReusedStream
 	| r |
 	r := SKRunner new.
 	r tables at: #path put: (Dictionary with: #(1 2) asConsTree -> #(#(1 2) #(1 2) #(1 2)) asConsTree).
