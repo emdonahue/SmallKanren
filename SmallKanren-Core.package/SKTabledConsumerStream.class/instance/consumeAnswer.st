@@ -1,0 +1,3 @@
+subclassresponsibility
+consumeAnswer
+	self subclassResponsibility 

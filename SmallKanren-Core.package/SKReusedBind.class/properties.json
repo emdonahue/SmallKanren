@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKTabledConsumerStream",
+	"category" : "SmallKanren-Core-Tabling",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"goal",
+		"stream"
+	],
+	"name" : "SKReusedBind",
+	"type" : "normal"
+}
