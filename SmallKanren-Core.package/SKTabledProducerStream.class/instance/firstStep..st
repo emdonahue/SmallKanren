@@ -1,3 +1,3 @@
-streaming
+accessing
 firstStep: aRunner
-	^ (stream firstStep: aRunner) table: self.
+	^ (stream firstStep: aRunner) produceTabledAnswersFrom: self.

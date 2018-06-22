@@ -1,6 +1,7 @@
 tabling
 master: goalBlock args: argVars state: aState cache: cache key: cacheKey
-	^ SKTabledProducerStream new
-		stream: ((goalBlock valueWithArguments: argVars) run: aState runner: self);
+	^ 
+		 ((goalBlock valueWithArguments: argVars) run: aState runner: self) produceTabledAnswersFrom: 
+		(SKTabledProducerStream new
 		cache: cache;
-		tabledArgs: cacheKey.
+		tabledArgs: cacheKey)

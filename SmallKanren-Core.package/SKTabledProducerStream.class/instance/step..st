@@ -1,3 +1,3 @@
-streaming
+subclassresponsibility
 step: aRunner
-	^  (stream step: aRunner) table: self.
+	^ (stream step: aRunner) produceTabledAnswersFrom: self.

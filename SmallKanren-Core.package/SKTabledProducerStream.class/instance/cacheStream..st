@@ -1,10 +1,12 @@
 caching
 cacheStream: aStream
-	<todo>
 	"Does not require full unifier. Subunify should do."
-	| answer |
-	answer := aStream answer reify: argVars.
+
+	"answer var redundant?"
+
+	<todo>
+	<type: #SKState returns: #(OrC SKState SKFailure)>
 	(cache allSatisfy: [ :ansv | (aStream answer unify: ansv with: argVars) isEmptyStream ])
 		ifFalse: [ ^ SKStream failure ].
-	cache add: answer.
-	^ self copy stream: aStream.
+	cache add: (aStream answer reify: argVars).
+	^ aStream.

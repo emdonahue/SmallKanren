@@ -1,3 +1,3 @@
 tabling
-table: tabledStream
+produceTabledAnswersFrom: tabledStream
 	^ tabledStream cacheStream: self.
