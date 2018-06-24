@@ -1,0 +1,3 @@
+testing
+isWaitingStream
+	^ stream isWaitingStream

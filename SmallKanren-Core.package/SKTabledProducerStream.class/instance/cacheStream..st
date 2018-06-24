@@ -2,7 +2,7 @@ caching
 cacheStream: aStream
 	"Does not require full unifier. Subunify should do."
 
-	"answer var redundant?"
+	"answer called twice"
 
 	<todo>
 	<type: #SKState returns: #(OrC SKState SKFailure)>

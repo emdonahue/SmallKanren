@@ -1,7 +1,7 @@
-as yet unclassified
+subclassresponsibility
 consumeAnswer: aRunner
 	"full unify unnecessary: can make a subunifier."
-
+	<type: #SKRunner returns: #(OrC SKState SKFailure)>
 	<todo>
 	self hasAnswers
 		ifTrue: [ numConsumed := numConsumed + 1.
