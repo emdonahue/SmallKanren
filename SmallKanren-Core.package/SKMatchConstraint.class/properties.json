@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SmallKanren-Core-Delayed",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pattern",
+		"block",
+		"matchVars",
+		"delayedVar"
+	],
+	"name" : "SKMatchConstraint",
+	"type" : "normal"
+}

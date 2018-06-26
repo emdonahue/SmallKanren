@@ -1,0 +1,3 @@
+accessing
+var
+	^ var

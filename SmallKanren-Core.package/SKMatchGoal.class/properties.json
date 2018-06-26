@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SKGoal",
+	"category" : "SmallKanren-Core-Delayed",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"var",
+		"pattern",
+		"block",
+		"vars"
+	],
+	"name" : "SKMatchGoal",
+	"type" : "normal"
+}
