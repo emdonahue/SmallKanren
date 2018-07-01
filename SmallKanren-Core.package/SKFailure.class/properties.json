@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "EvanDonahue 8/19/2016 14:24",
 	"super" : "SKStream",
-	"category" : "SmallKanren-Core-Running",
+	"category" : "SmallKanren-Core-Streams",
 	"classinstvars" : [
 		"singleton"
 	],

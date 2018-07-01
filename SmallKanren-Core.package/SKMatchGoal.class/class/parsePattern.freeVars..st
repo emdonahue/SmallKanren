@@ -12,13 +12,13 @@ parsePattern: aPattern freeVars: freeVars
 					cdr := aPattern at: i + 1.
 					^ parsed
 						inject:
-							(cdr = #@
+							(cdr = #?
 								ifTrue: [ freeVars add: SKVar new ]
 								ifFalse: cdr)
 						into: [ :d :a | a cons: d ] ].
-			parsed := x = #@
+			parsed := x = #?
 				ifTrue: [ (freeVars add: SKVar new) cons: parsed ]
 				ifFalse: [ x isArray
-						ifTrue: [ (self parsePattern: x  freeVars: freeVars) cons: parsed ]
+						ifTrue: [ (self parsePattern: x freeVars: freeVars) cons: parsed ]
 						ifFalse: [ x cons: parsed ] ] ].
 	^ parsed reversed.

@@ -1,3 +1,3 @@
 comparing
 hash
-	^ constraint hash xor: next hash
+	^ constraint hash bitXor: next hash

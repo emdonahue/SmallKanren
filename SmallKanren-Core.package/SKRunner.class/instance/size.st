@@ -1,0 +1,3 @@
+debugging
+size
+	^ stream size

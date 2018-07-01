@@ -1,0 +1,3 @@
+subclassresponsibility
+packages: packageCollection
+	self subclassResponsibility 

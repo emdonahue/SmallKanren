@@ -1,3 +1,3 @@
-accessing
+debugging
 size
-	^ 1
+	self subclassResponsibility 

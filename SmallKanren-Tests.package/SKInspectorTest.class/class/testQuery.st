@@ -1,4 +1,7 @@
 tests
 testQuery
+
 	<script>
-	[ :one :two | (one carCdrIn: [ :a :d | a === 1 & d isEmptyo ]) & (two carCdrIn: [ :a :d | a === 1 & d isEmptyo ]) ] asGoal runner inspect
+	| loop |
+	loop := [ :x | x isEmptyo | (x carCdrIn: [ :a :d | a === 1 | (a === 2) | (a === 1) & (loop value: d) ]) ].
+	loop asGoal runner inspect.

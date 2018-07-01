@@ -3,12 +3,8 @@ checkIn: aSKState runner: aSKRunner
 	"Can maybe subunify or something bc all vars in pattern are fresh & no constraints, altho unify may fail."
 
 	"can just extend state, dont have to unify if we know its a var."
-	"if the suubstitution delta captures all free vars, none of them is an extension and we can throw away the new associations..?"
+
+	"if the suubstitution delta captures all free vars, none of them is an extension and we can throw away the new associations. this will probably only happen if other delays have fired first, so maybe we can handle all delays at once in the conjoined. otherwise we may be able to do some lookups in the existing term (and throw away the new vars) and some creations of new vars"
 
 	<todo>
-	| s term |
-	term := aSKState walk: delayedVar.
-	term isSKVar
-		ifTrue: [ ^ (aSKState unify: term with: pattern) bind: (block valueWithArguments: matchVars) runner: aSKRunner ].
-	s := aSKState substitution unify: pattern with: delayedVar.
-	self halt.
+	^ (aSKState unify: delayedVar with: pattern) bind: (block valueWithArguments: matchVars) runner: aSKRunner.
