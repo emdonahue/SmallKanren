@@ -1,4 +1,4 @@
-reifying
+terms
 testCopyTerm
 	| one s fresh term |
 	one := SKVar tag: #one.
