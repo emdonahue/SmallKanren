@@ -1,3 +1,3 @@
 accessing
-tabledArgs: anObject
+inputs: anObject
 	argVars := anObject

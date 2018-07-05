@@ -2,5 +2,5 @@ tests
 testTableState
 	| s x |
 	x := SKVar new.
-	s := ([ :y | SKGoal succeed ] tabled: #test o: {x.}) asGoal runner stream.
+	s := ([ :y | SKGoal succeed ] tabled: #test inputs: {x.}) asGoal runner stream.
 	self assert: s isState.

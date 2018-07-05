@@ -7,4 +7,4 @@ master: goalBlock args: argVars state: aState cache: cache key: cacheKey
 		produceTabledAnswersFrom:
 			(SKTabledProducerStream new
 				cache: cache;
-				tabledArgs: cacheKey).
+				inputs: cacheKey).

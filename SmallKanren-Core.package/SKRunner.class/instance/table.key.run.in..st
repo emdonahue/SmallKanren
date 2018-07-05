@@ -1,6 +1,7 @@
 tabling
 table: tableName key: argVars run: aState in: goalBlock
 	"Can we reify the argVars /before/ passing to either reuse or master?"
+	<todo>
 
 	| table cacheKey |
 	cacheKey := aState reify: argVars.

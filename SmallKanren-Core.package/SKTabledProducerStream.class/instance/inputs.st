@@ -1,3 +1,3 @@
 accessing
-tabledArgs
+inputs
 	^ argVars

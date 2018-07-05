@@ -7,8 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"tableName",
-		"tabledArgs",
-		"block"
+		"block",
+		"inputs",
+		"outputs"
 	],
 	"name" : "SKTabledGoal",
 	"type" : "normal"
