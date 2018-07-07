@@ -4,4 +4,5 @@ path: from to: to plan: aPlan
 		tabled: #path
 		inputs:
 			{from.
-			to. aPlan}.
+			to.
+			} outputs: {aPlan.}.

@@ -9,6 +9,9 @@ testAlphaEquals
 	self deny: (1 skAlphaEquals: 2).
 	self deny: (SKVar new skAlphaEquals: 1).
 	self deny: (1 skAlphaEquals: SKVar new).
+	self deny: ((SKVar new cons: SKVar new) skAlphaEquals: Cons empty).
+	self deny: ( Cons empty skAlphaEquals: (SKVar new cons: SKVar new) ).
+	
 	self assert: (SKVar new skAlphaEquals: SKVar new).
 	self assert: (x skAlphaEquals: x).
 	self deny: ((1 cons: 2) skAlphaEquals: 1).

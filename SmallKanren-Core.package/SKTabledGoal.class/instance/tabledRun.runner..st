@@ -1,4 +1,4 @@
 running
 tabledRun: aState runner: aRunner
 	<type: #SKPackage type: #SKRunner returns: #SKStream>
-	^ aRunner table: tableName key: inputs run: aState in: block.
+	^ aRunner table: tableName inputs: inputs outputs: outputs run: aState in: block.

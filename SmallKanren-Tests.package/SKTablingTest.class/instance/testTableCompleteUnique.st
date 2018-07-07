@@ -1,4 +1,4 @@
-tests
+classic tabling
 testTableCompleteUnique
 	| s x |
 	x := SKVar new.

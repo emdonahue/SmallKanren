@@ -1,4 +1,4 @@
-tests
+classic tabling
 testTableGround
 	| r t |
 	r := (self path: #a to: #b) runner.

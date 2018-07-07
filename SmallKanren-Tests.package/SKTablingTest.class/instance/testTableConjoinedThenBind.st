@@ -1,4 +1,4 @@
-tests
+classic tabling
 testTableConjoinedThenBind
 	| r as |
 	r := [ :x | (self path: #a to: x) & (self path: #a to: x) & (x === x) ] asGoal runner.

@@ -1,4 +1,4 @@
-tests
+classic tabling
 testTableFree
 	| r t as |
 	r := [ :x | (self path: #a to: x) ] asGoal runner.

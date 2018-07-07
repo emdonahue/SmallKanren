@@ -1,4 +1,4 @@
-tests
+classic tabling
 testPath
 	self assert: (self path: #a to: #b) succeeds.
 	self assert: (self path: #a to: #a) succeeds.
