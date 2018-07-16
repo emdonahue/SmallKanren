@@ -1,3 +1,5 @@
-running
+debugging
 steps: nSteps
-	^ self copy stream: (stream steps: nSteps runner: self).
+	^ (1 to: nSteps) inject: self into: [ :r :i | 
+		Transcript show: 'step '; show: i; cr.
+		r step ].

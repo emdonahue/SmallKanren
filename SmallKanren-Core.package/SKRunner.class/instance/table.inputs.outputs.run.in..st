@@ -9,7 +9,10 @@ table: tableName inputs: inputVars outputs: outputVars run: aState in: goalBlock
 	"If the cache already exists, this is a consumer call. Otherwise, it is a producer call."
 	^ table
 		at: cacheKey
-		ifPresent: [ :c | self reuse: outputVars cache: c state: aState ]
+		ifPresent: [ :c | 
+			(cacheKey) = (#b cons: #b cons)
+		ifTrue: [ Transcript show: 'b b slave' ].
+			self reuse: outputVars cache: c state: aState ]
 		ifAbsent: [ | c |
 			c := table at: cacheKey put: OrderedCollection new.
 			self master: goalBlock args: outputVars state: aState cache: c key: inputVars ].

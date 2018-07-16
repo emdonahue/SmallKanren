@@ -7,9 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"substitution",
-		"score",
-		"constraints",
-		"history"
+		"constraints"
 	],
 	"name" : "SKState",
 	"type" : "normal"

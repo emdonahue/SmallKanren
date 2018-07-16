@@ -1,0 +1,3 @@
+testing
+waitCheck
+	^ self hasAnswers

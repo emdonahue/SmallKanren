@@ -6,6 +6,7 @@ cacheStream: aStream
 
 	<todo>
 	<type: #SKState returns: #(OrC SKState SKFailure)>
+	"self haltIf: [ (aStream answer reify: argVars) = (#b cons: #b cons) ]."
 	(cache allSatisfy: [ :ansv | (aStream answer unify: ansv with: argVars) isEmptyStream ])
 		ifFalse: [ ^ SKStream failure ].
 	cache add: (aStream answer reify: argVars).

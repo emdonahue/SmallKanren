@@ -1,16 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "SKStream",
+	"super" : "SKBind",
 	"category" : "SmallKanren-Core-Tabling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"stream",
-		"cache",
-		"argVars",
-		"cacheKey"
-	],
-	"name" : "SKTabledProducerStream",
+	"instvars" : [ ],
+	"name" : "SKBindClassic",
 	"type" : "normal"
 }
