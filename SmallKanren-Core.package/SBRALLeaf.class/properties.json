@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SBRAL",
+	"category" : "SmallKanren-Core-Variables",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"element"
+	],
+	"name" : "SBRALLeaf",
+	"type" : "normal"
+}

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "SBRAL",
+	"category" : "SmallKanren-Core-Variables",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"root",
+		"size",
+		"left",
+		"right"
+	],
+	"name" : "SBRALNode",
+	"type" : "normal"
+}
