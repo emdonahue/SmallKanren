@@ -1,9 +1,9 @@
 accessing
 at: nTh
-	| size |
+	| sz |
 	nTh = 1
 		ifTrue: [ ^ root ].
-	size := (self size + 1) // 2.
-	nTh <= size
+	sz := (size+ 1) // 2.
+	nTh <= sz
 		ifTrue: [ ^ left at: nTh - 1 ].
-	^ right at: nTh - size.
+	^ right at: nTh - sz.

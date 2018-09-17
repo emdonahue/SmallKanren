@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SBRAL",
-	"category" : "SmallKanren-Core-Variables",
+	"category" : "SmallKanren-Core-SBRAL",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

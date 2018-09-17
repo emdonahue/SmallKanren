@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
-	"super" : "SBRAL",
-	"category" : "SmallKanren-Core-Variables",
+	"super" : "Object",
+	"category" : "SmallKanren-Core-SBRAL",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
