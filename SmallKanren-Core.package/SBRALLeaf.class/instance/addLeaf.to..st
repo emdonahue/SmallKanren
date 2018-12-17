@@ -1,3 +1,3 @@
 adding
 addLeaf: anElement to: aSpine
-	^ aSpine addNode: anElement
+	^ aSpine addNode: anElement.
