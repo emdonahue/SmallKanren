@@ -1,0 +1,1 @@
+Provides a relational interpreter for as extremely restricted subset of SmallKanren (all types are finite classes, no disjunction). This allows the generation of small constraint based programs and evaluations to use as test cases for the full implementation.

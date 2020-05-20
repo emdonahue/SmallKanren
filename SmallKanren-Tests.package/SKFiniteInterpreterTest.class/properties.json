@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "EvanDonahue 5/16/2020 20:12",
+	"super" : "TestCase",
+	"category" : "SmallKanren-Tests-Constraints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"interpreter"
+	],
+	"name" : "SKFiniteInterpreterTest",
+	"type" : "normal"
+}
