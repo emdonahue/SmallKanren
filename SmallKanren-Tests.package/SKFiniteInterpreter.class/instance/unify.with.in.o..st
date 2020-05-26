@@ -9,4 +9,17 @@ unify: arg1 with: arg2 in: env o: nextEnv
 				unifyVar: a
 				var: b
 				in: env
-				o: nextEnv) | (self unifyVar: a val: b in: env o: nextEnv) | (a === b & (env === nextEnv))) ]
+				o: nextEnv)
+				|
+					(self
+						unifyVar: a
+						val: b
+						in: env
+						o: nextEnv)
+				|
+					(self
+						unifyVar: b
+						val: a
+						in: env
+						o: nextEnv) | (a === b & (env === nextEnv)))
+	 ] asGoal
