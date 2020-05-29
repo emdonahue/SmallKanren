@@ -1,3 +1,3 @@
 parsing
 pairs
-	self notYetImplemented 
+ ^ (self pairsDepth: 1 length: 2) collect: #first

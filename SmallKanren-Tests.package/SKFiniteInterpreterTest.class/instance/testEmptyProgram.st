@@ -1,5 +1,5 @@
 tests
 testEmptyProgram
 	self
-		assert: (interpreter eval: Cons empty) 
-		equals: #(#() #()) asConsTree
+		assert: (interpreter eval: Cons empty)
+		equals: #(#(x y z) #()) asConsTree

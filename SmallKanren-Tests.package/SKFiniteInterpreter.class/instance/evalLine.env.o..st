@@ -5,6 +5,8 @@ evalLine: line env: env o: nextEnv
 		&
 			(op === #==
 				&
+				(self is: arg1 in: self all) &
+				(self is: arg2 in: self all) &
 					(self
 						unify: arg1
 						with: arg2
