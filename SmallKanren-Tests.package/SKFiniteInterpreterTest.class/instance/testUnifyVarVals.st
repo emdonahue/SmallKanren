@@ -9,11 +9,12 @@ testUnifyVarVals
 				in: #(#(x y z) #()) asConsTree
 				o: p ] asGoal run
 		equals: #(#(#(#(1 y z) #()))) asConsTree.
-	self
+	"self
 		assert:
 			[ :p | 
 			interpreter
 				unifyVar: #x
 				val: #x cons
 				in: #(#(x y z) #()) asConsTree
-				o: p ] asGoal asGoal run equals: Cons empty cons cons
+				o: p ] asGoal asGoal run
+		equals: Cons empty cons cons"

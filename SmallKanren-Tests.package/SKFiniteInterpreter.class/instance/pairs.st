@@ -1,3 +1,3 @@
 parsing
 pairs
- ^ (self pairsDepth: 1 length: 2) collect: #first
+	^ (self pairsDepth: 1 length: 1) collect: #first

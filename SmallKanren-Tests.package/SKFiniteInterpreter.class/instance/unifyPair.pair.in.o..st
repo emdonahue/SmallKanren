@@ -1,7 +1,7 @@
 parsing
-unifyList: a list: b in: env o: nextEnv
+unifyPair: a pair: b in: env o: nextEnv
 	^ [ :c :d :e :f :nenv | 
-	a === (c cons: d) & (b === (e cons: f)) 
+	a === (c cons: d) & (b === (e cons: f))
 		&
 			(self
 				unify: c

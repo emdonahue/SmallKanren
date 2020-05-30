@@ -9,8 +9,7 @@ testUnifyLists
 				in: #(#(x y z) #()) asConsTree
 				o: p ] asGoal run
 		equals: #(#(#(#(x y z) #()))) asConsTree.
-		
-		self
+	self
 		assert:
 			[ :p | 
 			interpreter
@@ -45,4 +44,17 @@ testUnifyLists
 				with: (1 cons: #y)
 				in: #(#(x y z) #()) asConsTree
 				o: p ] asGoal run
-		equals: #(#(#(#(1 2 z) #()))) asConsTree
+		equals: #(#(#(#(1 2 z) #()))) asConsTree.
+	self
+		assert:
+			[ :p | 
+			[ :a :b | 
+			a === (#x cons: 2) & (b === (1 cons: #y))
+				&
+					(interpreter
+						unify: a
+						with: b
+						in: #(#(x y z) #()) asConsTree
+						o: p) ] ] asGoal run
+		equals: #(#(#(#(1 2 z) #()))) asConsTree.
+		
