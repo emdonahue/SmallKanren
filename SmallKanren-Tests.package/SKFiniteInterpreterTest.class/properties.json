@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"interpreter"
+		"interpreter",
+		"variables"
 	],
 	"name" : "SKFiniteInterpreterTest",
 	"type" : "normal"

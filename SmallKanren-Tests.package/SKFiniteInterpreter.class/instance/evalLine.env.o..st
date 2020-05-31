@@ -10,5 +10,4 @@ evalLine: line env: env o: nextEnv
 						with: arg2
 						in: env
 						o: nextEnv
-						depth: self listDepth
-						length: self listLength)) ]
+						)) ]

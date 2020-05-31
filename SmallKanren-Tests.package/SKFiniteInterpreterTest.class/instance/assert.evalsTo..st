@@ -1,3 +1,3 @@
 generative
-assert: prog evalsTo: out 
- self assert prog equals: out
+assert: prog evalsTo: out
+	self assert: (self eval: prog) equals: (self read: out first)

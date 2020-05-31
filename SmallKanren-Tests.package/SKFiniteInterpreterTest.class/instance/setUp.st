@@ -1,3 +1,4 @@
 tests
-setUp 	
-	interpreter := SKFiniteInterpreter new
+setUp
+	interpreter := SKFiniteInterpreter new.
+	variables := Dictionary new.
