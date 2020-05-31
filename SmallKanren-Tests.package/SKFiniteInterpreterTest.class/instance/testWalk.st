@@ -1,4 +1,4 @@
-tests
+interpreter
 testWalk
 	self
 		assert:

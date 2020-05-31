@@ -1,4 +1,4 @@
-tests
+interpreter
 testEmptyProgram
 	self
 		assert: (interpreter eval: Cons empty)

@@ -1,3 +1,4 @@
-parsing
+deprecated
 all
-	^ self nonLists, self pairs
+	self halt.
+	^ self nonLists , self pairs

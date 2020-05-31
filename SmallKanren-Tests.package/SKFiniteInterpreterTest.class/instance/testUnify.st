@@ -1,4 +1,4 @@
-tests
+interpreter
 testUnify
 	self
 		assert:

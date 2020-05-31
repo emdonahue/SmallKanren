@@ -6,7 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"primitives"
+		"primitives",
+		"programLength",
+		"listDepth",
+		"listLength"
 	],
 	"name" : "SKFiniteInterpreter",
 	"type" : "normal"

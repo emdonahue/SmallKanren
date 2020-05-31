@@ -1,4 +1,4 @@
-parsing
+interpreting
 unify: arg1 with: arg2 in: env o: nextEnv
 	^ env === Cons empty & (nextEnv === Cons empty)
 		| [ :a :b :substitution :constraints | 

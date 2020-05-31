@@ -1,3 +1,3 @@
-parsing
+interpreting
 nonVars 
 ^ self values , {(SKVar new cons: SKVar new)}

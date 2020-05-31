@@ -1,3 +1,4 @@
-parsing
+deprecated
 allBut: x
- ^ self all reject: [ :a | a = x ]
+	self halt.
+	^ self all reject: [ :a | a = x ]

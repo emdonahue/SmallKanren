@@ -1,4 +1,4 @@
-tests
+interpreter
 testNotEquals
 	self
 		assert:

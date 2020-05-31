@@ -1,4 +1,4 @@
-parsing
+interpreting
 occurs: x notIn: unwalkedY sub: sub
 	^ [ :y | 
 	(self walk: unwalkedY in: sub o: y)

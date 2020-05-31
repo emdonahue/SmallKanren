@@ -1,4 +1,4 @@
-tests
+interpreter
 testNotOccursCheck
 	| sub |
 	sub := #(x #(x) #(#(2) 1)) asConsTree.

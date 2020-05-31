@@ -1,4 +1,4 @@
-tests
+interpreter
 testUnifyVarVals
 	self
 		assert:

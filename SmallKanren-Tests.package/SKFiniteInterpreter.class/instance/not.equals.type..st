@@ -1,4 +1,4 @@
-parsing
+interpreting
 not: a equals: b type: typeclass
 	^ typeclass
 		inject: SKGoal fail

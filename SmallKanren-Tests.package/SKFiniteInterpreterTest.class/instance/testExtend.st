@@ -1,4 +1,4 @@
-tests
+interpreter
 testExtend
 	self
 		assert:

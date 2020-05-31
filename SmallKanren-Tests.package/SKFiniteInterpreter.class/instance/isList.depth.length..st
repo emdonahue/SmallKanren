@@ -1,4 +1,4 @@
-parsing
+interpreting
 isList: x depth: d length: l
 	(d = 0 or: l = 0)
 		ifTrue: [ ^ SKGoal fail ].

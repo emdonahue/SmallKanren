@@ -1,4 +1,4 @@
-parsing
+interpreting
 occurs: x in: unwalkedY sub: sub
 	^ (self
 		occurs: x

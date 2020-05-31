@@ -1,4 +1,4 @@
-parsing
+interpreting
 walk: var in: substitution o: val
 	| logicVars |
 	logicVars := self vars collect: [ :v | SKVar new tag: v ].

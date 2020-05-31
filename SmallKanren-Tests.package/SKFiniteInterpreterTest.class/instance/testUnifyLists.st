@@ -1,4 +1,4 @@
-tests
+interpreter
 testUnifyLists
 	self
 		assert:

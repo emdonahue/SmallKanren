@@ -1,4 +1,4 @@
-tests
+interpreter
 testUnifyPrograms
 	self
 		assert: (interpreter eval: #(#(== 1 1)) asConsTree)

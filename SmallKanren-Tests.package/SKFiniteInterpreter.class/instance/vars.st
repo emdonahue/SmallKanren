@@ -1,3 +1,3 @@
-parsing
+interpreting
 vars 
 	^ primitives at: #var

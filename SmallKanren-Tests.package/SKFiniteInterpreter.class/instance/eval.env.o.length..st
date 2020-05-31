@@ -1,7 +1,7 @@
-parsing
+interpreting
 eval: prog env: env o: out length: l
 	l = 0
-		ifTrue: [ ^ SKGoal succeed ].
+		ifTrue: [ ^ prog === Cons empty & (env === out) ].
 	^ prog === Cons empty & (out === env)
 		| [ :first :rest :nextEnv | 
 			prog === (first cons: rest)
