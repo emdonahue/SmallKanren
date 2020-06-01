@@ -8,7 +8,7 @@ extend: var with: val in: substitution o: extendedSub
 		collect: [ :i | 
 			{(subVars at: i).
 			(extSubVars at: i).
-			(self vars at: i)} ].
+			(self vars at: i)} ]. "last one may be unnecessary"
 	^ substitution === subVars asCons
 		& (extendedSub === extSubVars asCons)
 		&

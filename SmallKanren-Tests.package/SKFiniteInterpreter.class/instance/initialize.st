@@ -1,6 +1,7 @@
 initializing
 initialize
 	super initialize.
+	constraints := #(typeo =/= absento).
 	primitives := Dictionary new
 		at: #var put: #(x y);
 		at: #number put: #(1 2);

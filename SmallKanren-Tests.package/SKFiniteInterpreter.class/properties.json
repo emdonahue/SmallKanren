@@ -9,7 +9,8 @@
 		"primitives",
 		"programLength",
 		"listDepth",
-		"listLength"
+		"listLength",
+		"constraints"
 	],
 	"name" : "SKFiniteInterpreter",
 	"type" : "normal"
