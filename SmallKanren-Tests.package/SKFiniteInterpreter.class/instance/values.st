@@ -1,4 +1,4 @@
-interpreting
+accessing
 values
 	^ primitives associations
 		inject: #()
