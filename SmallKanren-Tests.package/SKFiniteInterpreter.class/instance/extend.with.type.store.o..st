@@ -1,11 +1,11 @@
 interpreting
 extend: var with: constraint type: type store: store o: out
 	| storeVars outVars allVars |
-	storeVars := self fresh: self vars.
-	outVars := self fresh: self vars.
-	allVars := (1 to: self vars size)
+	storeVars := self fresh: self constraints.
+	outVars := self fresh: self constraints.
+	allVars := (1 to: self constraints size)
 		collect: [ :i | 
-			{(self vars at: i).
+			{(self constraints at: i).
 			(storeVars at: i).
 			(outVars at: i)} ].
 	^ store === storeVars & (out === outVars)
@@ -15,13 +15,8 @@ extend: var with: constraint type: type store: store o: out
 				into: [ :g :s | 
 					g
 						&
-							(s first === var
-								&
-									(self
-										extend: type
-										with: constraint
-										store: s second
-										o: s third)
+							(s first === type
+								& (s third === ((var cons: constraint) cons:  s second))
 								|
-									((self not: s first equals: var type: self vars)
+									((self not: s first equals: type type: self constraints)
 										& (s second === s third))) ])
