@@ -1,3 +1,6 @@
 running
 run: aState runner: aRunner
-	^ (block valueWithArguments: (block argumentNames collect: [ :a | SKVar new ])) run: aState runner: aRunner
+	"Executes when goal is run as a subgoal (non top level), which is uncommon due match being preferred in most cases."
+	^ SKIncomplete new
+		state: aState;
+		block: block

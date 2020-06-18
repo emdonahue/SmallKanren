@@ -1,11 +1,8 @@
 running
 runner
-	"can probably DRY this out wrt run:"
-
-	<todo>
-	| args r |
-	args := block argumentNames collect: [ :a | SKVar tag: a ].
-	r := SKRunner new.
-	^ r
-		stream: ((block valueWithArguments: args) asGoal run: SKState new runner: r);
-		queryVars: args asCons
+"As the top level goal, we forego making a stream and execute the top level goal directly, saving the fresh variables as the query variables for the entire computaiton."
+	| queryVars |
+	queryVars := block argumentNames collect: [ :a | SKVar tag: a ].
+	^ SKRunner new
+		queryVars: queryVars asCons;
+		goal: (block valueWithArguments: queryVars) asGoal

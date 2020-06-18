@@ -1,5 +1,7 @@
 interpreter
 testUnifyVals
+	"To reduce test time, the interpreter does not currently support literal operations."
+
 	self
 		assert:
 			[ :p | 
@@ -9,8 +11,7 @@ testUnifyVals
 				in: #(#(x y z) #()) asConsTree
 				o: p ] asGoal run
 		equals: #(#(#(#(x y z) #()))) asConsTree.
-		
-			self
+	self
 		assert:
 			[ :p | 
 			interpreter
@@ -18,6 +19,4 @@ testUnifyVals
 				with: 2
 				in: #(#(x y z) #()) asConsTree
 				o: p ] asGoal run
-		equals: #(#(#())) asConsTree.
-		
-	
+		equals: #(#(#())) asConsTree

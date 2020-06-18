@@ -1,3 +1,19 @@
 as yet unclassified
 checkConstraints: env o: out
-	^ [ :sub :typeo :diseq :absento | env === (sub cons: (typeo cons: diseq cons: absento cons) cons) & (self checkTypes: typeo in: env out: out depth: self programLength) ]
+	^ (env === Cons empty & (out === Cons empty)) |
+	
+[ :sub :typeo :diseq :absento :diseqEnv :absentoEnv | 
+	env === (sub cons: (typeo cons: diseq cons: absento cons) cons)
+		&
+			(self
+				checkTypes: typeo
+				in: env
+				out: diseqEnv
+				depth: self programLength) &
+				
+(				(diseqEnv === Cons empty & (out === Cons empty))
+				
+				|
+(				self checkDiseq: diseq in: diseqEnv o: absentoEnv depth: self programLength)
+				)
+				 ]
