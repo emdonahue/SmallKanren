@@ -1,4 +1,4 @@
-tests
+fresh
 testRecursiveFreshGoal
 	| loop |
 	loop := [ SKGoal succeed | loop ].

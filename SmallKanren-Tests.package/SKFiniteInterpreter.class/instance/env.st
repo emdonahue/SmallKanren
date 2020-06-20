@@ -1,4 +1,4 @@
-interpreting
-env 
- self vars cons: (self constraints collect: [ :c | Cons empty ]) cons
-			
+accessing
+env
+	^ self vars asCons
+		cons: (self constraints collect: [ :c | Cons empty ]) asCons cons

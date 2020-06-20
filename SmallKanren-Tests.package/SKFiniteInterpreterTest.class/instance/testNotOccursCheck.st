@@ -1,6 +1,7 @@
 interpreter
 testNotOccursCheck
 	| sub |
+	self skip.
 	sub := #(x #(x) #(#(2) 1)) asConsTree.
 	self assert: (interpreter occurs: #x notIn: #x sub: sub) fails.
 	self assert: (interpreter occurs: #x notIn: #y sub: sub) fails.
@@ -10,6 +11,8 @@ testNotOccursCheck
 	self
 		assert: (interpreter occurs: #x notIn: #z cons sub: sub) succeeds.
 	self
-		assert: [ :x :y | 
+		assert:
+			[ :x :y | 
 			x === #x & (y === 1)
-				& (interpreter occurs: x notIn: y sub: #(x y z) asConsTree) ] asGoal succeeds
+				& (interpreter occurs: x notIn: y sub: #(x y z) asConsTree) ]
+				asGoal succeeds

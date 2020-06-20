@@ -19,4 +19,4 @@ testUnifyVals
 				with: 2
 				in: #(#(x y z) #()) asConsTree
 				o: p ] asGoal run
-		equals: #(#(#())) asConsTree
+		equals: Cons empty
