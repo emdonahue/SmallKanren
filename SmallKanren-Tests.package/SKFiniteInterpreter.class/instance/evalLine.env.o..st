@@ -5,19 +5,21 @@ evalLine: line env: env o: nextEnv
 		&
 			(args === (arg1 cons: arg2 cons)
 				&
-					((op === #==
+					(op === #==
 						&
 							(self
 								unify: arg1
 								with: arg2
 								in: env
-								o: nextEnv)) |
-								
-								((op === #typeo
+								o: nextEnv
+								depth: 1
+								length: 1)
+						|
+							(op === #typeo
 								&
 									(self
 										extendPackage: arg1
 										with: arg2
 										type: #typeo
 										store: env
-										o: nextEnv))) )) ] asGoal
+										o: nextEnv)))) ] asGoal

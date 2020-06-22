@@ -1,5 +1,5 @@
 interpreting
-unify: arg1 with: arg2 in: env o: nextEnv
+unify: arg1 with: arg2 in: env o: nextEnv depth: depth length: length
 	"						|
 							((self not: a equals: b type: self nonVars) & (nextEnv === Cons empty))"
 
@@ -26,6 +26,6 @@ unify: arg1 with: arg2 in: env o: nextEnv
 								list: b
 								in: env
 								o: nextEnv
-								depth: 1
-								length: 1)
+								depth: depth
+								length: length)
 						| (a === b & (self is: a in: self values) & (env === nextEnv))) ]

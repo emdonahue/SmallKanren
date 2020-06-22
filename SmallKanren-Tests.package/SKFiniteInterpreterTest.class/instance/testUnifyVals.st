@@ -9,7 +9,9 @@ testUnifyVals
 				unify: 1
 				with: 1
 				in: #(#(x y z) #()) asConsTree
-				o: p ] asGoal run
+				o: p
+				depth: 1
+				length: 1 ] asGoal run
 		equals: #(#(#(#(x y z) #()))) asConsTree.
 	self
 		assert:
@@ -18,5 +20,7 @@ testUnifyVals
 				unify: 1
 				with: 2
 				in: #(#(x y z) #()) asConsTree
-				o: p ] asGoal run
+				o: p
+				depth: 1
+				length: 1 ] asGoal run
 		equals: Cons empty

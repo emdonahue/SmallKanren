@@ -7,5 +7,7 @@ testUnifyVars
 				unify: #x
 				with: #z
 				in: #(#(x y z) nil) asConsTree
-				o: p ] asGoal run
+				o: p
+				depth: 1
+				length: 1 ] asGoal run
 		equals: #(#(#(#(z y z) nil))) asConsTree

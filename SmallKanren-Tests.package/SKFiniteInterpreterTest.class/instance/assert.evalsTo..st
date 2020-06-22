@@ -1,3 +1,5 @@
 generative
 assert: prog evalsTo: out
-	self assert: (self eval: prog) equals: (self read: out first)
+	| evaled |
+	evaled := self eval: prog.
+	self assert: (self reify: evaled) equals: (self read: out env: evaled)
