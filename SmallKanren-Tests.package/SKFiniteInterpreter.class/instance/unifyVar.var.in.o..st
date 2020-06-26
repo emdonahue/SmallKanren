@@ -1,4 +1,4 @@
-interpreting
+unify
 unifyVar: a var: b in: env o: nextEnv
 	^ (self not: a equals: b type: self vars)
 		&

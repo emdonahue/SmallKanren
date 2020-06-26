@@ -1,4 +1,4 @@
-interpreting
+eval
 evalLine: line env: env o: nextEnv
 	^ [ :op :args :arg1 :arg2 | 
 	line === (op cons: args)

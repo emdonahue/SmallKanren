@@ -1,4 +1,4 @@
-interpreting
+eval
 eval: prog env: env o: out length: l
 	l = 0
 		ifTrue: [ ^ prog === Cons empty & (self checkConstraints: env o: out) ].

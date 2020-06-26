@@ -1,4 +1,4 @@
-interpreting
+eval
 eval: prog env: env o: out
 	^ self
 		eval: prog

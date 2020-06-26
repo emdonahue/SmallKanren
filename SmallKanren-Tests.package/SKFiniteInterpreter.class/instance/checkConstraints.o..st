@@ -1,4 +1,4 @@
-as yet unclassified
+constraints
 checkConstraints: env o: out
 	^ env === Cons empty & (out === Cons empty)
 		| [ :sub :typeo :diseq :absento :diseqEnv :absentoEnv | 

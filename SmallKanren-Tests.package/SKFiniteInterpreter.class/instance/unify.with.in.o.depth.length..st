@@ -1,4 +1,4 @@
-interpreting
+unify
 unify: arg1 with: arg2 in: env o: nextEnv depth: depth length: length
 	"						|
 							((self not: a equals: b type: self nonVars) & (nextEnv === Cons empty))"

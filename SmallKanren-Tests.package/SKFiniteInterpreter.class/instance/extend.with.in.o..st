@@ -1,4 +1,4 @@
-interpreting
+extend
 extend: var with: val in: substitution o: extendedSub
 	| subVars extSubVars allVars |
 	"Since the number of vars in the substitution is finite and known, we pre-generate a list of vars and simply unify with the substitution to extract them."

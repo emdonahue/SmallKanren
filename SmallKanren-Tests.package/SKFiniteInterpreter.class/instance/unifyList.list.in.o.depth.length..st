@@ -1,4 +1,4 @@
-interpreting
+unify
 unifyList: a list: b in: env o: nextEnv depth: depth length: length
 	(depth = 0 or: length = 0)
 		ifTrue: [ ^ SKGoal fail ].

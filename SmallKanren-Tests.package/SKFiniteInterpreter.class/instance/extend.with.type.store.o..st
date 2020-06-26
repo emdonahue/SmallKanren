@@ -1,4 +1,4 @@
-interpreting
+extend
 extend: var with: constraint type: type store: store o: out
 	| storeVars outVars allVars |
 	storeVars := self fresh: self constraints.

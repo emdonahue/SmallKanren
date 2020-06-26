@@ -1,4 +1,4 @@
-interpreting
+occurscheck
 occurs: x in: unwalkedY sub: sub rest: r
 	^ [ :y | 
 	(self walk: unwalkedY in: sub o: y)

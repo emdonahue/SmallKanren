@@ -1,4 +1,4 @@
-interpreting
+equality
 any
 	"Returns all possible types (lists are returned with free vars to speed matching process."
 

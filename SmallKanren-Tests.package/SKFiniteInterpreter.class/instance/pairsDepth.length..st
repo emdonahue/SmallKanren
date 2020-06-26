@@ -1,4 +1,4 @@
-interpreting
+equality
 pairsDepth: depth length: length
 	| vars vals |
 	depth = 0

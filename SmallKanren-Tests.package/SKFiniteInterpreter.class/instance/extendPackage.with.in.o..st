@@ -1,4 +1,4 @@
-interpreting
+extend
 extendPackage: var with: val in: package o: extendedPkg
 	^ [ :substitution :constraints :nextSub |
 		package === (substitution cons: constraints cons)
