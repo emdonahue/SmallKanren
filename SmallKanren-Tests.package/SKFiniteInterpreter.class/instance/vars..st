@@ -1,3 +1,3 @@
 accessing
-vars: vars
-	primitives at: #var put: vars
+vars: vs
+	vars := vs

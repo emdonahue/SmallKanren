@@ -1,8 +1,6 @@
-extend
+substitution
 extendPackage: var with: val in: package o: extendedPkg
-	^ [ :substitution :constraints :nextSub |
-		package === (substitution cons: constraints cons)
-		
+	^ [ :substitution :store :nextSub | 
+	package === (substitution cons: store cons)
 		& (self extend: var with: val in: substitution o: nextSub)
-		& (extendedPkg === (nextSub cons: constraints cons))
-		]
+		& (extendedPkg === (nextSub cons: store cons)) ] asGoal

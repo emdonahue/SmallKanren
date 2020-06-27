@@ -1,3 +1,3 @@
 accessing
-vars 
-	^ primitives at: #var
+vars
+	^ vars

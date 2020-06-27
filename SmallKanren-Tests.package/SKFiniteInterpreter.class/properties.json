@@ -10,7 +10,8 @@
 		"programLength",
 		"listDepth",
 		"listLength",
-		"constraints"
+		"constraints",
+		"vars"
 	],
 	"name" : "SKFiniteInterpreter",
 	"type" : "normal"
