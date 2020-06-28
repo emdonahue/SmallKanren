@@ -4,8 +4,8 @@ testOrReduces
 	self assert: {{(x === 1)}} asGoal isUnification.
 	self
 		assert:
-			{{{{(x === 1).
-			(x === 2)}}}} asGoal isDisjunction.
+			{{(x === 1).
+			(x === 2)}} asGoal isDisjunction.
 	self
 		assert:
 			{{{(x === 1).

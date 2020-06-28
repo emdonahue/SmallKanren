@@ -9,11 +9,6 @@ walk: var in: substitution o: val
 
 	"Otherwise, unify var names with var and corresponding substitution values with val. Only one var name will unify with the walked var, hence only one val is returned."
 	{(substitution === logicVars asCons).
-	((self vars
-		with: logicVars
-		collect: [ :a :b | 
-			{a.
-			b} ])
+	((self vars 	with: logicVars collect: [ :a :b | {a. b} ])
 		inject: SKGoal fail
-		into: [ :g :lv | g | (var === lv first & (val === lv second)) ])}}}
-		asGoal
+		into: [ :g :lv | g | (var === lv first & (val === lv second)) ])}}} asGoal

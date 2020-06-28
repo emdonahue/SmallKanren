@@ -6,17 +6,13 @@ extend: var with: constraint constraint: constraintType store: store o: out
 	storeVars := self fresh: self constraints.
 	outVars := self fresh: self constraints.
 	allVars := (1 to: self constraints size)
-		collect: [ :i | 
-			{(self constraints at: i).
-			(storeVars at: i).
-			(outVars at: i)} ].
-	^ store === storeVars & (out === outVars)
-		&
-			(allVars
-				inject: SKGoal succeed
-				into: [ :g :s | 
-					{g.
-					{(s first === constraintType
-						& (s third === ((var cons: constraint) cons: s second))).
-					((self not: s first equals: constraintType type: self constraints)
-						& (s second === s third))}} asGoal ])
+		collect: [ :i | {(self constraints at: i). (storeVars at: i). (outVars at: i)} ].
+	^ {store === storeVars. 
+			(out === outVars).
+			allVars inject: SKGoal succeed into: [ :g :s | 
+					g &
+					{{s first === constraintType
+							& (s third === ((var cons: constraint) cons: s second)).
+								
+						(self not: s first equals: constraintType type: self constraints)
+							& (s second === s third)}} asGoal ]}
