@@ -4,12 +4,10 @@ checkTypes: types in: env o: out depth: depth
 
 	depth = 0
 		ifTrue: [ ^ env === out ].
-	^ [ :var :const :rest :val | 
+	^ [ :var_type :rest :checkedEnv | 
 	"If the search has already failed, pass along the empty substitution."
 	{{(types === Cons empty & (env === out)).
 	
-	{(self walk: var env: env o: val).
-	(((var cons: const) cons: rest) === types).
-	(self is: val type: const)
-	& (self checkTypes: rest in: env o: out depth: depth - 1)
-	| ((self not: val type: const) & (out === Cons empty))}}} ] asGoal
+		{(var_type cons: rest) === types.
+		self perform: #checkTypeo:in:o: with: var_type with: env with: checkedEnv.
+		self checkTypes: rest in: checkedEnv o: out depth: depth - 1 }}} ] asGoal

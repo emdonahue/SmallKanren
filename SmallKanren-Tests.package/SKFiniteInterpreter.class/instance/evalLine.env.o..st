@@ -7,4 +7,8 @@ evalLine: line env: env o: nextEnv
 			& (self unify: arg1 with: arg2 in: env o: nextEnv depth: 1 length: 1).
 	
 			op === #typeo
-			& (self extendPackage: arg1 with: arg2 type: #typeo store: env o: nextEnv)}}} ] asGoal
+			& (self extendPackage: arg1 with: arg2 type: #typeo store: env o: nextEnv).
+			
+			op === #=/=
+			& (self extendPackage: arg1 with: arg2 type: #=/= store: env o: nextEnv).
+			}}} ] asGoal

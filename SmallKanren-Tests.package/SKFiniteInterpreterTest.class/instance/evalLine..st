@@ -7,4 +7,6 @@ evalLine: line
 				ifTrue: [ ^ (self evalAtom: line second) isSymbolo ].
 			line third = #number
 				ifTrue: [ ^ (self evalAtom: line second) isNumbero ] ].
+	line first = #=/=
+		ifTrue: [^ (self evalAtom: line second) =/= (self evalAtom: line third) ].
 	Error signal: 'Unrecognized operation'
