@@ -1,6 +1,6 @@
 typeo
 checkTypeo: var_type in: env o: out
-	"Run all typeo constraints. Types is a list of (var . type) pairs."
+	"var_type is a (var . type) pair."
 
 	^ [ :var :type :val | 	
 	{(var cons: type) === var_type.

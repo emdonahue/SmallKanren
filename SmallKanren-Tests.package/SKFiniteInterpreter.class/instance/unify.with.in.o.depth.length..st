@@ -12,4 +12,5 @@ unify: arg1 with: arg2 in: env o: nextEnv depth: depth length: length
 			{{self unifyVar: a var: b in: env o: nextEnv.
 				self unifyVar: a val: b in: env o: nextEnv.
 				self unifyList: a list: b 	in: env 	o: nextEnv depth: depth 	length: length.
-				a === b & (self is: a in: self values) & (env === nextEnv)}}} ]
+				a === b & (self is: a in: self values) & (env === nextEnv).
+				(self not: a equals: b type: self nonVars) & (nextEnv === Cons empty).}}} ]

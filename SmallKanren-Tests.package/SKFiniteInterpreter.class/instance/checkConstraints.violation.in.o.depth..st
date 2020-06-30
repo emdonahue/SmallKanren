@@ -1,6 +1,6 @@
 constraints
 checkConstraints: listOfConstraints violation: violationMsg in: env o: out depth: depth
-	"Run all typeo constraints. Types is a list of (var . type) pairs."
+	"A higher order method that runs all constraints of a given type, where violationMsg specifies the method to call to check constraints of the given type."
 
 	depth = 0
 		ifTrue: [ ^ env === out ].
