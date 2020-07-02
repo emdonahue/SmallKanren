@@ -1,3 +1,3 @@
 accessing
 symbols
- ^ #(sym1 sym2)
+ ^ #(sym1)

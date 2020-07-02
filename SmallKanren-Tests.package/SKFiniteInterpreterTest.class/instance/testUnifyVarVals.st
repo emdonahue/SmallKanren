@@ -21,4 +21,4 @@ testUnifyVarVals
 				o: p
 				depth: 1
 				length: 1 ] asGoal run
-		equals: Cons empty
+		equals: Cons empty cons cons.
