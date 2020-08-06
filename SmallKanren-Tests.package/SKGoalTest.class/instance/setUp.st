@@ -1,6 +1,6 @@
 initialization
 setUp
-
+	(RPackageOrganizer default packageNamed: 'SmallKanren-Core') enforceContractC.
 	x := SKVar new tag: #x.
 	y := SKVar new tag: #y.
 	z := SKVar new tag: #z.

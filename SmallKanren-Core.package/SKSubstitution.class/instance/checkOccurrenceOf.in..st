@@ -1,3 +1,3 @@
 occurring
 checkOccurrenceOf: aVar in: aTerm
-	^ 		aTerm skOccurs: aVar in: self
+	^ aTerm skOccurs: aVar in: self
