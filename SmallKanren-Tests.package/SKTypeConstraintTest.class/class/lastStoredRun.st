@@ -1,0 +1,3 @@
+history
+lastStoredRun
+	^ ((Dictionary new) add: (#timeStamp->(DateAndTime basicNew instVarAt: 1 put: 84663; instVarAt: 2 put: (Duration seconds: -14400 nanoSeconds: 0); instVarAt: 3 put: 2459068; instVarAt: 4 put: 319121000; yourself)); add: (#passed->((Set new) add: #testEmptyConstraint; add: #testEmptyStore; add: #testConstraintShiftsVarsWhenApplied; add: #testMutualExclusivity; add: #testVariableAlreadySatisfies; add: #testVariableAlreadyViolates; add: #testPrintOn; add: #testIdempotence; yourself)); add: (#failures->((Set new))); add: (#errors->((Set new) add: #testConstraintConflictOnUnification; add: #testConstraintShiftsVarsWhenUnified; add: #testConstraintsMergeWhenUnified; add: #testDoubleConstraint; add: #testSingleConstraint; yourself)); yourself)

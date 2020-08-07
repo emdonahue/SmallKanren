@@ -1,0 +1,3 @@
+history
+lastStoredRun
+	^ ((Dictionary new) add: (#timeStamp->(DateAndTime basicNew instVarAt: 1 put: 84663; instVarAt: 2 put: (Duration seconds: -14400 nanoSeconds: 0); instVarAt: 3 put: 2459068; instVarAt: 4 put: 320732000; yourself)); add: (#passed->((Set new) add: #testUnifyWalked; add: #testUnifyFree; add: #testUnifyVal; add: #testUnifyList; add: #testUnifyOccursCheck; add: #testPrintOn; add: #testSingleUnify; add: #testDoubleUnify; yourself)); add: (#failures->((Set new))); add: (#errors->((Set new))); yourself)
