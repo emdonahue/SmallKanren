@@ -1,3 +1,6 @@
 removing
 remove: aVar
-	^ self copy hashmap: (hashmap without: aVar)
+
+	^ (hashmap includesKey: aVar)
+		  ifTrue: [ self removeKey: aVar ]
+		  ifFalse: [ self ]
