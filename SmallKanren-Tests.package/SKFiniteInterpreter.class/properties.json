@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "EvanDonahue 5/16/2020 20:12",
-	"super" : "TestCase",
+	"super" : "Object",
 	"category" : "SmallKanren-Tests-Constraints",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -6,4 +6,5 @@ setUp
 	b := SKDelayedVar new
 		vars: {SKVar new};
 		block: [  ].
-	empty := SKDelayQueue empty
+	empty := SKDelayQueue empty.
+	'SmallKanren-Core' asPackage enforceContractC.

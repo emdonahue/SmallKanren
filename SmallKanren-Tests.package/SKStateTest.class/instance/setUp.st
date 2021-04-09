@@ -3,6 +3,7 @@ setUp
 	x := SKVar new.
 	y := SKVar new.
 	z := SKVar new.
+	'SmallKanren-Core' asPackage enforceContractC.
 	"x1 := SKState new unify: x with: 1.
 	y2 := SKState new unify: y with: 2.
 	x1y2 := (SKState new unify: x with: 1) unify: y with: 2.

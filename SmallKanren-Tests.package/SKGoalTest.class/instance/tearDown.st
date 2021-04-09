@@ -1,3 +1,3 @@
-running
-tearDown
+initialization
+tearDown 	
 	'SmallKanren-Core' asPackage unenforceContractC.

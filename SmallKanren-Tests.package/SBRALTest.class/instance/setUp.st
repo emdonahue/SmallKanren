@@ -1,3 +1,3 @@
 running
-tearDown
+setUp 	
 	'SmallKanren-Core' asPackage enforceContractC.

@@ -1,8 +1,6 @@
 running
 setUp
-	SKPackage enforceContractC.
-	SKState enforceContractC.
-	SKDelayed enforceContractC.
+	'SmallKanren-Core' asPackage enforceContractC.
 	x := SKVar new tag: #x.
 	y := SKVar new tag: #y.
 	multi := SKMultiConstraint new
