@@ -4,7 +4,7 @@ extendAndCheck: aVar with: aValue
 
 	"We can add to state something that creates a new state and extends sub/removes var from constraints simultaneously "
 	
-	<type: #isSKVar type: #AnyC returns: #SKStream>
+	<type: #isSKVar type: #ObjectC returns: #SKStream>
 	<todo>
 	^ (state extendAndCheck: aVar with: aValue) suspendedVars: suspendedVars
 	"^ (delayedVars remove: [ :v | v = aVar ])

@@ -1,3 +1,4 @@
 *SmallKanren-Core
 skUnifyEmptyCons
-	^ SKFail singleton
+	"For non-Cons (primitive and Var), unification with Cons is the same as any ground."
+	^ self skUnifyGround: Cons empty.

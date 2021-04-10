@@ -1,6 +1,4 @@
 unification
 skUnifyGround: aValue in: aState
-	<todo>
-	"can these be combined into one call and short circuited by Delayed?"
-	"^ (aState extend: self with: aVar) checkConstraintsOn: self boundTo: aVar"
+	"Unify Var with ground and fire constraints. Unlike unifyPrimitive, this is called during unification, not at goal construction time."
 	^ aState extendAndCheck: self with: aValue

@@ -1,3 +1,3 @@
 list
 isNotEmptyo
-	^ self =/= Cons empty
+	^ self =/= Cons empty.

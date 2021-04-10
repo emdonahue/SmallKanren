@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "SmallKanren-Core-Variables",
+	"category" : "SmallKanren-Core-Disequality",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

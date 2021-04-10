@@ -1,3 +1,3 @@
 testing
 isEmpty
-	^ hashmap size = 0.
+	^ hashmap isEmpty.

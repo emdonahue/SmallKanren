@@ -4,4 +4,4 @@ checkConstraintsOn: aVar boundTo: aValue
 	
 	^ SKSubstitutionDelta new
 		substitution: (self extend: aVar noOccursCheck: aValue);
-		deltas: (SKSingleDisequality new left: aVar; right: aValue)
+		deltas: (SKDisequalityConstraint left: aVar right: aValue)

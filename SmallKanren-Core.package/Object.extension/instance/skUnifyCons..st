@@ -1,3 +1,4 @@
 *SmallKanren-Core
 skUnifyCons: anCons
-	^ SKFail singleton
+	"For Var and ground, a cons is just a primitive."
+	^ self skUnifyGround: anCons.

@@ -1,3 +1,4 @@
 *SmallKanren-Core
 skUnifyEmptyConsIn: aState
-	^ SKFailure singleton
+	"Cons is just a ground for vars and primitives."
+	^ self skUnifyGround: Cons empty in: aState

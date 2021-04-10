@@ -1,3 +1,3 @@
-comparing
+deprecated
 skAlphaHash
 	^ self class hash
