@@ -1,3 +1,3 @@
-checking
+disequality
 disunify: aDisequality
 	^ SKSatisfiedConstraint singleton

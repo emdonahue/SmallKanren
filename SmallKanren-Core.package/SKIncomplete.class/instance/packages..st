@@ -1,3 +1,4 @@
 subclassresponsibility
 packages: packages 
-^ state packages: packages 
+	self halt.
+	^ state packages: packages 

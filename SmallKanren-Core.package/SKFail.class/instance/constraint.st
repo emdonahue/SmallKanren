@@ -1,3 +1,3 @@
 constraining
 constraint
-	^ SKUnsatisfiableConstraint singleton
+	^ SKConstraint unsatisfiable.

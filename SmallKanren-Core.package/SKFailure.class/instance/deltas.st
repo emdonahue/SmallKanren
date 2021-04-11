@@ -1,3 +1,3 @@
-accessing
+disequality
 deltas
-	^ SKSatisfiedConstraint singleton
+	^ SKConstraint satisfied.

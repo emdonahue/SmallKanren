@@ -1,3 +1,4 @@
 accessing
 at: aVariable
-	^ SKSatisfiedConstraint singleton
+	"Because there are no constraints, the only constraint 'on' any variable is the trivially satisfied constraint."
+	^ SKConstraint satisfied.

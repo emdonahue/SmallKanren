@@ -1,4 +1,4 @@
-accessing
+debugging
 streamsByQuery: queryVars
 	| queries streams |
 	queries := OrderedCollection new.

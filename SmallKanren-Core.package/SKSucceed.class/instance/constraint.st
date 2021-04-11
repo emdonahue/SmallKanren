@@ -1,3 +1,3 @@
 constraining
 constraint
-	^ SKSatisfiedConstraint singleton
+	^ SKConstraint satisfied.

@@ -1,3 +1,3 @@
 running
 run: aState
-	^ self constraint checkAgainst: (aState walk: var) in: aState
+	^ self constraint runAgainst: (aState walk: var) in: aState

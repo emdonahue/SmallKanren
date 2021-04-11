@@ -4,5 +4,5 @@ constrain: aState
 	<todo>
 	"add an inverse type DE so it knows which value to reduceFirst with"
 	^ (right isSKVar
-		ifTrue: [ aState constrain: right with: self ]
-		ifFalse: aState) constrain: left with: self
+		ifTrue: [ aState add: right constraint: self ]
+		ifFalse: aState) add: left constraint: self

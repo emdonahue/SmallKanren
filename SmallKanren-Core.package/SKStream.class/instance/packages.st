@@ -1,3 +1,3 @@
-accessing
+debugging
 packages
 	^ self packages: OrderedCollection new

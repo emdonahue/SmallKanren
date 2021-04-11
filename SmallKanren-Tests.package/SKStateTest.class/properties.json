@@ -6,17 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"state",
-		"simpleVar",
+		"s",
 		"x",
 		"y",
-		"x1",
-		"y2",
-		"x1y2",
-		"z",
-		"x1yx",
-		"xNot1",
-		"yNot2"
+		"z"
 	],
 	"name" : "SKStateTest",
 	"type" : "normal"

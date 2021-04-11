@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SmallKanren-Core-Constraints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"deltas",
+		"substitution"
+	],
+	"name" : "SKDisequalitySubstitution",
+	"type" : "normal"
+}

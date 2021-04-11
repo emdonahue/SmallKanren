@@ -1,3 +1,3 @@
-stepping and presenter
+streaming
 step: aRunner
-	^ SKFailure singleton.
+	^ SKStream failure.

@@ -1,0 +1,1 @@
+The initial singleton ConstraintStore prior to immutably adding constraints.
