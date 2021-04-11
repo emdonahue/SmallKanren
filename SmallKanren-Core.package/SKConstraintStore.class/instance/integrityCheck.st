@@ -1,5 +1,5 @@
 debugging
 integrityCheck
-	<todo>
-	"disable this for production"
-	self keysAndValuesDo: [ :k :v | self assert: [ v isSatisfied not & v isUnsatisfiable not ] ]
+	"A debug-time test that ensures that no trivial constraints have made it into the store."
+	
+	^ hashmap values allSatisfy: [ :v | v isSatisfied not & v isUnsatisfiable not ].

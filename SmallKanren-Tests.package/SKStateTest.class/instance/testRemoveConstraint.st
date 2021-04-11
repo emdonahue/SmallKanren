@@ -1,7 +1,7 @@
 tests
 testRemoveConstraint
 	| x1 x1ySym |
-	'SmallKanren-Core' asPackage unenforceContractC.
+	
 	"Running a constraint that doesn't exist should return the state unchanged without copying."
 	x1 := s extend: x with: 1.
 	self assert: (x1 check: x against: 1) equals: x1.

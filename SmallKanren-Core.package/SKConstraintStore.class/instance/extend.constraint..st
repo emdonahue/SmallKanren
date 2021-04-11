@@ -1,4 +1,4 @@
 constraining
 extend: aVar constraint: aConstraint
-	self integrityCheck.
+	<type: #SKVar type: #(NotC SKSatisfiedConstraint SKUnsatisfiableConstraint) returns: #integrityCheck>
 	^ self copy hashmap: (hashmap with: aVar as: aConstraint).
