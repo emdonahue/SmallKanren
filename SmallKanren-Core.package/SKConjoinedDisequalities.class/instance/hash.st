@@ -1,3 +1,3 @@
 comparing
 hash
-	^ super hash bitXor: next hash.
+	^ super hash bitXor: rest hash.

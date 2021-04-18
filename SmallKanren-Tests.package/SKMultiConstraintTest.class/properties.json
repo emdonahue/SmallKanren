@@ -9,7 +9,11 @@
 		"x",
 		"y",
 		"multi",
-		"xhash"
+		"xhash",
+		"symbolo",
+		"satisfied",
+		"unsatisfiable",
+		"numbero"
 	],
 	"name" : "SKMultiConstraintTest",
 	"type" : "normal"

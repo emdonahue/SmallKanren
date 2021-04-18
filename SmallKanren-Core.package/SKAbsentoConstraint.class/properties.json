@@ -8,6 +8,6 @@
 	"instvars" : [
 		"excluded"
 	],
-	"name" : "SKExclusionConstraint",
+	"name" : "SKAbsentoConstraint",
 	"type" : "normal"
 }

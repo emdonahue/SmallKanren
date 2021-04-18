@@ -1,3 +1,3 @@
 converting
 asConstraint
-	^ SKExclusionConstraint new excluded: excluded
+	^ SKAbsentoConstraint new excluded: excluded

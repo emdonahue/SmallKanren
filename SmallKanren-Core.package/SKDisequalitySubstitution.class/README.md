@@ -1,0 +1,1 @@
+This class mimics the normal Substitution, but is used only during the processing of disequality constraints. Because disequality constraints use the unifier to simplify themselves, this class provides extra facilities to keep track of simplified disequalities during the otherwise normal unification process.

@@ -1,3 +1,3 @@
 accessing
 constraint
-	^ SKExclusionConstraint new excluded: excluded
+	^ SKAbsentoConstraint new excluded: excluded

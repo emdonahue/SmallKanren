@@ -1,3 +1,4 @@
 as yet unclassified
 extend: aVar checkVar: otherVar
-	^ (self extend: aVar noOccursCheck: otherVar) check: aVar against: otherVar
+	"Substitutions have no constraints to run within disequality checking, so simply extend."
+	^ self extend: aVar with: otherVar.

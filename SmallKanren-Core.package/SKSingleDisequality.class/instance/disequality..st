@@ -1,4 +1,4 @@
-accessing
+simplifying
 disequality: aDisequalityConstraint
 	"Merges disequalites together into a single DisjoinedDisequality.."
 

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "EvanDonahue 5/31/2017 20:42",
-	"super" : "SKExclusionConstraint",
+	"super" : "SKAbsentoConstraint",
 	"category" : "SmallKanren-Core-Constraints",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,6 +8,6 @@
 	"instvars" : [
 		"next"
 	],
-	"name" : "SKDisjoinedExclusions",
+	"name" : "SKDisjoinedAbsento",
 	"type" : "normal"
 }

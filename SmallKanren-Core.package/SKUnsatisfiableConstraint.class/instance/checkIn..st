@@ -1,3 +1,3 @@
 checking
 checkIn: aState
-	^ SKFailure singleton
+	^ SKGoal fail.

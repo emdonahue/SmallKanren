@@ -1,3 +1,3 @@
 comparing
 = aDisequalityConstraint
-	^ super = aDisequalityConstraint and: [ next = aDisequalityConstraint next ]
+	^ super = aDisequalityConstraint and: [ rest = aDisequalityConstraint rest ]

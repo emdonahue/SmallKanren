@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"next"
+		"rest"
 	],
 	"name" : "SKConjoinedDisequalities",
 	"type" : "normal"

@@ -1,5 +1,3 @@
-disequality
+checking
 check: aVar against: aValue
-	"^ self class new
-		substitution: (substitution extend: aVar noCheck: aValue);
-		deltas: (deltas add: aVar constraint: aValue)"
+	"Substitutions have no constraint stores, so do nothing for this method, which is primarily used polymorphically by the full state to do constraint checking."

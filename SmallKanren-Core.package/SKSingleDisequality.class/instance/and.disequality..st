@@ -1,7 +1,4 @@
-adding
+disequality
 and: aVar disequality: aVal
 	"Builds up SingleDisequalities into a ConjoinedDisequality"
-	^ SKConjoinedDisequalities new
-		left: aVar;
-		right: aVal;
-		next: self
+	^ SKConjoinedDisequalities left: aVar right: aVal rest: self.
