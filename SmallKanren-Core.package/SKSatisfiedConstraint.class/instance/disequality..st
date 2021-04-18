@@ -1,3 +1,3 @@
-as yet unclassified
+disequality
 disequality: aDisequalityConstraint 
 	^ aDisequalityConstraint 

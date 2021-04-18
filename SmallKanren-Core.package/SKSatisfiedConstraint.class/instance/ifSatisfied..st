@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 ifSatisfied: aBlock
 	^ aBlock value

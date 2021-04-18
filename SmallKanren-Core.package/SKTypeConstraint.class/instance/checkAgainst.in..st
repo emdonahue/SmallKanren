@@ -1,5 +1,5 @@
 checking
-check: aValue in: aState
+checkAgainst: aValue in: aState
 
 	aValue isSKVar
 		ifTrue: [ ^ aState add: aValue constraint: self ].	"if the Var is free, store the constraint for future application."

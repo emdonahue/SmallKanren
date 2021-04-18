@@ -1,4 +1,4 @@
-tests-simplifying
+tests
 testTypeSimplifyType
 	self assert: (symbolo simplify: symbolo) equals: satisfied.
 	self assert: (symbolo simplify: numbero) equals: unsatisfiable.

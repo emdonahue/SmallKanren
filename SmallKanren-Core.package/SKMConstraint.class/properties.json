@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKConstraint",
+	"category" : "SmallKanren-Core-Constraints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"first",
+		"rest"
+	],
+	"name" : "SKMConstraint",
+	"type" : "normal"
+}
