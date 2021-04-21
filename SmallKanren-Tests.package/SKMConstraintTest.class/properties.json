@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "SmallKanren-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"x",
+		"xn1",
+		"xn2",
+		"symbolo",
+		"satisfied",
+		"numbero",
+		"unsatisfiable",
+		"y",
+		"yn1",
+		"no1",
+		"no2"
+	],
+	"name" : "SKMConstraintTest",
+	"type" : "normal"
+}
