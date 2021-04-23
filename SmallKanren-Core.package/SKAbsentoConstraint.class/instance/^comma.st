@@ -1,3 +1,3 @@
 reducing
-, anExclusionConstraint
-	^ self exclusion: anExclusionConstraint 
+, aConstraint
+	^ aConstraint isAbsento ifTrue: self | aConstraint ifFalse: (SKMConstraint first: self rest: aConstraint).

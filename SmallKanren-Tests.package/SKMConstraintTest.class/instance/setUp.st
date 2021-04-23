@@ -7,6 +7,7 @@ setUp
 	yn1 := (y=/=1) asConstraint.
 	no1 := SKConstraint absento: 1.
 	no2 := SKConstraint absento: 2.
+	noSymbol := SKConstraint absento: #symbol.
 	symbolo := SKConstraint symbolo.
 	numbero := SKConstraint numbero.
 	satisfied := SKConstraint satisfied.

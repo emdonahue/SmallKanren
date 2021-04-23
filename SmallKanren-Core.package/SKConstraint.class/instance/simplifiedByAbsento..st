@@ -1,3 +1,2 @@
 simplifying
-simplifiedByAbsento: aConstraint
-	^ aConstraint
+simplifiedByAbsento: anAbsento

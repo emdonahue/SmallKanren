@@ -16,7 +16,8 @@
 		"y",
 		"yn1",
 		"no1",
-		"no2"
+		"no2",
+		"noSymbol"
 	],
 	"name" : "SKMConstraintTest",
 	"type" : "normal"
