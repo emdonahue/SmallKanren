@@ -1,5 +1,5 @@
 merging
-consolidate: aConstraint
+consolidatedBy: aConstraint
 	| s |
 	s := aConstraint simplify: self.
 	s = self class satisfied ifTrue: [ ^ aConstraint ].

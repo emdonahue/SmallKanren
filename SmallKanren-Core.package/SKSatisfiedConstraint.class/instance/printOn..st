@@ -1,3 +1,3 @@
 printing
 printOn: aStream
-	aStream nextPutAll: 'no constraints'
+	aStream nextPutAll: 'satisfied'
