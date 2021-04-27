@@ -8,4 +8,4 @@ testUndelayState
 	self assert: g step suspendedVars size equals: 2.
 	self assert: g step step isDelayed.
 	self assert: g step step step isState.
-	self assert: g step step step step isEmptyStream
+	self assert: g step step step step isFailure

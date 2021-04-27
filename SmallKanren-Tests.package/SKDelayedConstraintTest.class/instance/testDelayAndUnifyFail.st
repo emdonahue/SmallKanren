@@ -4,4 +4,4 @@ testDelayAndUnifyFail
 
 	| g |
 	g := (x carCdrIn: [ :a :d | a === 1 & (d === Cons empty) ])  & (x === 1).
-	self assert: g step isEmptyStream
+	self assert: g step isFailure

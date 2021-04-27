@@ -4,4 +4,4 @@ testDelayAndUnifyFailure
 
 	| g |
 	g := (x carCdrIn: [ :a :d | SKGoal fail ]) & (x === (y cons: z)).
-	self assert: g step isEmptyStream
+	self assert: g step isFailure

@@ -7,6 +7,6 @@ firstStep: aRunner
 	self waitCheck
 		ifFalse: [ ^ SKStream failure ].
 	ans := self consumeAnswer: aRunner.	"tabledTopStep: self."
-	ans isEmptyStream
+	ans isFailure
 		ifTrue: [ ^ self ].
 	^ ans + self.

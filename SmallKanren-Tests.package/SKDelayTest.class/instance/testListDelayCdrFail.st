@@ -4,4 +4,4 @@ testListDelayCdrFail
 
 	| s |
 	s := (1 cons car: 2 cdrIn: [ :d | Error signal ]) run: SKState new.
-	self assert: s isEmptyStream
+	self assert: s isFailure

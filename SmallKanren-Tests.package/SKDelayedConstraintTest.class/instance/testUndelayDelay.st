@@ -11,5 +11,5 @@ testUndelayDelay
 	self assert: g step step step isDelayed.	"Fired one, either introduced new one or completed."
 	self assert: g step step step step isDelayed.	"Either removed one, or reintroduced one."
 	self assert: g step step step step step isState.	"Removed last."
-		self assert: g step step step step step step isEmptyStream	"Removed last."
+		self assert: g step step step step step step isFailure	"Removed last."
 		

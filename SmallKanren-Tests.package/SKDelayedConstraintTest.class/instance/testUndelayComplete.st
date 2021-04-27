@@ -11,4 +11,4 @@ testUndelayComplete
 	self assert: g step step step step step isDelayed.
 	self assert: g step step step step step step isComplete.
 	self assert: g step step step step step step step isState.
-	self assert: g step step step step step step step step isEmptyStream
+	self assert: g step step step step step step step step isFailure

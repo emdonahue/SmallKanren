@@ -4,4 +4,4 @@ testNonListDelayConsFail
 
 	| s |
 	s := (Object new carCdrIn: [ :d | SKGoal succeed ]) run: SKState new.
-	self assert: s isEmptyStream
+	self assert: s isFailure

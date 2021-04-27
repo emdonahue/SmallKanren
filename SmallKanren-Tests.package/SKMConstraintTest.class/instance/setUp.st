@@ -15,3 +15,5 @@ setUp
 	satisfied := SKConstraint satisfied.
 	unsatisfiable := SKConstraint unsatisfiable.
 	null := SKConstraint new.
+	s := SKState new.
+	failure := SKStream failure.

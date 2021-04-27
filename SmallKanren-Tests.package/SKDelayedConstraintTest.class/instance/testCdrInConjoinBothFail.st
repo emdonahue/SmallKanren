@@ -5,4 +5,4 @@ testCdrInConjoinBothFail
 	| g s |
 	g := (x car: 1 cdrIn: [ :d | SKGoal fail ]) & (x car: 1 cdrIn: [ :d | SKGoal fail ]).
 	s := (g run: SKState new) undelaystep.
-	self assert: s isEmptyStream
+	self assert: s isFailure

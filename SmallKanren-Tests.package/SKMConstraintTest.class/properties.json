@@ -20,7 +20,9 @@
 		"noSymbol",
 		"null",
 		"no3",
-		"no4"
+		"no4",
+		"s",
+		"failure"
 	],
 	"name" : "SKMConstraintTest",
 	"type" : "normal"

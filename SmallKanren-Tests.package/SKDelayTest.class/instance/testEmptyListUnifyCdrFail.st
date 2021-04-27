@@ -4,4 +4,4 @@ testEmptyListUnifyCdrFail
 
 	| s |
 	s := ((x isEmptyo) & (x car: 1 cdrIn: [ :d | x === d ])) runner stream.
-	self assert: s isEmptyStream
+	self assert: s isFailure

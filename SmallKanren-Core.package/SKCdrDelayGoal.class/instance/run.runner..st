@@ -16,7 +16,7 @@ run: aState runner: aRunner
 						ifTrue: [ (aState unify: v car with: car) suspendVar: (self constraint vars: {v cdr.}) ]
 						ifFalse: [ | grd |
 							grd := aState unify: v car with: car.
-							grd isEmptyStream
+							grd isFailure
 								ifTrue: grd
 								ifFalse: [ "grd undelay: (self constraint vars: {v cdr})" (self constraint vars: {v cdr.}) checkIn: grd runner: aRunner ] ] ] ].
 	^ SKStream failure.

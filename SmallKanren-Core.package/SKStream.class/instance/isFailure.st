@@ -1,3 +1,3 @@
 testing
-isEmptyStream
+isFailure
 	^ false

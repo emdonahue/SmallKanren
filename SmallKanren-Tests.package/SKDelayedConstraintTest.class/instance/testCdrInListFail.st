@@ -5,4 +5,4 @@ testCdrInListFail
 	| g s |
 	g := 1 cons car: 2 cdrIn: [ :d | x === d ].
 	s := g run: SKState new.
-	self assert: s isEmptyStream.
+	self assert: s isFailure.
