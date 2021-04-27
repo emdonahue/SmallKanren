@@ -9,16 +9,15 @@ testPrintOn
 					{xhash.
 					yhash}).
 	self
-		assert: (x =/= 1 , (y =/= 2)) asString
+		assert: (x =/= 2 , (y =/= 1)) asString
 		equals:
-			('\{\{<y:{2}>=/=2\} | \{<x:{1}>=/=1\}\}'
+			('\{<x:{2}>=/=2\} \{<y:{1}>=/=1\}'
 				format:
-					{xhash.
-					yhash}).
+					{yhash. xhash}).
 	self
-		assert: ((x cons: y cons) =/= (1 cons: 2 cons) , (x =/= 1)) asString
+		assert: ((x cons: y cons) =/= (1 cons: 2 cons), (x =/= 3)) asString
 		equals:
-			('\{\{<x:{1}>=/=1\} | \{\{<y:{2}>=/=2\}&\{<x:{1}>=/=1\}\}\}'
+			('\{\{<y:{2}>=/=2\}&\{<x:{1}>=/=1\}\} \{<x:{1}>=/=3\}'
 				format:
 					{xhash.
 					yhash}).

@@ -1,0 +1,3 @@
+accessing
+restOrSatisfied
+	^ rest.

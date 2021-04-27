@@ -1,3 +1,4 @@
 comparing
 = aDisequalityConstraint
-	^ super = aDisequalityConstraint and: [ rest = aDisequalityConstraint rest ]
+	self class = aDisequalityConstraint class ifFalse: [ ^ false ].
+	^ left = aDisequalityConstraint left & (right = aDisequalityConstraint right) & (rest = aDisequalityConstraint rest).

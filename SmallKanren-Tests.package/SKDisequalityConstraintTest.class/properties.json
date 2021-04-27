@@ -13,7 +13,8 @@
 		"one",
 		"two",
 		"xhash",
-		"yhash"
+		"yhash",
+		"satisfied"
 	],
 	"name" : "SKDisequalityConstraintTest",
 	"type" : "normal"

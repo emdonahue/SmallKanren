@@ -22,7 +22,8 @@
 		"no3",
 		"no4",
 		"s",
-		"failure"
+		"failure",
+		"yn2"
 	],
 	"name" : "SKMConstraintTest",
 	"type" : "normal"

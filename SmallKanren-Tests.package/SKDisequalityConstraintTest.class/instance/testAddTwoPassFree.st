@@ -4,5 +4,5 @@ testAddTwoPassFree
 
 	| ySymbolo |
 	ySymbolo := (y =/= 2 run: (x =/= 1 run: SKState new)) unify: x with: y.
-	self assert: (ySymbolo constraints at: y) equals: y =/= 2 , (y =/= 1).
-	self assert: (ySymbolo constraints at: x) equals: SKSatisfiedConstraint singleton
+	self assert: (ySymbolo constraints at: y) equals: y =/= 1, (y =/= 2).
+	self assert: (ySymbolo constraints at: x) equals: satisfied.
