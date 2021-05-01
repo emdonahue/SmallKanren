@@ -1,4 +1,4 @@
 reifying
 skReify: aConstraintStore
-	self halt.
+	<todo> "reifier probably needs to thread more information through"
 	^ (super skReify: aConstraintStore ) next: (aConstraintStore reify: next)

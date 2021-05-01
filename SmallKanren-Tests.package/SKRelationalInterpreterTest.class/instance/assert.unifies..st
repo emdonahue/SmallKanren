@@ -5,4 +5,4 @@ assert: a unifies: b
 	v := SKVar new.
 	{ u === a.
 	v === b.
-	u === v } asGoal runner next peek isState.
+	u === v } asGoal runtime next peek isState.

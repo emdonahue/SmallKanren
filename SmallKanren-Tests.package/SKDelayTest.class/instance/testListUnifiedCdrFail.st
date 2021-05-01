@@ -4,5 +4,5 @@ testListUnifiedCdrFail
 
 	| s |
 	self skip.
-	s := (x === 1 cons & (x car: 2 cdrIn: [ :d | Error signal ])) runner stream.
+	s := (x === 1 cons & (x car: 2 cdrIn: [ :d | Error signal ])) runtime stream.
 	self assert: s isFailure.

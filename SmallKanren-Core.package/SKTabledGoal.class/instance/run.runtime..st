@@ -1,8 +1,8 @@
 running
-run: aState runner: aRunner
+run: aState runtime: aRunner
 	"hack"
 
-	<type: #SKPackage type: #SKRunner returns: #SKStream>
+	<type: #SKPackage type: #SKRuntime returns: #SKStream>
 	<todo>
 	"inputs should reify here to become ground keys for cache"
 	"(self copy inputs: (inputs add: (aState reify: outputs third)))"

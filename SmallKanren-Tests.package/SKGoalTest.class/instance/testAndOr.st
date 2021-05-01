@@ -4,7 +4,7 @@ testAndOr
 	ss := {{{(x === 1).
 	(x === 2)}}.
 	{{(y === 1).
-	(y === 2)}}} asGoal runner runAll.
+	(y === 2)}}} asGoal runtime runAll.
 	self assert: ss size equals: 4.
 	"Use prime factorization to check all combinations."
 	self

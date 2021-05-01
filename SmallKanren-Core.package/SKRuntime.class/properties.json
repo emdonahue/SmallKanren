@@ -10,6 +10,6 @@
 		"queryVars",
 		"tables"
 	],
-	"name" : "SKRunner",
+	"name" : "SKRuntime",
 	"type" : "normal"
 }

@@ -1,0 +1,3 @@
+testing
+isLazy
+	^ constraints isLazy.

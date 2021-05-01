@@ -5,4 +5,4 @@ step: runner
 	| vars |
 	
 	vars := (1 to: block argumentCount) collect: [ :_ | SKVar new ].
-	^ (block valueWithArguments: vars) asGoal run: state runner: runner
+	^ (block valueWithArguments: vars) asGoal run: state runtime: runner

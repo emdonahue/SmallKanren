@@ -1,7 +1,7 @@
 and
 testAndAnds
 	| ss |
-	ss := (x === 1 & (y === 2) & (z === 3 & (x === 1))) runner runAll.
+	ss := (x === 1 & (y === 2) & (z === 3 & (x === 1))) runtime runAll.
 	self assert: ss size equals: 1.
 	self assert: ss first => x equals: 1.
 	self assert: ss first => y equals: 2.

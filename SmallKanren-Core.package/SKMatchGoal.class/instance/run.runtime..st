@@ -1,5 +1,5 @@
 running
-run: aState runner: aRunner
+run: aState runtime: aRunner
 	<todo>
 	"make this polymorphic, instead of checking the variable and generating the unneeded constraint"
 	| term |

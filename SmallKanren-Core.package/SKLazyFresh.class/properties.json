@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKConstraint",
+	"category" : "SmallKanren-Core-Constraints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"var",
+		"block"
+	],
+	"name" : "SKLazyFresh",
+	"type" : "normal"
+}

@@ -1,7 +1,7 @@
 classic tabling
 testTableDisjoined
 	| r as |
-	r := [ :x | (self path: #a to: x) | (self path: #a to: x) ] asGoal runner.
+	r := [ :x | (self path: #a to: x) | (self path: #a to: x) ] asGoal runtime.
 	as := r run.
 	self assert: as size equals: 6.
 	self assert: (as includes: #a cons).

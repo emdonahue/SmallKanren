@@ -3,5 +3,5 @@ testConstraintsRunModel
 	self
 		assert:
 			{x isSymbolo.
-			x isNumbero} asConde runner runAll size
+			x isNumbero} asConde runtime runAll size
 		equals: 2

@@ -3,7 +3,7 @@ testTabledBind
 	| r |
 	r := [[ :a :b | 
 	a === 1 & (b === 2) & ((self path: a to: b) | (self path: a to: b))
-		& (b === 2) ] ] asGoal runner.
+		& (b === 2) ] ] asGoal runtime.
 	r tables
 		at: #path
 		put:
