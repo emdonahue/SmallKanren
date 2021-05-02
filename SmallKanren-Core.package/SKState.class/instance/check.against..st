@@ -2,4 +2,4 @@ constraining
 check: aVar against: aValue
 	"Runs when aVar is unified with aValue, to check constraints. Fires the constraint to perform any necessary modifications, then removes the constraint, since after it has fired we no longer need to track it."
 
-	^ constraints check: aVar against: aValue in: self
+	^ constraints check: aValue remove: aVar in: self

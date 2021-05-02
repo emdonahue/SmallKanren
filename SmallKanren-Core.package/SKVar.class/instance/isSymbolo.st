@@ -1,3 +1,3 @@
 constraining
 isSymbolo
-	^ SKCGoal new var: self; constraint: SKConstraint symbolo.
+	^ SKConstraintGoal new var: self; constraint: SKConstraint symbolo.

@@ -1,15 +1,20 @@
-running
-setUp
-	'SmallKanren-Core' asPackage enforceContractC.
-	x := SKVar new tag: #x.
-	y := SKVar new tag: #y.
-	multi := SKMultiConstraint new
-		type: SKNumberConstraint singleton;
-		disequality: (x =/= 1) asConstraint;
-		exclusion: (x absento: 2) asConstraint.
-		xhash := x hash asString copyFrom: 1 to: 4.
-		satisfied := SKConstraint satisfied.
-		unsatisfiable := SKConstraint unsatisfiable.
-		symbolo := SKConstraint symbolo.
-		numbero := SKConstraint numbero.
-	
+tests
+setUp 
+	x := SKVar tag: #x.
+	y := SKVar tag: #y.
+	xn1 := (x=/=1) constraint.
+	xn2 := (x=/=2) constraint.
+	yn1 := (y=/=1) constraint.
+	yn2 := (y=/=2) constraint.
+	no1 := SKConstraint absento: 1.
+	no2 := SKConstraint absento: 2.
+	no3 := SKConstraint absento: 3.
+	no4 := SKConstraint absento: 4.
+	noSymbol := SKConstraint absento: #symbol.
+	symbolo := SKConstraint symbolo.
+	numbero := SKConstraint numbero.
+	satisfied := SKConstraint satisfied.
+	unsatisfiable := SKConstraint unsatisfiable.
+	null := SKConstraint new.
+	s := SKState new.
+	failure := SKStream failure.

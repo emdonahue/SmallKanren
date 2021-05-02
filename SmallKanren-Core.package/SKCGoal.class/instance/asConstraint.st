@@ -1,3 +1,0 @@
-converting
-asConstraint
-	^ self constraint.

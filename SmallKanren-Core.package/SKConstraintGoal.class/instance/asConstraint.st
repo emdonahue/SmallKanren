@@ -1,4 +1,3 @@
-running
+converting
 asConstraint
-	"Each goal must be able to assemble an appropriate constraint."
-	self subclassResponsibility 
+	^ self constraint.

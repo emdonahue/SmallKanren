@@ -1,3 +1,0 @@
-running
-constraint
-	^ SKNumberConstraint singleton

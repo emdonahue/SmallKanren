@@ -7,8 +7,8 @@ testDoubleConstraint
  ] asGoal run
 		do: [ :cc | 
 		(cc as: Array)	bind: [ :c1 :c2  | 
-			self assert: ((c1 asGoalOn: x) & (c2 asGoalOn: x)) fails.
-			self assert: (y === x & (c1 asGoalOn: y) & (c2 asGoalOn: x)) fails.
-			self assert: (x === y & (c1 asGoalOn: y) & (c2 asGoalOn: x)) fails.
-			self assert: ((c1 asGoalOn: y) & (c2 asGoalOn: x) & (x === y)) fails.
-			self assert: ((c1 asGoalOn: y) & (c2 asGoalOn: x) & (y === x)) fails ]   ]
+			self assert: ((c1 asGoal: x) & (c2 asGoal: x)) fails.
+			self assert: (y === x & (c1 asGoal: y) & (c2 asGoal: x)) fails.
+			self assert: (x === y & (c1 asGoal: y) & (c2 asGoal: x)) fails.
+			self assert: ((c1 asGoal: y) & (c2 asGoal: x) & (x === y)) fails.
+			self assert: ((c1 asGoal: y) & (c2 asGoal: x) & (y === x)) fails ]   ]

@@ -1,3 +1,3 @@
 constraining
 absento: aValue
-	^ SKCGoal new var: self; constraint: (SKConstraint absento: aValue).
+	^ SKConstraintGoal new var: self; constraint: (SKConstraint absento: aValue).
