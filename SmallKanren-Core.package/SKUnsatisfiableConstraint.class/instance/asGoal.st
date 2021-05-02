@@ -1,0 +1,3 @@
+converting
+asGoal
+	^ SKGoal fail.

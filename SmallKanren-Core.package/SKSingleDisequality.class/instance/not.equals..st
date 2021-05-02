@@ -1,3 +1,3 @@
 testing
-dis: aVar equals: aVal
+not: aVar equals: aVal
 	^ left = aVar & (right = aVal).

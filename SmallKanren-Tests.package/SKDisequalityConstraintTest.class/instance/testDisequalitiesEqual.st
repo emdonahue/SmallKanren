@@ -4,5 +4,5 @@ testDisequalitiesEqual
 
 	self assert: (x =/= 1) asConstraint equals: (x =/= 1) asConstraint.
 	self deny: (x =/= 1) asConstraint = (y=/=2) asConstraint.
-	self deny: (x =/= 1) asConstraint = SKSatisfiedConstraint singleton.
+	self deny: (x =/= 1) asConstraint = satisfied.
 	self assert: ((x cons: y cons) =/= (1 cons: 2 cons)) asConstraint equals: ((x cons: y cons) =/= (1 cons: 2 cons)) asConstraint

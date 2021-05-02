@@ -1,0 +1,3 @@
+converting
+asConstraint
+	^ SKConstraint unsatisfiable.

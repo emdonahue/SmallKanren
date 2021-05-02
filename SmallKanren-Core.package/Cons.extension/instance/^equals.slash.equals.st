@@ -1,3 +1,5 @@
 *SmallKanren-Core
 =/= aCons
-	^ self ifEmpty: [ aCons skDisunifyEmptyCons ] ifNotEmpty: [ aCons skDisunifyCons: self ]
+	<todo> "remove along with disunifycons, disunifyemptycons"
+	^ super =/= aCons.
+	"^ self ifEmpty: [ aCons skDisunifyEmptyCons ] ifNotEmpty: [ aCons skDisunifyCons: self ]"

@@ -10,3 +10,5 @@ setUp
 	xhash := x hash asString copyFrom: 1 to: 4.
 	yhash := y hash asString copyFrom: 1 to: 4.
 	'SmallKanren-Core' asPackage enforceContractC.
+	failure := SKStream failure.
+	state := SKState new.

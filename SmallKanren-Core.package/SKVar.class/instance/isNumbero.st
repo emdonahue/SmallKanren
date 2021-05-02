@@ -1,3 +1,3 @@
-types
+constraining
 isNumbero
-	^ SKNumberGoal new variable: self
+	^ SKCGoal new var: self; constraint: SKConstraint numbero.

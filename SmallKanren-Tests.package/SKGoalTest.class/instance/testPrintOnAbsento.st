@@ -1,3 +1,3 @@
 printing
 testPrintOnAbsento
-	self assert: (x excludes: 1) asString equals: ('<x:{1}> excludes: 1' format: {xhash})
+	self assert: (x absento: 1) asString equals: ('<x:{1}> excludes: 1' format: {xhash})

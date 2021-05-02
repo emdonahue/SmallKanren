@@ -1,3 +1,3 @@
 constraining
 absento: aValue
-	^ self excludes: aValue
+	^ SKCGoal new var: self; constraint: (SKConstraint absento: aValue).
