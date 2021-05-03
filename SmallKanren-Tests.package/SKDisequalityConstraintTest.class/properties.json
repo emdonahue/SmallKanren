@@ -16,7 +16,8 @@
 		"yhash",
 		"satisfied",
 		"failure",
-		"state"
+		"state",
+		"symbolo"
 	],
 	"name" : "SKDisequalityConstraintTest",
 	"type" : "normal"

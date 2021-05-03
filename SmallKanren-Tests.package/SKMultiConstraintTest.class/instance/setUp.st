@@ -2,10 +2,10 @@ tests
 setUp 
 	x := SKVar tag: #x.
 	y := SKVar tag: #y.
-	xn1 := (x=/=1) constraint.
-	xn2 := (x=/=2) constraint.
-	yn1 := (y=/=1) constraint.
-	yn2 := (y=/=2) constraint.
+	xn1 := (x=/=1).
+	xn2 := (x=/=2).
+	yn1 := (y=/=1).
+	yn2 := (y=/=2).
 	no1 := SKConstraint absento: 1.
 	no2 := SKConstraint absento: 2.
 	no3 := SKConstraint absento: 3.

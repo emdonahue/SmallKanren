@@ -1,5 +1,5 @@
-simplifying
+accessing
 simplifiedByAbsento: anAbsento
-	^ (anAbsento isAbsent: right) 
+	^ (anAbsento isAbsent: self val) 
 		ifTrue: SKConstraint satisfied
 		ifFalse: self

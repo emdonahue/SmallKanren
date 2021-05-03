@@ -1,3 +1,3 @@
-simplifying
+converting
 simplify: aConstraint
 	^ aConstraint simplifiedByDisequality: self.

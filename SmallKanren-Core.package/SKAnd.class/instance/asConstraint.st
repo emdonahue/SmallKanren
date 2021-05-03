@@ -1,3 +1,3 @@
 converting
 asConstraint
-	^ left asConstraint & right asConstraint.
+	^ left asConstraint & right.

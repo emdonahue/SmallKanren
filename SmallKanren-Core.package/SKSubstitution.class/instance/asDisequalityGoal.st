@@ -1,0 +1,3 @@
+disequality
+asDisequalityGoal
+	^ SKGoal fail.

@@ -1,3 +1,3 @@
 testing
 dis: aVar equals: aVal 	
-	^ SKDisequalityPair new left: aVar; right: aVal.
+	^ (SKSubstitution empty unify: aVar noWalk: aVal) asDisequality.

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKDisequality",
+	"category" : "SmallKanren-Core-Constraints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"first",
+		"rest"
+	],
+	"name" : "SKDisequalityConjoined",
+	"type" : "normal"
+}
