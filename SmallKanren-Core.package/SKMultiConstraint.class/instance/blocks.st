@@ -1,3 +1,0 @@
-accessing
-blocks
-	^ delayed blocks

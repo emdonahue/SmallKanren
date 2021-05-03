@@ -1,7 +1,7 @@
 tests
 testMergeTypes
-	self assert: (symbolo merge2: symbolo) equals: symbolo.
-	self assert: (symbolo merge2: numbero) equals: unsatisfiable.
-	self assert: (numbero merge2: symbolo) equals: unsatisfiable.
-	self assert: (numbero merge2: numbero) equals: numbero.
+	self assert: (symbolo merge: symbolo) equals: symbolo.
+	self assert: (symbolo merge: numbero) equals: unsatisfiable.
+	self assert: (numbero merge: symbolo) equals: unsatisfiable.
+	self assert: (numbero merge: numbero) equals: numbero.
 	

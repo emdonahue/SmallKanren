@@ -1,3 +1,3 @@
 accessing
-absent: aTerm
-	excluded := aTerm
+absent: anObject
+	absent := anObject

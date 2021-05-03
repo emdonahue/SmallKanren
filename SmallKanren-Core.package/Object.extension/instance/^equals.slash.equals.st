@@ -1,4 +1,4 @@
 *SmallKanren-Core
 =/= aVar
 	"^ aVar skDisunifyPrim: self"
-	^ (SKSubstitution empty disunify: self with: aVar) asDisequality asGoal.
+	^ (SKSubstitution empty unify: self noWalk: aVar) asDisequality asGoal.

@@ -1,3 +1,3 @@
 accessing
 rest
-	^ next
+	^ rest

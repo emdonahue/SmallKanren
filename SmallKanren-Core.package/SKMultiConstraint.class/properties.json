@@ -1,15 +1,13 @@
 {
-	"commentStamp" : "EvanDonahue 5/31/2017 20:43",
+	"commentStamp" : "",
 	"super" : "SKConstraint",
 	"category" : "SmallKanren-Core-Constraints",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"type",
-		"disequality",
-		"exclusion",
-		"delayed"
+		"first",
+		"rest"
 	],
 	"name" : "SKMultiConstraint",
 	"type" : "normal"

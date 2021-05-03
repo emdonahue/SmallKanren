@@ -1,7 +1,5 @@
 printing
 printOn: aStream
-	type printOn: aStream .
-	aStream nextPutAll: ' & '.
-	disequality printOn: aStream.
-	aStream nextPutAll: ' & '.
-	exclusion printOn: aStream
+	first printOn: aStream.
+	aStream nextPutAll: ' '.
+	^ rest printOn: aStream.

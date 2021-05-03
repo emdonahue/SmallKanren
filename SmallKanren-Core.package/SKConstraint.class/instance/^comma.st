@@ -1,3 +1,3 @@
 debugging
 , aConstraint
-	^ SKMConstraint first: self rest: aConstraint.
+	^ SKMultiConstraint first: self rest: aConstraint.

@@ -1,4 +1,4 @@
 merging
 mergeDisjoinedAbsento: anAbsento
 	"Destructure self and append it to anAbsento."
-	^ next mergeDisjoinedAbsento: (self class absent: excluded rest: anAbsento).
+	^ rest mergeDisjoinedAbsento: (self class absent: absent rest: anAbsento).

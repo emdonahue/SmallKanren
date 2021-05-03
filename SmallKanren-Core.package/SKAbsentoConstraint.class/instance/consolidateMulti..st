@@ -1,7 +1,7 @@
 merging
 consolidateMulti: aMulti
-	| s r |
+	<todo> "Can this be further factored so we don't have to deal with multi logic here."
+	"If the multi is not headed by an absento, treat it normally."
 	aMulti first isAbsento ifFalse: [ ^ super consolidateMulti: aMulti ].
-	s := self mergeAbsento: aMulti first.
-	r := aMulti rest consolidatedBy: self. "If this constraint still has information, consolidate the rest of the multi."
-	^ SKMConstraint first: s rest: r. "If both have changed, the consolidating constraint has already been inserted later in the list so simply append the current constraint."
+	"Otherwise, merge with the heading absento and append to the consolidated rest."
+	^ (aMulti rest consolidatedBy: self) add: (self mergeAbsento: aMulti first). 

@@ -1,3 +1,3 @@
 comparing
 hash
-	^ type hash xor: disequality hash
+	^ first hash xor: rest hash.

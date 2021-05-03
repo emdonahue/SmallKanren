@@ -1,4 +1,4 @@
-comparing
-= aDisequalityConstraint
-	self class = aDisequalityConstraint class ifFalse: [ ^ false ].
-	^ left = aDisequalityConstraint left & (right = aDisequalityConstraint right) & (rest = aDisequalityConstraint rest).
+debugging
+= aDisequality 	
+	self class = aDisequality asConstraint class ifFalse: [ ^ false ].
+	^ (self subsumes: aDisequality asConstraint) & (aDisequality asConstraint subsumes: self).

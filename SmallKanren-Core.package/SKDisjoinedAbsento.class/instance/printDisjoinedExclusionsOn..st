@@ -1,5 +1,5 @@
 printing
 printDisjoinedExclusionsOn: aStream
- excluded printOn: aStream.
+ absent printOn: aStream.
 	aStream nextPut: $,.
-	next printDisjoinedExclusionsOn: aStream
+	rest printDisjoinedExclusionsOn: aStream

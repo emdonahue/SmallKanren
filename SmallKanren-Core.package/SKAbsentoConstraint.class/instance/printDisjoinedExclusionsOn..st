@@ -1,3 +1,3 @@
 printing
 printDisjoinedExclusionsOn: aStream
-	excluded printOn: aStream.
+	absent printOn: aStream.

@@ -1,3 +1,3 @@
 accessing
 rest: anAbsento
-	next := anAbsento 
+	rest := anAbsento 

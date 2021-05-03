@@ -1,5 +1,5 @@
 merging
 consolidatedBy: aConstraint
-	<todo> "Single and disjoined absentos should talk to see who adds to who, eg singles should append to multiples not vice versa."
+	"If aConstraint is an absento, merge these constraints directly together into a disjoined absento. Otherwise merge using the standard multiconstraint system."
 	aConstraint isAbsento ifFalse: [ ^ super consolidatedBy: aConstraint ].
-	 ^ aConstraint mergeAbsento: self.
+	^ aConstraint mergeAbsento: self.

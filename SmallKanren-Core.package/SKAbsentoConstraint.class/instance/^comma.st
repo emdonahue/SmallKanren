@@ -1,5 +1,6 @@
-reducing
+debugging
 , aConstraint
+	"Creates a multi constraint, although if aConstraint is absento just merges them into a disjoined."
 	^ aConstraint isAbsento 
-		ifTrue: (SKDisjoinedAbsento absent: excluded rest: aConstraint) 
-		ifFalse: (SKMConstraint first: self rest: aConstraint).
+		ifTrue: (SKDisjoinedAbsento absent: absent rest: aConstraint) 
+		ifFalse: (SKMultiConstraint first: self rest: aConstraint).

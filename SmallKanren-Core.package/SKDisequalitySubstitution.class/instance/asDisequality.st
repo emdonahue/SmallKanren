@@ -1,5 +1,5 @@
 disequality
 asDisequality
-	<returns:#(OrC SKSingleDisequality SKConjoinedDisequalities)>
+	<returns:#(OrC #SKDisequalityPair SKConjoinedDisequalities)>
 	"Because this substitution builds disequalities as it goes, at the end it can simply return the collected constraints."
-	^ deltas
+	^ deltas and: var disequality: val.

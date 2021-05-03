@@ -1,4 +1,4 @@
 reifying
 skReify: aConstraintStore
 	<todo> "fix constraint reifier"
-	^ self class new excluded: (aConstraintStore reify: excluded)
+	^ self class new absent: (aConstraintStore reify: absent)

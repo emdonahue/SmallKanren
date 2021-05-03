@@ -1,1 +1,0 @@
-When multiple different types of constraints are applied to the same variable, this manages their joint interactions.

@@ -1,3 +1,0 @@
-testing
-isDisjoinedDisequality
-	^ false

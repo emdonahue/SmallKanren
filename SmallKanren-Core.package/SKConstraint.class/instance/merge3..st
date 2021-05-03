@@ -8,6 +8,6 @@ merge3: aConstraint
 	c isSatisfied ifTrue: [ ^ s ].
 	s isSatisfied ifTrue: [ ^ c ].
 	r := s consolidatedBy: c.
-	r == s ifTrue: [ ^ SKMConstraint first: c rest: s ].
+	r == s ifTrue: [ ^ SKMultiConstraint first: c rest: s ].
 	^ r.
 	"^ SKMConstraint first: c rest: s."

@@ -1,5 +1,4 @@
 comparing
-= aMultiConstraint
-	aMultiConstraint class = self class
-		ifFalse: [ ^ false ].
-	^ type = aMultiConstraint type & (disequality = aMultiConstraint disequality) & (exclusion = aMultiConstraint exclusion)
+= aConstraint
+	aConstraint isMultiConstraint ifFalse: [ ^ false ].
+	^ first = aConstraint first and: [ rest = aConstraint rest ].

@@ -1,3 +1,0 @@
-disequality
-disjoinDisequality: aDisequalityConstraint
-	^ aDisequalityConstraint orDisequality: self

@@ -1,4 +1,4 @@
 debugging
 = aDisjoinedExclusion
-	^ (super = aDisjoinedExclusion ) and: [ next = aDisjoinedExclusion next ]
-	
+	^ super = aDisjoinedExclusion
+		and: [ rest = aDisjoinedExclusion rest ]

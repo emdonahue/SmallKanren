@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"deltas",
-		"substitution"
+		"substitution",
+		"var",
+		"val"
 	],
 	"name" : "SKDisequalitySubstitution",
 	"type" : "normal"

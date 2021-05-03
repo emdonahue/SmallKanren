@@ -1,3 +1,6 @@
 simplifying
 simplifiedByAbsento: anAbsento
-	(anAbsento excludes: excluded) ifTrue: [ ^ SKConstraint satisfied ].
+	"If anAbsento already contains our term, we are redundant."
+	^ (anAbsento simplifiesAbsento: absent) 
+		ifTrue: SKConstraint satisfied
+		ifFalse: self.

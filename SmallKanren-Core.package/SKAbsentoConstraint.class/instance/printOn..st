@@ -1,4 +1,4 @@
 printing
 printOn: aStream
-	aStream nextPutAll: 'excludes: '.
-	excluded printOn: aStream
+	aStream nextPutAll: 'absento: '.
+ self printDisjoinedExclusionsOn: aStream.

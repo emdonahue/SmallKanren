@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"excluded"
+		"absent"
 	],
 	"name" : "SKAbsentoConstraint",
 	"type" : "normal"

@@ -1,3 +1,3 @@
 checking
 disunify: aVar with: aVal in: aSubstitution
-	^ (aSubstitution disunify: aVar with: aVal) disunify: rest.
+	^ (aSubstitution unify: aVar noWalk: aVal) disunify: rest.
