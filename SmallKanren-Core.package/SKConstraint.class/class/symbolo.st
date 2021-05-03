@@ -1,3 +1,3 @@
 as yet unclassified
 symbolo
-	^ SKSymbolConstraint singleton.
+	^ SKSymbolo singleton.

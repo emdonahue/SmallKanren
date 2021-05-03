@@ -1,3 +1,3 @@
 as yet unclassified
 numbero
-	^ SKNumberConstraint singleton.
+	^ SKNumbero singleton.

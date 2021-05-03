@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "EvanDonahue 4/12/2017 10:45",
-	"super" : "SKTypeConstraint",
+	"super" : "SKTypeo",
 	"category" : "SmallKanren-Core-Constraints",
 	"classinstvars" : [
 		"singleton"
@@ -8,6 +8,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SKSymbolConstraint",
+	"name" : "SKSymbolo",
 	"type" : "normal"
 }

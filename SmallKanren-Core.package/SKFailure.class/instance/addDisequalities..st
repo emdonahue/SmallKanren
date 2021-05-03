@@ -1,0 +1,3 @@
+disequality
+addDisequalities: aState 
+	^ aState.

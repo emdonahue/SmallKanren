@@ -1,13 +1,11 @@
 {
-	"commentStamp" : "EvanDonahue 5/8/2017 14:05",
+	"commentStamp" : "",
 	"super" : "SKConstraint",
 	"category" : "SmallKanren-Core-Constraints",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"absent"
-	],
-	"name" : "SKAbsentoConstraint",
+	"instvars" : [ ],
+	"name" : "SKDisequality",
 	"type" : "normal"
 }

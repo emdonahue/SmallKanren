@@ -1,3 +1,3 @@
 accessing
 constraint: aConstraint 
-	^ aConstraint === SKSymbolConstraint singleton | (aConstraint === SKNumberConstraint singleton)
+	^ aConstraint === SKSymbolo singleton | (aConstraint === SKNumbero singleton)

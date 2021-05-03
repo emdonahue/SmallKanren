@@ -1,3 +1,3 @@
 constraining
 absento: abs 
-	^ SKAbsentoConstraint new absent: abs.
+	^ SKAbsento new absent: abs.

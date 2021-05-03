@@ -1,5 +1,5 @@
 printing
 testPrintOn
-	self assert: SKNumberConstraint singleton asString equals: 'isNumber'.
-	self assert: SKSymbolConstraint singleton asString equals: 'isSymbol'.
+	self assert: SKNumbero singleton asString equals: 'isNumber'.
+	self assert: SKSymbolo singleton asString equals: 'isSymbol'.
 	

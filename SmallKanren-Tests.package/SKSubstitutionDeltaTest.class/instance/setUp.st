@@ -7,4 +7,4 @@ setUp
 	x1 := SKDisequalityPair new
 		left: x;
 		right: 1.
-	y2x1 := x1 and: y disequality: 2.
+	y2x1 := x1 and: y disequals: 2.
