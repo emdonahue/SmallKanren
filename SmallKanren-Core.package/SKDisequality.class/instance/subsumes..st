@@ -1,3 +1,3 @@
-debugging
+testing
 subsumes: aDisequality
 	self subclassResponsibility.

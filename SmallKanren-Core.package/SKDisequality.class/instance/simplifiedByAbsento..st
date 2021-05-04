@@ -1,4 +1,4 @@
-accessing
+simplifying
 simplifiedByAbsento: anAbsento
 	^ (anAbsento isAbsent: self val) 
 		ifTrue: SKConstraint satisfied
