@@ -1,3 +1,3 @@
 unifying
-unify: left with: right
-	^ self unify: (substitution walk: left) noWalk: (substitution walk: right).
+unify: aVar with: aVal
+	^ self unify: (substitution walk: aVar) noWalk: (substitution walk: aVal).

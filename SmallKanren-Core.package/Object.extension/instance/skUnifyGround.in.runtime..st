@@ -1,5 +1,5 @@
 *SmallKanren-Core
-skUnifyGround: aGroundVal in: aState
+skUnifyGround: aGroundVal in: aState runtime: aRuntime
 	"Ground terms simply unify with equality."
 	^ self = aGroundVal
 		ifTrue: aState

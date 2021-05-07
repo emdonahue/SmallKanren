@@ -1,4 +1,4 @@
-unification
+unifying
 skOccurs: aVar in: aSubstitution
 	"Checks whether aVar occurs in the structure bound to self, which is a var."
 	<type: #SKVar type: #SKSubstitution returns: #(OrC SKSubstitution SKFailure)>

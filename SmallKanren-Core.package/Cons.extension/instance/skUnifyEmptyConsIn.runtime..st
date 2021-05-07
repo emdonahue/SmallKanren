@@ -1,3 +1,3 @@
 *SmallKanren-Core
-skUnifyEmptyConsIn: aState
+skUnifyEmptyConsIn: aState runtime: aRuntime
 	^ self ifEmpty: aState ifNotEmpty: [ SKStream failure ].
