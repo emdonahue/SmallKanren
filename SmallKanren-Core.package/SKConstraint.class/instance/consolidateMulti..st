@@ -1,6 +1,8 @@
 merging
 consolidateMulti: aMulti
-	| s r |
+	| s r c |
+	c := self compress: aMulti first.
+	c == self ifFalse: [ ^ (aMulti rest consolidatedBy: self) add: c ].
 	s := self simplify: aMulti first. "Simplify the first constraint in the multi constraint."
 	s = self class satisfied ifTrue: [ ^ aMulti rest consolidate: self ]. "If it is redundant, drop it."
 	s = self class unsatisfiable ifTrue: [ ^ s ]. "If it is unsatisfiable, stop now."

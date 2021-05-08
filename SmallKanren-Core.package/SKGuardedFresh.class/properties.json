@@ -1,15 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "SmallKanren-Tests",
+	"super" : "SKConstraint",
+	"category" : "SmallKanren-Core-Constraints",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"x",
-		"failure",
-		"r"
+		"var",
+		"block"
 	],
-	"name" : "SKLazyFreshTest",
+	"name" : "SKGuardedFresh",
 	"type" : "normal"
 }

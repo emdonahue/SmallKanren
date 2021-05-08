@@ -10,4 +10,4 @@ check: aValue remove: aVar in: aState runtime: aRuntime
 	c := self at: aVar.
 	s := c check: aValue remove: aVar in: aState.
 	s isFailure ifTrue: [ ^ s ].
-	^ c eager: aVar val: aValue in: s.
+	^ c eager: aVar val: aValue in: s runtime: aRuntime.

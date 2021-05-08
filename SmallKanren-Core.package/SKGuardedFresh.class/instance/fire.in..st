@@ -1,4 +1,4 @@
 checking
-checkAgainst: aVal in: aState
+fire: aVal in: aState
 	(aVal isCons and: [ aVal isNotEmpty ]) ifFalse: [ ^ SKStream failure ].
 	^ aState
