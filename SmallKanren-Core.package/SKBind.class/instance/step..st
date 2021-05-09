@@ -1,3 +1,3 @@
 subclassresponsibility
 step: aSKRunner 
-	^ (stream step: aSKRunner) bind: goal runner: aSKRunner 
+	^ (stream step: aSKRunner) bind: goal runtime: aSKRunner 

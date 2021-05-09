@@ -1,3 +1,3 @@
 as yet unclassified
 consumeAnswer: aRunner
-	^ (stream consumeAnswer: aRunner) bind: goal runner: aRunner
+	^ (stream consumeAnswer: aRunner) bind: goal runtime: aRunner

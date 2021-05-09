@@ -7,9 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"pattern",
-		"vars",
-		"block"
+		"first",
+		"rest"
 	],
-	"name" : "SKGuardedFresh",
+	"name" : "SKGuardedFreshConjoined",
 	"type" : "normal"
 }
