@@ -1,6 +1,8 @@
 tests
 testMultiEager
-	self assert: (((s 
-		add: x constraint: (SKGuardedFresh new block: [ :a :d | a === 1 ])) 
-		add: x constraint: (SKGuardedFresh new block: [ :a :d | (d === 2) ])) 
-			eager: r) => x equals: (1 cons: 2).
+	| st |
+	st := ((((x match2: #(_ | _) o: [ :a :d | a === 1 ])
+			& (x match2: #(_ | _) o: [ :a :d | d === 2 ])) run: s runtime: r) 
+		eager: r).
+	self assert: st => x equals: (1 cons: 2).
+	self assert: st constraints isEmpty.
