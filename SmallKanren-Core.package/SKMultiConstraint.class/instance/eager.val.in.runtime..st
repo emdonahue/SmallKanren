@@ -1,3 +1,3 @@
 laziness
 eager: aVar val: aVal in: aState runtime: aRuntime
-	^ aState.
+	^ self lazyConstraint eager: aVar val: aVal in: aState runtime: aRuntime.

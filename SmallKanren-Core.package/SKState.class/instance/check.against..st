@@ -1,3 +1,4 @@
 debugging
 check: aVar against: aVal 
-	^ self check: aVar against: aVal runtime: SKRuntime new.
+	aVal isSKVar ifTrue: [ ^ self checkVar: aVal extend: aVar runtime: SKRuntime new ].
+	^ self check: aVal extend: aVar runtime: SKRuntime new
