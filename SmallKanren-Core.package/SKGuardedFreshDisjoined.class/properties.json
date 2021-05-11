@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "SKConstraint",
+	"super" : "SKGuardedFresh",
 	"category" : "SmallKanren-Core-Constraints",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"pattern"
+		"clauses"
 	],
-	"name" : "SKGuardedFresh",
+	"name" : "SKGuardedFreshDisjoined",
 	"type" : "normal"
 }

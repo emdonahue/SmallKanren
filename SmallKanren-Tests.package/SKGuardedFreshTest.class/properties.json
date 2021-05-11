@@ -9,7 +9,9 @@
 		"x",
 		"failure",
 		"r",
-		"s"
+		"s",
+		"y",
+		"z"
 	],
 	"name" : "SKGuardedFreshTest",
 	"type" : "normal"

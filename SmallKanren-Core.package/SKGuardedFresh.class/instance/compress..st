@@ -1,3 +1,3 @@
 merging
 compress: aConstraint
-	aConstraint isGuardedFresh ifTrue: [ ^ SKGuardedFreshConjoined first: self rest: aConstraint ]. 
+	aConstraint isGuardedFresh ifTrue: [ ^ aConstraint add: self ]. 

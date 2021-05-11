@@ -1,10 +1,9 @@
 tests
 testUnify 	
-	"self assert: (x pairo: [ :a :d | a === 1 & (d === 2) ]) & (x == (1 cons: 2)) => x equals: (1 cons: 2)."
-	| st |
-	st := ((x match2: #(_ | _) o: [ :a :d | a === 1 & (d === 2) ]) run: s runtime: r).
-	self assert: (st unify: x with: 2) equals: failure.
-	self assert: (st unify: x with: (2 cons: 2) runtime: r) equals: failure.
-	self assert: (st unify: x with: (1 cons: 3) runtime: r) equals: failure.
-	self assert: (st unify: x with: (1 cons: 2) runtime: r) isState.
-	self assert: (st unify: x with: (1 cons: 2) runtime: r) substitution size equals: 1.
+	self assert: (((x match2: #(_ | _) o: [ :a :d | a === 1 & (d === 2) ]) run: s) unify: x with: 1) equals: failure.
+	self assert: (((x match2: #(_ | _) o: [ :a :d | a === 1 & (d === 2) ]) run: s) unify: x with: (y cons: z)) => (y cons: z) equals: (1 cons: 2).
+	self assert: (((x match2: #(_ _) o: [ :a :d | a === 1 & (d === 2) ]) run: s) unify: x with: (y cons: z)) => (y cons: z) equals: (1 cons: 2 cons).
+	self should: [ ((x match2: #(_1 _1) o: [ :a :d |  ]) run: s) eager: r ] raise: ArgumentsCountMismatch.
+	self assert: (((x match2: #(_1 _ _1) o: [ :a :d | a === 1 & (d === 2) ]) run: s) unify: x with: (y cons: z)) => (y cons: z) equals: (1 cons: 2 cons: 1 cons).
+	self assert: (((x match2: #(_1 (_ _1)) o: [ :a :d | a === 1 & (d === 2) ]) run: s) unify: x with: (y cons: z)) => (y cons: z) equals: (1 cons: (2 cons: 1 cons) cons).
+	self assert: (((x match2: #(_ _) o: [ :a :d | a === 1 & (d === 2) ]) run: s) eager: r) substitution size equals: 3.
