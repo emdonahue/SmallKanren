@@ -23,7 +23,8 @@
 		"no4",
 		"s",
 		"failure",
-		"yn2"
+		"yn2",
+		"r"
 	],
 	"name" : "SKMultiConstraintTest",
 	"type" : "normal"

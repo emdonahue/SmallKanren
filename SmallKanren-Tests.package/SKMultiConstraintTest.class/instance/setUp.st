@@ -17,4 +17,5 @@ setUp
 	unsatisfiable := SKConstraint unsatisfiable.
 	null := SKConstraint new.
 	s := SKState new.
+	r := SKRuntime new.
 	failure := SKStream failure.

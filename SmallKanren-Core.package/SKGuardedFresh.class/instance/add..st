@@ -1,3 +1,3 @@
 adding
 add: aGuardedFresh
-	^ SKGuardedFreshDisjoined first: self rest: aGuardedFresh.
+	^ SKGuardedFreshDisjoined merge: self guardedFresh: aGuardedFresh.
