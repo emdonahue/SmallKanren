@@ -24,7 +24,10 @@
 		"s",
 		"failure",
 		"yn2",
-		"r"
+		"r",
+		"booleano",
+		"istrue",
+		"z"
 	],
 	"name" : "SKMultiConstraintTest",
 	"type" : "normal"

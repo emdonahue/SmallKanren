@@ -2,6 +2,7 @@ tests
 setUp 
 	x := SKVar tag: #x.
 	y := SKVar tag: #y.
+	z := SKVar tag: #z.
 	xn1 := (x=/=1).
 	xn2 := (x=/=2).
 	yn1 := (y=/=1).
@@ -13,9 +14,11 @@ setUp
 	noSymbol := SKConstraint absento: #symbol.
 	symbolo := SKConstraint symbolo.
 	numbero := SKConstraint numbero.
+	booleano := SKConstraint booleano.
 	satisfied := SKConstraint satisfied.
 	unsatisfiable := SKConstraint unsatisfiable.
 	null := SKConstraint new.
 	s := SKState new.
 	r := SKRuntime new.
 	failure := SKStream failure.
+	istrue := SKUnificationConstraint new term: true.

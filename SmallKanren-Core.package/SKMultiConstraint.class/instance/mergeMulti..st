@@ -4,5 +4,5 @@ mergeMulti: aMulti
 	"aMulti is the main constraint in this relation. Self should be destructured and appended."
 	| m |
 	m := first merge: aMulti.
-	m isSatisfied | m isUnsatisfiable ifTrue: [ ^ m ].
+	m isSatisfied | m isUnsatisfiable | m isUnification ifTrue: [ ^ m ].
 	^ m merge: self rest.
