@@ -1,3 +1,4 @@
 testing
 isIncomplete
-	^ false
+	"^ false"
+	^ self isLazy.
