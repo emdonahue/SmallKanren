@@ -1,0 +1,3 @@
+testing
+isFiniteDomain
+	^ true
