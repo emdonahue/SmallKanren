@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "SKTestCase",
+	"category" : "SmallKanren-Tests-Constraints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"x",
+		"s",
+		"r",
+		"y",
+		"z"
+	],
+	"name" : "SKCustomConstraintTest",
+	"type" : "normal"
+}

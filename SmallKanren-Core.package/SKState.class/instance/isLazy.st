@@ -1,3 +1,4 @@
 testing
 isLazy
-	^ constraints isLazy.
+	"^ constraints isLazy."
+	^ schedule isNotEmpty.
