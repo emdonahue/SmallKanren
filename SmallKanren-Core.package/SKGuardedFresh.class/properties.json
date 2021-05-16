@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"pattern"
+		"pattern",
+		"var"
 	],
 	"name" : "SKGuardedFresh",
 	"type" : "normal"
