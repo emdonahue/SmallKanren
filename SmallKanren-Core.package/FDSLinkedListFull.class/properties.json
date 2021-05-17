@@ -1,0 +1,16 @@
+{
+	"classtraitcomposition" : "FDSAbstractLinkedListFull classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"first",
+		"rest"
+	],
+	"name" : "FDSLinkedListFull",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "FDSAbstractLinkedListFull",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "SmallKanren-Core-Queue"
+}

@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "FDSAbstractLinkedListEmpty classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FDSLinkedList",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "FDSAbstractLinkedListEmpty",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "SmallKanren-Core-Queue"
+}

@@ -1,0 +1,12 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "FDSAbstractQueue + FDSCollectionNonEmpty",
+	"classtraitcomposition" : "FDSAbstractQueue classTrait + FDSCollectionNonEmpty classTrait",
+	"category" : "SmallKanren-Core-Queue",
+	"classinstvars" : [ ],
+	"name" : "FDSAbstractQueueFull",
+	"instvars" : [
+		"head",
+		"tail"
+	]
+}

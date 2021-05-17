@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "FDSAbstractQueue classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKSchedulerEmpty",
+	"commentStamp" : "",
+	"super" : "FDSQueue",
+	"traitcomposition" : "FDSAbstractQueue",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "SmallKanren-Core-Scheduling"
+}

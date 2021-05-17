@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "FDSCollection",
+	"classtraitcomposition" : "FDSCollection classTrait",
+	"category" : "SmallKanren-Core-Queue",
+	"classinstvars" : [
+		"singleton"
+	],
+	"name" : "FDSCollectionEmpty",
+	"instvars" : [ ]
+}

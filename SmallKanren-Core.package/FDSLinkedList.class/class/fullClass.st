@@ -1,0 +1,3 @@
+classes
+fullClass
+	^ FDSLinkedListFull.
