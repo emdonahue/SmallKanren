@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SKGuardedFresh",
-	"category" : "SmallKanren-Core-Constraints",
+	"category" : "SmallKanren-Core-Scheduling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

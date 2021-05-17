@@ -1,9 +1,0 @@
-{
-	"commentStamp" : "",
-	"traitcomposition" : "FDSCollectionSequenceable",
-	"classtraitcomposition" : "FDSCollectionSequenceable classTrait",
-	"category" : "SmallKanren-Core-Queue",
-	"classinstvars" : [ ],
-	"name" : "FDSAbstractQueue",
-	"instvars" : [ ]
-}

@@ -1,3 +1,5 @@
-running
+scheduling
 run: aState runtime: aRuntime
-	^ aState addSchedule: self.
+	^ ((block valueWithArguments: 
+		(block argumentNames collect: [ :n | SKVar tag: n ])) asGoal) 
+			run: aState runtime: aRuntime.

@@ -1,3 +1,0 @@
-classes
-emptyClass
-	self explicitRequirement.

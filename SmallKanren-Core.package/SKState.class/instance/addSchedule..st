@@ -1,3 +1,3 @@
 scheduling
-addSchedule: aSchedule
-	^ self copy schedule: (schedule append: aSchedule cons).
+addSchedule: aFresh
+	^ self copy schedule: (schedule add: aFresh).

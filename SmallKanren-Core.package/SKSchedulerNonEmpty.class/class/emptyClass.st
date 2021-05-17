@@ -1,3 +1,3 @@
 classes
 emptyClass
-	^ FDSLinkedList.
+	^ SKScheduler.

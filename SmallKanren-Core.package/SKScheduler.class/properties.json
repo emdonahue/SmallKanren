@@ -4,7 +4,7 @@
 	"instvars" : [ ],
 	"name" : "SKScheduler",
 	"commentStamp" : "",
-	"super" : "FDSQueueFull",
+	"super" : "FDSQueue",
 	"traitcomposition" : "FDSAbstractQueue",
 	"type" : "normal",
 	"classinstvars" : [ ],

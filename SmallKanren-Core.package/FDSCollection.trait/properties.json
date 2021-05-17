@@ -1,7 +1,0 @@
-{
-	"commentStamp" : "",
-	"classinstvars" : [ ],
-	"category" : "SmallKanren-Core-Queue",
-	"instvars" : [ ],
-	"name" : "FDSCollection"
-}
