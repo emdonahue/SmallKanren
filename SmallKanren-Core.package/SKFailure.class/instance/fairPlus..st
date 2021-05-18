@@ -1,0 +1,3 @@
+streaming
+fairPlus: aStream
+	^ aStream.

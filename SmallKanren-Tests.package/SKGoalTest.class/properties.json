@@ -10,7 +10,8 @@
 		"y",
 		"z",
 		"yhash",
-		"xhash"
+		"xhash",
+		"failure"
 	],
 	"name" : "SKGoalTest",
 	"type" : "normal"

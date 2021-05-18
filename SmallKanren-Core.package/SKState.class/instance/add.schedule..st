@@ -6,8 +6,4 @@ add: aVar schedule: aFresh
 	sch := schedule rejectOne: 
 		[ :f | (f isGuarding: aVar) 
 			ifTrue: [ fresh := f compress: aFresh. true ]].
-	^ self copy schedule: (sch add: fresh).
-		
-	"cp := (schedule detect: [ :x | x isCons ifTrue: [ x car = aVar ]] ifNone: [ nil ]).
-	ncp := cp ifNil: [ aVar cons: aFresh ] ifNotNil: [ aVar cons: (cp cdr compress: aFresh) ].
-	^ self copy schedule: ((schedule remove: cp) add: ncp)."
+	^ self setSchedule: (sch add: fresh).
