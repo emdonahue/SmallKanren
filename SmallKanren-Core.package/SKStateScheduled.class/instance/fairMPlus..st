@@ -1,3 +1,3 @@
 streaming
-fairMplus: aStream
+fairMPlus: aStream
 	^ SKMplusFair with: aStream with: self.
