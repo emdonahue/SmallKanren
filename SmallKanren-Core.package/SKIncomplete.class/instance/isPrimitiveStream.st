@@ -1,0 +1,3 @@
+testing
+isPrimitiveStream
+	^ true.

@@ -1,3 +1,0 @@
-subclassresponsibility
-hasAnswer
-	self subclassResponsibility 

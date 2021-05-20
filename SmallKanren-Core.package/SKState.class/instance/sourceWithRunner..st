@@ -1,3 +1,3 @@
 inspecting
 sourceWithRunner: aRunner
-	^ (self reify: aRunner queryVars) asString
+	^ (self reify: aRunner query) asString

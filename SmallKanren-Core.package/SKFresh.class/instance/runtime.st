@@ -4,5 +4,5 @@ runtime
 	| queryVars |
 	queryVars := block argumentNames collect: [ :a | SKVar tag: a ].
 	^ SKRuntime new
-		queryVars: queryVars asCons;
+		query: queryVars asCons;
 		goal: (block valueWithArguments: queryVars) asGoal

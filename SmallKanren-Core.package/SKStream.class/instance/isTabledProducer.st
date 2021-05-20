@@ -1,3 +1,0 @@
-testing
-isTabledProducer
-	^ false

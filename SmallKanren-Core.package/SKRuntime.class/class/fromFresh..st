@@ -1,5 +1,5 @@
 instance creation
 fromFresh: aGoal
 	^ self new 
-		queryVars: aGoal query asCons;
+		query: aGoal query asCons;
 		stream: (aGoal run: SKState new).

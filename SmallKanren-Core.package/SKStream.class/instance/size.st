@@ -1,3 +1,0 @@
-debugging
-size
-	self subclassResponsibility 

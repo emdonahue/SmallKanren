@@ -1,3 +1,0 @@
-testing
-isWaitingStream
-	^ false.

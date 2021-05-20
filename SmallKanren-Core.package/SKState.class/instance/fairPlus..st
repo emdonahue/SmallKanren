@@ -1,3 +1,3 @@
 streaming
 fairPlus: aStream
-	^ SKComplete answer: self stream: aStream.
+	^ aStream complete: self.

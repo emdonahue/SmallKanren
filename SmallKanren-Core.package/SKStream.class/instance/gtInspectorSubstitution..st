@@ -1,3 +1,0 @@
-inspecting
-gtInspectorSubstitution: aGLMCompositePresentation 
-	

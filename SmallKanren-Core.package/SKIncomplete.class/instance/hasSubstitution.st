@@ -1,0 +1,3 @@
+testing
+hasSubstitution
+	^ state hasSubstitution.

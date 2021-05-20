@@ -1,2 +1,0 @@
-inspecting
-inspectSuspendedVarsIn: aComposite runner: aRunner
