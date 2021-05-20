@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SmallKanren-Core-Debugging",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"goal",
+		"state",
+		"runtime"
+	],
+	"name" : "SKGoalDebugger",
+	"type" : "normal"
+}

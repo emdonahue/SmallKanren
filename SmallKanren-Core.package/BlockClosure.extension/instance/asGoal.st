@@ -1,3 +1,3 @@
 *SmallKanren-Core
 asGoal
-	^ SKFresh new block: self
+	^ SKTopLevelFresh new block: self

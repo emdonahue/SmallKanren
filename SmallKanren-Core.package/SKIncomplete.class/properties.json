@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"block",
-		"state"
+		"state",
+		"goal"
 	],
 	"name" : "SKIncomplete",
 	"type" : "normal"

@@ -1,5 +1,5 @@
 printing
 printOn: aStream
-	aStream nextPut: $(.
-	self conjuncts do: [ :c | c printOn: aStream ] separatedBy: [ aStream nextPutAll: ' & ' ].
+	aStream nextPutAll: '(& '.
+	self conjuncts do: [ :c | c printOn: aStream ] separatedBy: [ aStream nextPut: Character space ].
 	aStream nextPut: $)

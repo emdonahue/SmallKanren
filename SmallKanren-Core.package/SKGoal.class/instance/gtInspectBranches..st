@@ -1,6 +1,6 @@
 inspecting
 gtInspectBranches: composite
-		<gtInspectorPresentationOrder: 10>
+	<todo>
 	composite text
 		title: [ 'Source' ];
 		display: [ self ].

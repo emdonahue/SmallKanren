@@ -1,3 +1,4 @@
 accessing
 children
-	^ self disjuncts
+	^ {left. right}.
+	"^ self disjuncts"
