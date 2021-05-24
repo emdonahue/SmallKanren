@@ -13,7 +13,8 @@
 		"xhash",
 		"failure",
 		"s",
-		"r"
+		"r",
+		"repeato"
 	],
 	"name" : "SKGoalTest",
 	"type" : "normal"
