@@ -5,6 +5,6 @@ delayCheckIn: aMatchC runner: aRunner
 	"^ (stream delayCheckIn: aMatchC runner: aRunner) produceTabledAnswersFrom: self."
 
 	<todo>
-	^ SKBindClassic new
+	^ SKBind new
 		stream: self;
 		goal: aMatchC asGoal.

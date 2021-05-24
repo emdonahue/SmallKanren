@@ -1,4 +1,4 @@
 converting
 asGoal: aVar 	
 	var := aVar.
-	^ super asGoal: aVar.
+	^ SKGuardedFreshGoal new var: aVar; fresh: self.

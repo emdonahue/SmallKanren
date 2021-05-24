@@ -1,0 +1,3 @@
+laziness
+freshGoal 	
+	self subclassResponsibility.

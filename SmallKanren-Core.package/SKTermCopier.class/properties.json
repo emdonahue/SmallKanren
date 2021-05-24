@@ -1,12 +1,12 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "EvanDonahue 5/22/2021 15:02",
 	"super" : "Object",
 	"category" : "SmallKanren-Core-Tabling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"termDict"
+		"terms"
 	],
 	"name" : "SKTermCopier",
 	"type" : "normal"

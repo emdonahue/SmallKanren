@@ -1,0 +1,3 @@
+accessing
+countAnswers
+	^ 0.

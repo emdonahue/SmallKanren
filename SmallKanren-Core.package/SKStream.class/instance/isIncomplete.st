@@ -1,0 +1,3 @@
+subclassresponsibility
+isIncomplete
+	self subclassResponsibility 

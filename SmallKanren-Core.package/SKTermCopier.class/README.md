@@ -1,0 +1,1 @@
+An implementation of copy_term that uses the existing reifier architecture to copy terms, swapping in new logic variables in place of old ones.

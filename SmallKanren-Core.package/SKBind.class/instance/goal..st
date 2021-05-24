@@ -1,4 +1,4 @@
 accessing
-goal: aTabledGoal
-	<type: #SKTabledGoal returns: #SKBind>
-	goal := aTabledGoal.
+goal: aGoal
+	<type: #SKGoal returns: #SKBind>
+	goal := aGoal.

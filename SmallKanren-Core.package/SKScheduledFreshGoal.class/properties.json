@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SKGoal",
-	"category" : "SmallKanren-Core-Goals",
+	"category" : "SmallKanren-Core-Scheduling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

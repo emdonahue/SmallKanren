@@ -1,5 +1,5 @@
 subclassresponsibility
 bind: aGoal runtime: aRunner
-	^ SKBindClassic new
+	^ SKBind new
 		goal: aGoal;
 		stream: self

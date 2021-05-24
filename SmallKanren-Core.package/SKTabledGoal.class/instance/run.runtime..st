@@ -1,7 +1,7 @@
 running
 run: aState runtime: aRunner
 	"hack"
-
+	"May suspend in a bind on a scheduled state, but eventually returns to tabledRun on this goal."
 	<type: #SKPackage type: #SKRuntime returns: #SKStream>
 	<todo>
 	"inputs should reify here to become ground keys for cache"

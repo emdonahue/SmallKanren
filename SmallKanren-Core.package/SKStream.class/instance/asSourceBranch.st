@@ -1,0 +1,3 @@
+inspecting
+asSourceBranch
+	^ {self}
