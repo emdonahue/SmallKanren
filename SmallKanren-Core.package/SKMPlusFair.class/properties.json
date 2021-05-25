@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "SmallKanren-Tests",
+	"super" : "SKStream",
+	"category" : "SmallKanren-Core-Streams",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"x",
-		"repeato"
+		"streams"
 	],
-	"name" : "SKStreamTest",
+	"name" : "SKMPlusFair",
 	"type" : "normal"
 }

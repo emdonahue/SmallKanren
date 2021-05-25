@@ -1,3 +1,3 @@
 streaming
 fairPlus: aStream
-	^ (right fairPlus: aStream) fairComplete: left.
+	^ (right fairPlus: aStream) complete: left.

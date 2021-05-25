@@ -1,3 +1,3 @@
 streaming
 fairMPlus: aStream
-	self subclassResponsibility.
+	^ SKMPlusFair2 first: self rest: aStream.

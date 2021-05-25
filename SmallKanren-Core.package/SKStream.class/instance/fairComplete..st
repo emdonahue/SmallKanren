@@ -1,3 +1,4 @@
 streaming
 fairComplete: aState
-	^ self complete: aState.
+	self halt.
+"	^ SKCompleteFair first: aState rest: self."

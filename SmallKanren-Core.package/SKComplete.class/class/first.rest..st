@@ -1,4 +1,4 @@
 as yet unclassified
-answer: aState stream: aStream
+first: aState rest: aStream
 	<type: #SKState type: #(NotC SKFailure) returns: #SKComplete>
 	^ self new left: aState; right: aStream.

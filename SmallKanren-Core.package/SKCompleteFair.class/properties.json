@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "SKStream",
+	"super" : "SKComplete",
 	"category" : "SmallKanren-Core-Streams",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"streams"
-	],
-	"name" : "SKMplusFair",
+	"instvars" : [ ],
+	"name" : "SKCompleteFair",
 	"type" : "normal"
 }

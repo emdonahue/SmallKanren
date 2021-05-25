@@ -1,4 +1,5 @@
 running
 run: aState runtime: aRuntime
-	^ clauses inject: SKStream failure into: 
-		[ :m :c | (c asGoal run: aState runtime: aRuntime) fairPlus: m ].
+	^ SKMPlusFair streams: 
+		(clauses collect: [ :g | g run: aState runtime: aRuntime ] 
+			thenSelect: [ :s | s isFailure not ]).

@@ -1,3 +1,3 @@
 debugging
 step
-	^ self run: SKState new
+	^ self run: SKState new runtime: SKRuntime new.

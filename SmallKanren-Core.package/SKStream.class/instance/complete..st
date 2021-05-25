@@ -1,3 +1,3 @@
 streaming
 complete: aState
-	^ SKComplete answer: aState stream: self.
+	^ SKComplete first: aState rest: self.

@@ -1,3 +1,3 @@
 streaming
 fairPlus: aStream
-	^ aStream fairComplete: self.
+	^ aStream complete: self.
