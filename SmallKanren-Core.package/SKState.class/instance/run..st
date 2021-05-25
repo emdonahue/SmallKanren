@@ -1,3 +1,3 @@
 scheduling
 run: aRuntime
-	^ schedule first run: (self setSchedule: (schedule rest)) runtime: aRuntime.
+	^ schedule first scheduledRun: (self setSchedule: (schedule rest)) runtime: aRuntime.

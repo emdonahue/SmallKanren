@@ -1,3 +1,0 @@
-testing
-hasSchedule
-	^ right hasSchedule.

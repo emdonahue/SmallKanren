@@ -1,3 +1,3 @@
 printing
 tagString
-	^ tag , ':'
+	^ tag ifNil: '' ifNotNil: [ tag , ':' ].

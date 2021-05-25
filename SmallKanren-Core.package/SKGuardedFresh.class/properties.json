@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "SKConstraint",
+	"super" : "SKGoal",
 	"category" : "SmallKanren-Core-Scheduling",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SmallKanren-Core-Debugging",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"schedule",
+		"state",
+		"runtime"
+	],
+	"name" : "SKScheduleDebugger",
+	"type" : "normal"
+}

@@ -1,3 +1,3 @@
 streaming
 fairPlus: aStream
-	self subclassResponsibility.
+	^ aStream fairMPlus: self.

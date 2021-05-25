@@ -1,5 +1,5 @@
 scheduling
-run: aState runtime: aRuntime
+scheduledRun: aState runtime: aRuntime
 	| s |
 	"Unify pattern with val to extract the current values of this constraint's free vars."
 	s := (aState unify: pattern with: var runtime: aRuntime) ifFailure: [ ^ SKStream failure ].
