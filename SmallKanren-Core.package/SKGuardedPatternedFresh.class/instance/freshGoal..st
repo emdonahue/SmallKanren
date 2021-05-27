@@ -2,7 +2,6 @@ laziness
 freshGoal: aSubstitution
 	"Extract the values that have been bound to the free vars and send them to the block to generate a fresh goal."
 	^ block valueWithArguments: 
-		((aSubstitution reify: vars)
-			collectWithIndex: [ :v :i | v isSKVar 
-				ifTrue: [ v tag: (block argumentNames at: i) ]
-				ifFalse: v]).
+		((aSubstitution reify: vars), 
+			((1 to: (block argumentCount - vars size)) 
+				collect: [ :i | SKTaggedVar new ])).

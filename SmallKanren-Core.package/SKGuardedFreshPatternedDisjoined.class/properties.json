@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"vars",
-		"block"
+		"clauses"
 	],
-	"name" : "SKGuardedFreshSingle",
+	"name" : "SKGuardedFreshPatternedDisjoined",
 	"type" : "normal"
 }

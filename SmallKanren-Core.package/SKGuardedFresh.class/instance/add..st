@@ -1,3 +1,3 @@
 adding
 add: aGuardedFresh
-	^ SKGuardedFreshDisjoined merge: self guardedFresh: aGuardedFresh.
+	^ SKGuardedFreshPatternedDisjoined merge: self guardedFresh: aGuardedFresh.

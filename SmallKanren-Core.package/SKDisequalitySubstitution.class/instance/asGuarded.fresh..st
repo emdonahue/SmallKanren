@@ -1,6 +1,6 @@
 laziness
 asGuarded: a fresh: b
-		^ SKGuardedFreshDisjoined new 
+		^ SKGuardedFreshPatternedDisjoined new 
 		var: a var;
 		pattern: (self reify: a pattern); 
 		clauses: a clauses, b clauses.

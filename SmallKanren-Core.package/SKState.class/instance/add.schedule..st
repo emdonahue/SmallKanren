@@ -6,5 +6,5 @@ add: aVar schedule: aFresh
 	fresh = SKConstraint unsatisfiable ifTrue: [ ^ SKStream failure ]."
 	^ self setSchedule: (schedule 
 		replace: [ :f | f isGuarding: aVar ]
-		ifFound: [ :f | (f compress: aFresh) ifFailure: [ ^ SKStream failure ] ]
+		ifFound: [ :f | (f compress: aFresh) ifFail: [ ^ SKStream failure ] ]
 		ifNone: [ schedule add: aFresh ]).

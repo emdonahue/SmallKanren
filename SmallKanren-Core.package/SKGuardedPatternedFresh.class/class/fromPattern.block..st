@@ -1,7 +1,8 @@
 instance creation
 fromPattern: aPattern block: aBlock
-	| vars pattern |
+	| vars pattern names |
 	vars := OrderedDictionary new.
 	pattern := self fromPattern: aPattern vars: vars.
-	aBlock argumentNames with: vars asArray do: [ :n :v | v tag: n ].
+	names := aBlock argumentNames.
+	vars values doWithIndex: [ :v :i | v tag: (names at: i) ].
 	^ self new pattern: pattern; vars: vars values; block: aBlock.
