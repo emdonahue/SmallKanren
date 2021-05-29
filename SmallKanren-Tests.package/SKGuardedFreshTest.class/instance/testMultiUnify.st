@@ -1,4 +1,4 @@
-tests
+tests - pattern
 testMultiUnify
 	self assert: (((x match2: #(_ | _) o: [ :a :d | a === 1 ]) & (x match2: #(_ | _) o: [ :a :d | d === 2 ]) run: s runtime: r) unify: x with: 1) step equals: failure.
 	self assert: (((x match2: #(_ | _) o: [ :a :d | a === 1 ]) & (x match2: #(_ | _) o: [ :a :d | d === 2 ]) run: s runtime: r) unify: x with: (y cons: 1)) step equals: failure.

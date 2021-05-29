@@ -1,4 +1,4 @@
-tests
+tests - pattern
 testPattern
 	| c |
 	self assert: (SKGuardedPatternedFresh fromPattern: #(1) block: []) pattern equals: 1 cons.

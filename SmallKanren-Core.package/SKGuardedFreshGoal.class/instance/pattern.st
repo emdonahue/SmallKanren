@@ -1,3 +1,3 @@
 running
-unifier
+pattern
 	^ self unifier: (SKVar new cons: SKVar new).

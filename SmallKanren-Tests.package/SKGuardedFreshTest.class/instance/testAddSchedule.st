@@ -1,4 +1,4 @@
-tests
+tests - pattern
 testAddSchedule
 	self deny: SKState new hasSchedule.
 	self assert: ((x match2: #(_) o: [ :a | ]) run: s runtime: r) hasSchedule.

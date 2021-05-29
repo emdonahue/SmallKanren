@@ -1,4 +1,4 @@
-tests
+tests - pattern
 setUp
 	x := SKVar tag: #x.
 	y := SKVar tag: #y.

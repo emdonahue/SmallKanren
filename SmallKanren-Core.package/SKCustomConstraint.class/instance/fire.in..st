@@ -4,5 +4,5 @@ fire: aVal in: aState
 	| v |
 	v := (vars copyReplaceAll: {vars detect: [ :x | x isSKVar ]} with: {aVal}) 
 		collect: [ :x | aState walk: x ].
-	^ v detect: [ :x | x isSKVar ] ifFound: [ :x | aState add: x constraint: (self class new vars: v; block: block) ] ifNone: [ (block valueWithArguments: v) run: aState runtime: nil ].
+	^ v detect: [ :x | x isSKVar ] ifFound: [ :x | aState add: x constraint: (self class new vars: v; block: block) ] ifNone: [ (block valueWithArguments: v) asGoal run: aState runtime: nil ].
 	

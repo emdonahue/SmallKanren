@@ -1,0 +1,2 @@
+subclassresponsibility
+answer

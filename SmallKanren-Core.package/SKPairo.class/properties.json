@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKTypeo",
+	"category" : "SmallKanren-Core-Constraints",
+	"classinstvars" : [
+		"singleton"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKPairo",
+	"type" : "normal"
+}
