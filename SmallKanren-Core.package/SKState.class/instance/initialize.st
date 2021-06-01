@@ -1,6 +1,6 @@
 initialization
 initialize
 	super initialize.
-	substitution := SKSubstitution new.
+	substitution := SKSubstitution empty.
 	constraints := SKConstraintStore empty.
 	schedule := SKScheduler empty.
