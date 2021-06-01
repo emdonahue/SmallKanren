@@ -1,3 +1,3 @@
 adding
 andDisequals: aVal 
-	^ self add: (SKDisequalitySingle new val: aVal).
+	^ self addDisequality: (SKDisequalitySingle new val: aVal).

@@ -1,5 +1,6 @@
 tests - pair
 testCarList
+	self skip.
 	self assert: ((1 cons: 2 cons) car: 1 list: 1 o: [ :a | a===2 ]) answer isState.
 	self assert: ((1 cons: 2) car: 1 list: 1 o: [ :a | true ]) answer equals: failure.
 	self assert: ((2 cons: 2 cons) car: 1 list: 1 o: [ :a | true ]) answer equals: failure.

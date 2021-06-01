@@ -8,3 +8,4 @@ testMergeAbsentoDisequality
 	self assert: (xn2 merge: no1 asConstraint) equals: no1, xn2.
 	self assert: (no1 merge: (xn1 & yn1) asConstraint) equals: no1.
 	self assert: (xn1 & yn1 merge: no1 asConstraint) equals: no1.
+	self assert: (no4,no3 merge: no3, xn2) equals: no3, no4, xn2.
