@@ -1,3 +1,3 @@
 merging
-compress: aFreshClause
+merge: aFreshClause
 	^ SKGuardedMultiFresh first: self rest: aFreshClause.

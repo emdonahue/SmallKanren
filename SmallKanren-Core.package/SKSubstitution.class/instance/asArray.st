@@ -1,3 +1,3 @@
 converting
 asArray
-	^ hashmap associations asArray
+	^ hashmap asArray 

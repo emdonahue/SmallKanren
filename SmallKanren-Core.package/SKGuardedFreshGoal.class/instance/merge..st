@@ -1,3 +1,3 @@
 as yet unclassified
-compress: aFresh
+merge: aFresh
 	self subclassResponsibility.

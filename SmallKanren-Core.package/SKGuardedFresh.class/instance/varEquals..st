@@ -1,3 +1,3 @@
 testing
-isGuarding: aVar
+varEquals: aVar
 	^ var = aVar.

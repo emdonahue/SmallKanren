@@ -8,5 +8,5 @@ gtInspectReification: composite
 		column: 'Value' evaluated: [ :a | a value skReify: self ];
 		selectionAct: [ :x | x selection value value inspect ] entitled: 'Inspect';
 		send: [ :x | self reify: x value ];
-		display: [ hashmap associations asArray ];
+		display: [ hashmap asArray ];
 		when: [ self isNotEmpty ].
