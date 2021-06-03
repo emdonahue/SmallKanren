@@ -1,5 +1,6 @@
 printing
 printOn: aStream
+	super printOn: aStream.
 	var printOn: aStream.
 	aStream nextPutAll: '==='.
-	pattern printOn: aStream.
+	self pattern printOn: aStream.

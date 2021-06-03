@@ -1,3 +1,0 @@
-running
-unifier: aPair
-	^ aPair.
