@@ -1,7 +1,5 @@
 merging
 merge: aFreshClause
-	"(aFreshClause unifiesCar: car) ifFalse: [ ^ SKStream failure ].
-	^ SKGuardedMultiFresh first: self rest: aFreshClause."
 	| p |
 	p := aFreshClause pattern.
 	p car isSKVar ifTrue: [ ^ SKGuardedFreshPatternedDisjoined var: var pattern: (car cons: p cdr) clauses: (aFreshClause clauses copyWith: self) ].
