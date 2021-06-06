@@ -1,3 +1,3 @@
 scheduling
 groundGoal: aVal
-	^ (aVal carCdro: block) asGoal
+	^ self freshGoal: aVal.

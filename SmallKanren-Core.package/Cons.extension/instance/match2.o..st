@@ -1,3 +1,5 @@
 *SmallKanren-Core
 match2: aPattern o: aBlock
-	^ ((SKGuardedPatternedFresh fromPattern: aPattern block: aBlock) runNow: self) asGoal.
+	^ self ifEmpty: 
+		SKGoal fail 
+		ifNotEmpty: [ ((SKGuardedMatch fromPattern: aPattern block: aBlock) groundGoal: self) ].

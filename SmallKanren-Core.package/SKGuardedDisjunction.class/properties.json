@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKGuardedFresh",
+	"category" : "SmallKanren-Core-Scheduling",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pattern",
+		"clauses"
+	],
+	"name" : "SKGuardedDisjunction",
+	"type" : "normal"
+}

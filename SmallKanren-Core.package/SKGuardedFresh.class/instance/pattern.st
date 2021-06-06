@@ -1,3 +1,3 @@
 accessing
 pattern
-	^ pattern
+	self subclassResponsibility.

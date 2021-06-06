@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "SKGuardedFreshGoal",
+	"super" : "SKGuardedPrecompiled",
 	"category" : "SmallKanren-Core-Scheduling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"car",
-		"size",
-		"block"
+		"size"
 	],
 	"name" : "SKGuardedFreshCarList",
 	"type" : "normal"

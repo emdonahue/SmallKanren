@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKGuardedFresh",
+	"category" : "SmallKanren-Core-Scheduling",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"block"
+	],
+	"name" : "SKGuardedGoal",
+	"type" : "normal"
+}

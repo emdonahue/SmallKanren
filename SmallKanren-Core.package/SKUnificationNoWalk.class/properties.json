@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SKUnification",
+	"category" : "SmallKanren-Core-Goals",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKUnificationNoWalk",
+	"type" : "normal"
+}
