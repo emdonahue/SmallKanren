@@ -1,3 +1,5 @@
-delaying
+as yet unclassified
 car: aCar list: aSize o: aBlock
-	^ SKGuardedFreshCarList var: self car: aCar list: aSize block: aBlock.
+	|vars |
+	vars := (aBlock argumentNames copyFrom: 1 to: aSize) collect: [ :n | self class tag: n].
+	^ (SKGuardedMatch pattern: (aCar cons: vars asCons) vars: vars block: aBlock) asGoal: self.
