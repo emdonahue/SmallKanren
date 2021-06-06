@@ -1,5 +1,6 @@
 goal
 freshGoal
+	<todo> "walk unnecessary once we are on the constraint firing system."
 	| p |
 	p := self pattern.
-	^ (SKUnificationNoWalk left: var right: p) & (self freshGoal: p).
+	^ (var===p) & (self freshGoal: p).

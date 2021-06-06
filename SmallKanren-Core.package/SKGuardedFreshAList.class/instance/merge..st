@@ -1,8 +1,10 @@
 as yet unclassified
 merge: aFreshClause
-	| p |
+	| p a |
 	p := aFreshClause pattern.
-	p car isSKVar ifTrue: [ ^ SKGuardedDisjunction var: var pattern: ((SKVar new cons: SKVar new) cons: p cdr) clauses: (aFreshClause clauses copyWith: self) ].
-	p isCons ifTrue: [ 
-		^ p ifEmpty: SKStream failure ifNotEmpty: [ :p2 | SKGuardedDisjunction var: var pattern: p clauses: (aFreshClause clauses copyWith: self) ]].
-	^ SKStream failure.
+	p isSKVar ifTrue: [ | names | 
+			names := block argumentNames.
+			a := ((SKVar tag: names first) cons: (SKVar tag: names second)) ].
+	p isCons ifTrue: [ a := p ifEmpty: [ ^ SKStream failure ] ifNotEmpty: [ :p2 | p2 ]]
+		ifFalse: [ ^ SKStream failure ].
+	^ SKGuardedDisjunction var: var pattern: a clauses: (aFreshClause clauses copyWith: self).

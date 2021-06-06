@@ -1,3 +1,3 @@
 delaying
 car: aCar cdro: aBlock
-	^ SKGuardedFreshCar var: self car: aCar block: aBlock.
+	^ (SKGuardedFreshCar car: aCar block: aBlock) asGoal: self.
