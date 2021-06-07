@@ -1,3 +1,4 @@
 *SmallKanren-Core
 carCdrIn: aBlock
-	^ SKGoal fail
+	^ self carCdro: aBlock.
+	"^ SKGoal fail"

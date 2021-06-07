@@ -2,12 +2,13 @@ delaying
 car: aCar cdrIn: aBlock
 	<todo>
 	"make this directly in terms of the cons pair, no need to parse pattern"
-	^ self
+	^ super car: aCar cdrIn: aBlock.
+	"^ self
 		match:
 			{aCar.
 			#'.'.
 			#?.}
-		o: aBlock.
+		o: aBlock."
 	"^ SKCdrDelayGoal new
 		var: self;
 		car: aCar;

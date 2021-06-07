@@ -5,7 +5,7 @@ fromPattern: aPattern vars: varDict
 	aPattern ifEmpty: [ ^ Cons empty ].
 	h := t := (self fromPatternElement: aPattern first vars: varDict) cons.
 	aPattern allButFirstDo: [ :p | 
-		p = #| ifTrue: [ t cdr: (self fromPatternElement: aPattern last vars: varDict). ^ h ].
+		(#(| .) includes: p) ifTrue: [ t cdr: (self fromPatternElement: aPattern last vars: varDict). ^ h ].
 		t cdr: (self fromPatternElement: p vars: varDict) cons.
 		t := t cdr ].
 	^ h.
