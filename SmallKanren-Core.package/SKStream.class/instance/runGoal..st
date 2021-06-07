@@ -1,0 +1,2 @@
+streaming
+runGoal: aGoal

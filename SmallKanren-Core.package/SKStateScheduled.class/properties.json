@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"goal",
-		"schedule"
+		"schedule",
+		"goal"
 	],
 	"name" : "SKStateScheduled",
 	"type" : "normal"

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "FDSQueueFull",
+	"super" : "FDSQueueNonEmpty",
 	"category" : "SmallKanren-Core-Scheduling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
