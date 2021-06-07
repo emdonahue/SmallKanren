@@ -1,3 +1,3 @@
 accessing
 substitution
-	^ self shouldNotImplement 
+	^ substitution

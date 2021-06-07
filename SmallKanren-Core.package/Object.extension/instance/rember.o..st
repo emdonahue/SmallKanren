@@ -2,4 +2,4 @@
 rember: x o: out
 	| restNoX |
 	restNoX := SKVar new.
-	^ self carCdrIn: [ :y :rest | x === y & (rest === out) | (x =/= y & (out === (y cons: restNoX)) & (rest rember: x o: restNoX)) ]
+	^ self carCdro: [ :y :rest | x === y & (rest === out) | (x =/= y & (out === (y cons: restNoX)) & (rest rember: x o: restNoX)) ]

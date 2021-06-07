@@ -10,6 +10,6 @@ testConjoinFailEarly
 		ifTrue: [ Error signal ]
 		ifFalse: [ second := true.
 			SKFail singleton ] ]. "Throw an error iff we expand both goals, to prove that the failure fails early."
-	g := (x carCdrIn: delayBlock) asGoal & (x carCdrIn: delayBlock).
+	g := (x carCdro: delayBlock) asGoal & (x carCdro: delayBlock).
 	self assert: g step isDelayed.
 	self assert: g step step isFailure

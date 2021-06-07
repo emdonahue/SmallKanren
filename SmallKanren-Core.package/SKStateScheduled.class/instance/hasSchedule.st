@@ -1,0 +1,3 @@
+scheduling
+hasSchedule
+	^ schedule isNotEmpty.

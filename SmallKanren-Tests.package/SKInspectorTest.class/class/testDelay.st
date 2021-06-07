@@ -4,5 +4,5 @@ testDelay
 	| one two |
 	one := SKVar tag: #one.
 	two := SKVar tag: #two.
-	((one carCdrIn: [ :a :d | a === 1 & d isEmptyo ]) & (two carCdrIn: [ :a :d | (d isEmptyo) & (a === 2) ]) & (two carCdrIn: [ :a :d | d isEmptyo & (a === 2) ]))
+	((one carCdro: [ :a :d | a === 1 & d isEmptyo ]) & (two carCdro: [ :a :d | (d isEmptyo) & (a === 2) ]) & (two carCdro: [ :a :d | d isEmptyo & (a === 2) ]))
 		runtime inspect

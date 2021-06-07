@@ -2,7 +2,7 @@
 append: s o: ls
 	
 	^ ((self isEmptyo) & (s === ls)) |
-	 	(self carCdrIn: [ :x :rest |
+	 	(self carCdro: [ :x :rest |
 			ls car: x cdro: [ :restPlusS |
 				rest append: s o: restPlusS.
 				 ]

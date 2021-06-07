@@ -1,8 +1,4 @@
-unifying
-unify: left with: right
-	<todo> "Performance test == checks before both and between the walks to short circuit extra walking."
-	| a b |
-	a := self substitution walk: left.
-	b := self substitution walk: right.
-	a == b ifTrue: [ ^ self ].	"A value trivially unifies with itself. This is important to prevent unbound variables from self-unifying."
-	^ a skUnify: b in: self runtime: nil.
+debugging
+unify: aVar with: aVal 	
+	<todo> "remove as debug tool to reduce risk of error"
+	^ self unify: aVar with: aVal runtime: SKRuntime new.

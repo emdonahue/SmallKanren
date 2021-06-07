@@ -2,7 +2,7 @@ undelay
 testUndelayComplete
 	"Undelay Complete => DPlus"
 	| g |
-	g := g := (x carCdrIn: [ :a :d | SKGoal succeed | SKGoal succeed ]) & (y carCdrIn: [ :a :d | SKGoal succeed | SKGoal succeed ]).
+	g := g := (x carCdro: [ :a :d | SKGoal succeed | SKGoal succeed ]) & (y carCdro: [ :a :d | SKGoal succeed | SKGoal succeed ]).
 	self assert: g step isDelayed.
 	self assert: g step constraints size equals: 2.
 	self assert: g step step isDelayedPlus.

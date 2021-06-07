@@ -1,1 +1,0 @@
-A datastructure that holds all DelayedVars indexed under the same Var in a delayed state's suspended store.

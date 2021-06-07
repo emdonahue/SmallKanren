@@ -1,3 +1,3 @@
-scheduling
+testing
 hasSchedule
-	^ schedule isNotEmpty.
+	^ false.

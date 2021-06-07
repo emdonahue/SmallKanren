@@ -7,5 +7,5 @@ gtInspectStream: composite
 		display: [ stream ];
 		send: [ :s | self subStream: s ];
 		format: [ :s | s streamFormat: runtime query ];
-		when: [ stream isPrimitiveStream not ];
+		when: [ stream isPackage not ];
 		yourself.

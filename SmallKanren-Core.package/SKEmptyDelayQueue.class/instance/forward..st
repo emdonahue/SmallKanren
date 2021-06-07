@@ -1,3 +1,0 @@
-removing
-forward: aForwardQueue
-	^ aForwardQueue 

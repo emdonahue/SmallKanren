@@ -1,3 +1,0 @@
-delaying
-delayed: aDelay
-	^ aDelay

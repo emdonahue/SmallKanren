@@ -3,7 +3,7 @@ testUndelayDelay
 	"Undelay Delay => Delay"
 
 	| g |
-	g := g := (x carCdrIn: [ :a :d | a carCdrIn: [ :b :c | SKGoal succeed ] ]) & (y carCdrIn: [ :a :d | a carCdrIn: [ :b :c | SKGoal succeed ] ]).
+	g := g := (x carCdro: [ :a :d | a carCdro: [ :b :c | SKGoal succeed ] ]) & (y carCdro: [ :a :d | a carCdro: [ :b :c | SKGoal succeed ] ]).
 	self assert: g step isDelayed.	"Initial state"
 	self assert: g step constraints size equals: 2.
 	self assert: g step step isDelayed.	"Fired one, introduced new one."

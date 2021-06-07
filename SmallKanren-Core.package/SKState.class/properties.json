@@ -5,11 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"substitution",
-		"constraints",
-		"schedule"
-	],
+	"instvars" : [ ],
 	"name" : "SKState",
 	"type" : "normal"
 }

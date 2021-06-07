@@ -4,7 +4,7 @@ genDisj: isPass disj: aDisj depth: aDepth
 	pass := SKVar new.
 	pass2 := SKVar new.
 	^ aDisj
-		carCdrIn: [ :ca :cd | 
+		carCdro: [ :ca :cd | 
 			(self genConj: pass conj: ca depth: 2)
 				&
 					(aDepth isZero
