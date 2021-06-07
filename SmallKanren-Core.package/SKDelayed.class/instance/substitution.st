@@ -1,3 +1,0 @@
-delegating
-substitution
-	^ state substitution
