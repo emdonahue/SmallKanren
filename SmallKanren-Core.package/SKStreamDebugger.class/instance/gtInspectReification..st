@@ -1,4 +1,4 @@
 inspecting
 gtInspectReification: composite 
-	<gtInspectorPresentationOrder: 40>
+	<gtInspectorPresentationOrder: 70>
 	stream gtInspectReification: composite.

@@ -4,4 +4,4 @@ run: aState runtime: aRuntime
 	| v |
 	v := aState walk: var.
 	v isSKVar ifFalse: [ ^ self fire: v in: aState runtime: aRuntime ].
-	^ aState add: v schedule: self.
+	^ aState add: v schedule: (self reassignVar: v).
