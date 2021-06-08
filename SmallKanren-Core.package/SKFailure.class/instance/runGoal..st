@@ -1,2 +1,0 @@
-streaming
-runGoal: aRuntime
