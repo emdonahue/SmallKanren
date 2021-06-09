@@ -1,0 +1,1 @@
+Similar to an SKVar but ignores all atempts to bind the logic variable. Used as a dummy variable in pairs when only the car or cdr is needed and the other half of the match can be thrown away.

@@ -1,7 +1,7 @@
 inspecting
 gtInspectGoal: composite 
 	"For scheduled states with pending goals."
-	<gtInspectorPresentationOrder: 30>
+	<gtInspectorPresentationOrder: 50>
 	composite tree
 		title: [ 'Goal' ];
 		children: [ :g | g children ];

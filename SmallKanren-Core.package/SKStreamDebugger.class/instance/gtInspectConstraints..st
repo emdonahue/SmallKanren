@@ -1,4 +1,4 @@
 inspecting
 gtInspectConstraints: composite 
-	<gtInspectorPresentationOrder: 60>
+	<gtInspectorPresentationOrder: 80>
 	stream gtInspectConstraints: composite.

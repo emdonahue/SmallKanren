@@ -1,0 +1,3 @@
+inspecting
+leaves
+	^ right leaves.

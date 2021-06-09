@@ -7,6 +7,7 @@ setUp
 	xn2 := (x=/=2).
 	yn1 := (y=/=1).
 	yn2 := (y=/=2).
+	xny := x=/=y.
 	no1 := SKConstraint absento: 1.
 	no2 := SKConstraint absento: 2.
 	no3 := SKConstraint absento: 3.

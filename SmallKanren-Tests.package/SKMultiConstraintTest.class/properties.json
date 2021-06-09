@@ -27,7 +27,8 @@
 		"r",
 		"booleano",
 		"istrue",
-		"z"
+		"z",
+		"xny"
 	],
 	"name" : "SKMultiConstraintTest",
 	"type" : "normal"

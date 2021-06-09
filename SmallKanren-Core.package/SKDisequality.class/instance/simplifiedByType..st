@@ -1,3 +1,3 @@
 simplifying
 simplifiedByType: aType
-	^ (aType isOfType: self val) ifTrue: self ifFalse: SKConstraint satisfied.
+	^ self val isSKVar | (aType isOfType: self val) ifTrue: self ifFalse: SKConstraint satisfied.

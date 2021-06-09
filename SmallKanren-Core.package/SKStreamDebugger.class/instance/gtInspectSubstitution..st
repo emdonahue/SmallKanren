@@ -1,4 +1,4 @@
 inspecting
 gtInspectSubstitution: composite 
-	<gtInspectorPresentationOrder: 60>
+	<gtInspectorPresentationOrder: 70>
 	stream gtInspectSubstitution: composite.

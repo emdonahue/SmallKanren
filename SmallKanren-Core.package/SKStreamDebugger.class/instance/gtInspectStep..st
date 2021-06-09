@@ -1,6 +1,6 @@
 inspecting
 gtInspectStep: composite 
-	<gtInspectorPresentationOrder: 20>
+	<gtInspectorPresentationOrder: 40>
 	composite tree
 		title: [ 'Step' ];
 		children: [ :s | s children ];

@@ -1,6 +1,6 @@
 inspecting
 gtInspectSchedule: composite 
-	<gtInspectorPresentationOrder: 40>
+	<gtInspectorPresentationOrder: 60>
 	composite list
 		title: 'Schedule';
 		send: [ :x | SKScheduleDebugger schedule: x state: stream runtime: runtime ];
