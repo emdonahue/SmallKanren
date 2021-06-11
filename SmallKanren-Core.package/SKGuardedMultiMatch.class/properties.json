@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKGuardedMatch",
+	"category" : "SmallKanren-Core-Scheduling",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"vals"
+	],
+	"name" : "SKGuardedMultiMatch",
+	"type" : "normal"
+}
