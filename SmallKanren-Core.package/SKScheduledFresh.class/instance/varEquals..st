@@ -1,3 +1,0 @@
-testing
-varEquals: aVar
-	^ false.

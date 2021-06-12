@@ -1,3 +1,3 @@
 testing
-varEquals: aVar
+includesVar: aVar
 	^ var = aVar.

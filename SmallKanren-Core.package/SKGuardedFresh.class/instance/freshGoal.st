@@ -3,4 +3,4 @@ freshGoal
 	<todo> "walk unnecessary once we are on the constraint firing system."
 	| p |
 	p := self pattern.
-	^ (var===p) & (self freshGoal: p).
+	^ (var asConsTree===p) & (self freshGoal: p).
