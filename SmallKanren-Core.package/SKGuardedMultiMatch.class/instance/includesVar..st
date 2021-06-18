@@ -1,3 +1,4 @@
 testing
 includesVar: aVar
-	^ vars includes: aVar.
+	^ false.
+	"^ vars includes: aVar."
