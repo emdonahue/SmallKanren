@@ -10,7 +10,8 @@
 		"x",
 		"y",
 		"z",
-		"satisfied"
+		"satisfied",
+		"r"
 	],
 	"name" : "SKStateTest",
 	"type" : "normal"

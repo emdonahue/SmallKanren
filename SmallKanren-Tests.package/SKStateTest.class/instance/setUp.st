@@ -5,4 +5,5 @@ setUp
 	y := SKVar new.
 	z := SKVar new.
 	satisfied := SKConstraint satisfied.
+	r := SKRuntime new.
 	'SmallKanren-Core' asPackage enforceContractC.
