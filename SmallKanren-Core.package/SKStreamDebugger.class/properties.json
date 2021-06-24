@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"stream",
-		"runtime"
+		"runtime",
+		"options"
 	],
 	"name" : "SKStreamDebugger",
 	"type" : "normal"

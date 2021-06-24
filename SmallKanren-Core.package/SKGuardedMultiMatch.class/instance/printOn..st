@@ -1,9 +1,9 @@
 printing
 printOn: aStream
 	tag ifNotNil: [ aStream nextPut: $#; nextPutAll: tag; nextPut: Character space ].
-	aStream nextPut: ${.
+	"aStream nextPut: ${."
 	var printElementsOn: aStream.
-	aStream nextPutAll: '} {'.
+	"aStream nextPutAll: '} {'."
 	vals printElementsOn: aStream.
-	aStream nextPutAll: '} '.
+	aStream nextPutAll: ' '.
 	block printOn: aStream.

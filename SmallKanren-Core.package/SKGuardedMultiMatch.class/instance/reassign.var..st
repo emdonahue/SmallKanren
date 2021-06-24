@@ -1,4 +1,3 @@
 running
 reassign: oldVar var: newVar
-	"self haltIf: [ var includes: oldVar ]."
-	"^ self reassignVar: (vars collect: [ :v | v = oldVar ifTrue: newVar ifFalse: v ])."
+	(var includes: oldVar) ifTrue: [ ^ self reassignVar: (vars collect: [ :v | v = oldVar ifTrue: newVar ifFalse: v ]) ].

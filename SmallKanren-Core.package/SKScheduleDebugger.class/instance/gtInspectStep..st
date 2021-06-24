@@ -1,6 +1,6 @@
 inspecting
 gtInspectStep: composite 
-	<gtInspectorPresentationOrder: 30>
+	<gtInspectorPresentationOrder: 10>
 	| stream |
 	stream := schedule scheduledRun: (state removeSchedule: schedule) runtime: runtime.
 	^ composite tree
