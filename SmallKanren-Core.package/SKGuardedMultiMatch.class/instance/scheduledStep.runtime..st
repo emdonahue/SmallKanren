@@ -1,13 +1,15 @@
 as yet unclassified
 scheduledStep: aState runtime: aRuntime
+	| ground g unground sch frsh |
+	"ABBench a: ["
 	^ super scheduledStep: aState runtime: aRuntime.
-	"| ground g unground sch frsh |
+	"] b: [
 	frsh := self.
 	sch := aState schedule remove: [ :f | (f isKindOf: SKGuardedMultiMatch) and: [ f var size ~= f vals size ] ] 
 		ifPresent: [ :f | frsh := f ]
 		ifAbsent: aState schedule rest.
-	^ frsh scheduledRun: (aState setSchedule: sch) runtime: aRuntime."
-	
+	^ frsh scheduledRun: (aState setSchedule: sch) runtime: aRuntime.
+	]."
 	
 	
 	"g := (frsh expandBlockWithVars: vars) ifFail: [ ^ SKStream failure ].

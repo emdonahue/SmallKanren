@@ -1,4 +1,7 @@
 running
 isFullyGround
+	"ABBench a: ["
 	^ var isEmpty.
-	"^ var size ~= vals size."
+	"] b: [
+	^ var size ~= vals size.
+	]"
