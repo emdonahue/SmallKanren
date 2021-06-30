@@ -2,4 +2,4 @@
 match: aPattern o: aBlock
 	^ self ifEmpty: 
 		SKGoal fail 
-		ifNotEmpty: [ ((SKGuardedMatch fromPattern: aPattern block: aBlock) groundGoal: self) ].
+		ifNotEmpty: [ SKGuardedMultiMatch externals: {self} pattern: {aPattern} block: aBlock ].

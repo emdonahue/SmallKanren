@@ -2,7 +2,7 @@ as yet unclassified
 scheduledStep: aState runtime: aRuntime
 	| ground g unground sch frsh |
 	"ABBench a: ["
-	^ super scheduledStep: aState runtime: aRuntime.
+	^ self scheduledRun: (aState setSchedule: aState schedule rest) runtime: aRuntime
 	"] b: [
 	frsh := self.
 	sch := aState schedule remove: [ :f | (f isKindOf: SKGuardedMultiMatch) and: [ f var size ~= f vals size ] ] 

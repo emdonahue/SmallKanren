@@ -1,11 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "SKGuardedMatch",
+	"super" : "SKGoal",
 	"category" : "SmallKanren-Core-Scheduling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"externals",
+		"block",
+		"pattern",
+		"internals",
 		"vals"
 	],
 	"name" : "SKGuardedMultiMatch",
