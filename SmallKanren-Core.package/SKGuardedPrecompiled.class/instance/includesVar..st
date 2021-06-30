@@ -1,3 +1,3 @@
 testing
 includesVar: aVar
-	^ var = aVar.
+	^ externals = aVar.

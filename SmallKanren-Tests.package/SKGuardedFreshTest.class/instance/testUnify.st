@@ -1,6 +1,5 @@
 tests - pattern
 testUnify 	
-		self skip.
 	self assert: (((x match: #(_ | _) o: [ :a :d | a === 1 & (d === 2) ]) asStream) unify: x with: 1) asAnswer	 equals: failure.
 	self assert: (((x match: #(_ | _) o: [ :a :d | a === 1 & (d === 2) ]) asStream) unify: x with: (y cons: z)) asAnswer => (y cons: z) equals: (1 cons: 2).
 	self assert: (((x match: #(_ _) o: [ :a :d | a === 1 & (d === 2) ]) asStream) unify: x with: (y cons: z)) asAnswer => (y cons: z) equals: (1 cons: 2 cons).

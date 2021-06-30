@@ -7,7 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"pattern",
-		"vars"
+		"internals"
 	],
 	"name" : "SKGuardedMatch",
 	"type" : "normal"

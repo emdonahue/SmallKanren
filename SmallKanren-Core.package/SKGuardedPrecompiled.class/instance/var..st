@@ -1,3 +1,3 @@
 accessing
 var: anObject
-	var := anObject
+	externals := anObject

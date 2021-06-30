@@ -1,5 +1,7 @@
 *SmallKanren-Core
 carCdro: aBlock
-	^ self 
-		ifEmpty: SKGoal fail
-		ifNotEmpty: [ :s | ^ (SKGuardedFreshPair block: aBlock) groundGoal: s ].
+	^ self ifEmpty: SKGoal fail
+		ifNotEmpty: [ :s |
+			SKGuardedMultiMatch 
+				expandBlock: aBlock 
+				withVars: {s car. s cdr}].

@@ -1,3 +1,3 @@
 converting
 asGoal: aVar
-	var := aVar.
+	externals := aVar.

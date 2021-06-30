@@ -7,4 +7,4 @@ merge: aFreshClause
 			a := ((SKVar tag: names first) cons: (SKVar tag: names second)) ].
 	p isCons ifTrue: [ a := p ifEmpty: [ ^ SKStream failure ] ifNotEmpty: [ :p2 | p2 ]]
 		ifFalse: [ ^ SKStream failure ].
-	^ SKGuardedDisjunction var: var pattern: a clauses: (aFreshClause clauses copyWith: self).
+	^ SKGuardedDisjunction var: externals pattern: a clauses: (aFreshClause clauses copyWith: self).

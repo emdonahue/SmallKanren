@@ -1,3 +1,3 @@
 accessing
 vars: anObject
-	vars := anObject
+	internals := anObject

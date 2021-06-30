@@ -1,4 +1,4 @@
 converting
 asGoal: aVar 	
-	var := aVar.
+	externals := aVar.
 	"^ SKGuardedFreshGoal new var: aVar; fresh: self."

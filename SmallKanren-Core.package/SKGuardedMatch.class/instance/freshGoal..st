@@ -4,5 +4,5 @@ freshGoal: aPattern
 	^ self expandBlockWithVars: 
 		(((SKSubstitution empty unify: pattern with: aPattern) 
 				ifFailure: [ ^ SKGoal fail ]) 
-			reify: vars).
+			reify: internals).
 	

@@ -1,5 +1,5 @@
 testing
 includesVar: aVar
-	self haltIf: [var includes: aVar].
+	self haltIf: [externals includes: aVar].
 	^ false.
 	"^ vars includes: aVar."

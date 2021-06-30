@@ -1,3 +1,3 @@
 removing
 removeVar: someVars
-	^ self reassignVar: (var reject: [ :v | someVars includes: v ]).
+	^ self reassignVar: (externals reject: [ :v | someVars includes: v ]).

@@ -1,3 +1,3 @@
 accessing
 var
-	^ var
+	^ externals

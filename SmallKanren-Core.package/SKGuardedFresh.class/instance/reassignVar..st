@@ -1,3 +1,3 @@
 running
 reassignVar: aVar
-	aVar = var ifFalse: [ ^ self copy var: aVar ].
+	aVar = externals ifFalse: [ ^ self copy var: aVar ].

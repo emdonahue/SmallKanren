@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"var"
+		"externals"
 	],
 	"name" : "SKGuardedFresh",
 	"type" : "normal"

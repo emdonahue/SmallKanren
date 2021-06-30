@@ -1,4 +1,4 @@
 converting
 asGoal: someVars	
-	var := someVars.
+	externals := someVars.
 	vals := Array new: someVars size.
