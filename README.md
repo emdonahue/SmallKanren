@@ -112,6 +112,7 @@ This form is often more convenient to write than the corresponding fresh block a
 # Roadmap
 
 - Clean up implementation for initial release
-- Replace alist-based substitution with Skewed Binary Random Access List
+- Document the language more completely
+- Replace alist-based substitution with Skew Binary Random Access List
 
 SmallKanren is intended to be a fully featured logic programming environment for Pharo Smalltalk, similar to core.logic in the Clojure community (which rests on the same underlying miniKanren language). The current implementation is stable and usable for practical logic programming purposes, albeit it is still under active development. Although not yet documented, several more advanced features such as tabling and debugging are usable in the current implementation as well.
