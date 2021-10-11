@@ -4,6 +4,12 @@ SmallKanren is an implementation of the miniKanren relational logic programming 
 
 ## Installation
 
+```smalltalk
+Metacello new
+	baseline: 'SmallKanren';
+	repository: 'github://emdonahue/SmallKanren';
+	load.
+```
 
 ## Quick Start
 
