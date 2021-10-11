@@ -113,7 +113,7 @@ SmallKanren contains a form specific to itself called "guarded fresh." This form
 
 The variable `x` is "matched" against (unified with) the pattern `#(1 . _)`, which represents the pair of the constant `1` and a fresh logic variable represented by `_`, eg `(1 . _)`. The newly instantiated logic variable is passed as the :cdr argument to the block, where it is then unified with `2`. 
 
-This form is often more convenient to write than the corresponding fresh block and unification operations, but more importantly it allows the runtime to make a number of important optimizations, and so it is recommended to use this style in general when unifying with a complex term.
+This form is often more convenient to write than the corresponding fresh block and unification operations, but more importantly it allows the runtime to make a number of important optimizations, and so it is recommended to use this style in general when unifying with a complex term. As described in the paper, however, there are cases where traditional fresh is more efficient, so be sure to test if performance is important.
 
 # Roadmap
 
