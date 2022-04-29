@@ -5,7 +5,7 @@ externals: someExternals pattern: aPattern block: aBlock
 	vars := SmallDictionary new.
 	pattern := aPattern collect: [ :p | self fromPatternElement: p vars: vars ].
 	names := aBlock argumentNames.
-	vars valuesDo: [ :v | i := i+1. v tag: (names at: i) ].
+	vars valuesDo: [ :v | i := i+1. v tag: (names at: i ifAbsent: #_) ].
 	^ self new 
 		externals: someExternals; 
 		pattern: pattern; 
