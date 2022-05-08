@@ -1,0 +1,4 @@
+accessing
+p
+
+	^ logP exp.

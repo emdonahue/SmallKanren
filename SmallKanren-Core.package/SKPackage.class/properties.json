@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"substitution",
-		"constraints"
+		"constraints",
+		"likelihood",
+		"distributions"
 	],
 	"name" : "SKPackage",
 	"type" : "normal"

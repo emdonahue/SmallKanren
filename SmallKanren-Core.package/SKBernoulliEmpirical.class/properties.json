@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKDistribution",
+	"category" : "SmallKanren-Core-Probability",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"ones",
+		"zeroes"
+	],
+	"name" : "SKBernoulliEmpirical",
+	"type" : "normal"
+}

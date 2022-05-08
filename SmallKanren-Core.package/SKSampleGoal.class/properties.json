@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKGoal",
+	"category" : "SmallKanren-Core-Probability",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"distribution",
+		"sample"
+	],
+	"name" : "SKSampleGoal",
+	"type" : "normal"
+}
