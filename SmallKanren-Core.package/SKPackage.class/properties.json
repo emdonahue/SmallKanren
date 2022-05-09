@@ -9,7 +9,7 @@
 		"substitution",
 		"constraints",
 		"likelihood",
-		"distributions"
+		"jointDistribution"
 	],
 	"name" : "SKPackage",
 	"type" : "normal"

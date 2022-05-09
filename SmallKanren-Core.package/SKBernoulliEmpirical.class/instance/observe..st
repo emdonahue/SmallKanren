@@ -1,4 +1,5 @@
 as yet unclassified
 observe: obs
-	obs isZero ifTrue: [ ^ self copy zeroes: (zeroes ifNil: 0) + 1 ].
-	^ self copy ones: (ones ifNil: 0) + 1.
+	"Add 1 to appropriate count in log space (1 ln = 0)."
+	obs isZero ifTrue: [ ^ self copy zeroes: (self log: zeroes sum: 0) ].
+	^ self copy ones: (self log: ones sum: 0).

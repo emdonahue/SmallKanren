@@ -1,4 +1,3 @@
 accessing
 likelihood
-
-	^ likelihood
+	^ likelihood exp.

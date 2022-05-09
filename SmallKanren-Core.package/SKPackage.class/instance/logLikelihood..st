@@ -1,4 +1,4 @@
 accessing
-likelihood: anObject
+logLikelihood: anObject
 
 	likelihood := anObject
