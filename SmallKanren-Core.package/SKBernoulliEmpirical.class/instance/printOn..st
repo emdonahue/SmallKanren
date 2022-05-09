@@ -1,7 +1,7 @@
 printing
 printOn: aStream
 	aStream nextPutAll: 'Bernoulli('.
-	(ones ifNil: Float negativeInfinity) exp printOn: aStream.
+	ones exp printOn: aStream.
 	aStream nextPut: $/.
-	(self log: (ones ifNil: Float negativeInfinity) sum: (zeroes ifNil: Float negativeInfinity)) exp printOn: aStream.
+	(self log: ones sum: zeroes) exp printOn: aStream.
 	aStream nextPut: $).
