@@ -1,12 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "SKDistribution",
 	"category" : "SmallKanren-Core-Probability",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"distributions"
+		"distributions",
+		"likelihood"
 	],
 	"name" : "SKJointDistribution",
 	"type" : "normal"

@@ -8,7 +8,6 @@
 	"instvars" : [
 		"substitution",
 		"constraints",
-		"likelihood",
 		"jointDistribution"
 	],
 	"name" : "SKPackage",

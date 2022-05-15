@@ -2,9 +2,9 @@ tests
 testHiddenCoin
 	| h c0 c1 |
 	self skip.
-	h := SKBernoulliEstimate new p: 0.9.
-	c0 := SKBernoulliEstimate new p: 0.1.
-	c1 := SKBernoulliEstimate new p: 0.9.
+	h := SKBernoulliEstimate new p: 0.1.
+	c0 := SKBernoulliEstimate new p: 0.2.
+	c1 := SKBernoulliEstimate new p: 0.3.
 	"self assert: ("
-	[ { { h sample: 0. { c0 sample: 0. c0 sample: 1 } conde }.
-		{ h sample: 1. { c1 sample: 0. c1 sample: 1 } conde } } conde ] asGoal runtime maximize inspect
+	([ :m | { { m  first sample: 0. { m second sample: 0. m second sample: 1 } conde }.
+		{ m first sample: 1. { m third sample: 0. m third sample: 1 } conde } } conde ] asGoal train: {h. c0. c1}) last inspect

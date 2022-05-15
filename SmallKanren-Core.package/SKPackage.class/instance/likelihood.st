@@ -1,3 +1,3 @@
 accessing
-likelihood
-	^ likelihood exp.
+likelihood 
+	^ self jointDistribution likelihood
