@@ -1,0 +1,4 @@
+accessing
+std
+
+	^ std

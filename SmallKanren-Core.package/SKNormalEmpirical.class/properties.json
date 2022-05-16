@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SKDistribution",
+	"category" : "SmallKanren-Core-Probability",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"n",
+		"x",
+		"x2"
+	],
+	"name" : "SKNormalEmpirical",
+	"type" : "normal"
+}
