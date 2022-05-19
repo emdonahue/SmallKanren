@@ -11,4 +11,4 @@ train: aModel on: aGoal
 			oldModel := model.
 			model := joint maximizeModel: model.
 			{oldModel. joint likelihood } ] 
-		until: [ | stopping | stopping := converged.  converged := converged or: joint likelihood - likelihood < 1.01 ln. likelihood := joint likelihood.  stopping ].
+		until: [ | stopping | stopping := converged.  converged := converged or: (joint log: joint likelihood difference: likelihood) - likelihood < 0.001 ln. likelihood := joint likelihood.  stopping. ].

@@ -1,4 +1,3 @@
 accessing
 std: anObject
-
-	std := anObject
+	std := anObject.
