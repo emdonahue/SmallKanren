@@ -1,7 +1,7 @@
 tests
-testGMM
+testGMMConditionalIndependence
 	| ll model |
-	ll := [ :z :n0 :n1 :x | { { z sample: 0. n0 sample: x }. {z sample: 1. n1 sample: x} } conde ].
+	ll := [ :z :n0 :n1 :x | z marginalize: SKVar new o: [ :Z | { { Z === 0. n0 sample: x }. {Z === 1. n1 sample: x} } conde ] ].
 	
 	model := ([ :m | {ll value: m first value: m second value: m third value: 0.
 				ll value: m first value: m second value: m third value: 0.1.

@@ -1,4 +1,3 @@
 probability
 maximize
-	^ self asSpace inject: SKJointDistribution new
-		into: [ :joint :state | joint + (state jointDistribution weight: state likelihood) ].
+	^ (self asSpace collect: [ :s | s jointDistribution weight: s likelihood ]) sum.

@@ -1,3 +1,3 @@
 subclassresponsibility
 isIncomplete
-	self subclassResponsibility 
+	^ true

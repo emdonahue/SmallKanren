@@ -1,3 +1,3 @@
-accessing
+probability
 likelihood 
 	^ self jointDistribution likelihood
