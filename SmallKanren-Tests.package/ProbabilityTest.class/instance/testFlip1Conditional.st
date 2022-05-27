@@ -1,5 +1,5 @@
 tests
-test1Flip1Conditional
+testFlip1Conditional
 	| c s |
 	c := SKBernoulliEstimate new p: 0.6.	
 	s := [ :x | {{{c sample: 0. x === 1 }. c sample: 1.} conde. x === 2} ] asGoal asSpace.	

@@ -1,6 +1,6 @@
 tests
-test1FlipGround
+testFlip1Bound
 	| c s |
 	c := SKBernoulliEstimate new p: 0.6.
-	s := [ c sample: 1 ] asGoal asSpace.
+	s := [ :x | {x === 1 . c sample: x } ] asGoal asSpace.
 	self assert: s first likelihood exp equals: 0.6.	

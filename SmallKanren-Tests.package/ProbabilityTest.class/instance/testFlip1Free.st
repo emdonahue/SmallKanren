@@ -1,5 +1,5 @@
 tests
-test1FlipFree
+testFlip1Free
 	| c s |
 	c := SKBernoulliEstimate new p: 0.6.
 	s := [ :x | c sample: x ] asGoal asSpace.

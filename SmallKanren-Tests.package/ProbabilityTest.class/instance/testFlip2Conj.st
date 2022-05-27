@@ -1,5 +1,5 @@
 tests
-test1Flip2Conj
+testFlip2Conj
 	| c s |
 	c := SKBernoulliEstimate new p: 0.6.
 	s := [ {c sample: 1.c sample: 1} ] asGoal asSpace.
