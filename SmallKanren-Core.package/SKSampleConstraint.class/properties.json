@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "SKStream",
+	"super" : "SKConstraint",
 	"category" : "SmallKanren-Core-Probability",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"state",
-		"stream"
+		"distribution"
 	],
-	"name" : "SKMarginalStream",
+	"name" : "SKSampleConstraint",
 	"type" : "normal"
 }
