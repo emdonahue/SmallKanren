@@ -5,8 +5,7 @@ testHMM
 	hmm := nil.
 	hmm := [ :prevt :states :observations :transitions :emissions | 
 		{{states isEmptyo. observations isEmptyo}.
-		{states isNotEmptyo. observations isNotEmptyo. 	
-			{states. observations} match: #((_ . _) (_ . _)) o: [ :currs :nexts :curro :nexto | 
+		{{states. observations} match: #((_ . _) (_ . _)) o: [ :currs :nexts :curro :nexto | 
 				{{currs === #sunnyday. prevt sample: 1. emissions first sample: curro. hmm valueWithArguments: {transitions first. nexts. nexto. transitions. emissions.}}.
 				{currs === #rainyday. prevt sample: 0. emissions second sample: curro. hmm valueWithArguments: {transitions second. nexts. nexto. transitions. emissions.}}.} conde ]}} conde
 		].	

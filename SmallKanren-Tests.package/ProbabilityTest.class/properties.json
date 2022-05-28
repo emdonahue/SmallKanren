@@ -5,7 +5,12 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"hight",
+		"lowt",
+		"highe",
+		"lowe"
+	],
 	"name" : "ProbabilityTest",
 	"type" : "normal"
 }
