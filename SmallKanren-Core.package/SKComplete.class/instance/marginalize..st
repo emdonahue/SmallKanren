@@ -1,3 +1,3 @@
 probability
 marginalize: aState
-	^ right marginalize: (aState copy jointDistribution: aState jointDistribution + left jointDistribution).
+	^ right marginalize: (left marginalize: aState).
