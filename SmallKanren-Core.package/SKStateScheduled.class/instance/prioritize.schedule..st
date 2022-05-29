@@ -9,5 +9,5 @@ prioritize: aVar schedule: aValue
 	"sch := schedule remove: [ :f | f includesVar: aVar ] 
 		ifPresent: [ :f | g := ((f groundGoal: aValue) & goal) ifFail: [ ^ SKStream failure ] ] 
 		ifAbsent: [ ^ self ]."
-	^ self class substitution: substitution constraints: constraints schedule: sch goal: g.
+	^ self class substitution: substitution constraints: constraints schedule: sch jointDistribution: jointDistribution goal: g.
 	
