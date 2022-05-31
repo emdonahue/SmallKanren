@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKLogSpace",
+	"category" : "SmallKanren-Core-Probability",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"likelihood",
+		"pseudocounts"
+	],
+	"name" : "SKPseudoCounts",
+	"type" : "normal"
+}

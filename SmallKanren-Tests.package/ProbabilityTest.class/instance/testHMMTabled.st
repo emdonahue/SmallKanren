@@ -1,7 +1,7 @@
 tests
 testHMMTabled
 	| tabledhmm |
-	self skip.
+	
 	tabledhmm := nil.
 	tabledhmm := [ :prevt :states :observations | 
 		[ :pt :ss :os | 

@@ -1,4 +1,0 @@
-accessing
-zeroes
-
-	^ zeroes

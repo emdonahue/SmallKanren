@@ -1,0 +1,3 @@
+accessing
+first
+	^ statistics first.

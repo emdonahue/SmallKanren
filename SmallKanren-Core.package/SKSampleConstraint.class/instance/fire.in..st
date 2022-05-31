@@ -1,3 +1,3 @@
 checking
 fire: aVal in: aState
-	^ aState sample: aVal distribution: distribution
+	^ aState observe: aVal from: distribution

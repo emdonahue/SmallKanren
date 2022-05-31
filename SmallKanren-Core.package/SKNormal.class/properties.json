@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKLogSpace",
+	"category" : "SmallKanren-Core-Probability",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mean",
+		"std"
+	],
+	"name" : "SKNormal",
+	"type" : "normal"
+}

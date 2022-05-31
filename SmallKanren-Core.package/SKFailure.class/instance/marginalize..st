@@ -1,3 +1,3 @@
 probability
 marginalize: aState
-	aState likelihood = Float negativeInfinity ifFalse: [ ^ aState ].
+	aState jointDistribution ifNotEmpty: [ ^ aState ].

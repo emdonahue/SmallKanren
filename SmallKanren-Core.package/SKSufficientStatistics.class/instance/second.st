@@ -1,0 +1,3 @@
+accessing
+second
+	^ statistics second.

@@ -1,5 +1,5 @@
 tests
 testLogSqrt
 	| d |
-	d := SKDistribution new.
+	d := SKLogSpace new.
 	self assert: (d logSqrt: 25 ln) exp closeTo: 5 precision: 0.0001.

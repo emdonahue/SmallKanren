@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKLogSpace",
+	"category" : "SmallKanren-Core-Probability",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"logP"
+	],
+	"name" : "SKBernoulli",
+	"type" : "normal"
+}

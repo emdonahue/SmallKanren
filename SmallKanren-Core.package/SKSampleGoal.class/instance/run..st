@@ -1,3 +1,3 @@
 running
 run: aState
-	^ aState sample: sample distribution: distribution.
+	^ aState observe: sample from: distribution.

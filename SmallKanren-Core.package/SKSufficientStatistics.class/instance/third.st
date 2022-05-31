@@ -1,0 +1,3 @@
+accessing
+third
+	^ statistics third.
