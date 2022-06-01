@@ -1,4 +1,4 @@
-tests
+tests-flip
 testFlip1LateBound
 	| c s |
 	c := SKBernoulli new p: 0.6.

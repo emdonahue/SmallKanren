@@ -1,3 +1,3 @@
 accessing
 sample: aSample
-	^ SKSampleGoal new distribution: self; sample: aSample.
+	^ SKObservationGoal new distribution: self; sample: aSample.

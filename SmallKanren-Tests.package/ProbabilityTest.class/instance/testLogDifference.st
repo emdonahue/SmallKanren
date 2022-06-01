@@ -1,4 +1,4 @@
-tests
+tests-math
 testLogDifference
 	| d |
 	d := SKLogSpace new.

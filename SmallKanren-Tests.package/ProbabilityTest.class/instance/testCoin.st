@@ -1,4 +1,4 @@
-tests
+tests-flip
 testCoin
 	| c |
 	c := SKBernoulli new p: 0.3.

@@ -1,4 +1,4 @@
-tests
+tests-flip
 testHiddenCoin | h c0 c1 mdl |
 	"Like a GMM but with only coins. The two coins should be .5 and the hidden coin can be whatever since it doesnt matter which coin gets picked."
 		

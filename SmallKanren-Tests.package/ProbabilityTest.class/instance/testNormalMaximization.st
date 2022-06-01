@@ -1,4 +1,4 @@
-tests
+tests-distributions
 testNormalMaximization
 	| normal |
 	normal := SKNormal new.

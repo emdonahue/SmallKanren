@@ -1,3 +1,3 @@
 probability
 maximize: anEstimate
-	^ self jointDistribution maximize: anEstimate.
+	^ self pseudoCounts maximize: anEstimate.

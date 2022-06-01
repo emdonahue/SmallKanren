@@ -1,3 +1,3 @@
 probability
 likelihood 
-	^ self jointDistribution likelihood
+	^ self pseudoCounts likelihood

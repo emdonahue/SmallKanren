@@ -1,4 +1,4 @@
-tests
+tests-distributions
 testNormalLikelihood	
 	self assert: ((SKNormal new mean: 0 ln; std: 1 ln) logLikelihood: 0) exp closeTo: 0.39894 precision: 0.001.
 	self assert: ((SKNormal new mean: 0	 ln; std: 1 ln) logLikelihood: 1	) exp closeTo: 0.24197 precision: 0.001.

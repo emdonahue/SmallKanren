@@ -1,4 +1,4 @@
-tests
+tests-math
 testLogSumExp
 	| b |
 	b := SKLogSpace new.

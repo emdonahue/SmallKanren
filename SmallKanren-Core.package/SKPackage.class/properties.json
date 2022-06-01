@@ -8,7 +8,7 @@
 	"instvars" : [
 		"substitution",
 		"constraints",
-		"jointDistribution"
+		"pseudocounts"
 	],
 	"name" : "SKPackage",
 	"type" : "normal"

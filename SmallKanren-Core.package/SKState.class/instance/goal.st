@@ -1,0 +1,3 @@
+accessing
+goal
+	^ SKGoal succeed.

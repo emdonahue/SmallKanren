@@ -1,4 +1,4 @@
-tests
+tests-gmm
 testGMMConditionalIndependence
 	| ll model |
 	

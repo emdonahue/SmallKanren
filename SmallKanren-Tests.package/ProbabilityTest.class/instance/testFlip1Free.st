@@ -1,4 +1,4 @@
-tests
+tests-flip
 testFlip1Free
 	| c s |
 	c := SKBernoulli new p: 0.6.

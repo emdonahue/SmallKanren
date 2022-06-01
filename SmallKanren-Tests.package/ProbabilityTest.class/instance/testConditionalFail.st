@@ -1,5 +1,5 @@
-tests
-testMarginalizeFail
+tests-condition
+testConditionalFail
 	| c |
 	c := SKBernoulli new p: 0.3.
 	self assert: [ :x | c marginalize: x o: [ :y | SKGoal fail ]] asGoal fails.

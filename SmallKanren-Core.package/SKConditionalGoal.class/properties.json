@@ -7,8 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"distribution",
-		"sample"
+		"observation",
+		"block"
 	],
-	"name" : "SKSampleGoal",
+	"name" : "SKConditionalGoal",
 	"type" : "normal"
 }

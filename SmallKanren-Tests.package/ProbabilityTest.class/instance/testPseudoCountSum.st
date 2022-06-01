@@ -1,4 +1,4 @@
-tests
+tests-pseudocounts
 testPseudoCountSum
 	
 	| b a |

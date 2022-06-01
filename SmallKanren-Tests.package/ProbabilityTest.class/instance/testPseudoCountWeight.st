@@ -1,4 +1,4 @@
-tests
+tests-pseudocounts
 testPseudoCountWeight
 	
 	| b |

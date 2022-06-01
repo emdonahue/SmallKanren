@@ -1,5 +1,5 @@
-tests
-testConditionalIndependence
+tests-condition
+testConditionSum
 	| b st |
 	b := SKBernoulli new p: 0.6.
 	st := [ :o | { b marginalize: o o: [ :m | {m === 0. m === 1} conde ] } ] asGoal asSpace.

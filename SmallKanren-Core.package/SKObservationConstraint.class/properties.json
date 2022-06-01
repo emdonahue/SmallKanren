@@ -8,6 +8,6 @@
 	"instvars" : [
 		"distribution"
 	],
-	"name" : "SKSampleConstraint",
+	"name" : "SKObservationConstraint",
 	"type" : "normal"
 }

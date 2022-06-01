@@ -1,4 +1,4 @@
-tests
+tests-math
 testLogSqrt
 	| d |
 	d := SKLogSpace new.

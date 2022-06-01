@@ -1,4 +1,4 @@
-tests
+tests-flip
 testFlip1Marginal
 	| c |
 	c := SKBernoulli new p: 0.3.

@@ -1,5 +1,5 @@
-tests
-testBernoulliEstimation
+tests-distributions
+testBernoulli
 	| b |
 	b := SKBernoulli new.
 	

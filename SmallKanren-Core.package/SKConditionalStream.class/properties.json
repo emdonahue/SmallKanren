@@ -9,6 +9,6 @@
 		"state",
 		"stream"
 	],
-	"name" : "SKMarginalStream",
+	"name" : "SKConditionalStream",
 	"type" : "normal"
 }
