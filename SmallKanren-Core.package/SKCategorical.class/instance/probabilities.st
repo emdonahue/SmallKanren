@@ -1,4 +1,3 @@
 accessing
 probabilities
-
-	^ probabilities
+	^ probabilities collect: [ :p | p exp ].

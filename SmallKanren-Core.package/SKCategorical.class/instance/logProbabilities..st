@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 logProbabilities: someProbs
 	probabilities := someProbs.
