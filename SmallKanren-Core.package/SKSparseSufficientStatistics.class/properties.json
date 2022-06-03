@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SKSufficientStatistics",
+	"category" : "SmallKanren-Core-Probability",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SKSparseSufficientStatistics",
+	"type" : "normal"
+}

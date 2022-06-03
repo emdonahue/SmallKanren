@@ -1,3 +1,3 @@
 running
 run
-	^ self asSpace collect: [ :s | s  reify: queryVars ].
+	^ self runStates collect: [ :s | s  reify: queryVars ].

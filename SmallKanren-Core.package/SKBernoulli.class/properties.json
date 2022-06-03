@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "SKLogSpace",
+	"super" : "SKDiscreteDistribution",
 	"category" : "SmallKanren-Core-Probability",
 	"classinstvars" : [ ],
 	"pools" : [ ],

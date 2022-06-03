@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SmallKanren-Core-Probability",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"model",
+		"likelihood",
+		"likelihoodDelta"
+	],
+	"name" : "SKTrainingEpoch",
+	"type" : "normal"
+}

@@ -1,3 +1,3 @@
-running
+probability
 train: aModel
-	^ SKRuntime train: aModel on: self.
+	^ (self trainingEpochs: aModel) last.

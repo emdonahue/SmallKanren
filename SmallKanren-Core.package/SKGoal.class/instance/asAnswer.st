@@ -1,3 +1,3 @@
 running
 asAnswer
-	^ self asSpace ifEmpty: [ SKStream failure ] ifNotEmpty: [ :s | s first ].
+	^ self runStates ifEmpty: [ SKStream failure ] ifNotEmpty: [ :s | s first ].

@@ -1,3 +1,5 @@
 probability
 hasEquivalentConstraints: aState
-	^ substitution == aState substitution and: constraints == aState constraints.
+	<todo> "remove"
+	^ true
+	"^ substitution == aState substitution and: constraints == aState constraints."

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SKStream",
+	"category" : "SmallKanren-Core-Probability",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"state",
+		"stream"
+	],
+	"name" : "SKMarginalizeStream",
+	"type" : "normal"
+}

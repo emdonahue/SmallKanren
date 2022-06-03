@@ -1,14 +1,17 @@
 instance creation
 train: aModel on: aGoal
-	| model likelihood joint oldModel converged |
+
+	| model likelihood expectations epoch |
 	model := aModel.
-	joint := SKPseudoCounts new.
+	expectations := SKPseudoCounts new.
 	likelihood := Float negativeInfinity.
-	converged := false.
-	
-	"Stop when p'/p < 1.01 => log p' - log p > log 1.01"
-	^ Cons generate: [ joint := (self fromPpl: aGoal model: model) maximize.
-			oldModel := model.
-			model := joint maximizeAll: model.
-			{oldModel. joint likelihood } ] 
-		until: [ | stopping | stopping := converged.  converged := converged or: (joint log: joint likelihood difference: likelihood) - likelihood < 0.001 ln. likelihood := joint likelihood.  stopping. ].
+
+	^ Cons generate: [ 
+			expectations := self expectations: model given: aGoal.
+		  epoch := SKTrainingEpoch new
+			  model: model;
+			  likelihood: expectations likelihood; "The likelihood is of the current model, not the future, maximized model."
+			  likelihoodDelta: (expectations likelihoodDelta: likelihood).
+			model := expectations maximizeAll: model.
+			likelihood := expectations likelihood.
+			epoch. ]

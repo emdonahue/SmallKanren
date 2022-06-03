@@ -1,3 +1,3 @@
 converting
 asAnswer
-	^ (SKRuntime new stream: self) asSpace ifEmpty: [ SKStream failure] ifNotEmpty: [ :s | s first ].
+	^ (SKRuntime new stream: self) runStates ifEmpty: [ SKStream failure] ifNotEmpty: [ :s | s first ].

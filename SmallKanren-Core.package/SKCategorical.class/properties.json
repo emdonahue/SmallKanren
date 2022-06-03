@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKDiscreteDistribution",
+	"category" : "SmallKanren-Core-Probability",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"probabilities"
+	],
+	"name" : "SKCategorical",
+	"type" : "normal"
+}
