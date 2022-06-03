@@ -10,7 +10,6 @@ testHMMArgmax
 					{{st === 0. lowe sample: curro. hmm valueWithArguments: {lowt. nexts. nexto.}}.
 					{st === 1. highe sample: curro. hmm valueWithArguments: {hight. nexts. nexto.}}} conde]]}} conde
 			].	
-	
 		
 		self assert: ([ :q | hmm valueWithArguments: {hight. #(1) asCons. #(1) asCons.} ] asGoal runStates collect: [ :s | s likelihood exp]) sum equals: hight p * highe p.
 		

@@ -5,5 +5,5 @@ trainingEpochs: aModel iterations: numIterations threshold: aThreshold
 	convergence := false.
 	^ (SKRuntime train: aModel on: self) takeWhile: [ :e | 
 		iterations := iterations + 1. 
-		convergence := e likelihoodDelta <= aThreshold.
+		convergence := e likelihoodDelta <= aThreshold ln.
 		iterations ~= numIterations and: convergence not ].

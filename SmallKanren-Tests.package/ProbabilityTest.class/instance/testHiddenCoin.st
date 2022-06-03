@@ -6,5 +6,5 @@ testHiddenCoin | h c0 c1 mdl |
 	c0 := SKBernoulli new p: 0.2.
 	c1 := SKBernoulli new p: 0.3.
 	mdl := ([ :m | { { m  first sample: 0. { m second sample: 0. m second sample: 1 } }.
-		{ m first sample: 1. { m third sample: 0. m third sample: 1 } } } conde ] asGoal trainingEpochs: {h. c0. c1}) last first collect: #p.
+		{ m first sample: 1. { m third sample: 0. m third sample: 1 } } } conde ] asGoal trainingEpochs: {h. c0. c1}) last model collect: #p.
 self assert: mdl first * mdl third + ((1 - mdl first) * mdl second) closeTo: 0.5 precision: 0.0001.
