@@ -33,3 +33,9 @@ testHMMArgmax
 		self assert: ([ :q | hmm valueWithArguments: {hight. q. #(1 0) asCons.} ] asGoal runStates collect: [ :s | s likelihood exp]) sum closeTo: 
 		((hight p * highe p) * ((1-hight p) * (1-lowe p)))
 		precision: 0.0001.
+		
+	self assert: [ :q | hmm valueWithArguments: {hight. q. #(1 0 0) asCons.} ] asGoal run first first equals: #(1 0 0) asCons.
+		
+	self assert: ([ :q | hmm valueWithArguments: {hight. q. #(1 0 0) asCons.} ] asGoal runStates collect: [ :s | s likelihood exp]) sum closeTo: 
+		((hight p * highe p) * ((1-hight p) * (1-lowe p)) * ((1-lowt p) * (1-lowe p)))
+		precision: 0.0001.

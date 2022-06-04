@@ -8,4 +8,5 @@ master: goalBlock args: argVars state: aState cache: cache key: cacheKey
 			(SKTabledProducerStream new
 				cache: cache;
 				inputs: cacheKey;
-				cacheKey: (aState reify: cacheKey)).
+				cacheKey: (aState reify: cacheKey);
+				pseudoCounts: aState pseudoCounts).

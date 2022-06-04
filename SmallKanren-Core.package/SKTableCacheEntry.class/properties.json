@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SmallKanren-Core-Tabling",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"argv",
+		"pseudoCounts"
+	],
+	"name" : "SKTableCacheEntry",
+	"type" : "normal"
+}
