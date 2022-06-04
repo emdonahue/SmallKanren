@@ -1,5 +1,5 @@
 arithmetic
 * logWeight
 	^ self class new 
-		pseudocounts: (self pseudocounts collect: [ :d | d * logWeight ]);
+		pseudocounts: (self scale: logWeight);
 		likelihood: (self log: likelihood product: logWeight).

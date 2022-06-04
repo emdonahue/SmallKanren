@@ -8,5 +8,5 @@ consumeAnswer: aRunner
 		ifTrue: [ numConsumed := numConsumed + 1.
 			cacheentry := cache at: numConsumed.
 			^ (state unify: argVars with: (state copyTerm: cacheentry argv))
-				addPseudoCounts: cacheentry pseudoCounts ].
+				averagePseudoCounts: cacheentry pseudoCounts ].
 	^ SKStream failure.
