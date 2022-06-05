@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"state",
-		"stream"
+		"stream",
+		"pseudocounts"
 	],
 	"name" : "SKMarginalizeStream",
 	"type" : "normal"
