@@ -31,4 +31,4 @@ testHMMGenerative
 		self assert: naive likelihood equals: aggregated likelihood.
 		self assert: naive likelihood closeTo: tabled likelihood precision: 0.0001.
 		true.
-	]) equals: 2 + 4 + 8.
+	]) equals: 2 + 4 + 8 + 16 + 32.
