@@ -1,3 +1,3 @@
 comparing
 = aPseudoCounts
-	^ self pseudocounts = aPseudoCounts pseudoCounts and: likelihood = aPseudoCounts likelihood.
+	^ self pseudocounts = aPseudoCounts pseudocounts and: likelihood = aPseudoCounts likelihood.

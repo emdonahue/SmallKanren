@@ -1,3 +1,3 @@
 accessing
 firstStep: aRunner
-	^ (stream firstStep: aRunner) condition: state.
+	^ (stream firstStep: aRunner) marginalize: state pseudocounts: pseudocounts.

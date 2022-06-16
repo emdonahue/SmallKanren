@@ -19,5 +19,3 @@ testHMMTabled
 		((hight p * highe p) * ((hight p * (1-highe p)) + ((1-hight p) * (1-lowe p))))
 		+ (((1-hight p) * lowe p) * (((lowt p * (1-highe p))) + ((1-lowt p) * (1-lowe p))))
 		precision: 0.0001.
-		
-	

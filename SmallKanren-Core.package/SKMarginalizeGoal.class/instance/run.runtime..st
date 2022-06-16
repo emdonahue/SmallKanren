@@ -6,8 +6,8 @@ run: aState runtime: aRuntime
 	^ ((distribution support collect: 
 			[ :o | 
 				{walked ifNil: true
-					ifNotNil: [ walked = o | walked isSKVar ]. "If observation is already bound, fail all but one branch."
+					ifNotNil: [ walked === o ]. "If observation is already bound, fail all but one branch."
 				distribution sample: o. "Adjust the likelihood of the branch."
 				block value: o} ]) 
 		conde run: aState runtime: aRuntime) 
-			condition: (aState copy pseudoCounts: SKPseudoCounts new).
+			marginalize: nil pseudocounts: nil.

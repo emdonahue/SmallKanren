@@ -1,3 +1,3 @@
 accessing
 step: aRunner
-	^ (stream step: aRunner) condition: state.
+	^ (stream step: aRunner) marginalize: state pseudocounts: pseudocounts.

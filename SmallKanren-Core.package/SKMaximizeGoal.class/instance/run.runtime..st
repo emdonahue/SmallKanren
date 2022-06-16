@@ -5,9 +5,9 @@ run: aState runtime: aRuntime
 	walked := aState walk: observation.
 	^ ((distribution support collect: 
 			[ :o | 
-				{observation 
+				{walked 
 					ifNil: true "If no variable will bind the maximized arg, just ignore and contribute likelihood."
-					ifNotNil: [ observation === o ]. "Unlike marginalization, maximization can return an actual answer."
+					ifNotNil: [ walked === o ]. "Unlike marginalization, maximization can return an actual answer."
 				distribution sample: o. "Adjust the likelihood of the branch."
 				block value: o} ]) 
 		conde run: aState runtime: aRuntime) 
