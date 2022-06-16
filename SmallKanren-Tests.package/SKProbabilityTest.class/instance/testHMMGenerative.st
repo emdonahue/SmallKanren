@@ -1,6 +1,6 @@
 tests-hmm
 testHMMGenerative
-	| hmm shmm thmm times size |
+	| hmm shmm thmm size data |
 	hmm := [ :prevt :states :observations | 
 		{{states isEmptyo. observations isEmptyo}.
 		{{states. observations} match: #((_ . _) (_ . _)) o: [ :currs :nexts :curro :nexto | 
@@ -22,14 +22,13 @@ testHMMGenerative
 		] tabled: #tabledhmm
 			inputs: {prevt. states. observations} ].	
 		
-	times := OrderedCollection new.
-	size := 3.
-	1 to: size do: [ :l | 
-		(Array new: l withAll: 0), (Array new: size-l withAll: 1) permutationsDo: [ :_d | | d naive aggregated tabled |
-			d := _d asCons.
+	data := [ :x :n | n = 0 ifTrue: [ x === Cons empty ]
+		ifFalse: [ x carCdro: [ :a :d | {{a === 0. a ===1} conde. {{d === Cons empty. 1 < n}. data value: d value: n-1} conde}]]].
+	self assert: (([ :q | data value: q value: 5 ] asGoal run collect: #first) count: [ :d | | naive aggregated tabled |
 			naive := [ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal runStates reduce: [ :a :b | a likelihood > b likelihood ifTrue: a ifFalse: b ].
 		aggregated := [ :q | shmm valueWithArguments: {hight. q. d.} ] asGoal runStates first.
 		tabled := [ :q | thmm valueWithArguments: {hight. q. d.} ] asGoal runStates first.
 		self assert: naive likelihood equals: aggregated likelihood.
 		self assert: naive likelihood closeTo: tabled likelihood precision: 0.0001.
-	]].
+		true.
+	]) equals: 2 + 4 + 8.
