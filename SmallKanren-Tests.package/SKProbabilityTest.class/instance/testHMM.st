@@ -31,3 +31,9 @@ testHMM
 		((hight p * highe p) * ((hight p * (1-highe p)) + ((1-hight p) * (1-lowe p))))
 		+ (((1-hight p) * lowe p) * (((lowt p * (1-highe p))) + ((1-lowt p) * (1-lowe p))))
 		precision: 0.0001.
+		
+	self assert: [ :q | hmm valueWithArguments: {hight. #(1 1 1) asCons. #(0 1 1) asCons.} ] asGoal runStates first likelihood equals: -3.583330956125896.
+	
+	self assert: [ :q | hmm valueWithArguments: {hight. #(0 1 1) asCons. #(0 1 1) asCons.} ] asGoal runStates first likelihood equals: -3.891632315780412.
+	
+	self assert: [ :q | hmm valueWithArguments: {hight. #(1 1 1) asCons. #(1 1 1) asCons.} ] asGoal runStates first likelihood closeTo: (0.63 ** 3) ln precision: 0.0001.

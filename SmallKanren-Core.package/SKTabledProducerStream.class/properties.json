@@ -10,7 +10,7 @@
 		"cache",
 		"argVars",
 		"cacheKey",
-		"pseudoCounts"
+		"state"
 	],
 	"name" : "SKTabledProducerStream",
 	"type" : "normal"

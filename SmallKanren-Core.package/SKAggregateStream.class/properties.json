@@ -1,11 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "SKAggregateStream",
+	"super" : "SKStream",
 	"category" : "SmallKanren-Core-Probability",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "SKMaximizeStream",
+	"instvars" : [
+		"state",
+		"stream"
+	],
+	"name" : "SKAggregateStream",
 	"type" : "normal"
 }

@@ -9,4 +9,4 @@ cacheStream: aState
 		ifFalse: [ ^ SKStream failure ].
 	"Otherwise, cache the answer and continue."
 	cache add: (SKTableCacheEntry new argv: (aState answer reify: argVars); pseudoCounts: aState pseudoCounts).
-	^ aState averagePseudoCounts: pseudoCounts.
+	^ aState averagePseudoCounts: state pseudoCounts.
