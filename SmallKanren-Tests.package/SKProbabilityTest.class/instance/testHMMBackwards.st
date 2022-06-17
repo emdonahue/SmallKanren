@@ -20,4 +20,11 @@ testHMMBackwards
 		+ (((1-hight p) * lowe p) * (((lowt p * (1-highe p))) + ((1-lowt p) * (1-lowe p))))
 		precision: 0.0001.
 		
+	[ | r | 
+		r := [ :q | tabledhmm valueWithArguments: {hight. q. #(1 1 1) asCons.} ] asGoal runtime.
+		self halt.
+			r runStatesForced.
+			(r tables at: #tabledhmm) inspect ] value.
+		
+	"self assert: [ :q | tabledhmm valueWithArguments: {hight. q. #(1 1 1) asCons.} ] asGoal runStates first likelihood exp closeTo:  0.37087499999999995 precision: 0.0001."
 	

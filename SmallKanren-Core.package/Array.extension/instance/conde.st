@@ -1,3 +1,3 @@
 *SmallKanren-Core
 conde
-	^ SKConde clauses: self.
+	^ self reverse reduce: [ :a :b | b asGoal | a asGoal ].

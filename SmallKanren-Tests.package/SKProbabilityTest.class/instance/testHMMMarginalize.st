@@ -28,3 +28,5 @@ testHMMMarginalize
 		((hight p * highe p) * ((hight p * (1-highe p)) + ((1-hight p) * (1-lowe p))))
 		+ (((1-hight p) * lowe p) * (((lowt p * (1-highe p))) + ((1-lowt p) * (1-lowe p))))
 		precision: 0.0001.
+		
+	self assert: [ :q | hmm valueWithArguments: {hight. q. #(1 1 1) asCons.} ] asGoal runStates first likelihood exp closeTo:  0.37087499999999995 precision: 0.0001.

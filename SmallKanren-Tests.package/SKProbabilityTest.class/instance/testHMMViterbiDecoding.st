@@ -53,5 +53,3 @@ testHMMViterbiDecoding
 		self halt.
 			r runStatesForced.
 			(r tables at: #tabledhmm) inspect ] value."
-	
-	"self assert: [ :q | hmm valueWithArguments: {hight. q. #(0 1 1) asCons.} ] asGoal runStates first likelihood closeTo: -3.583330956125896 precision: 0.0001."

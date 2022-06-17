@@ -1,6 +1,7 @@
 tests-hmm
-testHMMGenerative
-	| hmm shmm thmm size data |
+testHMMArgmaxGenerative
+	| hmm shmm thmm data |
+	hmm := shmm := thmm := nil.
 	hmm := [ :prevt :states :observations | 
 		{{states isEmptyo. observations isEmptyo}.
 		{{states. observations} match: #((_ . _) (_ . _)) o: [ :currs :nexts :curro :nexto | 
