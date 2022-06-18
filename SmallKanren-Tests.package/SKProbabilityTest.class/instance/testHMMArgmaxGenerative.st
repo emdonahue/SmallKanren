@@ -1,6 +1,7 @@
 tests-hmm
 testHMMArgmaxGenerative
 	| hmm shmm thmm data |
+	"self timeLimit: 60 seconds."
 	hmm := shmm := thmm := nil.
 	hmm := [ :prevt :states :observations | 
 		{{states isEmptyo. observations isEmptyo}.
@@ -22,7 +23,7 @@ testHMMArgmaxGenerative
 				{st === 1. highe sample: curro. thmm valueWithArguments: {hight. nexts. nexto.}}} conde]]}} conde
 		] tabled: #tabledhmm
 			inputs: {prevt. states. observations} ].	
-		
+	data := nil.
 	data := [ :x :n | n = 0 ifTrue: [ x === Cons empty ]
 		ifFalse: [ x carCdro: [ :a :d | {{a === 0. a ===1} conde. {{d === Cons empty. 1 < n}. data value: d value: n-1} conde}]]].
 	self assert: (([ :q | data value: q value: 5 ] asGoal run collect: #first) count: [ :d | | naive aggregated tabled |

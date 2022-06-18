@@ -15,24 +15,26 @@ testPerformanceHMM1D
 	shmm := [ :prevt :states :observations | 
 		{{states isEmptyo. observations isEmptyo}.
 		{{states. observations} match: #((_ . _) (_ . _)) o: [ :currs :nexts :curro :nexto | 
-			prevt marginalize: currs o: [ :st |
+			prevt argmax: currs o: [ :st |
 				{{st === 0. lowe sample: curro. shmm valueWithArguments: {lowt. nexts. nexto.}}.
 				{st === 1. highe sample: curro. shmm valueWithArguments: {hight. nexts. nexto.}}} conde]]}} conde ].
 	thmm := [ :prevt :states :observations | 
 		[ :pt :ss :os | 
 		{{ss isEmptyo. os isEmptyo}.
 		{{ss. os} match: #((_ . _) (_ . _)) o: [ :currs :nexts :curro :nexto | 
-			pt marginalize: currs o: [ :st |
+			pt argmax: currs o: [ :st |
 				{{st === 0. lowe sample: curro. thmm valueWithArguments: {lowt. nexts. nexto.}}.
 				{st === 1. highe sample: curro. thmm valueWithArguments: {hight. nexts. nexto.}}} conde]]}} conde
 		] tabled: #tabledhmm
 			inputs: {prevt. states. observations} ].	
 		
-	times := {OrderedCollection new. OrderedCollection new. OrderedCollection new}.
-	1 to: 15 do: [ :l | | d |
-		d := (Array new: l withAll: 1) asCons.
-		times first add: {l. [ [ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat}.
-		times second add: {l. [ [ :q | shmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat}.
-		times third add: {l. [ [ :q | thmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat}.
-	].
-	(Character lf asString , Character lf asString join: (times collect: [ :t | Character lf join: (t collect: [ :lt | Character tab join: lt ]) ])) inspect.
+	times := OrderedCollection new.
+	(Character lf join:
+		(((12 to: 12) collect: [ :l | | d |
+			d := (Array new: l withAll: 1) asCons.
+			{l. 
+				[ [ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat.
+				[ [ :q | shmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat.
+				[ [ :q | thmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat}.
+		]) collect: [ :r | Character space join: r ])) inspect.
+		"(Character lf asString , Character lf asString join: (times collect: [ :t | Character lf join: (t collect: [ :lt | Character tab join: lt ]) ])) inspect."
