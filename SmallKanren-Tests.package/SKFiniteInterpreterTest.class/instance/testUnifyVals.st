@@ -8,18 +8,18 @@ testUnifyVals
 			interpreter
 				unify: 1
 				with: 1
-				in: #(#(x y z) #()) asConsTree
+				in: #(#(x y z) #()) asConsR
 				o: p
 				depth: 1
 				length: 1 ] asGoal run
-		equals: #(#(#(#(x y z) #()))) asConsTree.
+		equals: #(#(#(#(x y z) #()))) asConsR.
 	self
 		assert:
 			[ :p | 
 			interpreter
 				unify: 1
 				with: 2
-				in: #(#(x y z) #()) asConsTree
+				in: #(#(x y z) #()) asConsR
 				o: p
 				depth: 1
 				length: 1 ] asGoal run

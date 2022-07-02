@@ -1,6 +1,7 @@
 tests-hmm
 testHMMMarginalizeGenerative
 	| hmm shmm thmm data |
+	self skip.
 	hmm := shmm := thmm := nil.
 	hmm := [ :prevt :states :observations | 
 		{{states isEmptyo. observations isEmptyo}.

@@ -1,8 +1,8 @@
 running
 runStates
 	^ (Cons
-		generate: [ | peek |
-			peek := self peek.
+		generate: [
 			self unsafeStep.
-			peek ]
-		until: [ self sync atEnd ])
+			self peek ]
+		from: [ self peek ]
+		upTo: [ self sync atEnd ]) forced.

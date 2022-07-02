@@ -6,4 +6,4 @@ testFreshVars
 			[ :a | 
 			{(a === 1).
 			(q === a cons)} ] ] asGoal run
-		equals: #(#(#(1))) asConsTree
+		equals: #(#(#(1))) asConsR

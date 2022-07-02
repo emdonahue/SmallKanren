@@ -7,5 +7,5 @@ testReusedStream
 		at: #path
 		put:
 			(Dictionary
-				with: #(1 2) asConsTree -> (#(#(1 2) #(1 2) #(1 2)) asConsTree collect: [ :e | SKTableCacheEntry new argv: e ])).
+				with: #(1 2) asConsR -> (#(#(1 2) #(1 2) #(1 2)) asConsR collect: [ :e | SKTableCacheEntry new argv: e ])).
 	self assert: r run size equals: 3

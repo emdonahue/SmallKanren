@@ -13,6 +13,6 @@ testWalk
 		equals: #z.
 	self
 		assert:
-			[ :val | interpreter walk: #y in: #(x 42 z) asConsTree o: val ] asGoal
+			[ :val | interpreter walk: #y in: #(x 42 z) asConsR o: val ] asGoal
 				run first first
 		equals: 42

@@ -27,6 +27,6 @@ testPCFG
 	
 	self assert: [ :q | pcfg valueWithArguments: {rules. #NN. q. #(cat) asCons}] asGoal runStates first likelihood equals: (rules logLikelihood: #(NN cat) asCons).
 	
-	self assert: [ :q | pcfg valueWithArguments: {rules. #NP. q. #(the cat) asCons}] asGoal run first first equals: #(NP (DT the) (NN cat)) asConsTree.
+	self assert: [ :q | pcfg valueWithArguments: {rules. #NP. q. #(the cat) asCons}] asGoal run first first equals: #(NP (DT the) (NN cat)) asConsR.
 		
 	self assert: [ :q | pcfg valueWithArguments: {rules. #NP. q. #(the cat) asCons}] asGoal runStates first likelihood equals: (rules logLikelihood: #(NP DT NN) asCons) + (rules logLikelihood: #(DT the) asCons) + (rules logLikelihood: #(NN cat) asCons).

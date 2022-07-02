@@ -7,9 +7,9 @@ testConstraintStore
 				extend: #x
 				with: #symbol
 				constraint: #typeo
-				store: #(#() #() #()) asConsTree
+				store: #(#() #() #()) asConsR
 				o: o ] asGoal run
 		equals:
 			{{{{(#x cons: #symbol)}. 
 			#().
-			#()}}} asConsTree
+			#()}}} asConsR
