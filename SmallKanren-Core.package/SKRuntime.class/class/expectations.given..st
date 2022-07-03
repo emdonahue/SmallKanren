@@ -1,4 +1,4 @@
-instance creation
+probability
 expectations: aModel given: aGoal	
 		^ ((self new  
 		query: aGoal query allButFirst asCons;

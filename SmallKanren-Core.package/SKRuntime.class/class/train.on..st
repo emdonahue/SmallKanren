@@ -1,4 +1,4 @@
-instance creation
+probability
 train: aModel on: aGoal
 
 	| model likelihood expectations epoch |

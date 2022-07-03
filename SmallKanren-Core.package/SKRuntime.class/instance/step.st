@@ -1,3 +1,3 @@
-running
+streaming
 step
 	^ self step: stream

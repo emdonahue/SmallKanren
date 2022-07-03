@@ -1,3 +1,3 @@
 testing
-atEnd 	
-	^ true.
+atEnd
+	^ true

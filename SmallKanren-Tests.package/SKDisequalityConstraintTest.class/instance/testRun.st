@@ -1,3 +1,3 @@
 tests
 testRun
-	self assert: (x =/= y) runtime runAll size equals: 1.
+	self assert: (x =/= y) runtime run size equals: 1.

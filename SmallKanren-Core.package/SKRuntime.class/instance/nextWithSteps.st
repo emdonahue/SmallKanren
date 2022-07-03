@@ -1,4 +1,4 @@
-running
+debugging
 nextWithSteps
 	| nextStream steps |
 	steps := 0.

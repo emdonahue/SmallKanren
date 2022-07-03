@@ -6,7 +6,7 @@ testUnifyList
 				isEmpty.
 	self
 		assert: (SKState new unify: 42 cons with: 42 cons) substitution isEmpty.
-	self assert: (SKState new unify: 42 cons with: 51 cons) isNone.
+	self assert: (SKState new unify: 42 cons with: 51 cons) atEnd.
 	self
 		assert: (SKState new unify: x with: Cons empty) => x
 		equals: Cons empty.

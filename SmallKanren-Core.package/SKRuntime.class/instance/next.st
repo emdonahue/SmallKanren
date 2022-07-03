@@ -1,4 +1,4 @@
-running
+debugging
 next
 	| nextStream |
 	nextStream := stream firstStep: self.

@@ -1,3 +1,3 @@
-running
+streaming
 atEnd
-	^ stream isNone
+	^ stream atEnd.
