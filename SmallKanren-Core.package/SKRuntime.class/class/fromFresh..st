@@ -1,5 +1,7 @@
 instance creation
 fromFresh: aGoal
+	| query |
+	query := aGoal query asCons.
 	^ self new 
-		query: aGoal query asCons;
-		stream: (aGoal run: SKState new).
+		query: query;
+		stream: ([aGoal expandFresh: query] asGoal run: SKState new).

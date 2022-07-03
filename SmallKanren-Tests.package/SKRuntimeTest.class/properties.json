@@ -5,17 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"x",
-		"y",
-		"z",
-		"yhash",
-		"xhash",
-		"failure",
-		"s",
-		"r",
-		"repeato"
-	],
-	"name" : "SKGoalTest",
+	"instvars" : [ ],
+	"name" : "SKRuntimeTest",
 	"type" : "normal"
 }
