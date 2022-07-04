@@ -1,3 +1,3 @@
 streaming
 step: aRunner
-	
+	self.

@@ -1,3 +1,3 @@
-subclassresponsibility
+debugging
 packages: packageCollection
 	self subclassResponsibility 

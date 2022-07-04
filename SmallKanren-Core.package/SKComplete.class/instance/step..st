@@ -1,3 +1,3 @@
-running
+streaming
 step: aRunner
-	^ right.
+	^ right runtime: aRunner.

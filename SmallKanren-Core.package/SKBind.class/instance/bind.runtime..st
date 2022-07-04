@@ -1,3 +1,3 @@
 subclassresponsibility
 bind: aGoal runtime: aRunner
-	^ self class new goal: aGoal; stream: self
+	^ (self class new goal: aGoal; stream: self) runtime: aRunner.

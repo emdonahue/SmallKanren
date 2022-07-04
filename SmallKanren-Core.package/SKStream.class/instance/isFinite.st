@@ -1,3 +1,0 @@
-subclassresponsibility
-isFinite
-	self subclassResponsibility 

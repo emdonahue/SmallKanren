@@ -1,3 +1,3 @@
 running
-run: aState runtime: aRuntime
+run: aState
 	^ aState addSchedule: (SKScheduledFresh new block: block).

@@ -1,5 +1,5 @@
-subclassresponsibility
+streaming
 bind: aGoal runtime: aRunner
-	^ SKBind new
+	^ (SKBind new
 		goal: aGoal;
-		stream: self
+		stream: self) runtime: aRunner.

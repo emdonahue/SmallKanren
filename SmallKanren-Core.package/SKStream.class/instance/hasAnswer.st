@@ -1,3 +1,3 @@
-subclassresponsibility
+streaming
 hasAnswer
 	self subclassResponsibility 

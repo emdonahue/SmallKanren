@@ -1,3 +1,0 @@
-testing
-isFinite
-	^ right isFinite
