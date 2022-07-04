@@ -1,2 +1,2 @@
-streaming
+scheduling
 runGoal: aGoal

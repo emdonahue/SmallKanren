@@ -1,3 +1,0 @@
-accessing
-score
-	^ stream score

@@ -1,3 +1,0 @@
-inspecting
-sourceName
-		^ stream sourceName

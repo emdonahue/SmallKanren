@@ -1,3 +1,0 @@
-subclassresponsibility
-isIncomplete
-	^ true.
