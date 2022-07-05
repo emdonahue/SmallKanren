@@ -1,6 +1,7 @@
 checking
 fire: aVal in: aState
-	<todo> "Full unification requires the runtime. This is a temporary hack."
+	<todo> "Full unification requires the runtime. This is a temporary 
+hack."
 	
 	| sm smd s |
 	sm := aState walk: sum.
@@ -8,7 +9,7 @@ fire: aVal in: aState
 	
 	aVal isSKVar ifFalse: [ 
 	smd isSKVar ifFalse: [ ^ aState unify: sm with: aVal + smd runtime: nil ].
-	sm isSKVar ifFalse: [ ^ aState unify: smd with: sm - aVal runtime: nil ].
+	sm isSKVar ifFalse: [ ^ aState unify: smd with: sm - aVal runtime: SKRuntime new ].
 	^ (aState add: smd constraint: (self class new sum: sm; summand: aVal)). ].
 	
 	smd isSKVar | sm isSKVar ifFalse: [ ^ aState unify: aVal with: sm - smd ].

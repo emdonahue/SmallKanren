@@ -9,5 +9,5 @@ check: aValue extend: aVar in: aState runtime: aRuntime
 	| c s |
 	c := self at: aVar.
 	s := c check: aValue extend: aVar in: aState.
-	s isFailure ifTrue: [ ^ s ].
+	s ifFailure: [ ^ s ].
 	^ c eager: aVar val: aValue in: s runtime: aRuntime.

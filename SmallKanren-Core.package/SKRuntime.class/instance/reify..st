@@ -1,0 +1,4 @@
+streams
+reify: aTerm 
+	"Debugging"
+	^ stream reify: aTerm.

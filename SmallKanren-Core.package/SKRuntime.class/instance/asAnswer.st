@@ -1,0 +1,3 @@
+streams
+asAnswer
+	^ stream asAnswer

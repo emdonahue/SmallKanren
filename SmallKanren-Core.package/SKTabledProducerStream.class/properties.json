@@ -10,7 +10,9 @@
 		"cache",
 		"argVars",
 		"cacheKey",
-		"state"
+		"state",
+		"inputCacheKey",
+		"tableName"
 	],
 	"name" : "SKTabledProducerStream",
 	"type" : "normal"

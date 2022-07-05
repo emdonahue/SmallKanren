@@ -10,4 +10,4 @@ testMergeBooleanAbsento
 	self assert: ((x absento: false), (x absento: false), (x absento: false) merge: booleano) equals: istrue.
 	self assert: ((((x absento: false) & x isBooleano) run: s runtime: r) reify: x) equals: true.
 	self assert: (((x isBooleano & (x absento: false)) run: s runtime: r) reify: x) equals: true.
-	self assert: ((x isBooleano & (x absento: false) & (x absento: true)) run: s runtime: r) equals: failure.
+	self assert: ((x isBooleano & (x absento: false) & (x absento: true)) run: s runtime: r) isFailure.

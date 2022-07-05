@@ -12,7 +12,7 @@ testMergeBooleanDisequality
 	self assert: (booleano merge: (x=/=y) asConstraint) equals: (x=/=y), booleano.
 	self assert: (((x=/=false & x isBooleano) run: s runtime: r) reify: x) equals: true.
 	self assert: (((x isBooleano & (x=/=false)) run: s runtime: r) reify: x) equals: true.
-	self assert: ((x isBooleano & (x=/=false) & (x=/=true)) run: s runtime: r) equals: failure.
+	self assert: ((x isBooleano & (x=/=false) & (x=/=true)) run: s runtime: r) isFailure.
 	self assert: ((((x=/=y) & x isBooleano & y isBooleano & (x=/=false)) run: s runtime: r) reify: x) equals: true.
 	self assert: ((((x=/=y) & x isBooleano & y isBooleano & (x=/=false)) run: s runtime: r) reify: y) equals: false.
 	self assert: (((x isBooleano & z isBooleano & (x=/=z) & (y=/=false) & (y=/=1) & (x===y)) run: s runtime: r) reify: z) equals: false.

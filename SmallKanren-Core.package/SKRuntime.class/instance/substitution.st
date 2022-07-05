@@ -1,0 +1,3 @@
+streams
+substitution
+	^ stream substitution.

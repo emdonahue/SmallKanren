@@ -1,2 +1,3 @@
 scheduling
-runGoal: aGoal
+runGoal: aRuntime
+	^ self runtime: aRuntime.

@@ -1,0 +1,3 @@
+streams
+=> aSKTaggedVar 
+	^ stream => aSKTaggedVar .

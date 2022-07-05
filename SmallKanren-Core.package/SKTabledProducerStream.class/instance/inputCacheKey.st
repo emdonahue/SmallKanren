@@ -1,0 +1,4 @@
+accessing
+inputCacheKey
+
+	^ inputCacheKey
