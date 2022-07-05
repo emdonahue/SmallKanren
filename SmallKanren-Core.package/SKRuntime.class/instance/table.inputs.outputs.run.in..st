@@ -7,7 +7,7 @@ table: tableName inputs: inputVars outputs: outputVars run: aState in: goalBlock
 	<todo>
 	| table cacheKey |
 	cacheKey := aState reify: inputVars. "Cached streams are indexed by reifications of the input vars."
-	table := tables at: tableName ifAbsentPut: [ PluggableDictionary new hashBlock: [ :a | a skAlphaHash ]; equalBlock: [ :a :b | a skAlphaEquals: b ] ].
+	"table := tables at: tableName ifAbsentPut: [ PluggableDictionary new hashBlock: [ :a | a skAlphaHash ]; equalBlock: [ :a :b | a skAlphaEquals: b ] ]."
 	"If the cache already exists, this is a consumer call. Otherwise, it is a producer call."
 	tables at: tableName ifPresent: [ :t | 
 		t at: cacheKey ifPresent: [ :c | 

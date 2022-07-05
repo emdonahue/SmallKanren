@@ -1,9 +1,7 @@
 printing
 printOn: aStream
 	aStream
-		nextPutAll: 'Producer ';
-		nextPutAll: cache size asString;
-		
+		nextPutAll: 'Tabled';		
 		nextPut: $(.
-		cacheKey printOn: aStream.
+		stream class printOn: aStream.
 		aStream nextPut: $).

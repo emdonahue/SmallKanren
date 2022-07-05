@@ -1,0 +1,3 @@
+testing
+isIncomplete
+	^ stream isIncomplete.

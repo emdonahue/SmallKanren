@@ -1,6 +1,7 @@
 streaming
 next
-	| nextStream |
-	nextStream := (stream firstStep: self) stream.
-	[ nextStream isIncomplete ] whileTrue: [ nextStream := nextStream firstStep: self ].
-	^ self copy stream: nextStream.
+	
+	| next |
+	next := self step.
+	[ next isIncomplete ] whileTrue: [ next := next step ].
+	^ next.

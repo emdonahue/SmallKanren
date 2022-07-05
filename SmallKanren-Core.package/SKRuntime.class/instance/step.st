@@ -1,3 +1,3 @@
 streaming
 step
-	^ self step: stream
+	^ self step: stream.
