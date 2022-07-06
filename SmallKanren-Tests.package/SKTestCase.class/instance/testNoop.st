@@ -1,3 +1,3 @@
 tests
 testNoop
-	"Makes the test light green."
+	"Makes the class test light green."

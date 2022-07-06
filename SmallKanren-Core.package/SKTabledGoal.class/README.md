@@ -2,4 +2,4 @@ Goal representing a tabled relation. When run, it produces a tabled stream that 
 
 Input arguments represent the memoization key and can be thought of as inputs to a function. Subsequent calls with unifying input arguments will return values from the cache.
 
-Output arguments can be thought of as the function output(s). They are not used to perform cache lookups.
+Output arguments can be thought of as the function output(s). They are not used to perform cache lookups but they are stored in the cache. We can think of all possible output answers as part of an equivalence class: any one of them is equally good and the system should consider all others to be duplicates and fail them. This is useful, for instance, in pathing, where for the same source and destination there are infinitely many paths, any of which satisfies the relation. We don't want to cache all infinitely many paths, so we specify that path is only an output variable. Any path between the two points will do.

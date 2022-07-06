@@ -7,12 +7,10 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"stream",
-		"cache",
-		"argVars",
 		"cacheKey",
-		"state",
-		"inputCacheKey",
-		"tableName"
+		"inputVars",
+		"tableName",
+		"state"
 	],
 	"name" : "SKTabledProducerStream",
 	"type" : "normal"
