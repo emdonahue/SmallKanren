@@ -1,4 +1,4 @@
-subclassresponsibility
+streaming
 step: aRunner
 
 	^ (stream step: aRunner)

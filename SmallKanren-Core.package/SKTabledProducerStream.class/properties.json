@@ -10,7 +10,7 @@
 		"cacheKey",
 		"inputVars",
 		"tableName",
-		"state"
+		"pseudocounts"
 	],
 	"name" : "SKTabledProducerStream",
 	"type" : "normal"

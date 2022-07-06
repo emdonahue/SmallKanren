@@ -12,4 +12,4 @@ master: goalBlock outputs: outputVars state: aState inputs: inputVars cacheKey: 
 		  table: aTableName
 		  cacheKey: aCacheKey
 		  inputs: inputVars
-		  state: aState
+		  pseudocounts: aState pseudoCounts

@@ -1,4 +1,4 @@
-subclassresponsibility
+tabling
 consumeAnswer: aRunner
 
 	^ (stream consumeAnswer: aRunner)
