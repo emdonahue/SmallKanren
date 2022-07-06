@@ -1,24 +1,18 @@
 tabling
 table: tableName inputs: inputVars outputs: outputVars run: aState in: goalBlock
+	<type: #Symbol type: #Cons type: #Cons type: #Cons type: #SKState returns: #String>
+	"Called from TabledGoal to perform tabling on a pure state."
 	"Can we reify the argVars /before/ passing to either reuse or master?"
 
 	"a faster dictionary should be doable"
 
 	<todo>
-	| table cacheKey |
+	| cacheKey |
 	cacheKey := aState reify: inputVars. "Cached streams are indexed by reifications of the input vars."
-	"table := tables at: tableName ifAbsentPut: [ PluggableDictionary new hashBlock: [ :a | a skAlphaHash ]; equalBlock: [ :a :b | a skAlphaEquals: b ] ]."
-	"If the cache already exists, this is a consumer call. Otherwise, it is a producer call."
+	"If the cache already exists, this is a consumer call."
 	tables at: tableName ifPresent: [ :t | 
 		t at: cacheKey ifPresent: [ :c | 
 			self halt.
 			^ self reuse: outputVars cache: c state: aState ]].
-	^ self master: goalBlock args: outputVars state: aState key: inputVars cacheKey: cacheKey tablename: tableName.
-	"^ table
-		at: cacheKey
-		ifPresent: [ :c | 
-			self halt.
-			self reuse: outputVars cache: c state: aState ]
-		ifAbsent: [ | c |
-			c := table at: cacheKey put: OrderedCollection new.
-			self master: goalBlock args: outputVars state: aState cache: c key: inputVars ]."
+	"Otherwise, it is a producer call."
+	^ self master: goalBlock outputs: outputVars state: aState inputs: inputVars cacheKey: cacheKey tablename: tableName.

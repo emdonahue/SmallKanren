@@ -10,7 +10,7 @@ master: goalBlock args: argVars state: aState cache: cache key: cacheKey
 	<todo>
 	self halt.
 	^ ((goalBlock valueWithArguments: argVars)
-		   run: aState tabledClose
+		   run: aState stripPseudocounts
 		   runtime: self)
 		  produceTabledAnswersFrom: (SKTabledProducerStream new
 				   cache: cache;

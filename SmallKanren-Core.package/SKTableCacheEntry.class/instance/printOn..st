@@ -1,5 +1,6 @@
 printing
 printOn: aStream
 	argv printOn: aStream.
-	aStream nextPut: $:.
-	pseudoCounts likelihood exp printOn: aStream.
+	pseudoCounts likelihood isZero ifFalse: [
+		aStream nextPut: $:.
+		pseudoCounts likelihood exp printOn: aStream.]

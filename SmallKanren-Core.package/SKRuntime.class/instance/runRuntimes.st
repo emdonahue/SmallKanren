@@ -1,7 +1,7 @@
 running
 runRuntimes
 	^ (Cons
-		generate: [
-			self next ]
+		generate: [ :r |
+			r next ]
 		from: [ self next ]
-		upTo: [ self atEnd ]) forced.
+		upTo: [ :r | r atEnd ]) forced.

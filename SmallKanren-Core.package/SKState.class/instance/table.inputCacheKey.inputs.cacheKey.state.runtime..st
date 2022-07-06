@@ -1,9 +1,7 @@
 tabling
 table: tableName inputCacheKey: aConsLazy inputs: inputVars cacheKey: cacheKey state: aState runtime: aSKRuntime
 	<todo> "Does not require full unifier. Subunify should do. (defined on diss page 182)" "answer called twice"
-	"<type: #SKState returns: #(OrC SKState SKFailure)>"
-	"self haltIf: [ (aStream answer reify: argVars) = (#b cons: #b cons) ]."
-	| cache tables table |
+	| cache table |
 	table := aSKRuntime tables at: tableName 
 		ifAbsent: [ PluggableDictionary new 
 			hashBlock: [ :a | a skAlphaHash ]; 

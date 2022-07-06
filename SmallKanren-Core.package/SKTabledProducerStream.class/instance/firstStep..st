@@ -1,6 +1,4 @@
 accessing
 firstStep: aRunner
-
-	^ (stream firstStep: aRunner)
-		  produceTabledAnswersFrom: self
-		  runtime: self notYetImplemented
+	self halt.
+	"^ (stream firstStep: aRunner) table: tableName inputCacheKey: aConsLazy inputs: inputVars cacheKey: cacheKey state: aState runtime: aSKRuntime"
