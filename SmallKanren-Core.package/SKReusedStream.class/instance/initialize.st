@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	numConsumed := 0.
+	consumed := Cons empty.

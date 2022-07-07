@@ -1,8 +1,8 @@
 printing
 printOn: aStream
-	aStream nextPutAll: 'reused '.
-	numConsumed printOn: aStream.
-	aStream nextPut: $/.
-	cache size printOn: aStream.
-	aStream nextPutAll: ': '.
-	(state reify: argVars) printOn: aStream.
+	self class printOn: aStream.
+	aStream nextPut: $(.
+	table printOn: aStream.
+	aStream nextPut: Character space.
+	cache printOn: aStream.
+	aStream nextPut: $).

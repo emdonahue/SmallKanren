@@ -6,10 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cache",
-		"numConsumed",
+		"table",
 		"state",
-		"argVars"
+		"outputs",
+		"consumed",
+		"cache"
 	],
 	"name" : "SKReusedStream",
 	"type" : "normal"
