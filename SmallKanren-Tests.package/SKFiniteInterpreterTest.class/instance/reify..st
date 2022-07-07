@@ -1,6 +1,6 @@
 generative
 reify: evaled
-	evaled atEnd
+	evaled next atEnd
 		ifTrue: [ ^ Cons empty ]
 		ifFalse: [ ^ evaled reifyNoConstraints:
 					(interpreter vars collect: [ :v | variables at: v ifAbsent: v ])
