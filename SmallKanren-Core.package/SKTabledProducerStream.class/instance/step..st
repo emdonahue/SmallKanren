@@ -1,6 +1,3 @@
 streaming
-step: aRunner
-
-	^ (stream step: aRunner)
-		  produceTabledAnswersFrom: self
-		  runtime: self notYetImplemented
+step: aRuntime
+	^ (stream step: aRuntime) table: tableName cacheKey: cacheKey inputs: inputVars pseudocounts: pseudocounts.

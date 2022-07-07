@@ -1,3 +1,4 @@
 streaming
 step: aStream
-	^ aStream firstStep: self.
+	(aStream waitCheck: self) ifTrue: [ ^ SKStream failure runtime: self ].
+	^ aStream step: self.
