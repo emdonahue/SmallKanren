@@ -1,3 +1,3 @@
 streaming
 sync
-	[ stream isIncomplete ] whileTrue: [ stream := (stream firstStep: self) stream ].
+	[ stream isIncomplete ] whileTrue: [ self halt. stream := (stream firstStep: self) stream ].

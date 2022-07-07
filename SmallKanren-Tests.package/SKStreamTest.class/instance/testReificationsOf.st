@@ -1,4 +1,4 @@
-debugging
+tests-debugging
 testReificationsOf
 	| qs |
 	qs := [ :a | a === 1 | (a === 2) ] asGoal runtime step

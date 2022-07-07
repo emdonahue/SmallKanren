@@ -1,3 +1,3 @@
 debugging
 answer 
-	^ self runtime peek.
+	^ self runtime next peek.

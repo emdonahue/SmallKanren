@@ -1,9 +1,9 @@
 fresh
 testFresh
-	| aVar bVar s |
-	s := [ :a :b | 
+	| aVar bVar st |
+	st := [ :a :b | 
 	aVar := a.
 	bVar := b.
-	a === 1 & (b === 2) ] asGoal runtime  peek.
-	self assert: s => aVar equals: 1.
-	self assert: s => bVar equals: 2
+	a === 1 & (b === 2) ] asGoal runtime next peek.
+	self assert: st => aVar equals: 1.
+	self assert: st => bVar equals: 2

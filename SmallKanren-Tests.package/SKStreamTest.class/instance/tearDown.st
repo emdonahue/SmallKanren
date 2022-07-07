@@ -1,3 +1,3 @@
-tests
+initialization
 tearDown 
 	'SmallKanren-Core' asPackage unenforceContractC.

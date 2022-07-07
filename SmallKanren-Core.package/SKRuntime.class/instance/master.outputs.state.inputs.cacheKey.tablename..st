@@ -14,10 +14,12 @@ master: goalBlock outputs: outputVars state: aState inputs: inputVars cacheKey: 
 	r := self copy tables: (tables copy at: tableName put: 
 		(table copy at: cacheKey put: Cons empty; yourself); yourself).
 		
-	^ ((goalBlock valueWithArguments: outputVars) asGoal
+	^ (((goalBlock valueWithArguments: outputVars) asGoal
 		   run: aState stripPseudocounts
 		   runtime: r)
 		  table: tableName
 		  cacheKey: cacheKey
 		  inputs: inputVars
 		  pseudocounts: aState pseudoCounts
+			runtime: r)
+				runtime: r.

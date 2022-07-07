@@ -1,6 +1,6 @@
 streaming
 bind: aGoal runtime: aRunner
 	<todo> "Remove mplus passthrough."
-	^ (SKBind new
+	^ SKBind new
 		goal: aGoal;
-		stream: self) runtime: aRunner.
+		stream: self.

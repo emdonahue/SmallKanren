@@ -1,4 +1,4 @@
-debugging
+tests-debugging
 testDelayedVarsAliveAfterSteps
 	| s |
 	self skip.

@@ -1,4 +1,4 @@
-debugging
+tests-debugging
 testMPlusBranchesNotFailedAfterSteps
 	| s |
 	self skip.

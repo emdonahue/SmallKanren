@@ -1,3 +1,4 @@
 accessing
 firstStep: aRunner
-	^ (stream firstStep: aRunner) bind: goal.
+	self halt.
+	"^ (stream firstStep: aRunner) bind: goal."
