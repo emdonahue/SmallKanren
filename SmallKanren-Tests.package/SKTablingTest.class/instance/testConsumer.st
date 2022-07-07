@@ -23,3 +23,9 @@ testConsumer
 		[ :y | y === 2 ] tabled: #test inputs: {x}.
 		[ :y | y === 3 ] tabled: #test inputs: {x}} conde] asGoal runStates 
 			collect: [ :s | s reify: x ]) equals: #(1 1 1) asCons.
+			
+		self assert: (([
+		{[ :y | [y === 1]] tabled: #test inputs: {x}. 
+		[ :y | y === 2 ] tabled: #test inputs: {x}.
+		[ :y | y === 3 ] tabled: #test inputs: {x}} conde] asGoal runRuntimes last 
+		tables at: #test) at: x cons) first argv equals: 1 cons.

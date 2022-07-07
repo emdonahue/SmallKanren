@@ -1,3 +1,3 @@
 streaming
 step: aRuntime
-	self halt.
+	^ (left step: aRuntime) tabledMPlus: right runner: aRuntime.
