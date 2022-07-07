@@ -14,7 +14,7 @@ testProducer
 	"Incomplete"
 	self assert: (([[ :y | [ y === 1 ]] tabled: #test inputs: {x}] asGoal runRuntimes last tables at: #test) at: x cons) first argv equals: 1 cons.
 	"Complete"
-	self assert: ((([[ :y | y === 1 | (y === 2)] tabled: #test inputs: {x}] asGoal runRuntimes last tables at: #test) at: x cons) collect: #argv) equals: #((1) (2)) asConsR.	
+	self assert: ((([[ :y | y === 1 | (y === 2)] tabled: #test inputs: {x}] asGoal runRuntimes last tables at: #test) at: x cons) collect: #argv) equals: #((2) (1)) asConsR.	
 	"MPlus"
 	self assert: ((([[ :y | [y === 1] asGoal | [y === 2]] tabled: #test inputs: {x}] asGoal runRuntimes last tables at: #test) at: x cons) collect: #argv) equals: #((2) (1)) asConsR.		
 		"Guarded"

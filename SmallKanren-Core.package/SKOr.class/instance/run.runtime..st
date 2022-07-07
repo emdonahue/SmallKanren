@@ -1,7 +1,7 @@
 running
 run: aState runtime: aRunner
 
-	^ (right run: aState runtime: aRunner)
-		  conde: left
+	^ (left run: aState runtime: aRunner)
+		  conde: right
 		  state: aState
 		  runtime: aRunner.
