@@ -12,7 +12,7 @@ testConsumer
 	"MPlus"
 	self assert: (([{[ :y | y === 1 ] tabled: #test inputs: {x}. 
 			[ :y | y === 2 ] tabled: #test inputs: {x}} conde] asGoal runRuntimes last 
-		tables at: #test) at: x cons) first argv equals: 1 cons.
+		tables at: #test) at: x cons) first argv equals: 2 cons.
 		
 	self assert: ([{[ :y | y === 1 ] tabled: #test inputs: {x}. 
 			[ :y | y === 2 ] tabled: #test inputs: {x}} conde] asGoal runStates 

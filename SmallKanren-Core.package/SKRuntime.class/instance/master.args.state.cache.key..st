@@ -8,7 +8,7 @@ master: goalBlock args: argVars state: aState cache: cache key: cacheKey
 	"Suspend delayed goals so they dont affect the tabled values and recover them on return."
 
 	<todo>
-	self halt.
+	self halt. "old master call"
 	^ ((goalBlock valueWithArguments: argVars)
 		   run: aState stripPseudocounts
 		   runtime: self)
@@ -17,4 +17,4 @@ master: goalBlock args: argVars state: aState cache: cache key: cacheKey
 				   inputs: cacheKey;
 				   cacheKey: (aState reify: cacheKey);
 				   state: aState)
-		  runtime: self notYetImplemented
+		  runtime: self

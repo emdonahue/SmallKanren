@@ -8,7 +8,7 @@ table: tableName cacheKey: cacheKey inputs: inputVars pseudocounts: pseudoCounts
 	
 	"If something in the cache unifies with the potential return vals, we have produced this answer before, so fail."
 	(cache allSatisfy: [ :e | (self answer unify: e argv with: inputVars) isFailure ])
-		ifFalse: [ ^ SKStream failure runtime: aSKRuntime ].
+		ifFalse: [ ^ SKStream failure ].
 		
 	"Otherwise, cache the answer and continue."
 	^ (self averagePseudoCounts: pseudoCounts) 

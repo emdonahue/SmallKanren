@@ -1,3 +1,3 @@
 streaming
 step: aRuntime
-	^ SKStream failure runtime: aRuntime.
+	^ SKStream failure.
