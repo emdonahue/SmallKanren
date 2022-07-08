@@ -1,3 +1,3 @@
 streaming
 mplus: anAnswer
-	^ self returnAnswer: self thenStream: anAnswer.
+	^ self complete: anAnswer.

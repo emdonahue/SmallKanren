@@ -1,3 +1,3 @@
-streams
+streaming
 asAnswer
 	^ stream asAnswer

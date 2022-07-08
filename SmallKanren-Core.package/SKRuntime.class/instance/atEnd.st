@@ -1,3 +1,3 @@
-streaming
+running
 atEnd
 	^ stream atEnd.

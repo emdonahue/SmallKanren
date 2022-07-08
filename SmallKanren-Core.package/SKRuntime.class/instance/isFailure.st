@@ -1,3 +1,3 @@
-streams
+streaming
 isFailure
 	^ stream isFailure

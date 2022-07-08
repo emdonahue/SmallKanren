@@ -1,3 +1,3 @@
-as yet unclassified
+debugging
 streamFormat: query
 	^ self asString.

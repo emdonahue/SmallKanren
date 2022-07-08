@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"x",
 		"repeato"
 	],
 	"name" : "SKStreamTest",

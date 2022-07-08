@@ -5,4 +5,6 @@ printOn: aStream
 	table printOn: aStream.
 	aStream nextPut: Character space.
 	cache printOn: aStream.
+	aStream nextPut: Character space.
+	consumed size printOn: aStream.
 	aStream nextPut: $).

@@ -1,4 +1,4 @@
 streaming
-plus: anAnswer
++ aStream
 	"Since this answer is already fully complete, just return it rather than interleaving."
-	 ^ anAnswer complete: self.
+	 ^ aStream complete: self.

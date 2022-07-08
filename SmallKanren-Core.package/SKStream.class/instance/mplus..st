@@ -1,6 +1,6 @@
 streaming
-mplus: anAnswer
+mplus: aStream
 	"At the end of + and plus:, actually create the interleaving MPlus structure."
 	^ SKMPlus new
-		left: anAnswer;
-		right: self.
+		left: self;
+		right: aStream.

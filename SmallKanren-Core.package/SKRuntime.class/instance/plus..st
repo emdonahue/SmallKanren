@@ -1,3 +1,3 @@
 streaming-mplus
-plus: aStream runtime: aRuntime
+plus: aStream
 	^ (stream plus: aStream) runtime: self.

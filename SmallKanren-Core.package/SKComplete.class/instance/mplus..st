@@ -1,3 +1,3 @@
 streaming
 mplus: anAnswer
-	^ self returnAnswer: left thenStream: right + anAnswer
+	^ left complete: right + anAnswer

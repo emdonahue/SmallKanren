@@ -1,3 +1,0 @@
-streaming
-fairMPlus: aStream
-	^ aStream.

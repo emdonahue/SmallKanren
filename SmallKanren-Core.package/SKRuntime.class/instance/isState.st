@@ -1,3 +1,3 @@
-streams
+streaming
 isState
 	^ stream isState

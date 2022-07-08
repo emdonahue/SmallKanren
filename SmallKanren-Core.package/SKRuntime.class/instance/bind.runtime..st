@@ -1,3 +1,3 @@
-streams
+streaming
 bind: aGoal runtime: aRuntime
 	^ stream bind: aGoal runtime: self.

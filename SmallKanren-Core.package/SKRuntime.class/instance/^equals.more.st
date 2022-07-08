@@ -1,3 +1,3 @@
-streams
+streaming
 => aSKTaggedVar 
 	^ stream => aSKTaggedVar .
