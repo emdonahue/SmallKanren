@@ -1,0 +1,1 @@
+An abstract stream that monitors a secondary stream and applies some operation to all answers returned from it.

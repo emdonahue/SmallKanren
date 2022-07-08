@@ -1,5 +1,5 @@
 printing
 printOn: aStream
-	aStream nextPutAll: 'ProducerBind ('.
+	aStream nextPutAll: 'Bind('.
 	self cacheKey printOn: aStream.
 	aStream nextPut: $).

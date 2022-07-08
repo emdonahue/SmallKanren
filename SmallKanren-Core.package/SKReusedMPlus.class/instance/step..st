@@ -1,3 +1,3 @@
 streaming
 step: aRuntime
-	^ (left step: aRuntime) tabledMPlus: right.
+	^ right + (left step: aRuntime).

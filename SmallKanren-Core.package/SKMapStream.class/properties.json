@@ -1,13 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "SKMapStream",
+	"commentStamp" : "EvanDonahue 7/8/2022 22:39",
+	"super" : "SKStream",
 	"category" : "SmallKanren-Core-Streams",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"goal"
+		"stream"
 	],
-	"name" : "SKBind",
+	"name" : "SKMapStream",
 	"type" : "normal"
 }
