@@ -7,9 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"cacheKey",
-		"inputVars",
 		"tableName",
-		"pseudocounts"
+		"pseudocounts",
+		"outputVars"
 	],
 	"name" : "SKTabledProducerStream",
 	"type" : "normal"

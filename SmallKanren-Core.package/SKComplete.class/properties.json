@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "EvanDonahue 6/27/2017 17:58",
-	"super" : "SKBranchingStream",
+	"super" : "SKAppendStream",
 	"category" : "SmallKanren-Core-Streams",
 	"classinstvars" : [ ],
 	"pools" : [ ],

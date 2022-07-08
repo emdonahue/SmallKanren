@@ -6,6 +6,6 @@ table: tableName cacheKey: cacheKey outputs: inputVars pseudocounts: pseudoCount
 	^ SKTabledProducerStream
 		  table: tableName
 		  cacheKey: cacheKey
-		  inputs: inputVars
+		  outputs: inputVars
 		  stream: self
 		  pseudocounts: pseudoCounts

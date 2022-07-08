@@ -9,6 +9,6 @@
 		"left",
 		"right"
 	],
-	"name" : "SKBranchingStream",
+	"name" : "SKAppendStream",
 	"type" : "normal"
 }

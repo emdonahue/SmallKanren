@@ -4,10 +4,14 @@ testConsumer
 	x := SKVar tag: #x.
 	z := SKVar tag: #z.	
 
-		"Conjunction"
+	"Conjunction"
 	self assert: (([{[ :y | y === 1 ] tabled: #test inputs: {x}. 
 			[ :y | y === 1 ] tabled: #test inputs: {x}}] asGoal runRuntimes last 
 		tables at: #test) at: x cons) first argv equals: 1 cons. 
+		
+	"Output"
+	self assert: ([{[ :y :b | {{y === 1. b === 2}. {y === 1. b === 3}} conde ] tabled: #test inputs: {x} outputs: {z}.
+			[ :y :b | SKGoal fail ] tabled: #test inputs: {x} outputs: {z}} conde] asGoal runStates collect: [ :s | s reify: (x cons: z cons)]) equals: #((1 2) (1 2)) asConsR.
 	
 	"Deduplication"
 	self assert: ([{[ :y | {y === 1. y === 2. y === 1. y === 2} conde ] tabled: #test inputs: {x}. 

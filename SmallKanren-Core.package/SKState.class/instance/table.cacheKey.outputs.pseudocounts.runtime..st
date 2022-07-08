@@ -1,5 +1,5 @@
 tabling
-table: tableName cacheKey: cacheKey outputs: inputVars pseudocounts: pseudoCounts runtime: aSKRuntime
+table: tableName cacheKey: cacheKey outputs: outputVars pseudocounts: pseudoCounts runtime: aSKRuntime
 	"Actually extends the table with the values represented in the current state. aState is the input state and its pseudocounts must be averaged with the current, output state."
 	<todo> "Does not require full unifier. Subunify should do. (defined on diss page 182)" "answer called twice"
 	| cache table |
@@ -7,13 +7,13 @@ table: tableName cacheKey: cacheKey outputs: inputVars pseudocounts: pseudoCount
 	cache := table at: cacheKey.
 	
 	"If something in the cache unifies with the potential return vals, we have produced this answer before, so fail."
-	(cache allSatisfy: [ :e | (self answer unify: e argv with: inputVars) isFailure ])
+	(cache allSatisfy: [ :e | (self answer unify: (e argv take: cacheKey size) with: cacheKey) isFailure ])
 		ifFalse: [ ^ SKStream failure ].
 		
 	"Otherwise, cache the answer and continue."
 	^ (self averagePseudoCounts: pseudoCounts) 
 		runtime: (aSKRuntime copy tables: (aSKRuntime tables copy at: tableName put: (
 			table copy at: cacheKey put: (cache add: 
-				(SKTableCacheEntry new argv: (self answer reify: inputVars); 
+				(SKTableCacheEntry new argv: (self answer reify: outputVars); 
 				pseudoCounts: self pseudoCounts)); yourself
 			 ); yourself)).
