@@ -1,12 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "SKStream",
+	"super" : "SKMapStream",
 	"category" : "SmallKanren-Core-Tabling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stream",
 		"cacheKey",
 		"inputVars",
 		"tableName",

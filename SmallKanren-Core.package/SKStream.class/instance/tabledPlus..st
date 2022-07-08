@@ -1,3 +1,7 @@
 tabling
-tabledPlus: aStream
-	^ self plus: aStream
+tabledPlus: aTabledStream
+	self isWaitingStream
+		ifTrue: [ ^ SKReusedMPlus new
+				left: aTabledStream;
+				right: self ].
+	^ self plus: aTabledStream.

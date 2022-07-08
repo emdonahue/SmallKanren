@@ -1,3 +1,0 @@
-testing
-waitCheck
-	^ stream waitCheck
