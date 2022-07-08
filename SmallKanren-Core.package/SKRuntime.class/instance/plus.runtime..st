@@ -1,3 +1,0 @@
-streaming-mplus
-plus: aStream runtime: aRuntime
-	^ (stream plus: aStream) runtime: self.

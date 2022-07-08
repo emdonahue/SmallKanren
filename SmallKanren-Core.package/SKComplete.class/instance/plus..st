@@ -1,3 +1,3 @@
 arithmetic
 plus: anAnswer
-	^ left complete: anAnswer + right
+	^ anAnswer + right complete: left.
