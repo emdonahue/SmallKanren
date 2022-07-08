@@ -1,0 +1,3 @@
+accessing
+orSubgoals
+	^ self subgoals.

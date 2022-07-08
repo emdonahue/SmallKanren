@@ -1,4 +1,4 @@
-streaming
+streaming-mplus
 mplus: aStream
 	"At the end of + and plus:, actually create the interleaving MPlus structure."
 	^ SKMPlus new

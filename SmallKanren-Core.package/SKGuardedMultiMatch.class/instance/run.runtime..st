@@ -11,7 +11,7 @@ run: aState runtime: aRuntime
 	sub := SKSubstitution empty.
 	walked doWithIndex: [ :v :i | sub := (sub unify: (pattern at: i ifAbsent: v) with: v runtime: aRuntime) ifFailure: [ ^ SKStream failure ] ].
 	"Unify ground atoms from pattern in the next state (free vars will self unify and so not enter the substitution)."
-	s := walked inject: aState into: [ :st :v | (st unify: v with: (sub reify: v) runtime: aRuntime) ifFailure: [ :r | ^ SKStream failure ] ].
+	s := walked inject: aState into: [ :st :v | (st unify: v with: (sub reify: v) runtime: aRuntime) ifFailure: [ ^ SKStream failure ] ].
 	"Get the free variables that have not yet been bound or are bound but still in the schedule (and are not simply ground terms from the input data)."
 	freevars := bindings collect: [ :v | 
 		(v isFDSAssociation and: 

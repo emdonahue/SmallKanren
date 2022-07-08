@@ -1,3 +1,3 @@
-streaming
+testing
 isIncomplete
 	^ true

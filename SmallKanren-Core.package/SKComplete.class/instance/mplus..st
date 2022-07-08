@@ -1,3 +1,3 @@
 streaming
 mplus: anAnswer
-	^ left complete: right + anAnswer
+	^ right + anAnswer complete: left.
