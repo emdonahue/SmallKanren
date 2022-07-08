@@ -1,4 +1,4 @@
-consumer
+tests-consumer
 testReusedStream
 	| r |
 	r := [[ :a :b | a === 1 & (b === 2) & (self path: a to: b) ] ] asGoal

@@ -1,4 +1,4 @@
-classic tabling
+tests
 testDelayedReusedStream
 	self
 		assert:

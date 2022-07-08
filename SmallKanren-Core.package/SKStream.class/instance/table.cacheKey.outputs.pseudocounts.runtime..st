@@ -1,5 +1,5 @@
 tabling
-table: tableName cacheKey: cacheKey inputs: inputVars pseudocounts: pseudoCounts runtime: aSKRuntime
+table: tableName cacheKey: cacheKey outputs: inputVars pseudocounts: pseudoCounts runtime: aSKRuntime
 
 	"Produce a tabled stream to consume answers from this stream and table them."
 

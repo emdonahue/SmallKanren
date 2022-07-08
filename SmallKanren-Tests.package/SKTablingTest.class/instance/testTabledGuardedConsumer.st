@@ -1,4 +1,4 @@
-classic tabling
+tests
 testTabledGuardedConsumer
 	| r x |
 	self skip.

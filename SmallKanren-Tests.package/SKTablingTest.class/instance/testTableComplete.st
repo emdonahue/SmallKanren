@@ -1,4 +1,4 @@
-classic tabling
+tests
 testTableComplete
 	| s x |
 	x := SKVar new.

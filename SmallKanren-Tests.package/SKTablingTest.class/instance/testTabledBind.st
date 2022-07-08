@@ -1,4 +1,4 @@
-consumer
+tests-consumer
 testTabledBind
 	| r |
 	r := [[ :a :b | 

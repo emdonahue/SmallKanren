@@ -1,5 +1,5 @@
 tabling
-table: tableName cacheKey: cacheKey inputs: inputVars pseudocounts: pseudoCounts runtime: aSKRuntime
+table: tableName cacheKey: cacheKey outputs: inputVars pseudocounts: pseudoCounts runtime: aSKRuntime
 	"Actually extends the table with the values represented in the current state. aState is the input state and its pseudocounts must be averaged with the current, output state."
 	<todo> "Does not require full unifier. Subunify should do. (defined on diss page 182)" "answer called twice"
 	| cache table |

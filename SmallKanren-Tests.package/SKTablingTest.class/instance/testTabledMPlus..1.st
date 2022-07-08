@@ -1,4 +1,4 @@
-streams
+tests-streaming
 testTabledMPlus
 	| s r i c g |
 	s := SKState new.

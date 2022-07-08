@@ -1,4 +1,4 @@
-classic tabling
+tests
 testTableDisjoined
 	| r as |
 	r := [ :x | (self path: #a to: x) | (self path: #a to: x) ] asGoal runtime.

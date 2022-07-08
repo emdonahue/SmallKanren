@@ -1,4 +1,4 @@
-classic tabling
+tests
 testTableGround
 	| r t |
 	r := (self path: #a to: #b) runtime.

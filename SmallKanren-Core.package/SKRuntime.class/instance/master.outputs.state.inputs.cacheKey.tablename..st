@@ -19,7 +19,7 @@ master: goalBlock outputs: outputVars state: aState inputs: inputVars cacheKey: 
 		   runtime: r)
 		  table: tableName
 		  cacheKey: cacheKey
-		  inputs: inputVars
+		  outputs: outputVars
 		  pseudocounts: aState pseudoCounts
 			runtime: r)
 				runtime: r.

@@ -1,4 +1,4 @@
-classic tabling
+tests
 testReusedChangesDetected
 	self
 		assert:

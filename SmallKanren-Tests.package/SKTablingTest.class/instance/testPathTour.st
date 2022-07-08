@@ -1,4 +1,4 @@
-modes
+tests-modes
 testPathTour
 	| tour |
 	tour := [ :plan | self path: #a to: #b plan: plan ] asGoal run.

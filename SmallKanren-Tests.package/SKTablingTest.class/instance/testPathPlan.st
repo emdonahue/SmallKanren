@@ -1,4 +1,4 @@
-modes
+tests-modes
 testPathPlan
 	<todo>
 	"uncomment this test when tabling allows ground inputs (probably make it a new test)"

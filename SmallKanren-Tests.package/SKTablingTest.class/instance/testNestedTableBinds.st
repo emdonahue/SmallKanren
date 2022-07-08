@@ -1,4 +1,4 @@
-classic tabling
+tests
 testNestedTableBinds
 	| r as y |
 	y := SKVar new.

@@ -1,4 +1,4 @@
-classic tabling
+tests
 testTableConjoinedThenBind
 	| r as |
 	r := [ :x | (self path: #a to: x) & (self path: #a to: x) & (x === x) ] asGoal runtime.

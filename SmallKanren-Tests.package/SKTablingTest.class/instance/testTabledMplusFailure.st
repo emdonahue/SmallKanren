@@ -1,4 +1,4 @@
-consumer
+tests-consumer
 testTabledMplusFailure
 	| r |
 	r := [ :x | [ :y | y === 1 ] tabled: #tbl inputs: {x} ].

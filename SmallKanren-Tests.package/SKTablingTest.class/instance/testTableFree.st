@@ -1,4 +1,4 @@
-classic tabling
+tests
 testTableFree
 	| r as |
 	r := [ :x | self path: #a to: x ] asGoal runtime.

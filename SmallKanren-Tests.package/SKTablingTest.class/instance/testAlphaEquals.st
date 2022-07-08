@@ -1,4 +1,4 @@
-terms
+tests-terms
 testAlphaEquals
 	"currently, there is no check for binding/name clash"
 
