@@ -4,4 +4,4 @@ runTablesOnly
 	| r |
 	r := self.
 	[ r atEnd ] whileFalse: [ r := r next ].
-	^ r.
+	^ r tables.
