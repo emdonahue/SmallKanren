@@ -38,4 +38,4 @@ testHMM
 	
 	self assert: [ :q | hmm valueWithArguments: {hight. #(1 1 1) asCons. #(1 1 1) asCons.} ] asGoal runStates first likelihood closeTo: (0.63 ** 3) ln precision: 0.0001.
 	
-	self assert: ([ :q | hmm valueWithArguments: {hight. q. #(1 1 1) asCons.} ] asGoal runStates collect: [ :st | st likelihood exp ]) sum equals:  0.37087499999999995.
+	self assert: ([ :q | hmm valueWithArguments: {hight. q. #(1 1 1) asCons.} ] asGoal runStates collect: [ :st | st likelihood exp ]) sum closeTo:  0.37087499999999995 precision: 0.0001.
