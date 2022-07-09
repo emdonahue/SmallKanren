@@ -7,11 +7,11 @@ table: tableName cacheKey: cacheKey outputs: outputVars run: aState in: goalBloc
 	returns: #String>
 	"If the cache already exists, this is a consumer call."
 	tables at: tableName ifPresent: [ :t | 
-		t at: cacheKey ifPresent: [ :c | 
+		t at: outputVars ifPresent: [ :c | 
 			^ (self
 				   reuse: outputVars
 				   table: tableName
-				   cacheKey: cacheKey
+				   cacheKey: outputVars
 				   state: aState) runtime: self ] ].
 	"Otherwise, it is a producer call."
 	^ self

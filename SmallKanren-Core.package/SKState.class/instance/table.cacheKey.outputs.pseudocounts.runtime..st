@@ -4,7 +4,7 @@ table: tableName cacheKey: cacheKey outputs: outputVars pseudocounts: pseudoCoun
 	<todo> "Does not require full unifier. Subunify should do. (defined on diss page 182)" "answer called twice"
 	| cache table |
 	table := aSKRuntime tables at: tableName. "Can't be absent because created when master is called."
-	cache := table at: cacheKey.
+	cache := table at: outputVars.
 	
 	"If something in the cache unifies with the potential return vals, we have produced this answer before, so fail."
 	(cache allSatisfy: [ :e | (self answer unify: (e argv take: cacheKey size) with: cacheKey) isFailure ])
@@ -13,7 +13,7 @@ table: tableName cacheKey: cacheKey outputs: outputVars pseudocounts: pseudoCoun
 	"Otherwise, cache the answer and continue."
 	^ (self averagePseudoCounts: pseudoCounts) 
 		runtime: (aSKRuntime copy tables: (aSKRuntime tables copy at: tableName put: (
-			table copy at: cacheKey put: (cache add: 
+			table copy at: outputVars put: (cache add: 
 				(SKTableCacheEntry new argv: (self answer reify: outputVars); 
 				pseudoCounts: self pseudoCounts)); yourself
 			 ); yourself)).
