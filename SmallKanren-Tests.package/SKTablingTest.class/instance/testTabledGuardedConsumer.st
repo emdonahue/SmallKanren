@@ -2,7 +2,7 @@ tests
 testTabledGuardedConsumer
 	| r x |
 	self skip.
-	x := SKVar new.
+	x := SKVar tag: #x.
 	r := [ 
 		{[[ x === 1 ] fresh] fresh. [ :a | SKGoal succeed ] tabled: #test inputs: {x}}.
 		] asGoal runtime.

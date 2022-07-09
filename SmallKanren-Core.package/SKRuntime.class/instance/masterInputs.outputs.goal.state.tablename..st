@@ -1,5 +1,5 @@
 tabling
-master: goalBlock outputs: outputVars state: aState cacheKey: cacheKey tablename: tableName
+masterInputs: inputVars outputs: outputVars goal: goalBlock state: aState tablename: tableName
 
 	"Strip pseudocounts from state since other branches will entel this tabling call with other pseudocount histories. Recombine the pseudocounts as states emerge from the master stream."
 
@@ -18,7 +18,7 @@ master: goalBlock outputs: outputVars state: aState cacheKey: cacheKey tablename
 		   run: aState stripPseudocounts
 		   runtime: r)
 		  table: tableName
-		  cacheKey: cacheKey
+		  inputs: inputVars
 		  outputs: outputVars
 		  pseudocounts: aState pseudoCounts
 			runtime: r)

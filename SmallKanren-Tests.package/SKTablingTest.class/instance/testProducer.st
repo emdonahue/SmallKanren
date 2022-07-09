@@ -24,6 +24,7 @@ self assert: (([{[ :y | SKGoal succeed ] tabled: #test1 inputs: {1}.
 	"Output vars"
 	self assert: (([[ :a :b | {a === 1. b === 2} ] tabled: #test inputs: {x} outputs: {z}] asGoal runRuntimes last tables at: #test) at: (x cons: z cons)) first argv equals: (1 cons: 2 cons).
 	self assert: ([[ :a :b | {a === 1. b === 2} ] tabled: #test inputs: {x} outputs: {z}] asGoal runStates first reify: (x cons: z)) equals: (1 cons: 2).
+	self assert: (([{z === 1. [ :a :b | a === b ] tabled: #test inputs: {x} outputs: {z}}] asGoal runRuntimes last tables at: #test) at: (x cons: 1 cons)) first argv equals: (1 cons: 1 cons).
 	"Incomplete"
 	self assert: (([[ :y | [ y === 1 ]] tabled: #test inputs: {x}] asGoal runRuntimes last tables at: #test) at: x cons) first argv equals: 1 cons.
 	"Complete"

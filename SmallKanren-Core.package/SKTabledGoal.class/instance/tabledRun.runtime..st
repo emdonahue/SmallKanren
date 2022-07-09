@@ -5,4 +5,4 @@ tabledRun: aState runtime: aRunner
 	| cacheKey |
 	"Cached streams are indexed by reifications of the input vars."
 	cacheKey := aState reify: inputs.
-	^ aRunner table: tableName cacheKey: cacheKey outputs: cacheKey, outputs run: aState in: block.
+	^ aRunner table: tableName inputs: cacheKey outputs: cacheKey, (aState reify: outputs) run: aState in: block.

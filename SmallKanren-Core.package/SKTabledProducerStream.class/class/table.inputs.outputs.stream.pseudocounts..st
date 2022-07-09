@@ -1,9 +1,9 @@
 constructor
-table: tableName cacheKey: cacheKey outputs: outputVars stream: aStream pseudocounts: pseudoCounts
+table: tableName inputs: inputVars outputs: outputVars stream: aStream pseudocounts: pseudoCounts
 	"Constructs a new producer stream to monitor an incomplete stream for new answers."
 	^ self new
 		tableName: tableName;
 		outputVars: outputVars;
-		cacheKey: cacheKey;
+		cacheKey: inputVars;
 		pseudocounts: pseudoCounts;
 		stream: aStream.
