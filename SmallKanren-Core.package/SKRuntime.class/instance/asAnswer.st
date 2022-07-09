@@ -1,3 +1,3 @@
-streaming
+debugging
 asAnswer
 	^ stream asAnswer

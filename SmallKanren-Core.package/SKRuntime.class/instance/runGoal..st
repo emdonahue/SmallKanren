@@ -1,3 +1,3 @@
 scheduling
 runGoal: aSKRuntime 
-	^ stream runGoal: self.
+	^ (stream runGoal: self) runtime: self.

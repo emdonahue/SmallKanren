@@ -1,3 +1,3 @@
-converting
+debugging
 asStream
 	^ stream.
