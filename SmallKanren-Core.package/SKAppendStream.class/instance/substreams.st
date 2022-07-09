@@ -1,0 +1,3 @@
+debugging
+substreams
+	^ {left . right}.
