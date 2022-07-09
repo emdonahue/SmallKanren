@@ -5,5 +5,5 @@ tabled: tableName inputs: tabledArgs
 	^ SKTabledGoal new
 		tableName: tableName;
 		inputs: inputs;
-		outputs: inputs;
+		outputs: Cons empty;
 		block: self.
