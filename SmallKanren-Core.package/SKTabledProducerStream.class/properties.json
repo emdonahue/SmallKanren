@@ -6,10 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cacheKey",
-		"tableName",
 		"pseudocounts",
-		"outputVars"
+		"inputs",
+		"outputs",
+		"tablename"
 	],
 	"name" : "SKTabledProducerStream",
 	"type" : "normal"

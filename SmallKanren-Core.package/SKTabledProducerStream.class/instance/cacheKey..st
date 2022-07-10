@@ -1,3 +1,3 @@
 accessing
 cacheKey: anObject
-	cacheKey := anObject
+	inputs := anObject

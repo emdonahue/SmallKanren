@@ -1,0 +1,3 @@
+inspecting
+substreams
+	^ {left . right}.

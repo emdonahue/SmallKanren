@@ -8,7 +8,7 @@ inspectTables: aBuilder
 		notebook
 			addPageTitle: tableName provider: [ 
 				aBuilder newTable
-					addColumn: (SpStringTableColumn title: 'Key' evaluated: #key);
+					addColumn: (SpStringTableColumn title: 'Key' evaluated: [ :x | x key force ]);
 					addColumn: (SpStringTableColumn title: 'Cache' evaluated: [ :kv | ' ' join: kv value ]);
 					items: (table associations collect: [:e | StInspectorAssociationNode hostObject: e ])]].
 	^ notebook.

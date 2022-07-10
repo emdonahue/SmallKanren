@@ -1,4 +1,4 @@
 accessing
 tableName: anObject
 
-	tableName := anObject
+	tablename := anObject

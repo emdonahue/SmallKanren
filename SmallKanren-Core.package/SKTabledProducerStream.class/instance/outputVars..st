@@ -1,4 +1,4 @@
 accessing
 outputVars: anObject
 
-	outputVars := anObject
+	outputs := anObject

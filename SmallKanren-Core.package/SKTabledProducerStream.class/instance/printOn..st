@@ -3,7 +3,7 @@ printOn: aStream
 	aStream
 		nextPutAll: 'Tabled';		
 		nextPut: $(.
-		cacheKey printOn: aStream.
+		inputs printOn: aStream.
 		aStream nextPut: Character space.
 		stream class printOn: aStream.
 		aStream nextPut: $).

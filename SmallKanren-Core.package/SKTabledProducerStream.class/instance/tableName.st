@@ -1,4 +1,4 @@
 accessing
 tableName
 
-	^ tableName
+	^ tablename
