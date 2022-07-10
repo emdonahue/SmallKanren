@@ -3,8 +3,9 @@ testTabledMPlus
 	| s r i c g |
 	s := SKState new.
 	i := SKIncomplete new goal: ["Incomplete"] asGoal.
-	c := SKReusedStream new table: #reused.
+	c := SKReusedStream new table: #reused; cache: #cache.
 	r := SKRuntime new.
+	r tables at: #reused put: (Dictionary with: #cache->SKTableCache new).
 	g := ["Bind"] asGoal.
 	
 	self assert: ((s + c) isKindOf: SKComplete).

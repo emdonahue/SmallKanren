@@ -1,4 +1,4 @@
-tabling
+streaming-mplus
 tabledPlus: aTabledStream
 	self isWaitingStream
 		ifTrue: [ ^ SKReusedMPlus new

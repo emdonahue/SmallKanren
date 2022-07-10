@@ -14,8 +14,9 @@ testHMMViterbiDecoding
 			inputs: {prevt. states. observations}
 	].
 	
+	self assert: [ :q | hmm valueWithArguments: {hight. q. #(1 0) asCons.} ] asGoal run first first equals: #(1 0) asCons.
 		
-		self assert: ([ :q | hmm valueWithArguments: {hight. #(1) asCons. #(1) asCons.} ] asGoal runStates collect: [ :s | s likelihood exp]) sum equals: hight p * highe p.
+	self assert: ([ :q | hmm valueWithArguments: {hight. #(1) asCons. #(1) asCons.} ] asGoal runStates collect: [ :s | s likelihood exp]) sum equals: hight p * highe p.
 		
 		self assert: ([ :q | hmm valueWithArguments: {hight. #(1 1) asCons. #(1 1) asCons.} ] asGoal runStates collect: [ :s | s likelihood exp]) sum closeTo: (hight p * highe p) * (hight p * highe p) precision: 0.0001.
 		

@@ -7,7 +7,7 @@ table: tableName inputs: cacheKey outputs: outputVars pseudocounts: pseudoCounts
 	cache := table at: outputVars.
 	
 	"If something in the cache unifies with the potential return vals, we have produced this answer before, so fail."
-	(cache allSatisfy: [ :e | (self answer unify: (e argv take: cacheKey size) with: cacheKey) isFailure ])
+	(cache entries allSatisfy: [ :e | (self answer unify: (e argv take: cacheKey size) with: cacheKey) isFailure ])
 		ifFalse: [ ^ SKStream failure ].
 		
 	"Otherwise, cache the answer and continue."

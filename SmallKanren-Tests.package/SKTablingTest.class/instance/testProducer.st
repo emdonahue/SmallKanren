@@ -5,9 +5,9 @@ testProducer
 	z := SKVar tag: #z.	
 
 	"Failure"
-	self assert: (([[ :y | SKGoal fail ] tabled: #test inputs: {x}] asGoal runtime runTablesOnly at: #test) at: x cons) equals: Cons empty. 
+	self assert: (([[ :y | SKGoal fail ] tabled: #test inputs: {x}] asGoal runtime runTablesOnly at: #test) at: x cons) isEmpty. 
 	"State"
-	self assert: (([[ :y | y === 1 ] tabled: #test inputs: {x}] asGoal runRuntimes last tables at: #test) at: x cons) first argv equals: 1 cons. 
+	self assert: (([[ :y | y === 1 ] tabled: #test inputs: {x}] asGoal runRuntimes last tables at: #test) at: x cons) entries first argv equals: 1 cons. 
 	"Multi-Cache"
 	self assert: (([{[ :y | SKGoal succeed ] tabled: #test inputs: {1}.
 		[ :y | SKGoal succeed ] tabled: #test inputs: {2}}] asGoal runtime runTablesOnly at: #test) at: 1 cons) first argv equals: 1 cons.

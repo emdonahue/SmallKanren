@@ -12,7 +12,7 @@ masterInputs: inputVars outputs: outputVars goal: goalBlock state: aState tablen
 			hashBlock: [ :a | a skAlphaHash ]; 
 			equalBlock: [ :a :b | a skAlphaEquals: b ]].
 	r := self copy tables: (tables copy at: tableName put: 
-		(table copy at: outputVars put: Cons empty; yourself); yourself).
+		(table copy at: outputVars put: SKTableCache new; yourself); yourself).
 		
 	^ (((goalBlock valueWithArguments: outputVars) asGoal
 		   run: aState stripPseudocounts
