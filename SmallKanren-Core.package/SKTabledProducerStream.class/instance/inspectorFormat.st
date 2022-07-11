@@ -1,3 +1,3 @@
 inspecting
 inspectorFormat
-	^ 'Tabled ', 3
+	^ 'Tabled ', tablename asString, ' ', outputs asString.
