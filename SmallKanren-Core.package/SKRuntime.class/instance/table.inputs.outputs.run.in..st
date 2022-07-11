@@ -9,6 +9,7 @@ table: tableName inputs: inputVars outputs: outputVars run: aState in: goalBlock
 	returns: #String>
 	tables at: tableName ifPresent: [ :t | 
 		t at: outputVars ifPresent: [ :c | 
+			c isFailure ifTrue: [ ^ SKStream failure ]. "If no answers at all, just fail."
 			^ (self
 				   reuseInputs: outputVars
 				   outputs: outputVars
