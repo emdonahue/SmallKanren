@@ -30,7 +30,7 @@ testPerformanceHMM1D
 		
 	times := OrderedCollection new.
 	(Character lf join:
-		(((13 to: 13) collect: [ :l | | d |
+		(((14 to: 14) collect: [ :l | | d |
 			d := (Array new: l withAll: 1) asCons.
 			self halt.
 			{l. 
