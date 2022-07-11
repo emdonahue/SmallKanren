@@ -1,2 +1,4 @@
 tabling
-table: tableName inputs: cacheKey outputs: inputVars pseudocounts: pseudoCounts runtime: aSKRuntime
+table: tableName inputs: inputVars outputs: outputVars pseudocounts: pseudoCounts runtime: aSKRuntime
+
+	^ self closeTable: tableName cache: outputVars runtime: aSKRuntime
