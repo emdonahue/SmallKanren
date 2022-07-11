@@ -30,11 +30,12 @@ testPerformanceHMM1D
 		
 	times := OrderedCollection new.
 	(Character lf join:
-		(((16 to: 16) collect: [ :l | | d |
+		(((13 to: 13) collect: [ :l | | d |
 			d := (Array new: l withAll: 1) asCons.
+			"self halt."
 			{l. 
-				"[ [ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat."
-				[ [ :q | shmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat.
+				[ [ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat.
+				"[ [ :q | shmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat."
 				[ [ :q | thmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat}.
 		]) collect: [ :r | Character space join: r ])) inspect.
 		"(Character lf asString , Character lf asString join: (times collect: [ :t | Character lf join: (t collect: [ :lt | Character tab join: lt ]) ])) inspect."
