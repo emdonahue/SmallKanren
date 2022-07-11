@@ -1,7 +1,6 @@
 tests-hmm
 testHMMMarginalizeGenerative
 	| hmm shmm thmm data |
-	self skip.
 	hmm := shmm := thmm := nil.
 	hmm := [ :prevt :states :observations | 
 		{{states isEmptyo. observations isEmptyo}.
@@ -26,7 +25,7 @@ testHMMMarginalizeGenerative
 		
 	data := [ :x :n | n = 0 ifTrue: [ x === Cons empty ]
 		ifFalse: [ x carCdro: [ :a :d | {{a === 0. a ===1} conde. {{d === Cons empty. 1 < n}. data value: d value: n-1} conde}]]].
-	self assert: (([ :q | data value: q value: 3 ] asGoal run collect: #first) count: [ :d | | naive aggregated tabled |
+	self assert: (([ :q | data value: q value: 5 ] asGoal run collect: #first) count: [ :d | | naive aggregated tabled |
 			naive := ([ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal runStates collect: [ :a | a likelihood exp ]) sum ln.
 		aggregated := [ :q | shmm valueWithArguments: {hight. q. d.} ] asGoal runStates first likelihood.
 		tabled := [ :q | thmm valueWithArguments: {hight. q. d.} ] asGoal runStates first likelihood.
