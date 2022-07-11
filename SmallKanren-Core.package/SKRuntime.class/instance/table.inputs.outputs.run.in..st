@@ -14,6 +14,7 @@ table: tableName inputs: inputVars outputs: outputVars run: aState in: goalBlock
 				   reuseInputs: outputVars
 				   outputs: outputVars
 				   table: tableName
+				   cache: cache
 				   state: aState) runtime: self ] ].
 	"Otherwise, it is a producer call."
 	^ self
