@@ -8,8 +8,8 @@ table: tableName inputs: inputVars outputs: outputVars run: aState in: goalBlock
 	<type: #Symbol type: #Cons type: #Cons type: #Cons type: #SKState
 	returns: #String>
 	tables at: tableName ifPresent: [ :t | 
-		t at: outputVars ifPresent: [ :c | 
-			c isFailure ifTrue: [ ^ SKStream failure ]. "If no answers at all, just fail."
+		t at: outputVars ifPresent: [ :cache | 
+			cache isFailure ifTrue: [ ^ SKStream failure ]. "If no answers at all, just fail."
 			^ (self
 				   reuseInputs: outputVars
 				   outputs: outputVars

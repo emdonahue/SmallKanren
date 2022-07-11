@@ -1,7 +1,7 @@
 streaming
 step: aRuntime
 	| producerEntries consumerEntries producerCache answer |
-	producerCache := aRuntime table: table cache: cache.
+	producerCache := aRuntime table: table cache: cacheKey.
 	producerEntries := producerCache entries.
 	
 	consumed == producerEntries ifTrue: [ 

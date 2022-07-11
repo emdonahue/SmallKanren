@@ -3,7 +3,7 @@ testTabledMPlus
 	| s r i c g |
 	s := SKState new.
 	i := SKIncomplete new goal: ["Incomplete"] asGoal.
-	c := SKReusedStream new table: #reused; cache: #cache.
+	c := SKReusedStream new table: #reused; cacheKey: #cache.
 	r := SKRuntime new.
 	r tables at: #reused put: (Dictionary with: #cache->SKTableCache new).
 	g := ["Bind"] asGoal.
@@ -16,7 +16,7 @@ testTabledMPlus
 	self assert: ((i + c) isKindOf: SKMPlus).
 	self assert: (i + c) left identicalTo: i.
 	self assert: ((c + i) isKindOf: SKMPlus).
-	self assert: (c + i) right identicalTo: i.
+	self assert: (c + i) left identicalTo: i.
 	
 	self assert: ((c + SKReusedStream new) isKindOf: SKReusedMPlus).
 	self assert: (c + SKReusedStream new) left identicalTo: c.

@@ -32,7 +32,7 @@ testPerformanceHMM1D
 	(Character lf join:
 		(((13 to: 13) collect: [ :l | | d |
 			d := (Array new: l withAll: 1) asCons.
-			"self halt."
+			self halt.
 			{l. 
 				[ [ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat.
 				"[ [ :q | shmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat."

@@ -10,6 +10,7 @@
 		"state",
 		"outputs",
 		"consumed",
+		"cacheKey",
 		"cache"
 	],
 	"name" : "SKReusedStream",
