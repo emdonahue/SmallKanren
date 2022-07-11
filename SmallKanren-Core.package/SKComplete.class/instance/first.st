@@ -1,3 +1,4 @@
 accessing
 first
+	<ignoreForCoverage>
 	^ left

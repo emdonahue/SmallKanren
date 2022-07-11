@@ -11,7 +11,7 @@ testConsumer
 		
 	"Output"
 	self assert: ([{[ :y :b | {{y === 1. b === 2}. {y === 1. b === 3}} conde ] tabled: #test inputs: {x} outputs: {z}.
-			[ :y :b | SKGoal fail ] tabled: #test inputs: {x} outputs: {z}} conde] asGoal runStates collect: [ :s | s reify: (x cons: z cons)]) equals: #((1 2) (1 2)) asConsR.
+			[ :y :b | SKGoal fail ] tabled: #test inputs: {x} outputs: {z}} conde] asGoal reify: (x cons: z cons)) equals: #((1 2) (1 2)) asConsR.
 	
 	"Deduplication"
 	self assert: ([{[ :y | {y === 1. y === 2. y === 1. y === 2} conde ] tabled: #test inputs: {x}. 

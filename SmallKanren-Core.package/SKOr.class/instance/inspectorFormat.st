@@ -1,3 +1,4 @@
 inspecting
 inspectorFormat
+	<ignoreForCoverage>
 	^ 'or'

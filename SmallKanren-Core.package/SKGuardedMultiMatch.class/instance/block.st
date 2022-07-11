@@ -1,3 +1,4 @@
 accessing
 block
+	<ignoreForCoverage>
 	^ block.

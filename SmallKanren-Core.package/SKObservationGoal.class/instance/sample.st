@@ -1,4 +1,4 @@
 accessing
 sample
-
+	<ignoreForCoverage>
 	^ sample

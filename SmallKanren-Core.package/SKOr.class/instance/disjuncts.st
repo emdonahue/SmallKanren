@@ -1,3 +1,4 @@
 accessing
 disjuncts
-	^ left disjuncts , right disjuncts
+	<ignoreForCoverage>
+	^ self subgoals.

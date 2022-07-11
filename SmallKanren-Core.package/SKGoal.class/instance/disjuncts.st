@@ -1,3 +1,4 @@
 accessing
 disjuncts
-	^ {self}
+	<ignoreForCoverage>
+	^ { self }.

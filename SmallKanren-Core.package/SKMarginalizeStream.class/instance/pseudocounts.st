@@ -1,4 +1,4 @@
 accessing
 pseudocounts
-
+	<ignoreForCoverage>
 	^ pseudocounts

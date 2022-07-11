@@ -1,3 +1,4 @@
 accessing
 hashmap
+	<ignoreForCoverage>
 	^ hashmap

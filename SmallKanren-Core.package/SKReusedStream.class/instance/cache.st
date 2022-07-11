@@ -1,3 +1,4 @@
 accessing
 cache
+	<ignoreForCoverage>
 	^ cache

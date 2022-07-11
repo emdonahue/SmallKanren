@@ -1,3 +1,4 @@
 accessing
 subgoals
+	<ignoreForCoverage>
 	^ #().

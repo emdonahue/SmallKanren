@@ -1,4 +1,4 @@
 accessing
 observation
-
+	<ignoreForCoverage>
 	^ observation

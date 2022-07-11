@@ -1,3 +1,4 @@
 accessing
 logProbabilities
+	<ignoreForCoverage>
 	^ probabilities.

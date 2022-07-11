@@ -1,3 +1,0 @@
-streaming
-substitution
-	^ stream substitution.

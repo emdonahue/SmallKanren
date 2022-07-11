@@ -1,3 +1,4 @@
 accessing
 tag
+	<ignoreForCoverage>
 	^ tag

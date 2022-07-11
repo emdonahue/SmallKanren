@@ -1,3 +1,0 @@
-streaming
-schedule
-	^ stream schedule.

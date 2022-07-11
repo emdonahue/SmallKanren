@@ -1,6 +1,7 @@
 inspecting
 inspectTables: aBuilder
 	<inspectorPresentationOrder: 3 title: 'Tables'>
+	<ignoreForCoverage>
 	| notebook |
 	notebook := aBuilder newNotebook.
 	"tables ifEmpty: [ self halt. notebook hide ]."

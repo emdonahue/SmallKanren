@@ -1,3 +1,4 @@
 testing
 isFresh
+	<ignoreForCoverage>
 	^ true.

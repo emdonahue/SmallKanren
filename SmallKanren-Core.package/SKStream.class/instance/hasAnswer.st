@@ -1,3 +1,0 @@
-streaming
-hasAnswer
-	^ false.

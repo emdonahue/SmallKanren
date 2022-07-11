@@ -1,3 +1,0 @@
-disequality
-andDisunify: aSKDisequalityGoal 
-	^ aSKDisequalityGoal 

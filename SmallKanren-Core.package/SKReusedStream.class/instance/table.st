@@ -1,4 +1,4 @@
 accessing
 table
-
+	<ignoreForCoverage>
 	^ table

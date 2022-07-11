@@ -1,3 +1,4 @@
 testing
 isBind
+	<ignoreForCoverage>
 	^ false

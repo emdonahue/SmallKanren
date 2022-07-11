@@ -24,7 +24,7 @@ testPattern
 	self assert: c pattern first equals: c pattern second.
 	self assert: c internals size equals: 1.
 	
-c := SKGuardedMultiMatch externals: #() pattern: #(_1 _ _1) block: [:a :b].
+	c := SKGuardedMultiMatch externals: #() pattern: #(_1 _ _1) block: [:a :b].
 	self assert: c internals size equals: 2.
 	self assert: c pattern first equals: c internals first.
 	self assert: c pattern second equals: c internals second.

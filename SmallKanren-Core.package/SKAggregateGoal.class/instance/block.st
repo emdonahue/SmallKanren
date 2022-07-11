@@ -1,4 +1,4 @@
 accessing
 block
-
+	<ignoreForCoverage>
 	^ block

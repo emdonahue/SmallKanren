@@ -1,3 +1,0 @@
-accessing
-orSubgoals
-	^ { self }.

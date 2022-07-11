@@ -1,2 +1,0 @@
-composing
-and: aGoal

@@ -1,3 +1,3 @@
 accessing
 conjuncts
-	^ left conjuncts , right conjuncts
+	^ self subgoals.

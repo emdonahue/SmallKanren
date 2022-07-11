@@ -1,3 +1,4 @@
 accessing
 subgoals
-	^ left andSubgoals , right andSubgoals.
+	<ignoreForCoverage>
+	^ left conjuncts , right conjuncts.

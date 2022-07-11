@@ -1,3 +1,4 @@
 accessing
 tableName
+	<ignoreForCoverage>
 	^ tableName

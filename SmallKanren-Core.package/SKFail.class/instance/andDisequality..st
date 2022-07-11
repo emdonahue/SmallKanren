@@ -1,3 +1,0 @@
-disequality
-andDisequality: disequalityConstraint
-	^ disequalityConstraint

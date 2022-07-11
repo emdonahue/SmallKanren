@@ -1,3 +1,4 @@
 accessing
 goal
+	<ignoreForCoverage>
 	^ goal

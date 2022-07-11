@@ -1,4 +1,4 @@
 accessing
 outputVars
-
+	<ignoreForCoverage>
 	^ outputs

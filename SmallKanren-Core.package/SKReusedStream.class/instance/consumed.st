@@ -1,4 +1,4 @@
 accessing
 consumed
-
+	<ignoreForCoverage>
 	^ consumed
