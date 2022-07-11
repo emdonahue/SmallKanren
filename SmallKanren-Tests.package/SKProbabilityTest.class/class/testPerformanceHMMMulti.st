@@ -30,7 +30,7 @@ testPerformanceHMMMulti
 			inputs: {prevt. states. observations} ].	
 	"self halt."
 	times := {OrderedCollection new. OrderedCollection new. OrderedCollection new}.
-	7 to: 7 do: [ :l | | d |
+	15 to: 15 do: [ :l | | d |
 		d := (Array new: 1 withAll: 1) asCons.
 		times first add: {l. [ (Array new: l withAll: [ :q | hmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRun totalSeconds asFloat}.
 		times second add: {l. [ (Array new: l withAll: [ :q | shmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRun totalSeconds asFloat}.
