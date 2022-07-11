@@ -13,8 +13,6 @@ testHMMViterbiDecoding
 		] tabled: #tabledhmm
 			inputs: {prevt. states. observations}
 	].
-	
-	self assert: [ :q | hmm valueWithArguments: {hight. q. #(1 0) asCons.} ] asGoal run first first equals: #(1 0) asCons.
 		
 	self assert: ([ :q | hmm valueWithArguments: {hight. #(1) asCons. #(1) asCons.} ] asGoal runStates collect: [ :s | s likelihood exp]) sum equals: hight p * highe p.
 		

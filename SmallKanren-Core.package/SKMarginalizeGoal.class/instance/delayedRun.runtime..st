@@ -1,5 +1,5 @@
 running
-run: aState runtime: aRuntime
+delayedRun: aState runtime: aRuntime
 	"For each element of the distribution's support, run the block with that observed value and sum all returned streams."
 	| walked |
 	walked := observation ifNotNil: [ aState walk: observation ].

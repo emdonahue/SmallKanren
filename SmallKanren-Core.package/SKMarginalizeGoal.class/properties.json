@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "SKGoal",
+	"super" : "SKAggregateGoal",
 	"category" : "SmallKanren-Core-Probability",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"distribution",
-		"observation",
-		"block"
-	],
+	"instvars" : [ ],
 	"name" : "SKMarginalizeGoal",
 	"type" : "normal"
 }

@@ -6,4 +6,4 @@ run: aState runtime: aRunner
 	<todo>
 	"inputs should reify here to become ground keys for cache"
 	"(self copy inputs: (inputs add: (aState reify: outputs third)))"
-	^ aState tabledBind: self runner: aRunner.
+	^ aState delayedBind: self runtime: aRunner.

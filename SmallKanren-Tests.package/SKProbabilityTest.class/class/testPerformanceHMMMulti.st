@@ -15,7 +15,7 @@ testPerformanceHMMMulti
 	shmm := [ :prevt :states :observations | 
 		{{states isEmptyo. observations isEmptyo}.
 		{{states. observations} match: #((_ . _) (_ . _)) o: [ :currs :nexts :curro :nexto | 
-			prevt argmaxo: [ :st |
+			prevt marginalizeo: [ :st |
 				{currs === st.
 				{{st === 0. lowe sample: curro. shmm valueWithArguments: {lowt. nexts. nexto.}}.
 				{st === 1. highe sample: curro. shmm valueWithArguments: {hight. nexts. nexto.}}} conde}]]}} conde ].
@@ -28,9 +28,9 @@ testPerformanceHMMMulti
 				{st === 1. highe sample: curro. thmm valueWithArguments: {hight. nexts. nexto.}}} conde]]}} conde
 		] tabled: #tabledhmm
 			inputs: {prevt. states. observations} ].	
-		
+	"self halt."
 	times := {OrderedCollection new. OrderedCollection new. OrderedCollection new}.
-	16 to: 16 do: [ :l | | d |
+	7 to: 7 do: [ :l | | d |
 		d := (Array new: 1 withAll: 1) asCons.
 		times first add: {l. [ (Array new: l withAll: [ :q | hmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRun totalSeconds asFloat}.
 		times second add: {l. [ (Array new: l withAll: [ :q | shmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRun totalSeconds asFloat}.
