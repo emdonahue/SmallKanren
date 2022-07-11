@@ -1,12 +1,18 @@
 streaming
 step: aRuntime
-	| producerEntries consumerEntries producerCache |
+	| producerEntries consumerEntries producerCache answer |
 	producerCache := aRuntime table: table cache: cache.
 	producerEntries := producerCache entries.
+	
 	consumed == producerEntries ifTrue: [ 
-		producerCache isClosed ifTrue: [ ^ SKStream failure ] "If out of entries, fail."
+		producerCache isClosed ifTrue: [ self halt. ^ SKStream failure ] "If out of entries, fail."
 			ifFalse: [ ^ self ] ]. "If no change, suspend."
+		
 	consumerEntries := producerEntries predecessorOf: consumed.
-	^ ((state unify: outputs with: (state copyTerm: consumerEntries first argv))
-				averagePseudoCounts: consumerEntries first pseudoCounts)
-		+ (self copy consumed: consumerEntries).
+	
+	answer := (state unify: outputs with: (state copyTerm: consumerEntries first argv))
+				averagePseudoCounts: consumerEntries first pseudoCounts.
+				
+	^ consumerEntries == producerEntries & producerCache isClosed 
+		ifTrue: [ answer ]
+		ifFalse: [ answer + (self copy consumed: consumerEntries) ] .
