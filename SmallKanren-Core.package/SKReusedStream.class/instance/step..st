@@ -1,5 +1,6 @@
 streaming
 step: aRuntime
+	<todo> "Test whether consuming all available answers is faster"
 	| producerEntries consumerEntries producerCache answer |
 	producerCache := aRuntime table: table cache: cacheKey.
 	producerEntries := producerCache entries.
@@ -9,7 +10,6 @@ step: aRuntime
 			ifFalse: [ ^ self ] ]. "If no change, suspend."
 		
 	consumerEntries := producerEntries predecessorOf: consumed.
-	
 	answer := (state unify: outputs with: (state copyTerm: consumerEntries first argv))
 				averagePseudoCounts: consumerEntries first pseudoCounts.
 			
