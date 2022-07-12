@@ -26,7 +26,7 @@ testTabledMPlus
 	
 	self assert: ((c + SKReusedStream new) isKindOf: SKReusedMPlus).
 	self assert: (c + SKReusedStream new) left identicalTo: c.
-	self assert: ((c + SKReusedStream new) step: r) right identicalTo: c.
+	self assert: ((c + SKReusedStream new) step: r) left identicalTo: c.
 	
 	self assert: (((c runtime: r ) + SKReusedStream new) stream isKindOf: SKReusedMPlus).
 	self assert: ((c runtime: r ) + SKReusedStream new) stream left identicalTo: c.

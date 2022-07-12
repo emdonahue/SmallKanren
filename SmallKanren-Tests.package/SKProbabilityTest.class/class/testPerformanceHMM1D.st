@@ -30,7 +30,7 @@ testPerformanceHMM1D
 		
 	times := OrderedCollection new.
 	(Character lf join:
-		(((15 to: 15) collect: [ :l | | d |
+		(((14 to: 14) collect: [ :l | | d |
 			d := (Array new: l withAll: 1) asCons.
 			{l. 
 				[ [ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat.

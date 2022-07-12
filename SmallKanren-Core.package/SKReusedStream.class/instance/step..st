@@ -16,4 +16,4 @@ step: aRuntime
 	"If we are returning our last answer, don't bother to preserve the reused stream."
 	^ consumerEntries == producerEntries & producerCache isClosed 
 		ifTrue: [ answer ]
-		ifFalse: [ answer + (self copy consumed: consumerEntries; cache: producerCache entries) ] .
+		ifFalse: [ answer + (self copy consumed: consumerEntries; cache: producerCache entries) ].
