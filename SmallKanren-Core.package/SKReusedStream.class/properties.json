@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "SKTabledConsumerStream",
+	"super" : "SKStream",
 	"category" : "SmallKanren-Core-Tabling",
 	"classinstvars" : [ ],
 	"pools" : [ ],

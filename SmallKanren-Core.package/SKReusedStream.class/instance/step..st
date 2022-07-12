@@ -5,7 +5,7 @@ step: aRuntime
 	producerEntries := producerCache entries.
 	
 	consumed == producerEntries ifTrue: [ 
-		producerCache isClosed ifTrue: [ ^ SKStream failure ] "If out of entries, fail."
+		producerCache isClosed ifTrue: [ ^ SKStream failure ] "If finished all entries, fail."
 			ifFalse: [ ^ self ] ]. "If no change, suspend."
 		
 	consumerEntries := producerEntries predecessorOf: consumed.

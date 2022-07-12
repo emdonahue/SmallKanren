@@ -8,9 +8,7 @@ masterInputs: inputVars outputs: outputVars goal: goalBlock state: aState tablen
 	<todo>
 	"Create the cache. Table may already exist."
 	| table r |
-	table := tables at: tableName ifAbsent: [ PluggableDictionary new 
-			hashBlock: [ :a | a skAlphaHash ]; 
-			equalBlock: [ :a :b | a skAlphaEquals: b ]].
+	table := tables at: tableName ifAbsent: [ self class newTable ].
 	r := self copy tables: (tables copy at: tableName put: 
 		(table copy at: outputVars put: SKTableCache new; yourself); yourself).
 		

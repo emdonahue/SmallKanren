@@ -1,20 +1,18 @@
 tests-closing
 testFailOnClosedCache
-	| x |
-	x := SKVar tag: #x.
-	"Fail on start"
-	self assert: 
-		[{[ :y | SKGoal fail ] tabled: #test inputs: {x}.
-		[ :y | SKGoal succeed ] tabled: #test inputs: {x}} conde] asGoal runtime step stream isFailure.
+	| k r c |
+	k := (SKVar tag: #x) cons.
+	c := 1 cons.
+	r := SKRuntime new table: #test cache: k	 put: SKTableCache new close.
+	"Fail on start (in runtime before call to reuse)"
+	self assert: ((SKRuntime new table: #test cache: k cons put: SKTableCache new close)
+		table: #test inputs: nil outputs: k cons run: nil in: nil) isFailure.
 
+	"Fail having detected the close after all answers have been returned (first in reused>>step)."
+	self assert: ((SKReusedStream new table: #test; cacheKey: k cons; consumed: c) step:
+		(SKRuntime new table: #test cache: k cons put: (SKTableCache new close entries: c))) isFailure.
+	
 	"Fail when returning an answer (incomplete -> complete -> reused -> state)"
-	self assert: 
-		[{[ :y | SKGoal succeed ] tabled: #test inputs: {x}.
-		[ :y | SKGoal succeed ] tabled: #test inputs: {x}} conde] asGoal runtime step step step stream isState.
-
-	"Fail having detected the close after all answers have been returned."
-	self assert: ((
-		[{[ :y | SKGoal succeed | [[ SKGoal fail ]] ] tabled: #test inputs: {x}.
-		[[[ SKGoal fail ]]].
-		[ :y | SKGoal succeed ] tabled: #test inputs: {x}.
-		} conde] asGoal runtime steps: 9) stream isKindOf: SKIncomplete).
+	self assert: ((SKReusedStream new table: #test; cacheKey: k cons; state: SKState new; outputs: k) step:
+		(SKRuntime new table: #test cache: k cons put: (SKTableCache new close entries: 
+			(SKTableCacheEntry new argv: 1 cons; pseudoCounts: SKPseudoCounts new) cons))) isState.
