@@ -1,7 +1,7 @@
 tests
 testPerformanceHMMMulti
 	<script>
-	| hmm lowe lowt highe hight thmm shmm times |
+	| hmm lowe lowt highe hight thmm shmm |
 	hight := SKBernoulli new p: 0.7.
 	lowt := SKBernoulli new p: 0.2.
 	highe := SKBernoulli new p: 0.9.
@@ -29,11 +29,11 @@ testPerformanceHMMMulti
 		] tabled: #tabledhmm
 			inputs: {prevt. states. observations} ].	
 	"self halt."
-	times := {OrderedCollection new. OrderedCollection new. OrderedCollection new}.
-	15 to: 15 do: [ :l | | d |
-		d := (Array new: 1 withAll: 1) asCons.
-		times first add: {l. [ (Array new: l withAll: [ :q | hmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRun totalSeconds asFloat}.
-		times second add: {l. [ (Array new: l withAll: [ :q | shmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRun totalSeconds asFloat}.
-		times third add: {l. [ (Array new: l withAll: [ :q | thmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRun totalSeconds asFloat}.
-	].
-	(Character lf asString , Character lf asString join: (times collect: [ :t | Character lf join: (t collect: [ :lt | Character tab join: lt ]) ])) inspect.
+	(Character lf join:
+		(((1 to: 200 by: 3) collect: [ :l | | d | "200 agg => 5s"
+		d := (Array new: 4 withAll: 1) asCons.
+		{l. 
+			[ (Array new: l withAll: [ :q | thmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRunWithoutGC asFloat / 1000.
+			[ (Array new: l withAll: [ :q | shmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRunWithoutGC asFloat / 1000.
+			l <= 4 ifTrue: [[ (Array new: l withAll: [ :q | hmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRunWithoutGC asFloat / 1000].
+		}]) collect: [ :r | Character tab join: (r select: #isNotNil) ])) inspect.

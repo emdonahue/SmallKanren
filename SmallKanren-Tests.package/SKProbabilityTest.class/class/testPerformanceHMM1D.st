@@ -1,7 +1,7 @@
 tests
 testPerformanceHMM1D
 	<script>
-	| hmm lowe lowt highe hight thmm shmm times |
+	| hmm lowe lowt highe hight thmm shmm |
 	hight := SKBernoulli new p: 0.7.
 	lowt := SKBernoulli new p: 0.2.
 	highe := SKBernoulli new p: 0.9.
@@ -28,13 +28,11 @@ testPerformanceHMM1D
 		] tabled: #tabledhmm
 			inputs: {prevt. states. observations} ].	
 		
-	times := OrderedCollection new.
 	(Character lf join:
-		(((14 to: 14) collect: [ :l | | d |
+		(((8 to: 50) collect: [ :l | | d | "17=>30s"
 			d := (Array new: l withAll: 1) asCons.
 			{l. 
-				[ [ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat.
-				"[ [ :q | shmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat."
-				[ [ :q | thmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRun totalSeconds asFloat}.
-		]) collect: [ :r | Character space join: r ])) inspect.
-		"(Character lf asString , Character lf asString join: (times collect: [ :t | Character lf join: (t collect: [ :lt | Character tab join: lt ]) ])) inspect."
+				[ [ :q | thmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRunWithoutGC.
+				l < 18 ifTrue: [[ [ :q | shmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRunWithoutGC ].
+				l < 18 ifTrue: [[ [ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRunWithoutGC]	}.
+		]) collect: [ :r | Character tab join: (r select: #isNotNil) ])) inspect.

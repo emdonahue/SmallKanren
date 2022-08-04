@@ -16,3 +16,5 @@ testPerfViterbi
 				{st === 1. highe sample: curro. thmm valueWithArguments: {hight. nexts. nexto.}}} conde]]}} conde
 		] tabled: #tabledhmm
 			inputs: {prevt. states. observations} ].	
+			
+		(ABBench bench: [[ :q | thmm valueWithArguments: {hight. q. (Array new: 10 withAll: 1) asCons.} ] asGoal run force]) inspect	.
