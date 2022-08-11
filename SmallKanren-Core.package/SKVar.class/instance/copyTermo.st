@@ -1,0 +1,3 @@
+copying
+copyTermo
+	^ self copy.
