@@ -1,5 +1,5 @@
 tests-gmm
-testGMM
+testGMMTrain
 	| ll epoch |
 	ll := [ :z :n0 :n1 :x | { { z sample: 0. n0 sample: x }. {z sample: 1. n1 sample: x} } conde ].
 	

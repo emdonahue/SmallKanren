@@ -4,6 +4,8 @@ testCategorical
 	| c |
 	c := SKCategorical new probabilities: (Dictionary with: #good -> 0.5 with: #cat -> 0.5).
 
+	self assert: (SKCategorical new logLikelihood: #cat) equals: 1 ln.
+
 	self assert: (c logLikelihood: #cat) equals: 0.5 ln.
 	self assert: (c logLikelihood: #dog) equals: 0 ln.
 	
