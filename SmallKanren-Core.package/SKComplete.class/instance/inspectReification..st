@@ -1,4 +1,4 @@
 inspecting
 inspectReification: aBuilder
-	<inspectorPresentationOrder: 1 title: 'Reification'>
+	<inspectorPresentationOrder: 2 title: 'Reification'>
 	^ left inspectReification: aBuilder.

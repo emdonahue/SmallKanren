@@ -1,6 +1,6 @@
 inspecting
 inspectTables: aBuilder
-	<inspectorPresentationOrder: 3 title: 'Tables'>
+	<inspectorPresentationOrder: 4 title: 'Tables'>
 	<ignoreForCoverage>
 	| notebook |
 	notebook := aBuilder newNotebook.

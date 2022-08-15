@@ -4,6 +4,6 @@ printOn: aStream
 	"aStream nextPut: ${."
 	externals printElementsOn: aStream.
 	"aStream nextPutAll: '} {'."
-	vals printElementsOn: aStream.
+	vals ifNotNil: [ vals printElementsOn: aStream ].
 	aStream nextPutAll: ' '.
 	block printOn: aStream.

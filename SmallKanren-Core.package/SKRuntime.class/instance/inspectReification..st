@@ -1,5 +1,5 @@
 inspecting
 inspectReification: aBuilder
-	<inspectorPresentationOrder: 2 title: 'Reification'>
+	<inspectorPresentationOrder: 3 title: 'Reification'>
 	<ignoreForCoverage>
 	^ stream inspectReification: aBuilder.
