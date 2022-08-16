@@ -1,0 +1,3 @@
+presento
+asPresentoGoal
+	^ SKGoal fail.
