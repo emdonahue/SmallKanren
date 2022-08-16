@@ -1,3 +1,4 @@
 *SmallKanren-Core
 presento: aTerm
-	^ (SKSubstitution new unify: self noWalk: aTerm) asPresentoGoal.
+	self = aTerm ifTrue: [ ^ SKConstraint satisfied ].
+	^ SKConstraint unsatisfiable.
