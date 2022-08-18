@@ -1,0 +1,3 @@
+*SmallKanren-Core
+isSKTerm
+	^ true.

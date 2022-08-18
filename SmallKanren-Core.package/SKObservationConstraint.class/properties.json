@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"distribution"
+		"distribution",
+		"term",
+		"index"
 	],
 	"name" : "SKObservationConstraint",
 	"type" : "normal"
