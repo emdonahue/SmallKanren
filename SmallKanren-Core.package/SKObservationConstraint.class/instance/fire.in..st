@@ -1,23 +1,10 @@
 checking
 fire: aVal in: aState
-	<todo> "confirm that run: is the right state api"	
+	<todo> "confirm that check:in: is the right state api"	
 	| t |
-	t := term isSKVar ifTrue: [ aVal ] ifFalse: [ term ].
-	t isSKTerm ifFalse: [ ^ aState observe: t from: distribution ].
-	index ifNotNil: [ t := t atT: index put: aVal ].
+	t := term isSKVar ifTrue: [ aVal ] ifFalse: [ term ]. "If suspended on a var, aVal is the new root term."
+	t isSKTerm ifFalse: [ ^ aState observe: t from: distribution ]. "If term was (constant when goal constructed) or is (var replaced with val) a non cons, observe it."
+	index ifNotNil: [ t := t atT: index put: aVal ]. "If we know term needs var replacements, make them."
 	(t findT: [ :x | x isSKVar ])
-				ifNil: [ ^ aState observe: t from: distribution ] "Fully ground cons."
-				ifNotNil: [ :i | ^ (self copy term: t; index: i) check: (aState walk: (t atT: i)) in: aState ].
-				
-	[index 
-		ifNil: [ "First fire, bound to var."
-			aVal isSKTerm ifFalse: [ ^ aState observe: aVal from: distribution ]. "Not a complex term."
-			(aVal findT: [ :x | x isSKVar ]) 
-				ifNil: [ ^ aState observe: aVal from: distribution ] "Fully ground cons."
-				ifNotNil: [ :i | ^ (self copy term: aVal; index: i) check: (aVal atT: i) in: aState ].
-			]
-		ifNotNil: [ | t2 |
-			t := term atT: index put: aVal.
-			(t findT: [ :x | x isSKVar ])
-				ifNil: [ ^ aState observe: t from: distribution ] "Fully ground cons."
-				ifNotNil: [ :i | ^ (self copy term: t; index: i) check: (t atT: i) in: aState ]].].
+				ifNil: [ ^ aState observe: t from: distribution ] "Fully ground cons: observe it."
+				ifNotNil: [ :i | ^ (self copy term: t; index: i) check: (aState walk: (t atT: i)) in: aState ]. "Suspend with a new index to replace."

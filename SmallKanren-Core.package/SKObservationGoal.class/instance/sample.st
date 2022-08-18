@@ -1,4 +1,0 @@
-accessing
-sample
-	<ignoreForCoverage>
-	^ sample
