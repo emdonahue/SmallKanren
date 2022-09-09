@@ -32,7 +32,7 @@ testPerformanceHMM1D
 		(((8 to: 50) collect: [ :l | | d | "17=>30s"
 			d := (Array new: l withAll: 1) asCons.
 			{l. 
-				[ [ :q | thmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRunWithoutGC.
-				l < 18 ifTrue: [[ [ :q | shmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRunWithoutGC ].
-				l < 18 ifTrue: [[ [ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal run force ] timeToRunWithoutGC]	}.
+				[ [ :q | thmm valueWithArguments: {hight. q. d.} ] asGoal runList force ] timeToRunWithoutGC.
+				l < 18 ifTrue: [[ [ :q | shmm valueWithArguments: {hight. q. d.} ] asGoal runList force ] timeToRunWithoutGC ].
+				l < 18 ifTrue: [[ [ :q | hmm valueWithArguments: {hight. q. d.} ] asGoal runList force ] timeToRunWithoutGC]	}.
 		]) collect: [ :r | Character tab join: (r select: #isNotNil) ])) inspect.

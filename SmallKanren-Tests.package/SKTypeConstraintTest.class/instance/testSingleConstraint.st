@@ -1,6 +1,6 @@
 property
 testSingleConstraint
-	[ :const :val :pass | self class constraint: const value: val passes: pass ] asGoal run
+	[ :const :val :pass | self class constraint: const value: val passes: pass ] asGoal runList
 		do: [ :cvp | 
 			[ :c :v :p | 
 			self assert: (c asGoal: v) succeeds equals: p.

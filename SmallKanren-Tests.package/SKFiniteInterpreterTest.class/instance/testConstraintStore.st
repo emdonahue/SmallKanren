@@ -8,7 +8,7 @@ testConstraintStore
 				with: #symbol
 				constraint: #typeo
 				store: #(#() #() #()) asConsR
-				o: o ] asGoal run
+				o: o ] asGoal runList
 		equals:
 			{{{{(#x cons: #symbol)}. 
 			#().

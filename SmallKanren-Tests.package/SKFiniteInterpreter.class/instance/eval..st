@@ -1,3 +1,3 @@
 eval
 eval: prog
-	^ [ :out | self eval: prog o: out ] asGoal run first first
+	^ [ :out | self eval: prog o: out ] asGoal runList first first

@@ -9,5 +9,5 @@ testUnifyVars
 				in: #(#(x y z) nil) asConsR
 				o: p
 				depth: 1
-				length: 1 ] asGoal run
+				length: 1 ] asGoal runList
 		equals: #(#(#(#(z y z) nil))) asConsR

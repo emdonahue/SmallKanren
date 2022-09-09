@@ -3,5 +3,5 @@ testRecursiveFreshGoal
 	| loop |
 	loop := [ SKGoal succeed | loop ].
 	self
-		assert: (loop asGoal run take: 3)
+		assert: (loop asGoal runList take: 3)
 		equals: #(#() #() #()) asConsR

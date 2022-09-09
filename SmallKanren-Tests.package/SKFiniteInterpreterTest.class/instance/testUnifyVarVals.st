@@ -9,7 +9,7 @@ testUnifyVarVals
 				in: interpreter env asConsR
 				o: p
 				depth: 1
-				length: 1 ] asGoal run
+				length: 1 ] asGoal runList
 		equals: #(#(#(#(1 y z) #(#() #() #())))) asConsR.
 	self
 		assert:
@@ -20,5 +20,5 @@ testUnifyVarVals
 				in: #(#(1 y z) #()) asConsR
 				o: p
 				depth: 1
-				length: 1 ] asGoal run
+				length: 1 ] asGoal runList
 		equals: Cons empty cons cons.

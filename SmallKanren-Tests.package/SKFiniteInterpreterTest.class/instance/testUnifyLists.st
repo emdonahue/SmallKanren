@@ -9,7 +9,7 @@ testUnifyLists
 				in: interpreter env
 				o: p
 				depth: 1
-				length: 1 ] asGoal run
+				length: 1 ] asGoal runList
 		equals: (self x: 1 y: 2) cons cons.
 	self
 		assert:
@@ -20,5 +20,5 @@ testUnifyLists
 				in: interpreter env
 				o: p
 				depth: 1
-				length: 1 ] asGoal run
+				length: 1 ] asGoal runList
 		equals: Cons empty cons cons.

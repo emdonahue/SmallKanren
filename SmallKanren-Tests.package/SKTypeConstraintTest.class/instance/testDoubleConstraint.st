@@ -4,7 +4,7 @@ testDoubleConstraint
 	self class
 		constraint: const1
 		constraint: const2
- ] asGoal run
+ ] asGoal runList
 		do: [ :cc | 
 		(cc as: Array)	bind: [ :c1 :c2  | 
 			self assert: ((c1 asGoal: x) & (c2 asGoal: x)) fails.

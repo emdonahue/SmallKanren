@@ -20,4 +20,4 @@ testHMMViterbiDecodingExamples
 		
 	self assert: [ :q | hmm valueWithArguments: {start. q	. #(normal cold dizzy) asCons.} ] asGoal runStates first likelihood exp closeTo: 0.01512 precision: 0.0001.
 		
-	self assert: [ :q | hmm valueWithArguments: {start. q	. #(normal cold dizzy) asCons.} ] asGoal run first first equals: #(healthy healthy fever) asCons.
+	self assert: [ :q | hmm valueWithArguments: {start. q	. #(normal cold dizzy) asCons.} ] asGoal runList first first equals: #(healthy healthy fever) asCons.

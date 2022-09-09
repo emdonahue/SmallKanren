@@ -1,3 +1,3 @@
 fresh
 testNestedFreshGoal
-	self assert: [ [ [ SKGoal succeed  ] ] ] asGoal run equals: #(#()) asConsR
+	self assert: [ [ [ SKGoal succeed  ] ] ] asGoal runList equals: #(#()) asConsR

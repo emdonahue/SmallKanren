@@ -11,7 +11,7 @@ testUnifyVals
 				in: #(#(x y z) #()) asConsR
 				o: p
 				depth: 1
-				length: 1 ] asGoal run
+				length: 1 ] asGoal runList
 		equals: #(#(#(#(x y z) #()))) asConsR.
 	self
 		assert:
@@ -22,5 +22,5 @@ testUnifyVals
 				in: #(#(x y z) #()) asConsR
 				o: p
 				depth: 1
-				length: 1 ] asGoal run
+				length: 1 ] asGoal runList
 		equals: Cons empty cons cons.

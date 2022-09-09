@@ -7,4 +7,4 @@ testDelayedReusedStream
 	pair isEmptyo & (self path: start to: end)
 		|
 			((pair carCdro: [ :a :d | (self path: start to: end) & (a === start) & (d === end) ])
-				& (pair carCdro: [ :a :d | (self path: start to: end) & (a === start) & (d === end) ])) ] asGoal run) size equals: 12.
+				& (pair carCdro: [ :a :d | (self path: start to: end) & (a === start) & (d === end) ])) ] asGoal runList) size equals: 12.

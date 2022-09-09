@@ -42,4 +42,4 @@ testHMMForwardBackwardExample
 		
 	self assert: [ :q | hmm valueWithArguments: {start. q	. #(normal cold dizzy) asCons.} ] asGoal run first first equals: #(healthy healthy fever) asCons."
 		
-	[ :q | fbhmm valueWithArguments: {start. q	. #(normal cold dizzy) asCons.} ] asGoal run asOrderedCollection inspect.
+	[ :q | fbhmm valueWithArguments: {start. q	. #(normal cold dizzy) asCons.} ] asGoal runList asOrderedCollection inspect.

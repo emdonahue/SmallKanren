@@ -33,7 +33,7 @@ testPerformanceHMMMulti
 		(((1 to: 200 by: 3) collect: [ :l | | d | "200 agg => 5s"
 		d := (Array new: 4 withAll: 1) asCons.
 		{l. 
-			[ (Array new: l withAll: [ :q | thmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRunWithoutGC asFloat / 1000.
-			[ (Array new: l withAll: [ :q | shmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRunWithoutGC asFloat / 1000.
-			l <= 4 ifTrue: [[ (Array new: l withAll: [ :q | hmm valueWithArguments: {hight. q. d.} ]) asGoal run force ] timeToRunWithoutGC asFloat / 1000].
+			[ (Array new: l withAll: [ :q | thmm valueWithArguments: {hight. q. d.} ]) asGoal runList force ] timeToRunWithoutGC asFloat / 1000.
+			[ (Array new: l withAll: [ :q | shmm valueWithArguments: {hight. q. d.} ]) asGoal runList force ] timeToRunWithoutGC asFloat / 1000.
+			l <= 4 ifTrue: [[ (Array new: l withAll: [ :q | hmm valueWithArguments: {hight. q. d.} ]) asGoal runList force ] timeToRunWithoutGC asFloat / 1000].
 		}]) collect: [ :r | Character tab join: (r select: #isNotNil) ])) inspect.

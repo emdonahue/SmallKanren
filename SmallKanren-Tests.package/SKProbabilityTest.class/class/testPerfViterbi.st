@@ -17,4 +17,4 @@ testPerfViterbi
 		] tabled: #tabledhmm
 			inputs: {prevt. states. observations} ].	
 			
-		(ABBench bench: [[ :q | thmm valueWithArguments: {hight. q. (Array new: 10 withAll: 1) asCons.} ] asGoal run force]) inspect	.
+		(ABBench bench: [[ :q | thmm valueWithArguments: {hight. q. (Array new: 10 withAll: 1) asCons.} ] asGoal runList force]) inspect	.

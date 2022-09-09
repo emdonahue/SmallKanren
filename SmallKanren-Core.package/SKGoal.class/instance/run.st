@@ -1,5 +1,5 @@
 running
 run
-	"Returns a lazy list that enumerates every result that satisfies this goal. This is the primary interface for vanilla SK."
+	"Returns singleton lists as individual values."
 
 	^ self runtime run

@@ -23,7 +23,7 @@ testHMMBackwards
 	[ | r | 
 		r := [ :q | tabledhmm valueWithArguments: {hight. q. #(1 1 1) asCons.} ] asGoal runtime.
 		self halt.
-			r run force.
+			r runList force.
 			(r tables at: #tabledhmm) inspect ] value.
 		
 	"self assert: [ :q | tabledhmm valueWithArguments: {hight. q. #(1 1 1) asCons.} ] asGoal runStates first likelihood exp closeTo:  0.37087499999999995 precision: 0.0001."

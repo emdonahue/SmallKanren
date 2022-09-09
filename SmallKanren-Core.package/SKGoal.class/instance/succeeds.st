@@ -1,3 +1,3 @@
 running
 succeeds
-	^ self run isNotEmpty
+	^ self runList isNotEmpty

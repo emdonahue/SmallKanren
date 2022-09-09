@@ -1,5 +1,5 @@
 tests
 testFail
 	| ss |
-	ss := false asGoal run.
+	ss := false asGoal runList.
 	self assert: ss isEmpty.
