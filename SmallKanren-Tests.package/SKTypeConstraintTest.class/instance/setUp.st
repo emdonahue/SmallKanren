@@ -6,4 +6,4 @@ setUp
 	numbero := SKConstraint numbero.
 	satisfied := SKConstraint satisfied.
 	unsatisfiable := SKConstraint unsatisfiable.
-	'SmallKanren-Core' asPackage enforceContractC.
+	'SmallKanren-Core' asPackage signContracts.

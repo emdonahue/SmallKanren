@@ -5,4 +5,4 @@ setUp
 	y := SKVar new tag: #y.
 	z := SKVar new.
 	s := SKSubstitution empty.
-	'SmallKanren-Core' asPackage enforceContractC.
+	'SmallKanren-Core' asPackage signContracts.

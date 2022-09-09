@@ -9,4 +9,4 @@ setUp
 	yhash := y hash asString copyFrom: 1 to: 4.
 	failure := SKStream failure.
 	repeato := [ :q :v :n | n = 0 ifTrue: SKGoal fail ifFalse: [ q === v | [ repeato value: q value: v value: n-1 ]]].
-	'SmallKanren-Core' asPackage enforceContractC.
+	'SmallKanren-Core' asPackage signContracts.

@@ -4,4 +4,4 @@ setUp
 	interpreter vars: #(x y z).
 	variables := (interpreter vars
 		collect: [ :v | v -> (SKVar new tag: v) ]) asDictionary.
-	'SmallKanren-Core' asPackage enforceContractC.
+	'SmallKanren-Core' asPackage signContracts.

@@ -1,3 +1,3 @@
 setup
 tearDown
-	'SmallKanren-Core' asPackage unenforceContractC.
+	'SmallKanren-Core' asPackage voidContracts.

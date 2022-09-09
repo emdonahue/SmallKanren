@@ -8,4 +8,4 @@ setUp
 	no4 := SKConstraint absento: 4.
 	satisfied := SKConstraint satisfied.
 	xhash := x hash asString copyFrom: 1 to: 4.
-	'SmallKanren-Core' asPackage enforceContractC.
+	'SmallKanren-Core' asPackage signContracts.

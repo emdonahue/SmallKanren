@@ -1,3 +1,3 @@
 tests
 setUp
-	'SmallKanren-Core' asPackage enforceContractC.
+	'SmallKanren-Core' asPackage signContracts.

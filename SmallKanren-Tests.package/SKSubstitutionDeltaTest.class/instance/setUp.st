@@ -1,7 +1,7 @@
 running
 setUp
 	super setUp.
-	'SmallKanren-Core' asPackage enforceContractC.
+	'SmallKanren-Core' asPackage signContracts.
 	x := SKVar new tag: #x.
 	y := SKVar new tag: #y.
 	x1 := SKDisequalityPair new
