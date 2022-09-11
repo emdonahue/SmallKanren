@@ -1,4 +1,4 @@
 merging
 consolidate: aMulti
-	<type: #SKMultiConstraint returns: #SKMultiConstraint>
+	<type: #SKMultiConstraint type: #SKMultiConstraint>
 	^ aMulti.

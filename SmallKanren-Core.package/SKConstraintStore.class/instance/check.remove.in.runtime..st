@@ -5,7 +5,7 @@ check: aValue remove: aVar in: aState runtime: aRuntime
 	"make this polymorphic"
 
 	<todo>
-	<type: #ObjectC type: #SKVar type: #SKState returns: #(OrC SKState SKFailure)>
+	<type: #ObjectC type: #SKVar type: #SKState type: #(OrC SKState SKFailure)>
 	| c s |
 	c := self at: aVar.
 	s := c check: aValue remove: aVar in: aState.

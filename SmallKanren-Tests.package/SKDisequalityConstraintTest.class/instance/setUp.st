@@ -1,5 +1,6 @@
 running
 setUp
+	super setUp.
 	x := SKVar new tag: #x.
 	y := SKVar new tag: #y.
 	z := SKVar new tag: #z.
@@ -9,6 +10,5 @@ setUp
 	satisfied := SKConstraint satisfied.
 	xhash := x hash asString copyFrom: 1 to: 4.
 	yhash := y hash asString copyFrom: 1 to: 4.
-	'SmallKanren-Core' asPackage signContracts.
 	failure := SKStream failure.
 	state := SKState new.

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
+	"super" : "SKTestCase",
 	"category" : "SmallKanren-Tests-Probability",
 	"classinstvars" : [ ],
 	"pools" : [ ],

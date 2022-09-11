@@ -1,3 +1,3 @@
 merging
 consolidate: aMulti
-	<type: #SKMultiConstraint returns: #SKUnsatisfiableConstraint>
+	<type: #SKMultiConstraint type: #SKUnsatisfiableConstraint>

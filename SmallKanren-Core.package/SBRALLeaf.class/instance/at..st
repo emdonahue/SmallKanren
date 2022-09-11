@@ -1,3 +1,0 @@
-accessing
-at: nTh
-	^ element

@@ -1,4 +1,4 @@
 adding
 addDisequality: aDisequality
-	<type: #SKDisequality returns: #SKDisequalityConjoined>
+	<type: #SKDisequality type: #SKDisequalityConjoined>
 	^ SKDisequalityConjoined new first: aDisequality; rest: self.

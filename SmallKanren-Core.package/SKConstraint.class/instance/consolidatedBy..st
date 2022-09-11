@@ -1,6 +1,6 @@
 merging
 consolidatedBy: aConstraint
-	<type: #(NotC SKMultiConstraint) returns: #SKConstraint>
+	<type: #(NotC SKMultiConstraint) type: #SKConstraint>
 	"Called by single constraints to begin a multi constraint."
 	| s c |
 	c := self compress: aConstraint.
