@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "SmallKanren-Core-SBRAL",
+	"classinstvars" : [
+		"placeholder"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SBRALPlaceholder",
+	"type" : "normal"
+}
