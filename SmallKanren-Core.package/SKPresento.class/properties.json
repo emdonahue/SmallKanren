@@ -1,15 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "SKConstraint",
-	"category" : "SmallKanren-Core-Probability",
+	"category" : "SmallKanren-Core-Constraints",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"distribution",
 		"term",
-		"index"
+		"pairs"
 	],
-	"name" : "SKObservationConstraint",
+	"name" : "SKPresento",
 	"type" : "normal"
 }

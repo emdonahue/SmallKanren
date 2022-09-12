@@ -1,6 +1,6 @@
 inspecting
 inspectStreams: aBuilder
-	<inspectorPresentationOrder: 1 title: 'Streams'>
+	<inspectorPresentationOrder: 3 title: 'Streams'>
 	<ignoreForCoverage>
 	^ aBuilder newTree
 		roots: { stream };

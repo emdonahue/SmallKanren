@@ -1,0 +1,3 @@
+constraints
+asPresentoGoal
+	^ SKGoal succeed.

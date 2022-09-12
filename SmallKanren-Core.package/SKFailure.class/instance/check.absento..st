@@ -1,3 +1,3 @@
-exclusion
+absento
 check: aValue absento: aConstraint
 	

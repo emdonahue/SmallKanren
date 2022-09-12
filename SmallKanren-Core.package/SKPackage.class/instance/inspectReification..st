@@ -3,5 +3,5 @@ inspectReification: aBuilder
 	<inspectorPresentationOrder: 1 title: 'Reification'>
 	^ aBuilder newTable
 			addColumn: (SpStringTableColumn title: 'Variable' evaluated: #key);
-			addColumn: (SpStringTableColumn title: 'Value' evaluated: [ :x | self reify: x val ]);
-			items: substitution hashmap.
+			addColumn: (SpStringTableColumn title: 'Value' evaluated: #val);
+			items: (substitution hashmap collect: [ :x | x copy val: (self reify: x val) ]).
