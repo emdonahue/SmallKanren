@@ -1,5 +1,6 @@
 accessing
 goal: aGoal
 	<type: #SKGoal type: #SKBind>
-	<ignoreForCoverage>
+	"<ignoreForCoverage>"
 	goal := aGoal.
+	^ self.
