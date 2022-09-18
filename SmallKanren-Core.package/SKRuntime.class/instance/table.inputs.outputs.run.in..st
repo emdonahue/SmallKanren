@@ -1,8 +1,8 @@
 tabling
 table: tableName inputs: inputVars outputs: outputVars run: aState in: goalBlock
 	"Called from TabledGoal to perform tabling on a pure state. If the cache already exists, this is a consumer call."
-	<type: #Symbol type: #Cons type: #Cons type: #Cons type: #SKState
-	type: #String>
+	<type: #Symbol type: #Cons type: #Cons type: #isState type: #BlockClosure
+	type: #isStream>
 	
 	tables at: tableName ifPresent: [ :t | 
 		t at: outputVars ifPresent: [ :cache | 

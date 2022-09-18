@@ -1,3 +1,3 @@
 accessing
 deltas
-	^ deltas
+	^ constraint

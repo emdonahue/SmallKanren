@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	deltas := SKConstraint satisfied.
+	constraint := SKConstraint satisfied.

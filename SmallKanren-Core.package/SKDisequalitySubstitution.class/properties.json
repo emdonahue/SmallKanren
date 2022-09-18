@@ -6,10 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"deltas",
 		"substitution",
 		"var",
-		"val"
+		"val",
+		"constraint"
 	],
 	"name" : "SKDisequalitySubstitution",
 	"type" : "normal"

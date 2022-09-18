@@ -1,3 +1,3 @@
 accessing
 deltas: anObject
-	deltas := anObject
+	constraint := anObject

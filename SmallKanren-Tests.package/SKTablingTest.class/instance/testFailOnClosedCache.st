@@ -6,7 +6,7 @@ testFailOnClosedCache
 	r := SKRuntime new table: #test cache: k	 put: SKTableCache new close.
 	"Fail on start (in runtime before call to reuse)"
 	self assert: ((SKRuntime new table: #test cache: k cons put: SKTableCache new close)
-		table: #test inputs: nil outputs: k cons run: nil in: nil) isFailure.
+		table: #test inputs: Cons empty outputs: k cons run: SKState new in: []) isFailure.
 
 	"Fail having detected the close after all answers have been returned (first in reused>>step)."
 	self assert: ((SKReusedStream new table: #test; cacheKey: k cons; consumed: c) step:
