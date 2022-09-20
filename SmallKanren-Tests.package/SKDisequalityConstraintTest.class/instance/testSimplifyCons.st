@@ -15,4 +15,4 @@ testSimplifyCons
 	self assert: ((1 cons: 3) =/= (1 cons: x)) equals: x=/=3.
 	self assert: ((1 cons: 3) =/= (x cons: 2)) isSuccess.
 	self assert: ((1 cons: 2) =/= (x cons: 2)) equals: x=/=1.
-	self assert: ((1 cons: 2) =/= (x cons: y)) equals: x=/=1 & (y=/=2).
+	self assert: ((1 cons: 2) =/= (x cons: y)) equals: (y=/=2) & (x=/=1).

@@ -4,7 +4,7 @@ testPrintOn
 	self
 		assert: ((x cons: y cons) =/= (1 cons: 2 cons)) asConstraint asString
 		equals:
-			('=/=1&<y:{2}>=/=2'
+			('=/=2&<x:{1}>=/=1'
 				format:
 					{xhash.
 					yhash}).
@@ -17,7 +17,7 @@ testPrintOn
 	self
 		assert: ((x cons: y cons) =/= (1 cons: 2 cons), (x =/= 3)) asString
 		equals:
-			('=/=1&<y:{2}>=/=2 =/=3'
+			('=/=2&<x:{1}>=/=1 =/=3'
 				format:
 					{xhash.
 					yhash}).
