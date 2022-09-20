@@ -1,0 +1,3 @@
+disunifying
+asDisequalityInverse
+	self subclassResponsibility

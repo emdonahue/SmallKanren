@@ -1,0 +1,1 @@
+Represents disequality constraints that are used as intermediate representations during disunification. In particular, they are pairs or conjunctions of pairs, neither of which is in proper normal form because neither starts with a singleton disequality. Singletons are added only after disunification to normalize the constraints before adding them to the store.
