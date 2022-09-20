@@ -1,3 +1,3 @@
 disequality
-deltas
+disequality
 	^ SKConstraint satisfied.

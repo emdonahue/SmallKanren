@@ -1,3 +1,3 @@
 accessing
-deltas: anObject
+disequality: anObject
 	constraint := anObject

@@ -1,3 +1,0 @@
-disequality
-orDisequality: aDiseq
-	^ aDiseq

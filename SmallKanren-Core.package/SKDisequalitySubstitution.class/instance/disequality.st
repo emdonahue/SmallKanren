@@ -1,3 +1,3 @@
 accessing
-deltas
+disequality
 	^ constraint
