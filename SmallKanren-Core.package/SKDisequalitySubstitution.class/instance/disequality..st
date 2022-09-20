@@ -1,3 +1,3 @@
 accessing
 disequality: anObject
-	constraint := anObject
+	disequality := anObject

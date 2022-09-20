@@ -1,3 +1,3 @@
 disequality
 asDisequalityGoal
-	^ constraint asDisequalityGoal
+	^ disequality asDisequalityGoal
