@@ -1,3 +1,3 @@
 accessing
 var: aVar
-	left := aVar.
+	var := aVar.

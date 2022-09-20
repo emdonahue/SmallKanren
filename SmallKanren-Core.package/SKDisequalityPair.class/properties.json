@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"left",
-		"right"
+		"var",
+		"val"
 	],
 	"name" : "SKDisequalityPair",
 	"type" : "normal"

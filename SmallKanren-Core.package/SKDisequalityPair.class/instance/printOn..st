@@ -1,6 +1,6 @@
 printing
 printOn: aStream
 	aStream nextPut: $&.
-	left printOn: aStream.
+	var printOn: aStream.
 	aStream nextPutAll: '=/='.
-	right printOn: aStream.
+	val printOn: aStream.

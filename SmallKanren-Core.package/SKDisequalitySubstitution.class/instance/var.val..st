@@ -1,4 +1,4 @@
-accessing
+disunifying
 var: aVar val: aVal 
 	"Sets a new var and val and updates the deltas. Aims to keep a ground value if at all possible so we don't need to add the disequality to two different vars."
 	var ifNil: [ ^ self copy var: aVar; val: aVal ].

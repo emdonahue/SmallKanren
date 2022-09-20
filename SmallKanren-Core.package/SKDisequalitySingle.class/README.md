@@ -1,0 +1,1 @@
+A disequality constraint that only remembers the value (not the variable). It is assumed that this will be used alone or as the first of a conjoined disequality since the constraint store remembers for it which variable it is constraining.

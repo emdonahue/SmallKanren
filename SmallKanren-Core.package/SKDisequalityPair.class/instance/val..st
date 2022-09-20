@@ -1,3 +1,3 @@
 accessing
 val: aVal
-	right := aVal.
+	val := aVal.
