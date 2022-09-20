@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	constraint := SKConstraint satisfied.
+	constraint := SKConstraint unsatisfiable.

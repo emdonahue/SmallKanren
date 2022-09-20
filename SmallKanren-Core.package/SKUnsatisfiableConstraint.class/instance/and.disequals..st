@@ -1,3 +1,3 @@
-disequality
+disunifying
 and: aVar disequals: aVal 
-	^ SKDisequalityPair left: aVar right: aVal.
+	^ SKDisequalityPair var: aVar val: aVal.

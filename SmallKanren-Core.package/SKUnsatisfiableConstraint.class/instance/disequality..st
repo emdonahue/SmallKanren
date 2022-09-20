@@ -1,3 +1,4 @@
-disequality
+disunifying
 disequality: aDisequalityConstraint 
+	self halt.
 	^ aDisequalityConstraint 

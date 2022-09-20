@@ -1,0 +1,3 @@
+disunifying
+asDisequalityGoal
+	^ SKGoal fail

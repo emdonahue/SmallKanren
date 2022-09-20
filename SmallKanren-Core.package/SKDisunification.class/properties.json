@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "SKDisunification",
+	"super" : "SKDisequality",
 	"category" : "SmallKanren-Core-Constraints",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"first",
-		"rest"
-	],
-	"name" : "SKDisequalityConjoined",
+	"instvars" : [ ],
+	"name" : "SKDisunification",
 	"type" : "normal"
 }

@@ -1,3 +1,3 @@
 accessing
 val 
-	^ self first val.
+	^ first val.
