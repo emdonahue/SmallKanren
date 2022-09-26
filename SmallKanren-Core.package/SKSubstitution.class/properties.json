@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "EvanDonahue 4/9/2021 13:50",
 	"super" : "Object",
-	"category" : "SmallKanren-Core-Variables",
+	"category" : "SmallKanren-Core-States",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

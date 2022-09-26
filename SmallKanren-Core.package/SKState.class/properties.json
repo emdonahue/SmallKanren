@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "EvanDonahue 4/10/2021 19:18",
 	"super" : "SKPackage",
-	"category" : "SmallKanren-Core-Streams",
+	"category" : "SmallKanren-Core-States",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

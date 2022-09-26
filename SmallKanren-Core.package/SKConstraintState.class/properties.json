@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "SKPackage",
+	"super" : "SKAbstractState",
 	"category" : "SmallKanren-Core-States",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"schedule",
-		"goal"
+		"store"
 	],
-	"name" : "SKStateScheduled",
+	"name" : "SKConstraintState",
 	"type" : "normal"
 }

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SKStream",
-	"category" : "SmallKanren-Core-Streams",
+	"category" : "SmallKanren-Core-States",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
