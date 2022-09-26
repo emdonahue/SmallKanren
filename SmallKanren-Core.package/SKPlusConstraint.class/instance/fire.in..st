@@ -8,8 +8,8 @@ hack."
 	smd := aState walk: summand.
 	
 	aVal isSKVar ifFalse: [ 
-	smd isSKVar ifFalse: [ ^ aState unify: sm with: aVal + smd runtime: nil ].
-	sm isSKVar ifFalse: [ ^ aState unify: smd with: sm - aVal runtime: SKRuntime new ].
+	smd isSKVar ifFalse: [ ^ aState unify: sm with: aVal + smd ].
+	sm isSKVar ifFalse: [ ^ aState unify: smd with: sm - aVal ].
 	^ (aState add: smd constraint: (self class new sum: sm; summand: aVal)). ].
 	
 	smd isSKVar | sm isSKVar ifFalse: [ ^ aState unify: aVal with: sm - smd ].

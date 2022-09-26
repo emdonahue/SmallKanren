@@ -1,0 +1,3 @@
+laziness
+eager: aState
+	^ aState

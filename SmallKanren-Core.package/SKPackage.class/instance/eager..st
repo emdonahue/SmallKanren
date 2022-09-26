@@ -1,3 +1,4 @@
 laziness
 eager: aRuntime
-	^ constraints eager: self runtime: aRuntime.
+
+	^ constraints eager: self
