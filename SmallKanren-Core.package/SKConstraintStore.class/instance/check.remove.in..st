@@ -6,7 +6,7 @@ check: aValue remove: aVar in: aState
 	"make this polymorphic"
 
 	<todo>
-	<type: #VoidC type: #SKVar type: #SKState type: #SKRuntime type:
+	<type: #VoidC type: #SKVar type: #SKState type:
 	#( OrC SKState SKFailure )>
 	| c s |
 	c := self at: aVar.

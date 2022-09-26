@@ -10,7 +10,6 @@ skUnifyVar: aVar in: aState
 	<todo>
 	<type: #SKVar type:
 	#( OrC SKPackage SKSubstitution #SKDisequalitySubstitution ) type:
-	#VoidC type:
 	#( OrC SKPackage SKSubstitution #SKDisequalitySubstitution
 	   SKFailure )>
 	^ aState checkVar: self extend: aVar

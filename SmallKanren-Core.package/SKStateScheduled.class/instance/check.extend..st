@@ -6,7 +6,7 @@ check: aValue extend: aVar
 	"After successful unification, fire any newly ground scheduled fresh goals."
 
 	<todo>
-	<type: #VoidC type: #SKVar type: #SKRuntime type:
+	<type: #VoidC type: #SKVar type:
 	#( OrC SKPackage SKFailure )>
 	^ (super check: aValue extend: aVar)
 		  prioritize: aVar

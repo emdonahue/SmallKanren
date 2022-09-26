@@ -6,7 +6,7 @@ checkVar: aValue extend: aVar in: aState
 	"make this polymorphic"
 
 	<todo>
-	<type: #VoidC type: #SKVar type: #SKPackage type: #isNil type:
+	<type: #VoidC type: #SKVar type: #SKPackage type:
 	#( OrC SKPackage SKFailure )>
 	| c s |
 	c := self at: aVar.
