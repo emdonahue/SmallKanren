@@ -1,5 +1,4 @@
-initialization
+adding
 initialize
-
 	super initialize.
-	hashmap := Dictionary empty
+	store := FDSLinkedList empty.

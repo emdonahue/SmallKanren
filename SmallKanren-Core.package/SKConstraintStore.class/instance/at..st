@@ -1,3 +1,3 @@
-accessing
+adding
 at: aVar
-	^ hashmap at: aVar ifAbsent: SKSatisfiedConstraint singleton
+	^ store atKey: aVar ifAbsent: SKConstraint satisfied

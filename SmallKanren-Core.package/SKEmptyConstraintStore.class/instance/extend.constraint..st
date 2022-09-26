@@ -1,3 +1,3 @@
 constraining
 extend: aVar constraint: aConstraint
-	^ SKConstraintStore new extend: aVar constraint: aConstraint
+	^ SKOldConstraintStore new extend: aVar constraint: aConstraint
