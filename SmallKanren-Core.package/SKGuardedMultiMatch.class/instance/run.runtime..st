@@ -8,7 +8,7 @@ run: aState runtime: aRuntime
 	"Get the fully walked variables to unify with pattern."
 	walked := bindings collect: [ :v | v isFDSAssociation ifTrue: [ v val ] ifFalse: v ]. 
 	"Unify pattern and walked vars to merge information from both sources."	
-	sub := SKSubstitution empty.
+	sub := SKSubstitution empty asDisequalitySubstitution.
 	walked doWithIndex: [ :v :i | sub := (sub unify: (pattern at: i ifAbsent: v) with: v runtime: aRuntime) ifFailure: [ ^ SKStream failure ] ].
 	"Unify ground atoms from pattern in the next state (free vars will self unify and so not enter the substitution)."
 	s := walked inject: aState into: [ :st :v | (st unify: v with: (sub reify: v) runtime: aRuntime) ifFailure: [ ^ SKStream failure ] ].
