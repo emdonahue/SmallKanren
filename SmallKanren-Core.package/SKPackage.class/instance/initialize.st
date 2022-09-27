@@ -1,5 +1,5 @@
 initialization
 initialize
 	super initialize.
-	substitution := SKSubstitution empty.
+	substitution := SKSubstitution new.
 	constraints := SKOldConstraintStore empty.

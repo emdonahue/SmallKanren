@@ -5,4 +5,4 @@ fromBlock: topLevelGoal query: aQuery
 	| r queryVariables |
 	queryVariables := aQuery asCons.
 	r := self new query: queryVariables.
-	^ ([topLevelGoal valueWithArguments: queryVariables] asGoal run: SKState new runtime: r) runtime: r.
+	^ ([topLevelGoal valueWithArguments: queryVariables] asGoal run: SKSubstitution new runtime: r) runtime: r.
