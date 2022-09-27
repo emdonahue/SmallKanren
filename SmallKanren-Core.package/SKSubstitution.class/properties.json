@@ -1,12 +1,12 @@
 {
 	"commentStamp" : "EvanDonahue 4/9/2021 13:50",
-	"super" : "Object",
+	"super" : "SKAbstractState",
 	"category" : "SmallKanren-Core-States",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"hashmap"
+		"bindings"
 	],
 	"name" : "SKSubstitution",
 	"type" : "normal"

@@ -1,4 +1,4 @@
 debugging
 at: aKey
 	"Used for debugging."
-	^ hashmap atKey: aKey.
+	^ bindings atKey: aKey.

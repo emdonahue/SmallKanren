@@ -1,6 +1,6 @@
 checking
 fire: aValue in: aState
-	<type: #(NotC SKVar) type: #SKPackage type: #(OrC SKPackage SKFailure)>
+	<type: #(NotC SKVar) type: #isState type: #isStateOrFailure>
 	"Confirm that the value is of the correct type."
 	^ (self isOfType: aValue)
 		ifTrue: aState

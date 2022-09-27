@@ -4,4 +4,4 @@ inspectSubstitution: aBuilder
 	^ aBuilder newTable
 			addColumn: (SpStringTableColumn title: 'Variable' evaluated: #key);
 			addColumn: (SpStringTableColumn title: 'Value' evaluated: #val);
-			items: hashmap.
+			items: bindings.

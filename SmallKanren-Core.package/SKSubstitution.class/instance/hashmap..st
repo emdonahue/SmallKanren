@@ -1,3 +1,3 @@
 accessing
 hashmap: aHashMap 
-	hashmap := aHashMap
+	bindings := aHashMap

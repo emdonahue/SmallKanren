@@ -7,5 +7,5 @@ gtInspectSubstitution: composite
 		column: 'Value' evaluated: [ :a | a val ];
 		selectionAct: [ :x | x selection value value inspect ] entitled: 'Inspect';
 		send: [ :x | x val ];
-		display: [ hashmap asArray ];
+		display: [ bindings asArray ];
 		when: [ self isNotEmpty ].

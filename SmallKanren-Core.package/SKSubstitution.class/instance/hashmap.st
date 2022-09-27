@@ -1,4 +1,4 @@
 accessing
 hashmap
 	<ignoreForCoverage>
-	^ hashmap
+	^ bindings

@@ -1,3 +1,3 @@
 accessing
 size
-	^ hashmap size.
+	^ bindings size.

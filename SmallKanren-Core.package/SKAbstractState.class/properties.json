@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"substitution"
-	],
+	"instvars" : [ ],
 	"name" : "SKAbstractState",
 	"type" : "normal"
 }

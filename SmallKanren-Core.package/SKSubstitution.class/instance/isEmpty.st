@@ -1,3 +1,3 @@
 testing
 isEmpty
-	^ hashmap isEmpty.
+	^ bindings isEmpty.

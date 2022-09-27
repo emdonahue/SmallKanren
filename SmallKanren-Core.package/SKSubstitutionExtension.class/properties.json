@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "SKSubstitutionExtension",
+	"super" : "SKAbstractState",
 	"category" : "SmallKanren-Core-States",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"store"
+		"substitution"
 	],
-	"name" : "SKConstraintStore",
+	"name" : "SKSubstitutionExtension",
 	"type" : "normal"
 }
