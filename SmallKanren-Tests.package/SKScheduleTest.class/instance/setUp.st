@@ -1,5 +1,5 @@
 tests
 setUp 
 	super setUp.
-	s := SKState new.
+	s := SKSubstitution new.
 	x := SKVar tag: #x.

@@ -3,6 +3,6 @@ testConstraintsMergeWhenUnified
 	"Constraints should shift to single var after free-free unification"
 
 	| s |
-	s := (y isSymbolo run: (x isSymbolo run: SKState new)) unify: x with: y.
+	s := (y isSymbolo run: (x isSymbolo run: SKSubstitution new)) unify: x with: y.
 	self assert: (s constraints at: y) equals: SKSymbolo singleton.
 	self assert: (s constraints at: x) equals: SKSatisfiedConstraint singleton

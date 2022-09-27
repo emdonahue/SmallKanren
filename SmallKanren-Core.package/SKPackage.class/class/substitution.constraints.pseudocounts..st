@@ -1,6 +1,6 @@
 as yet unclassified
 substitution: aSubstitution constraints: aStore pseudocounts: aCounts
-	^ SKState new 
+	^ SKSubstitution new 
 		substitution: aSubstitution;
 		constraints: aStore;
 		pseudoCounts: aCounts.

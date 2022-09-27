@@ -3,6 +3,6 @@ setUp
 	super setUp.
 	x := SKVar tag: #x.
 	y := SKVar tag: #y.
-	s := SKState new.
+	s := SKSubstitution new.
 	r := SKRuntime new.
 	

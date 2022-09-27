@@ -5,5 +5,5 @@ testDelay
 	| g s |
 	g := x carCdro: [ :a :d | a === 1 & (d === Cons empty) ].
 	self assert: g isDelayedGoal.
-	s := g run: SKState new.
+	s := g run: SKSubstitution new.
 	self assert: s isDelayed.

@@ -4,5 +4,5 @@ testDelayAndUnifyFree
 
 	| g s |
 	g := (x carCdro: [ :a :d | a === 1 & (d === Cons empty) ]) & (x === y).
-	s := g run: SKState new.
+	s := g run: SKSubstitution new.
 	self assert: s isDelayed.

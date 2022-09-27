@@ -1,3 +1,3 @@
 as yet unclassified
 goal: aGoal
-	^ self goal: aGoal state: SKState new runtime: SKRuntime new.
+	^ self goal: aGoal state: SKSubstitution new runtime: SKRuntime new.

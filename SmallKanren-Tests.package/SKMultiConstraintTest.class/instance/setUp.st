@@ -20,7 +20,7 @@ setUp
 	satisfied := SKConstraint satisfied.
 	unsatisfiable := SKConstraint unsatisfiable.
 	null := SKConstraint new.
-	s := SKState new.
+	s := SKSubstitution new.
 	r := SKRuntime new.
 	failure := SKStream failure.
 	istrue := SKUnificationConstraint new term: true.

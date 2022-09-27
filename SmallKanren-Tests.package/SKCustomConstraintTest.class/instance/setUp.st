@@ -4,5 +4,5 @@ setUp
 	x := SKVar tag: #x.
 	y := SKVar tag: #y.
 	z := SKVar tag: #z.
-	s := SKState new.
+	s := SKSubstitution new.
 	r := SKRuntime new.

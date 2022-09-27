@@ -3,17 +3,17 @@ testMPlus
 	| x y s r i |
 	x := SKVar tag: #x.
 	y := SKVar tag: #y.
-	s := SKState new.
+	s := SKSubstitution new.
 	i := SKIncomplete new.
 	r := SKRuntime new.
 	
-	self assert: ((s + SKState new) isKindOf: SKComplete).
-	self assert: (s + SKState new) left identicalTo: s.
+	self assert: ((s + SKSubstitution new) isKindOf: SKComplete).
+	self assert: (s + SKSubstitution new) left identicalTo: s.
 	
-	self assert: ((s + (SKState new runtime: r)) stream isKindOf: SKComplete).
-	self assert: (s + (SKState new runtime: r)) stream left identicalTo: s.
-	self assert: (((SKState new runtime: r) + s) stream isKindOf: SKComplete).
-	self assert: ((SKState new runtime: r) + s) stream right identicalTo: s.
+	self assert: ((s + (SKSubstitution new runtime: r)) stream isKindOf: SKComplete).
+	self assert: (s + (SKSubstitution new runtime: r)) stream left identicalTo: s.
+	self assert: (((SKSubstitution new runtime: r) + s) stream isKindOf: SKComplete).
+	self assert: ((SKSubstitution new runtime: r) + s) stream right identicalTo: s.
 	
 	self assert: ((i + SKIncomplete new) isKindOf: SKMPlus).
 	self assert: (i + SKIncomplete new) left identicalTo: i.

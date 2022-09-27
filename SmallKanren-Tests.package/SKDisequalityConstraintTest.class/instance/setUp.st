@@ -11,4 +11,4 @@ setUp
 	xhash := x hash asString copyFrom: 1 to: 4.
 	yhash := y hash asString copyFrom: 1 to: 4.
 	failure := SKStream failure.
-	state := SKState new.
+	state := SKSubstitution new.

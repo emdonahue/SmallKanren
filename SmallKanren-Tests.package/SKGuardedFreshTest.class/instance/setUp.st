@@ -6,4 +6,4 @@ setUp
 	z := SKVar tag: #z.
 	failure := SKStream failure.
 	r := SKRuntime new.
-	s := SKState new.
+	s := SKSubstitution new.

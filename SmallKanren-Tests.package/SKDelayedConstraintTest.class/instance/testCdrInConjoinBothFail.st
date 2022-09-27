@@ -4,5 +4,5 @@ testCdrInConjoinBothFail
 
 	| g s |
 	g := (x car: 1 cdro: [ :d | SKGoal fail ]) & (x car: 1 cdro: [ :d | SKGoal fail ]).
-	s := (g run: SKState new) undelaystep.
+	s := (g run: SKSubstitution new) undelaystep.
 	self assert: s isFailure

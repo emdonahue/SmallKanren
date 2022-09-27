@@ -7,5 +7,5 @@ setUp
 	y := SKVar new.
 	xy := Cons with: x with: y.
 	xa := Cons with: x with: a.
-	state := SKState new.
+	state := SKSubstitution new.
 	sub := SKSubstitution new.

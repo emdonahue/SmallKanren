@@ -7,4 +7,4 @@ setUp
 	x := SKVar new tag: #x.
 	y := SKVar new tag: #y.
 	z := SKVar new tag: #z.
-	s := ((SKState new unify: x with: 1) unify: y with: 2) unify: z with: 3.
+	s := ((SKSubstitution new unify: x with: 1) unify: y with: 2) unify: z with: 3.

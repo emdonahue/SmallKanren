@@ -4,6 +4,6 @@ testCdrInListSucceed
 
 	| g s |
 	g := 1 cons car: 1 cdro: [ :d | x === d ].
-	s := g run: SKState new.
+	s := g run: SKSubstitution new.
 	self deny: s isDelayed.
 	self assert: s => x equals: Cons empty

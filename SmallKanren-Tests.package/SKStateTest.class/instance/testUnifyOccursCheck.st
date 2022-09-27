@@ -1,3 +1,3 @@
 tests
 testUnifyOccursCheck
-	self assert: (SKState new unify: x with: x cons) atEnd.
+	self assert: (SKSubstitution new unify: x with: x cons) atEnd.

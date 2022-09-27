@@ -1,7 +1,7 @@
 tests-streaming
 testTabledMPlus
 	| s r i c g cc |
-	s := SKState new.
+	s := SKSubstitution new.
 	i := SKIncomplete new goal: ["Incomplete"] asGoal.
 	c := SKReusedStream new table: #reused; cacheKey: #cache.
 	cc := SKReusedStream new table: #reused; cacheKey: #cache; cache: 1 cons.

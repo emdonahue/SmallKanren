@@ -4,6 +4,6 @@ testCdrInGroundSucceed
 
 	| g s |
 	g := (x === 1 cons) & (x car: 1 cdro: [ :d | SKGoal succeed ]) .
-	s := g run: SKState new.
+	s := g run: SKSubstitution new.
 	self deny: s isDelayed.
 	self assert: s => x equals: 1 cons

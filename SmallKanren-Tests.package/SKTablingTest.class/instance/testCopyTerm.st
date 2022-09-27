@@ -3,7 +3,7 @@ testCopyTerm
 	| one s fresh term |
 	one := SKVar tag: #one.
 	fresh := SKVar tag: #fresh.
-	s := SKState new unify: one with: 1.
+	s := SKSubstitution new unify: one with: 1.
 	self assert: (s copyTerm: one) equals: 1.
 	self assert: (s copyTerm: (one cons: one)) equals: (1 cons: 1).
 	self assert: (s copyTerm: 1) equals: 1.

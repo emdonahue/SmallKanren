@@ -2,4 +2,4 @@ tests
 testMutualExclusivity
 	"Applying different type constraints should fail."
 
-	self assert: (x isNumbero run: (x isSymbolo run: SKState new)) atEnd
+	self assert: (x isNumbero run: (x isSymbolo run: SKSubstitution new)) atEnd
