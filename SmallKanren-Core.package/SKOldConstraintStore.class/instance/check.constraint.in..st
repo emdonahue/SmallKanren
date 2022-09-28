@@ -1,4 +1,4 @@
 checking
-add: aVar constraint: aConstraint in: aState
+check: aVar constraint: aConstraint in: aState
 	"Sends an existing constraint everything it needs to merge with aConstraint, simplify itself, and extend the State appropriately."
-	^ (self at: aVar) add: aVar constraint: aConstraint in: aState
+	^ (self at: aVar) check: aVar constraint: aConstraint in: aState

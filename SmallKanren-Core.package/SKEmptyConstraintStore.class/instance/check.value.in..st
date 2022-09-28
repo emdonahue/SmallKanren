@@ -1,3 +1,3 @@
 checking
-check: aVal extend: aVar in: aState
+check: aVal value: aVar in: aState
 	^ aState extend: aVar with: aVal.

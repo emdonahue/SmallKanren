@@ -10,11 +10,11 @@ hack."
 	aVal isSKVar ifFalse: [ 
 	smd isSKVar ifFalse: [ ^ aState unify: sm with: aVal + smd ].
 	sm isSKVar ifFalse: [ ^ aState unify: smd with: sm - aVal ].
-	^ (aState add: smd constraint: (self class new sum: sm; summand: aVal)). ].
+	^ (aState check: smd constraint: (self class new sum: sm; summand: aVal)). ].
 	
 	smd isSKVar | sm isSKVar ifFalse: [ ^ aState unify: aVal with: sm - smd ].
 	"At least one other is var, so just hang it on the one we know."
-	s := aState add: aVal constraint: (self class new sum: sm; summand: smd).
-	smd isSKVar ifTrue: [ s := s add: smd constraint: (self class new sum: sm; summand: aVal). ].
+	s := aState check: aVal constraint: (self class new sum: sm; summand: smd).
+	smd isSKVar ifTrue: [ s := s check: smd constraint: (self class new sum: sm; summand: aVal). ].
 	^ s.
 	

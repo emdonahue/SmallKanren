@@ -1,5 +1,5 @@
 checking
-check: aValue extend: aVar in: aState
+check: aValue value: aVar in: aState
 
 	"Called by state to check the constraint and return a new state if it passes, or a failed state if it does not. Throw away the constraints on this Var when done, as it is no longer free and can have no constraints."
 
@@ -10,6 +10,6 @@ check: aValue extend: aVar in: aState
 	#( OrC SKPackage SKFailure )>
 	| c s |
 	c := self at: aVar.
-	s := c check: aValue extend: aVar in: aState.
+	s := c check: aValue value: aVar in: aState.
 	s ifFailure: [ ^ s ].
 	^ c eager: aVar val: aValue in: s

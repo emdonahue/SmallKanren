@@ -1,3 +1,3 @@
 accessing
-at: aVar
+constraintAt: aVar
 	^ store atKey: aVar ifAbsent: SKConstraint satisfied
