@@ -1,3 +1,3 @@
 comparing
 hash
-	^ first hash xor: rest hash.
+	^ first hash bitXor: rest hash.

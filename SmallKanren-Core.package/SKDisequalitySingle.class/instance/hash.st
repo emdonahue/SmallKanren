@@ -1,0 +1,3 @@
+comparing
+hash
+	^ val hash
