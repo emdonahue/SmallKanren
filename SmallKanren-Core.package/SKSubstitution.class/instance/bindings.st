@@ -1,4 +1,4 @@
 accessing
-hashmap
+bindings
 	<ignoreForCoverage>
 	^ bindings

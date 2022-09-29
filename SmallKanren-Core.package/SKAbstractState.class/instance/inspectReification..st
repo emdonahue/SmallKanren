@@ -4,4 +4,4 @@ inspectReification: aBuilder
 	^ aBuilder newTable
 			addColumn: (SpStringTableColumn title: 'Variable' evaluated: #key);
 			addColumn: (SpStringTableColumn title: 'Value' evaluated: #val);
-			items: (substitution bindings collect: [ :x | x copy val: (self reify: x val) ]).
+			items: (self substitution bindings collect: [ :x | x copy val: (self reify: x val) ]).

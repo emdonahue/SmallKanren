@@ -1,6 +1,6 @@
 removing
 removeKey: aVar
 
-	^ self copy hashmap: (hashmap copy
+	^ self copy bindings: (hashmap copy
 			   removeKey: aVar ifAbsent: [ Error signal ];
 			   yourself)

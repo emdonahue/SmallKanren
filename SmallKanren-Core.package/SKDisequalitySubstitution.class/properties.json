@@ -1,12 +1,11 @@
 {
 	"commentStamp" : "EvanDonahue 4/17/2021 15:45",
-	"super" : "Object",
-	"category" : "SmallKanren-Core-Constraints",
+	"super" : "SKSubstitutionExtension",
+	"category" : "SmallKanren-Core-States",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"substitution",
 		"disequality"
 	],
 	"name" : "SKDisequalitySubstitution",

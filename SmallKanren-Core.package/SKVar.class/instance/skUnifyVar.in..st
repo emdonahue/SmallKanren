@@ -8,8 +8,5 @@ skUnifyVar: aVar in: aState
 	"Runtime sometimes nil. remove those calls"
 
 	<todo>
-	<type: #SKVar type:
-	#( OrC SKPackage SKSubstitution #SKDisequalitySubstitution ) type:
-	#( OrC SKPackage SKSubstitution #SKDisequalitySubstitution
-	   SKFailure )>
-	^ aState checkVar: self extend: aVar
+	<type: #SKVar type: #isState type: #isStateOrFailure>
+	^ aState check: self value: aVar

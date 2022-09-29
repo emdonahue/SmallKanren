@@ -1,5 +1,4 @@
 as yet unclassified
 first: aState rest: aStream
-	<type: #SKSubstitution type: #(NotC SKFailure) type: #SKComplete>
-	self haltIf: [ (aState isKindOf: SKSubstitution) not ].
+	<type: #isState type: #(NotC SKFailure) type: #SKComplete>
 	^ self new left: aState; right: aStream.
