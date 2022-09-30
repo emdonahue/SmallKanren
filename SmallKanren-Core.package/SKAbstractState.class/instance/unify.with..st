@@ -1,5 +1,7 @@
 substitution
 unify: aVar with: aVal
-	<todo> "Consider testing == after first walk in case walked var == unwalked val."
+	| var |
 	aVar == aVal ifTrue: [ ^ self ]. "Prevents self unification"
-	^ (self walk: aVar) skUnify: (self walk: aVal) in: self.
+	var := (self walk: aVar).
+	var == aVal ifTrue: [ ^ self ].
+	^ self unify: var noWalk: (self walk: aVal).
