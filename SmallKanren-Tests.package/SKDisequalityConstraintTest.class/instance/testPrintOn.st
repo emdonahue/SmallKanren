@@ -23,7 +23,7 @@ testPrintOn
 					yhash}).
 	self assert: (x =/= 1) asString equals: ('<x:{1}> =/=1' format: {xhash}).
 	self
-		assert: ((y cons: x cons) =/= (x cons: y cons)) asString
+		assert: ((x cons: y cons) =/= (y cons: x cons)) asString
 		equals:
 			('<x:{1}> =/=<y:{2}>'
 				format:
