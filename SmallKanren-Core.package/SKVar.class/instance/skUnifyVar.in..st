@@ -9,4 +9,4 @@ skUnifyVar: aVar in: aState
 
 	<todo>
 	<type: #SKVar type: #isState type: #isStateOrFailure>
-	^ aState check: self value: aVar
+	^ aState check: aVar value: self

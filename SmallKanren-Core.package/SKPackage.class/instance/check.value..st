@@ -5,4 +5,4 @@ check: aVar value: aValue
 
 	<type: #( NotC SKVar ) type: #SKVar type:
 	#( OrC SKPackage SKFailure )>
-	^ constraints check: aValue value: aVar in: self
+	^ constraints check: aVar value: aValue in: self
