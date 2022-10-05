@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKSubstitutionExtension",
+	"category" : "SmallKanren-Core-States",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"schedule"
+	],
+	"name" : "SKGuardSchedule",
+	"type" : "normal"
+}

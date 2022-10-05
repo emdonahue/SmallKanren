@@ -1,0 +1,3 @@
+testing
+isIncomplete
+	^ substitution isIncomplete
