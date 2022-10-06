@@ -1,2 +1,0 @@
-inspecting
-gtInspectSchedule: composite

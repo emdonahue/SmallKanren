@@ -1,0 +1,3 @@
+substitution
+substitution
+	self subclassResponsibility

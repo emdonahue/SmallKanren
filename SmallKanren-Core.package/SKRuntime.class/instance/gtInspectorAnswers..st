@@ -1,6 +1,6 @@
 inspecting
 gtInspectorAnswers: composite
-	<gtInspectorPresentationOrder: 20>
+	self halt.
 	composite list
 		title: 'Answers';
 		format: [ :q_p | 
