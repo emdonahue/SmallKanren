@@ -1,3 +1,3 @@
 scheduling
 schedule
-	^ self scheduler schedule
+	^ substitution schedule

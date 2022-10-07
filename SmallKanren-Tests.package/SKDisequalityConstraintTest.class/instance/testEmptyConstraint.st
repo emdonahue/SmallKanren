@@ -4,5 +4,5 @@ testEmptyConstraint
 
 	| s |
 	s := y =/= 2 run: (x =/= 1 run: SKSubstitution new).
-	self assert: (s constraints at: y) equals: (y =/= 2) asConstraint.
-	self assert: (s constraints at: x) equals: (x =/= 1) asConstraint
+	self assert: (s constraintAt: y) equals: (y =/= 2) asConstraint.
+	self assert: (s constraintAt: x) equals: (x =/= 1) asConstraint

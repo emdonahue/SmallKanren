@@ -4,5 +4,5 @@ testDisjoinedMerge
 
 	| s |
 	s := (x =/= 3 run: (x =/= 2 run: (x =/= 1 run: SKSubstitution new))) unify: x with: y.
-	self assertCollection: {s constraints at: y. s constraints at: x}
+	self assertCollection: {s constraintAt: y. s constraintAt: x}
 		hasSameElements: {(y =/= 1), (y =/= 2), (y =/= 3). SKConstraint satisfied}

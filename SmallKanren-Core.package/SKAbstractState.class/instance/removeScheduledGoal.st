@@ -1,3 +1,3 @@
 scheduling
 removeScheduledGoal
-	^ self schedule: (self schedule rest)
+	self schedule ifNotEmpty: [ ^ self schedule: (self schedule rest) ]
