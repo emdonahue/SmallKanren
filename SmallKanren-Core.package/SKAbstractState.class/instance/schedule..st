@@ -1,0 +1,3 @@
+scheduling
+schedule: aSchedule
+	self subclassResponsibility

@@ -1,3 +1,3 @@
 streaming
 step: aRuntime
-	^ self scheduler scheduledGoal scheduledRun: self removeScheduledGoal runtime: aRuntime
+	^ self schedule first scheduledRun: self removeScheduledGoal runtime: aRuntime
