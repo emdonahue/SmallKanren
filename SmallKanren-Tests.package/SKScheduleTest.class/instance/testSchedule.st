@@ -1,3 +1,3 @@
 tests
 testSchedule 
-	self assert: (s addSchedule: (SKScheduledFresh new block: [ :a | false ])) asAnswer equals: SKStream failure.
+	self assert: (s addScheduledGoal: (SKScheduledFresh new block: [ :a | false ])) asAnswer equals: SKStream failure.

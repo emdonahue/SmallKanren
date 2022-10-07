@@ -1,3 +1,3 @@
 scheduling
-addSchedule: aFresh
+addScheduledGoal: aFresh
 	^ self setSchedule: (self schedule add: aFresh).

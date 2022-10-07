@@ -5,4 +5,4 @@ scheduledRun: aState runtime: aRuntime
 	ground := aState schedule collect: [ :f | f removeVar: externals ].
 	g := (ground select: [ :f | f isFullyGround ]) inject: g into: [ :gl :f | gl & (f getGoal) ifFail: [ ^ SKStream failure ] ].
 	unground := ground reject: [ :f | f isFullyGround ].
-	^ g run: (aState setSchedule: unground) runtime: aRuntime.
+	^ g run: (aState schedule: unground) runtime: aRuntime.

@@ -1,4 +1,4 @@
 accessing
-schedule: anObject
+schedule: aSchedule
 
-	schedule := anObject
+	^ self copy setSchedule: aSchedule

@@ -1,5 +1,5 @@
 inspecting
 inspectSchedule: aBuilder
-	<inspectorPresentationOrder: 5 title: 'Schedule'>
+	<inspectorPresentationOrder: 6 title: 'Schedule'>
 	<ignoreForCoverage>
 	^ stream inspectSchedule: aBuilder.
