@@ -4,4 +4,4 @@ inspectSchedule: aBuilder
 	^ aBuilder newTable
 			addColumn: (SpStringTableColumn title: 'Variables' evaluated: #externals);
 			addColumn: (SpStringTableColumn title: 'Block' evaluated: #block);
-			items: schedule asOrderedCollection.
+			items: self schedule asOrderedCollection.

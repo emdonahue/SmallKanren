@@ -1,3 +1,3 @@
-constraintstore
+constraining
 constraintAt: aVar
-	^ self constraints constraintAt: aVar
+	^ self constraints atKey: aVar ifAbsent: SKConstraint satisfied

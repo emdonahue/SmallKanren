@@ -1,0 +1,3 @@
+constraining
+constraints
+	^ substitution constraints

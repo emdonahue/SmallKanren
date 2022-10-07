@@ -1,4 +1,4 @@
 adding
 initialize
 	super initialize.
-	store := FDSLinkedList empty.
+	store := self class emptyStore.

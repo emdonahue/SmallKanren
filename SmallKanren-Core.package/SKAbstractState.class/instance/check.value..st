@@ -1,4 +1,4 @@
-constraintstore
+constraining
 check: aVar value: aValue
 
 	| c s |

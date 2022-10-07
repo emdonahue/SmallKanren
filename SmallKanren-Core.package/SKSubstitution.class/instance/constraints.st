@@ -1,2 +1,3 @@
 constraining
 constraints
+	^ SKConstraintStore emptyStore

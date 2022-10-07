@@ -4,5 +4,5 @@ testConstraintsMergeWhenUnified
 
 	| s |
 	s := (y isSymbolo run: (x isSymbolo run: SKSubstitution new)) unify: x with: y.
-	self assertCollection: {s constraints at: y. s constraints at: x}
+	self assertCollection: {s constraintAt: y. s constraintAt: x}
 		hasSameElements: {SKConstraint satisfied. SKConstraint symbolo}

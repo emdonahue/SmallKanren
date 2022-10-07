@@ -1,3 +1,3 @@
 constraining
-constraints
+constraints: aStore
 	self subclassResponsibility
