@@ -1,3 +1,4 @@
 debugging
 asAnswer
-	^ (SKRuntime new stream: self) runStates ifEmpty: [ SKStream failure] ifNotEmpty: [ :s | s first ].
+	self isIncomplete ifTrue: [
+	^ (SKRuntime new stream: self) runStates ifEmpty: [ SKStream failure] ifNotEmpty: [ :s | s first ]]
