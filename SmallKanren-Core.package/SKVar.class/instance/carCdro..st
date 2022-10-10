@@ -6,7 +6,7 @@ carCdro: aBlock
 	cdr := SKTaggedVar tag: names second.
 	^ SKGuardedMultiMatch 
 		"Add aCar to external variables too in case it is a var so that identity will be preserved in the internals."
-		var: {self}
+		externals: {self}
 		pattern: (car cons: cdr) cons
-		vars: {car. cdr}
+		internals: {car. cdr}
 		block: aBlock.

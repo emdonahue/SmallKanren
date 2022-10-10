@@ -1,0 +1,3 @@
+running
+hasExternalDependencies
+	^ externals isNotEmpty.

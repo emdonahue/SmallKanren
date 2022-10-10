@@ -1,0 +1,3 @@
+scheduling
+dependsOnExternal: aConsPair 
+	^ false.

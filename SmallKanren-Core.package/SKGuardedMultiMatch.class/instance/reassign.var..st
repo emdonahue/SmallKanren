@@ -1,3 +1,3 @@
-running
+scheduling
 reassign: oldVar var: newVar
-	(externals includes: oldVar) ifTrue: [ ^ self reassignVar: (internals collect: [ :v | v = oldVar ifTrue: newVar ifFalse: v ]) ].
+	(externals includes: oldVar) ifTrue: [ ^ self setExternals: (internals collect: [ :v | v = oldVar ifTrue: newVar ifFalse: v ]) ].

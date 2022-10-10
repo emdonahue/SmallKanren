@@ -1,3 +1,3 @@
 accessing
 vals
-	^ vals
+	^ values

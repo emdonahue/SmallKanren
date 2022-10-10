@@ -6,7 +6,7 @@ car: aCar list: aSize o: aBlock
 			vars := (aBlock argumentNames copyFrom: 1 to: aSize) collect: [ :n | SKTaggedVar tag: n ].
 			^ (s car === aCar) &
 				(SKGuardedMultiMatch 
-					var: {self}
+					externals: {self}
 					pattern: (aCar cons: vars asCons) cons
-					vars: vars
+					internals: vars
 					block: aBlock) ].

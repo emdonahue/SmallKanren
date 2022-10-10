@@ -1,3 +1,3 @@
 accessing
 values: someVals
-	vals := someVals.
+	values := someVals.

@@ -10,7 +10,7 @@
 		"block",
 		"pattern",
 		"internals",
-		"vals"
+		"values"
 	],
 	"name" : "SKGuardedMultiMatch",
 	"type" : "normal"
