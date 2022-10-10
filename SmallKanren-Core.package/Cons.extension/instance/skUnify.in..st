@@ -2,5 +2,5 @@
 skUnify: aTerm in: aState
 
 	^ self
-		  ifEmpty: [ aTerm skUnifyEmptyConsIn: aState ]
+		  ifEmpty: [ aTerm skUnifyGround: self in: aState ]
 		  ifNotEmpty: [ :s | aTerm skUnifyCons: s in: aState ]
