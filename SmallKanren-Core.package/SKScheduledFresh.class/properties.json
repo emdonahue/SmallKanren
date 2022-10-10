@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "SKFresh",
 	"category" : "SmallKanren-Core-Scheduling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"block"
-	],
+	"instvars" : [ ],
 	"name" : "SKScheduledFresh",
 	"type" : "normal"
 }

@@ -1,4 +1,0 @@
-testing
-isFresh
-	<ignoreForCoverage>
-	^ true.

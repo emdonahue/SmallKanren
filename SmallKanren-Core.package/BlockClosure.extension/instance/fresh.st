@@ -1,3 +1,3 @@
 *SmallKanren-Core
 fresh
-	^ SKScheduledFreshGoal new block: self.
+	^ SKScheduledFresh new block: self.
