@@ -1,4 +1,4 @@
-tests - pattern
+pattern
 setUp
 	super setUp.
 	x := SKVar tag: #x.

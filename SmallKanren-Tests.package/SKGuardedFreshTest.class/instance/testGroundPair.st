@@ -1,4 +1,4 @@
-tests - pair
+pair
 testGroundPair
 	self assert: (1 carCdro: [ :a :d]) equals: SKGoal fail.
 	self assert: (Cons empty carCdro: [ :a :d]) equals: SKGoal fail.

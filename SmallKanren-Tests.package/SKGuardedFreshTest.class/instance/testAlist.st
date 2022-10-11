@@ -1,4 +1,4 @@
-tests - pair
+pair
 testAlist
 	self assert: (((1 cons: 2) cons: 3) carCdrResto: [ :aa :ad :d | {aa===1. ad===2. d===3} ]) asAnswer isState.
 	self assert: ((4 cons: 3) carCdrResto: [ :aa :ad :d ]) asAnswer equals: failure.

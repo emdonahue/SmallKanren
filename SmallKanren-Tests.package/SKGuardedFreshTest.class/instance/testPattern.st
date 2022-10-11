@@ -1,4 +1,4 @@
-tests - pattern
+pattern
 testPattern
 	| c |
 	self assert: (SKGuardedMultiMatch externals: #() pattern: #((1)) block: []) pattern equals: {1 cons}.

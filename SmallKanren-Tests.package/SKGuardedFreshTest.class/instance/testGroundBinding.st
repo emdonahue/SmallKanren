@@ -1,4 +1,4 @@
-tests - pattern
+pattern
 testGroundBinding
 	"Ensure fully ground fdsassociations work like any other ground term instead of benig treated as aspecial internal datastructure."
 	self assert: [ :q |

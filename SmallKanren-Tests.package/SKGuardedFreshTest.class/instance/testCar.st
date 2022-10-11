@@ -1,4 +1,4 @@
-tests - pair
+pair
 testCar
 	self assert: ((1 cons: 2) car: 1 cdro: [ :d | d===2 ]) answer isState.
 	self assert: ((2 cons: 2) car: 1 cdro: [ :d | d===2 ]) answer equals: failure.

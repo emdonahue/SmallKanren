@@ -1,4 +1,4 @@
-tests - pattern
+pattern
 testGround
 	self assert: ((1 match: #(_) o: [ :a | ]) run: s runtime: r) isFailure.
 	self assert: (((2 cons: 2) match: #(_ | _) o: [ :a :d | a === 1 & (d === 2) ]) run: s runtime: r) isFailure.

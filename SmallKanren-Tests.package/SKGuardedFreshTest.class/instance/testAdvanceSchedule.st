@@ -1,4 +1,4 @@
-tests - pattern
+pattern
 testAdvanceSchedule
 	self assert: ((((x match: #(_ | _) o: [ :a :d | a === 1 & (d === 2) ]) run: s runtime: r) step) reify: x) equals: (1 cons: 2).
 	self assert: (((x match: #(_ _) o: [ :a :d | a === 1 & (d === 2) ]) run: s runtime: r) step) => x equals: (1 cons: 2 cons).

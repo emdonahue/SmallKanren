@@ -1,4 +1,4 @@
-tests - pattern
+pattern
 testMultiFresh
 	self assert: (((x match: #(_ | _) o: [ :a :d | a === 1 ]) & (x match: #(_ | _) o: [ :a :d | d === 2 ]) run: s runtime: r) unify: x with: (y cons: z)) step => x equals: (1 cons: 2).	
 	self assert: (((x match: #(_ _) o: [ :a :d | a === 1 ]) & (x match: #(_ _) o: [ :a :d | d === 2 ]) run: s runtime: r) unify: x with: (y cons: z)) step => x equals: (1 cons: 2 cons).

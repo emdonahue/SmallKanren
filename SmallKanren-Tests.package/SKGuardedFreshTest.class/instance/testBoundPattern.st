@@ -1,4 +1,4 @@
-tests - pattern
+pattern
 testBoundPattern
 	self setUp.
 	self assert: ((x match: #(_ | _) o: [ :a :d | a === 1 & (d === 2) ]) run: 
