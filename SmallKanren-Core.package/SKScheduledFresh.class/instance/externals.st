@@ -1,3 +1,4 @@
 as yet unclassified
 externals
-	^ Cons empty
+	"Only used by inspector for debug printing"
+	^ ''

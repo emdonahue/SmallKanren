@@ -1,3 +1,3 @@
 scheduling
 schedule
-	^ SKScheduler empty
+	^ SKGuardSchedule emptySchedule
