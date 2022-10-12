@@ -1,0 +1,3 @@
+running
+hasPriority
+	^ externals isEmpty.

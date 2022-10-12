@@ -4,7 +4,7 @@ prioritize: aVar schedule: aValue
 	| sch g |
 	g := goal.
 	sch := schedule collect: [ :f | f removeExternals: {aVar} ]
-		thenSelect: [ :f | f hasExternalDependencies not
+		thenSelect: [ :f | f hasPriority not
 			ifTrue: [ g := g & f expandFresh. false ] ifFalse: true ].
 	"sch := schedule remove: [ :f | f includesVar: aVar ] 
 		ifPresent: [ :f | g := ((f groundGoal: aValue) & goal) ifFail: [ ^ SKStream failure ] ] 

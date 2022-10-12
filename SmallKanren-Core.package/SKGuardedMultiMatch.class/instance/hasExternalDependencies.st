@@ -1,3 +1,0 @@
-running
-hasExternalDependencies
-	^ externals isNotEmpty.
