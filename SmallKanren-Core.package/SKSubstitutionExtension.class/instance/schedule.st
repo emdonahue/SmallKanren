@@ -1,3 +1,0 @@
-scheduling
-schedule
-	^ substitution schedule

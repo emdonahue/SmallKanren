@@ -1,3 +1,3 @@
 accessing
 => aVar
-	^ substitution reify: aVar
+	^ state reify: aVar

@@ -1,4 +1,4 @@
 scheduling
 schedule: aSchedule
 	aSchedule ifNotEmpty: [
-		^ SKGuardSchedule new substitution: self; setSchedule: aSchedule ]
+		^ SKGuardSchedule new state: self; setSchedule: aSchedule ]

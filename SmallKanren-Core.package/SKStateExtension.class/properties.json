@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"substitution"
+		"state"
 	],
-	"name" : "SKSubstitutionExtension",
+	"name" : "SKStateExtension",
 	"type" : "normal"
 }

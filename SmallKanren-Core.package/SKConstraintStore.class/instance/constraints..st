@@ -1,4 +1,4 @@
 constraining
 constraints: aStore
-	aStore ifEmpty: [ ^ substitution ].
+	aStore ifEmpty: [ ^ state ].
 	^ self copy setConstraints: aStore

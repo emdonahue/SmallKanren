@@ -1,3 +1,3 @@
 reification
 reify: aTerm
-	^ substitution reify: aTerm.
+	^ state reify: aTerm.

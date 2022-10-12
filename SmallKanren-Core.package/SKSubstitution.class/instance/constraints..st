@@ -1,3 +1,3 @@
 constraining
 constraints: aStore
-	aStore ifNotEmpty: [ ^ SKConstraintStore new substitution: self; setConstraints: aStore ]
+	aStore ifNotEmpty: [ ^ SKConstraintStore new state: self; setConstraints: aStore ]

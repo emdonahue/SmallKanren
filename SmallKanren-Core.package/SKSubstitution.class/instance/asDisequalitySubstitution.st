@@ -1,3 +1,3 @@
 disequality
 asDisequalitySubstitution
-	^ SKDisequalitySubstitution new substitution: self
+	^ SKDisequalitySubstitution new state: self

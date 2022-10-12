@@ -1,3 +1,0 @@
-scheduling
-scheduledGoal
-	^ substitution scheduledGoal

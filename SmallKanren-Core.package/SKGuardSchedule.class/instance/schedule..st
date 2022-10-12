@@ -1,4 +1,4 @@
 scheduling
 schedule: aSchedule
-	aSchedule ifEmpty: [ ^ substitution ].
+	aSchedule ifEmpty: [ ^ state ].
 	^ self copy setSchedule: aSchedule

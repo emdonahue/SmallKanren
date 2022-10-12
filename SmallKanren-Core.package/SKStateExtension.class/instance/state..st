@@ -1,5 +1,5 @@
 accessing
-substitution: anObject
+state: anObject
 	<type: #SKAbstractState type: #== >
-	substitution := anObject.
+	state := anObject.
 	^ self.

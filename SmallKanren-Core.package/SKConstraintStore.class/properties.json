@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "SKSubstitutionExtension",
+	"super" : "SKStateExtension",
 	"category" : "SmallKanren-Core-States",
 	"classinstvars" : [ ],
 	"pools" : [ ],
