@@ -1,0 +1,3 @@
+*SmallKanren-Core
+isSKBinding
+	^ false

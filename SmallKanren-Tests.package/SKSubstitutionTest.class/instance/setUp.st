@@ -5,4 +5,4 @@ setUp
 	x := SKVar new tag: #x.
 	y := SKVar new tag: #y.
 	z := SKVar new.
-	s := SKSubstitution empty.
+	s := SKSubstitution new.

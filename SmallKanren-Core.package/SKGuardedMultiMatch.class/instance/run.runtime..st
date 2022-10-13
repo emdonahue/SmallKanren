@@ -6,10 +6,10 @@ run: aState runtime: aRuntime
 	bindings := externals collect: [ :v | aState substitution walkBinding: v ]. 
 	"Get varables and ground terms."
 	vars := bindings collectWithIndex: [ :v :i | 
-		(v isFDSAssociation & (externals at: i) isSKVar) ifTrue: [ v key ] ifFalse: [ v ] ].
+		v isSKBinding ifTrue: [ v key ] ifFalse: [ v ] ].
 	"Get the fully walked variables to unify with pattern."
 	vals := bindings collectWithIndex: [ :v :i | 
-		(v isFDSAssociation & (externals at: i) isSKVar) ifTrue: [ v val ] ifFalse: [ v ] ].
+		v isSKBinding ifTrue: [ v val ] ifFalse: [ v ] ].
 	"Unify pattern and walked vars to merge information from both sources."	
 	sub := SKSubstitution new asDisequalitySubstitution.
 	vals doWithIndex: [ :v :i | sub := (sub unify: (pattern at: i ifAbsent: v) with: v) ifFailure: [ ^ SKStream failure ] ].
