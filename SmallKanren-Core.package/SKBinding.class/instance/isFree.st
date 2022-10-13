@@ -1,0 +1,3 @@
+testing
+isFree
+	^ val isSKVar
