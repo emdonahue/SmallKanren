@@ -1,3 +1,3 @@
 extending
 atKey: aSKVar put: aVal
-	^ self class new bindings: (bindings add: (SKAssociation key: aSKVar val: aVal)).
+	^ self class new bindings: (bindings add: (SKBinding key: aSKVar val: aVal)).

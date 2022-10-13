@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "FDSAssociation",
-	"category" : "SmallKanren-Core-Collections",
+	"category" : "SmallKanren-Core-Variables",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SKAssociation",
+	"name" : "SKBinding",
 	"type" : "normal"
 }
