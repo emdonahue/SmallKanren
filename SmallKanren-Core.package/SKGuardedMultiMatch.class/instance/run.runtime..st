@@ -5,8 +5,8 @@ run: aState runtime: aRuntime
 	
 	"Get all free vars and bindings of bound vars."
 	bindings := externals collect: [ :v | aState walkBinding: v ]. 
-	"Unify pattern and walked vars to merge information from both sources."	
-	sub := SKSubstitution new asDisequalitySubstitution.
+	"Unify pattern and walked vars to merge information from both sources. sub maps variables in the pattern to variables in the bindings so fresh variables in the binding are preserved. Bindings not in the pattern don't need to merge with anything and self unify."	
+	sub := SKSubstitution new.
 	bindings doWithIndex: [ :b :i | sub := (sub unify: (pattern at: i ifAbsent: b val) with: b val) ifFailure: [ ^ SKStream failure ] ].
 	"Unify ground atoms from pattern in the next state (free vars will self unify and so not enter the substitution)."
 	s := bindings inject: aState into: [ :st :b | (st unify: b val with: (sub reify: b val)) ifFailure: [ ^ SKStream failure ] ].
