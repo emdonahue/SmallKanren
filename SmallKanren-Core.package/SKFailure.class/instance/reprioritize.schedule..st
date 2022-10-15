@@ -1,3 +1,3 @@
 as yet unclassified
-prioritize: aVar schedule: aValue
+reprioritize: aVar schedule: aValue
 	"Failures have no schedules to prioritize."

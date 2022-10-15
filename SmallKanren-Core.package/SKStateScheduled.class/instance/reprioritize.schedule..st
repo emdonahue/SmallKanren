@@ -1,5 +1,5 @@
 scheduling
-prioritize: aVar schedule: aValue
+reprioritize: aVar schedule: aValue
 	"Find the scheduled fresh matching aVar, remove it, expand it with aValue, and add it to the goal to be executed at the end of this expansion step."
 	| sch g |
 	g := goal.

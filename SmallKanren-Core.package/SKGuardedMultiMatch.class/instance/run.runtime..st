@@ -1,5 +1,6 @@
 running
 run: aState runtime: aRuntime
+	<todo> "Is full unifier necessary or can we skip checking bindigs/priorities?"
 	| s freevars sub bindings |
 	
 	"Get all free vars and bindings of bound vars."

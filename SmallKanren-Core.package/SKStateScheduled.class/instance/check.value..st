@@ -7,4 +7,4 @@ check: aVar value: aValue
 
 	<todo>
 	<type: #VoidC type: #SKVar type: #( OrC SKPackage SKFailure )>
-	^ (super check: aVar value: aValue) prioritize: aVar schedule: aValue
+	^ (super check: aVar value: aValue) reprioritize: aVar schedule: aValue

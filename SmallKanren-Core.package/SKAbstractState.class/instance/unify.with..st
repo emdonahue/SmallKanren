@@ -8,4 +8,4 @@ unify: aVar with: aVal
 
 	valB := self walkBinding: aVal.
 	
-	^ (self unify: varB val noWalk: valB val) prioritize: varB schedule: valB.
+	^ (self unify: varB val noWalk: valB val) reprioritize: varB schedule: valB.
