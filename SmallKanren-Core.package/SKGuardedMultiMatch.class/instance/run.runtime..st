@@ -16,4 +16,4 @@ run: aState runtime: aRuntime
 	"If all terms are ground, execute immediately,"
 	freevars ifEmpty: [ ^ (self expandBlockWithVars: (sub reify: internals)) run: s runtime: aRuntime ].
 	"Otherwise add to the schedule."
-	^ s addScheduledGoal: (self copy externals: freevars; internals: (sub reify: internals)).
+	^ s addScheduledGoal: (self copy externals: (freevars collect: #var); internals: (sub reify: internals)).
