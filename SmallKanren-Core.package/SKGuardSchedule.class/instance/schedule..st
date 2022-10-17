@@ -1,4 +1,6 @@
 scheduling
 schedule: aSchedule
 	aSchedule ifEmpty: [ ^ state ].
-	^ self copy setSchedule: aSchedule
+	schedule == aSchedule ifTrue: [ ^ self ].
+	schedule ifNotNil: [ ^ self class new state: state; schedule: aSchedule ].
+	schedule := aSchedule.

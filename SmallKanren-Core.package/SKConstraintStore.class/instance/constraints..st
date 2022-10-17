@@ -1,4 +1,6 @@
 constraining
 constraints: aStore
 	aStore ifEmpty: [ ^ state ].
-	^ self copy setConstraints: aStore
+	store == aStore ifTrue: [ ^ self ].
+	store ifNotNil: [ ^ self class new state: state; constraints: aStore ].
+	store := aStore.

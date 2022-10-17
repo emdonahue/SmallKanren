@@ -1,3 +1,3 @@
 scheduling
 schedule: aSchedule
-	^ self copy state: (state schedule: aSchedule)
+	^ self extend: (state schedule: aSchedule)
