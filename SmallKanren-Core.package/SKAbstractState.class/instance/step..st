@@ -1,15 +1,12 @@
 streaming
 step: aRuntime
-	| deps |
 	self schedule ifEmpty: [ ^ SKStream failure ]. "Substitution case, mostly for debugging."
 	
-	"If any goals have no dependencies, run them as top priority."
-	(self schedule select: #hasPriority) ifNotEmpty: [ :s |
-		^ (s inject: SKGoal succeed into: [ :gs :g | gs & g expandFresh ifFail: [ ^ SKStream failure ]])
-			run: (self schedule: (self schedule reject: #hasPriority)) runtime: aRuntime].
+	"Check for high priority goals and run them first."
+	self run: SKGoal succeed schedule: self schedule runtime: aRuntime ifPriority: [ :s | ^ s ].
 	
-	"If we have to commit to a goal, commit to its dependencies."
-	deps := (self schedule first removeDependencies: self schedule rest).
-	^ ((deps select: #hasPriority)
-		inject: self schedule first expandFresh into: [ :gs :g | gs & g expandFresh ifFail: [ ^ SKStream failure ]])
-			run: (self schedule: (deps reject: #hasPriority)) runtime: aRuntime.	
+	"If no high priority goals, promote the first goal to high priority."
+	^ self run: self schedule first expandFresh 
+		schedule: (self schedule first removeDependencies: self schedule rest)
+		runtime: aRuntime
+		ifPriority: [ :s | ^ s ].
