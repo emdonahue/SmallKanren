@@ -1,3 +1,0 @@
-accessing
-vals
-	^ values

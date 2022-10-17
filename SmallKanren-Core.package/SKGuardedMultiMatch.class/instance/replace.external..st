@@ -1,3 +1,3 @@
 scheduling
 replace: aVar external: bVar
-	^ self setExternals: (externals collect: [ :v | v = aVar ifTrue: [bVar] ifFalse: [v]]).
+	^ self copy externals: (externals collect: [ :v | v = aVar ifTrue: [bVar] ifFalse: [v]]).

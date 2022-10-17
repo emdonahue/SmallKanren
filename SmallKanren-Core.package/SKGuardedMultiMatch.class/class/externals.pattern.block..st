@@ -10,5 +10,4 @@ externals: someExternals pattern: aPattern block: aBlock
 		externals: someExternals; 
 		pattern: pattern; 
 		internals: vars values; 
-		values: (Array new: vars size);
 		block: aBlock.
