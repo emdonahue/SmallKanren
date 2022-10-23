@@ -1,4 +1,5 @@
 streaming
 + aStream
-	"Since this answer is already fully complete, just return it rather than interleaving."
-	 ^ aStream complete: self.
+	"If this answer is already fully complete, just return it rather than interleaving."
+	 self isIncomplete ifFalse: [ ^ aStream complete: self ].
+	^ super + aStream.
