@@ -1,3 +1,4 @@
 streaming
 mplus: aStream
-	^ aStream complete: self.
+	self isIncomplete ifFalse: [ ^ aStream complete: self ].
+	^ super mplus: aStream.

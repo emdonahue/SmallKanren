@@ -1,4 +1,5 @@
 streaming
 plus: anAnswer
-	"Since this answer is already fully complete, just return it rather than interleaving."
-	 ^ anAnswer complete: self.
+	"If this answer is already fully complete, just return it rather than interleaving."
+	self isIncomplete ifFalse: [ ^ anAnswer complete: self ].
+	^ super plus: anAnswer.
