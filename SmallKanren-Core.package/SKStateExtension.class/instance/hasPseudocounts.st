@@ -1,0 +1,3 @@
+probability
+hasPseudocounts
+	^ state hasPseudocounts

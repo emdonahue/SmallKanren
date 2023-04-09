@@ -1,3 +1,3 @@
 probability
 maximize
-	^ (self runStates collect: [ :s | s pseudoCounts ]) sum.
+	^ (self runStates collect: [ :s | s pseudocounts ]) sum.

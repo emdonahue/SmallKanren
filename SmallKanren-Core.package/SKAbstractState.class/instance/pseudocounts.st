@@ -1,0 +1,3 @@
+probability
+pseudocounts 
+	^ SKPseudoCounts new

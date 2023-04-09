@@ -1,3 +1,3 @@
 probability
 likelihood 
-	^ self pseudoCounts likelihood
+	^ self pseudocounts likelihood

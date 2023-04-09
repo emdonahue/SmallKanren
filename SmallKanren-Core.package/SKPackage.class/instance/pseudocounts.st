@@ -1,4 +1,4 @@
 accessing
-pseudoCounts
+pseudocounts
 
 	^ pseudocounts ifNil: [ pseudocounts := SKPseudoCounts new ].

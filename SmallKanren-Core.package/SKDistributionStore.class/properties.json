@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SKStateExtension",
+	"category" : "SmallKanren-Core-States",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pseudocounts"
+	],
+	"name" : "SKDistributionStore",
+	"type" : "normal"
+}

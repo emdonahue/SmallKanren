@@ -18,6 +18,6 @@ masterInputs: inputVars outputs: outputVars goal: goalBlock state: aState tablen
 		  table: tableName
 		  inputs: inputVars
 		  outputs: outputVars
-		  pseudocounts: aState pseudoCounts
+		  pseudocounts: aState pseudocounts
 			runtime: r)
 				runtime: r.

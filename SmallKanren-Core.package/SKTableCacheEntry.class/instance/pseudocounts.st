@@ -1,4 +1,4 @@
 accessing
-pseudoCounts
+pseudocounts
 
 	^ pseudoCounts

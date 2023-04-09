@@ -11,7 +11,7 @@ step: aRuntime
 		
 	consumerEntries := producerEntries predecessorOf: consumed.
 	answer := (state unify: outputs with: (state copyTerm: consumerEntries first argv))
-				averagePseudoCounts: consumerEntries first pseudoCounts.
+				averagePseudoCounts: consumerEntries first pseudocounts.
 			
 	"If we are returning our last answer, don't bother to preserve the reused stream."
 	^ consumerEntries == producerEntries & producerCache isClosed 

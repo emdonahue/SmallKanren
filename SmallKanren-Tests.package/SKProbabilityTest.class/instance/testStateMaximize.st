@@ -2,7 +2,7 @@ tests-goals
 testStateMaximize
 	| b |
 	b := SKBernoulli new p: 0.6.
-	self assert: ([ :x | b sample: 1 ] asGoal runStates first pseudoCounts maximize: b) p equals: 1.
-	self assert: ([ :x | b sample: 0 ] asGoal runStates first pseudoCounts maximize: b) p equals: 0.
-	self assert: ([ :x | (b sample: 1) & (b sample: 0) ] asGoal runStates first pseudoCounts maximize: b) p closeTo: 0.5 precision: 0.00001.
+	self assert: ([ :x | b sample: 1 ] asGoal runStates first pseudocounts maximize: b) p equals: 1.
+	self assert: ([ :x | b sample: 0 ] asGoal runStates first pseudocounts maximize: b) p equals: 0.
+	self assert: ([ :x | (b sample: 1) & (b sample: 0) ] asGoal runStates first pseudocounts maximize: b) p closeTo: 0.5 precision: 0.00001.
 	
