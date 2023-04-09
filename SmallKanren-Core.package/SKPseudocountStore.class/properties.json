@@ -8,6 +8,6 @@
 	"instvars" : [
 		"pseudocounts"
 	],
-	"name" : "SKDistributionStore",
+	"name" : "SKPseudocountStore",
 	"type" : "normal"
 }

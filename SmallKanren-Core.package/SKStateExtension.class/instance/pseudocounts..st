@@ -1,3 +1,3 @@
 probability
 pseudocounts: pseudoCounts
-	^ self extend: (state pseudocounts: pseudoCounts)
+	pseudoCounts isEmpty ifFalse: [ ^ self extend: (state pseudocounts: pseudoCounts) ].

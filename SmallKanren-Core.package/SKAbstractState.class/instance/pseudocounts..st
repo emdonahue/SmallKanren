@@ -1,3 +1,3 @@
 probability
 pseudocounts: pseudoCounts
-	^ SKDistributionStore new state: self; pseudocounts: pseudoCounts
+	pseudoCounts isEmpty ifFalse: [ ^ SKPseudocountStore new state: self; pseudocounts: pseudoCounts ].
