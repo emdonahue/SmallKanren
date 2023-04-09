@@ -7,4 +7,4 @@ walkBinding: aVariable
 			b val isSKVar 
 				ifTrue: [ self walkBinding: b val ] "Continue walking while we have a var."
 				ifFalse: [ b ]] "Stop walking when we find a ground term and return the binding."
-		ifNone: [ SKBinding unbound: aVariable ]. "If a var is free, it is the last var in its chain. Bindings of self->self indicate variables not in the substitution."
+		ifNone: [ SKBinding unbound: aVariable ]. "If a var is free, it is the last var in its chain. Bindings of self->self indicate variables not bound in the substitution, whether because free or because never referenced."
