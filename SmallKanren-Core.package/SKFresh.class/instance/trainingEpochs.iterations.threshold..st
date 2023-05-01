@@ -1,5 +1,6 @@
 probability
 trainingEpochs: aModel iterations: numIterations threshold: aThreshold
+	"Central user interface to run probability system. Returns a stream of TrainingEpochs containing model, likelihood, and likelihood delta."
 	| iterations convergence |
 	iterations := 0.
 	convergence := false.
