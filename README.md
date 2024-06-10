@@ -4,7 +4,7 @@ SmallKanren is an implementation of the miniKanren relational logic programming 
 
 ## Installation
 
-Note: The following installation method no longer works in current versions of Pharo. SmallKanren and its dependencies must for the moment be installed manually. All dependencies can be found elsewhere on this Github page.
+Note: The following installation method no longer works in current versions of Pharo. SmallKanren and its dependencies must for the moment be installed manually. All dependencies can be found in other repositories on this Github profile ([Cons](https://github.com/emdonahue/Cons) [FunctionalDataStructures](https://github.com/emdonahue/FunctionalDataStructures) [ABBench](https://github.com/emdonahue/ABBench) [Contracts](https://github.com/emdonahue/Contracts)).
 
 ```smalltalk
 Metacello new
